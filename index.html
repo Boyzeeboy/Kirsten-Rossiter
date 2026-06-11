@@ -499,6 +499,12 @@
                 border: 1px solid rgba(160, 120, 64, 0.15);
                 pointer-events: none;
             }
+            .about-portrait img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
             .portrait-placeholder {
                 font-family: var(--serif);
                 font-size: 13px;
@@ -1404,9 +1410,10 @@
                 <div class="about-inner reveal">
                     <div class="about-left">
                         <div class="about-portrait">
-                            <div class="portrait-placeholder">
-                                Photograph<br />of Kirsten Rossiter
-                            </div>
+                            <img
+                                src="kirsten-rossiter.jpeg"
+                                alt="Kirsten Rossiter"
+                            />
                         </div>
                     </div>
                     <div class="about-right">
