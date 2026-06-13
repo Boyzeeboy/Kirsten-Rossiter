@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Kirsten Rossiter</title>
+<meta name="description" content="Get in touch with Kirsten Rossiter." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --cream: #F5F0E8;
+    --paper: #FBF8F2;
+    --ink: #1C1814;
+    --navy: #1A2235;
+    --gold: #A07840;
+    --gold-soft: rgba(160, 120, 64, 0.32);
+    --ink-60: rgba(28, 24, 20, 0.60);
+    --ink-40: rgba(28, 24, 20, 0.40);
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--cream); color: var(--ink);
+    font-family: 'Jost', sans-serif; font-weight: 300; line-height: 1.7;
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  h1, h2 { font-family: 'Cormorant Garamond', serif; font-weight: 500; line-height: 1.08; }
+  .wrap { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 32px; }
+
+  .eyebrow {
+    font-family: 'Jost', sans-serif; font-weight: 400; font-size: 0.72rem;
+    letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold);
+  }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(245, 240, 232, 0.86); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--gold-soft);
+  }
+  .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+  .mark { font-weight: 400; font-size: 0.78rem; letter-spacing: 0.34em; text-transform: uppercase; color: var(--ink); text-decoration: none; }
+  .mark span { color: var(--gold); }
+  .back { font-size: 0.74rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-60); text-decoration: none; }
+  .back:hover { color: var(--gold); }
+
+  /* Layout */
+  main { flex: 1; padding: clamp(56px, 9vw, 104px) 0; }
+  .grid { display: grid; grid-template-columns: 0.85fr 1fr; gap: clamp(40px, 7vw, 88px); align-items: start; }
+
+  .intro .eyebrow { display: block; margin-bottom: 22px; }
+  .intro h1 { font-size: clamp(2.6rem, 5.6vw, 4rem); letter-spacing: -0.01em; margin-bottom: 24px; }
+  .intro p { color: var(--ink-60); font-size: 1.06rem; max-width: 24rem; }
+  .intro .rule { width: 56px; height: 1px; background: var(--gold); margin: 32px 0; }
+  .intro .direct { font-size: 0.92rem; color: var(--ink-60); }
+  .intro .direct a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--gold-soft); padding-bottom: 2px; }
+  .intro .direct a:hover { color: var(--gold); border-color: var(--gold); }
+
+  /* Form */
+  .field { margin-bottom: 26px; }
+  label {
+    display: block; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink-60); margin-bottom: 10px;
+  }
+  label .opt { color: var(--ink-40); text-transform: none; letter-spacing: 0; font-style: italic; }
+  input, textarea {
+    width: 100%; font-family: 'Jost', sans-serif; font-weight: 300; font-size: 1rem;
+    color: var(--ink); background: var(--paper);
+    border: 1px solid var(--gold-soft); padding: 14px 16px; border-radius: 0;
+    transition: border-color 0.3s var(--ease), background 0.3s var(--ease);
+  }
+  input:focus, textarea:focus { outline: none; border-color: var(--gold); background: #fff; }
+  textarea { resize: vertical; min-height: 150px; line-height: 1.6; }
+
+  /* Honeypot — visually and to AT removed, but present for bots */
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.7em;
+    font-family: 'Jost', sans-serif; font-weight: 400; font-size: 0.82rem;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--cream);
+    background: var(--navy); padding: 17px 36px; border: 1px solid var(--navy);
+    cursor: pointer; transition: background 0.4s var(--ease), color 0.4s var(--ease), transform 0.4s var(--ease);
+  }
+  .btn:hover:not(:disabled) { background: var(--gold); border-color: var(--gold); transform: translateY(-2px); }
+  .btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+  .btn:disabled { opacity: 0.55; cursor: default; }
+  .btn .arrow { transition: transform 0.4s var(--ease); }
+  .btn:hover:not(:disabled) .arrow { transform: translateX(4px); }
+
+  .formnote { margin-top: 16px; font-size: 0.82rem; min-height: 1.2em; }
+  .formnote.error { color: #9a3b2e; }
+
+  /* Success panel */
+  .success { display: none; padding: 8px 0; }
+  .success.show { display: block; }
+  .success .rule { width: 48px; height: 1px; background: var(--gold); margin-bottom: 28px; }
+  .success h2 { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 16px; }
+  .success p { color: var(--ink-60); font-size: 1.06rem; max-width: 28rem; }
+
+  form.hide { display: none; }
+
+  footer { background: var(--ink); color: rgba(245, 240, 232, 0.6); padding: 44px 0; }
+  .foot { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .foot .mark { color: rgba(245, 240, 232, 0.85); }
+  .foot small { font-size: 0.74rem; letter-spacing: 0.08em; }
+
+  @media (max-width: 820px) {
+    .grid { grid-template-columns: 1fr; gap: 8px; }
+    .intro { margin-bottom: 16px; }
+    .intro p { max-width: none; }
+    .intro .rule { margin: 28px 0; }
+    .back { display: none; }
+  }
+  @media (max-width: 520px) { .wrap { padding: 0 22px; } }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="/" class="mark">Kirsten <span>Rossiter</span></a>
+    <a href="/" class="back">← Back to home</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap grid">
+    <div class="intro">
+      <span class="eyebrow">Get in touch</span>
+      <h1>Start a<br />conversation</h1>
+      <p>For speaking invitations, enquiries about the ministry, or a word about the book — send a message and we'll be in touch.</p>
+      <div class="rule"></div>
+      <p class="direct">Prefer email? Reach us at <a href="mailto:kirsten@kirstenrossiter.com">kirsten@kirstenrossiter.com</a>.</p>
+    </div>
+
+    <div>
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label for="subject">Subject <span class="opt">— optional</span></label>
+          <input type="text" id="subject" name="subject" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <!-- Honeypot: real people never see or fill this; bots do. -->
+        <div class="hp" aria-hidden="true">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <button type="submit" class="btn" id="submitBtn">Send message <span class="arrow">→</span></button>
+        <p class="formnote" id="formnote" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="success" id="success">
+        <div class="rule"></div>
+        <h2>Thank you.</h2>
+        <p>Your message has been sent. We read every note and will get back to you as soon as we can.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span class="mark">Kirsten Rossiter</span>
+    <small>© <span id="yr"></span> Kirsten Rossiter Prophetic Ministries</small>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var form = document.getElementById('contactForm');
+  var btn = document.getElementById('submitBtn');
+  var note = document.getElementById('formnote');
+  var success = document.getElementById('success');
+
+  function setNote(msg, isError) {
+    note.textContent = msg || '';
+    note.className = 'formnote' + (isError ? ' error' : '');
+  }
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    setNote('');
+
+    var payload = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      subject: form.subject.value.trim(),
+      message: form.message.value.trim(),
+      company: form.company.value.trim() // honeypot
+    };
+
+    if (!payload.name || !payload.email || !payload.message) {
+      setNote('Please fill in your name, email, and message.', true);
+      return;
+    }
+    var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email);
+    if (!emailOk) { setNote('Please enter a valid email address.', true); return; }
+
+    btn.disabled = true;
+    var label = btn.innerHTML;
+    btn.textContent = 'Sending…';
+
+    try {
+      var res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      var data = await res.json().catch(function () { return {}; });
+      if (res.ok && data.ok) {
+        form.classList.add('hide');
+        success.classList.add('show');
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        setNote((data && data.error) || 'Something went wrong. Please try again.', true);
+        btn.disabled = false;
+        btn.innerHTML = label;
+      }
+    } catch (err) {
+      setNote('Network error — please check your connection and try again.', true);
+      btn.disabled = false;
+      btn.innerHTML = label;
+    }
+  });
+</script>
+</body>
+</html>
