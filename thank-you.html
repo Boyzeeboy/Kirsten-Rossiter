@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thank you — Kirsten Rossiter</title>
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+<style>
+  :root { --cream:#F5F0E8; --ink:#1C1814; --navy:#1A2235; --gold:#A07840; --ink-60:rgba(28,24,20,.6); }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--cream); color:var(--ink); font-family:'Jost',sans-serif; font-weight:300; line-height:1.7; min-height:100vh; display:flex; flex-direction:column; }
+  header { border-bottom:1px solid rgba(160,120,64,.32); }
+  .bar { width:100%; max-width:1140px; margin:0 auto; padding:0 32px; height:66px; display:flex; align-items:center; }
+  .mark { font-weight:400; font-size:.78rem; letter-spacing:.34em; text-transform:uppercase; color:var(--ink); text-decoration:none; }
+  .mark span { color:var(--gold); }
+  main { flex:1; display:flex; align-items:center; justify-content:center; text-align:center; padding:64px 24px; }
+  .inner { max-width:38rem; }
+  .eyebrow { font-weight:400; font-size:.72rem; letter-spacing:.32em; text-transform:uppercase; color:var(--gold); margin-bottom:24px; }
+  .rule { width:48px; height:1px; background:var(--gold); margin:0 auto 32px; }
+  h1 { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:clamp(2.4rem,6vw,3.6rem); line-height:1.1; margin-bottom:22px; }
+  p { color:var(--ink-60); font-size:1.06rem; margin:0 auto 16px; max-width:32rem; }
+  .inbox { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.3rem; color:var(--navy); margin:28px auto 8px; }
+  .home { display:inline-block; margin-top:40px; font-size:.78rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:4px; transition:color .3s ease; }
+  .home:hover { color:var(--gold); }
+  footer { padding:36px 0; text-align:center; }
+  footer small { font-size:.74rem; letter-spacing:.08em; color:var(--ink-60); }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar"><a href="/" class="mark">Kirsten <span>Rossiter</span></a></div>
+</header>
+<main>
+  <div class="inner">
+    <p class="eyebrow">Order complete</p>
+    <div class="rule"></div>
+    <h1>Thank you.</h1>
+    <p>Your order of <em>Building the Nations from the Ground Up</em> is confirmed.</p>
+    <p class="inbox">Your download link is on its way to your inbox.</p>
+    <p>It usually arrives within a minute or two. If you don't see it, check your spam or promotions folder — and do reach out if it hasn't landed.</p>
+    <a href="/" class="home">Return to home</a>
+  </div>
+</main>
+<footer>
+  <small>© <span id="yr"></span> Kirsten Rossiter Prophetic Ministries</small>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
