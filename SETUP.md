@@ -67,6 +67,14 @@ Everything in Phase 1 uses that URL, not the real domain.
      to **your own Resend-account email address**. That's all you need to test
      the flow yourself. (You can't have other people test-buy until launch.)
 
+> **Where the API key goes — never in the code.** Resend's quick-start shows the
+> key pasted straight into `new Resend('re_…')`. Do **not** do that here. The key
+> is a password: it goes **only** into Cloudflare's encrypted `RESEND_API_KEY`
+> variable (step 5), and the Functions read it at runtime as `env.RESEND_API_KEY`.
+> Never paste it into an HTML/JS file or commit it to the repo — anything in the
+> repo is public on `pages.dev`. Resend shows the full key once, so copy it now;
+> if you lose it, just generate a new one and update the Cloudflare variable.
+
 ### 4. Create the product + a TEST Payment Link in Stripe
 1. Switch Stripe to **Test mode** (toggle, top-right).
 2. **Product catalogue** → add **Building the Nations from the Ground Up**,
@@ -131,9 +139,14 @@ since those touch Xneelo and must be done in the right order to keep email safe.
 
 Alongside those DNS steps, you switch this checkout from test to live:
 
-**Resend:** verify the **`send.kirstenrossiter.com`** subdomain (a subdomain,
-not the root — this keeps Resend's records clear of the SPF record your Xneelo
-mailboxes use). Its DNS records go into **Xneelo's DNS tool**, per `LAUNCH-DAY.md`.
+**Resend — this is the hard gate for going live.** Until you verify a domain,
+Resend only delivers to your own account email, so *no paying customer can
+receive their book*. Verifying the sending domain is what flips it from
+"works for me" to "works for buyers." Verify the **`send.kirstenrossiter.com`**
+subdomain (a subdomain, not the root — this keeps Resend's records clear of the
+SPF record your Xneelo mailboxes use). Its DNS records go into **Xneelo's DNS
+tool**, per `LAUNCH-DAY.md`. Once it shows **Verified** in Resend, update
+`FROM_EMAIL` (below) to send from that domain.
 
 **Cloudflare Pages variables — change these:**
 | Name | Launch value |
