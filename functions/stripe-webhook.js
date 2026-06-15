@@ -125,8 +125,23 @@ async function sendDownloadEmail(env, to, link) {
         html,
       }),
     });
+    if (!res.ok) {
+      // Surface Resend's actual rejection in the Cloudflare function logs.
+      // Common cause: FROM_EMAIL uses an unverified domain, or (in dev) the
+      // buyer's email isn't your own Resend-account address — Resend rejects
+      // both here. Without this log the reason is invisible and Stripe just
+      // keeps retrying.
+      const detail = await res.text().catch(() => "");
+      console.error(
+        `Resend download email failed (${res.status}) — from=${env.FROM_EMAIL} to=${to}: ${detail}`
+      );
+    }
     return res.ok;
-  } catch {
+  } catch (err) {
+    console.error(
+      "Resend download request threw:",
+      err && err.stack ? err.stack : err
+    );
     return false;
   }
 }

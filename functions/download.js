@@ -35,6 +35,17 @@ export async function onRequestGet(context) {
   }
 
   // 3 — Stream the file straight from R2.
+  // Guard the binding itself: if BOOK_BUCKET isn't configured in Cloudflare,
+  // `env.BOOK_BUCKET.get(...)` throws an uncaught TypeError, which Cloudflare
+  // surfaces to the buyer as a raw "Error 1101 — Worker threw exception" page.
+  // Catch it here and return a readable error instead.
+  if (!env.BOOK_BUCKET) {
+    console.error("download: BOOK_BUCKET R2 binding is not configured");
+    return new Response(
+      "The download is temporarily unavailable. Please contact us and we'll send your book.",
+      { status: 500 }
+    );
+  }
   const key = env.BOOK_KEY || "building-the-nations.epub";
   const object = await env.BOOK_BUCKET.get(key);
   if (!object) {
