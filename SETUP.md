@@ -6,6 +6,8 @@ it's done, your day-to-day stays as it is now: edit, push to Git, Cloudflare dep
 Stripe calls them. Adding the `functions/` folder does **not** change the fact
 that this is a static site.
 
+## Checking the site URL and redeploying for testing purposes. 
+
 ## How this document is organised
 
 It's split into two phases:
