@@ -97,13 +97,22 @@ export async function onRequestPost(context) {
       }),
     });
     if (!res.ok) {
+      // Surface Resend's actual rejection in the Cloudflare function logs.
+      // Common cause: FROM_EMAIL uses a domain that isn't verified in Resend yet,
+      // or (in dev) CONTACT_TO isn't your own Resend-account email — both of which
+      // Resend rejects here. Without this log the reason is invisible.
+      const detail = await res.text().catch(() => "");
+      console.error(
+        `Resend send failed (${res.status}) — from=${env.FROM_EMAIL} to=${to}: ${detail}`
+      );
       return json(
         { ok: false, error: "Couldn't send right now — please try again shortly." },
         502
       );
     }
     return json({ ok: true });
-  } catch {
+  } catch (err) {
+    console.error("Resend request threw:", err && err.stack ? err.stack : err);
     return json(
       { ok: false, error: "Couldn't send right now — please try again shortly." },
       502
