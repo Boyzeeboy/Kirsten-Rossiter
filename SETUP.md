@@ -104,11 +104,37 @@ Then add the **R2 bucket binding**:
 - Bucket: the one from step 2.
 
 ### 6. Create the TEST Stripe webhook
-1. Stripe (still in **Test mode**) → **Developers → Webhooks → Add endpoint**.
-2. Endpoint URL: `https://<your-project>.pages.dev/stripe-webhook`
-3. Event to send: **`checkout.session.completed`** (just that one).
-4. Copy the **Signing secret** (`whsec_…`) into `STRIPE_WEBHOOK_SECRET` from
-   step 5, then redeploy.
+In current Stripe, a webhook is called an **event destination**, and Webhooks
+lives inside the **Developers / Workbench** panel — not on the Settings page.
+
+1. Make sure you're in **Test mode** before you start. Click **"Developers"** in
+   the footer bar (bottom-left) to open the Workbench, then the **Webhooks** tab.
+   You'll know you're in test mode when the dark **"Sandbox — you are testing in
+   a sandbox"** banner is showing across the top.
+   - You may see an existing destination like
+     `https://kirstenrossiter.com/?wc-api=wc_stripe` — that's an old WooCommerce
+     webhook on the live site. **Leave it alone**; don't edit or delete it.
+2. Click **"+ Add destination"** and work through the three-step wizard:
+   - **Select events.** Leave the scope on **"Your account"** and the **API
+     version** at its default. Under *Events*, use the **"Find event by name…"**
+     search box, type `checkout.session.completed`, and tick that **one** event
+     only. Do **not** use "Select all." Click **Continue**.
+   - **Choose destination type.** Pick **Webhook endpoint** (not Amazon
+     EventBridge). Click **Continue**.
+   - **Configure your destination.** Confirm the summary reads *Events from →
+     Your account* and *Listening to → checkout.session.completed*. Then:
+     - **Destination name:** optional — rename the random default (e.g.
+       `memorable-finesse`) to something like `book-checkout` so you recognise it.
+     - **Endpoint URL:** `https://<your-project>.pages.dev/stripe-webhook`
+       — use the **stable** `pages.dev` URL with **no deployment-hash prefix**
+       (i.e. `kirsten-rossiter.pages.dev`, *not* `254f96b6.kirsten-rossiter.pages.dev`).
+       The hashed preview URLs point at a single frozen build and break on the
+       next push. Confirm it matches the main URL shown at the top of your
+       Cloudflare Pages project, and use the same value for `SITE_URL`.
+     - **Description:** optional (e.g. "Emails download link after book purchase").
+   - Click **Create destination**.
+3. On the destination's details page, reveal and copy the **Signing secret**
+   (`whsec_…`) into `STRIPE_WEBHOOK_SECRET` from step 5, then **redeploy**.
 
 ### 7. Test the whole flow end to end
 1. Open your `pages.dev` site and click **Buy**.
