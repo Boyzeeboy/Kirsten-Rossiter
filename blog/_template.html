@@ -1,0 +1,240 @@
+<!doctype html>
+<!-- ============================================================
+     BLOG POST TEMPLATE
+     To create a new post:
+       1. Copy this file and rename it, e.g.  my-post-title.html
+          (use lowercase words separated by hyphens — this becomes
+          the web address: /blog/my-post-title.html)
+       2. Fill in the four EDIT markers below: <title>, post type,
+          date, headline, and the article body.
+       3. Add a matching <a class="post-row"> entry at the top of
+          blog/index.html so it shows in the list.
+       4. Commit & push — Cloudflare Pages publishes it automatically.
+     ============================================================ -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- EDIT: page title (shows in browser tab & search results) -->
+        <title>Post title — Kirsten Rossiter</title>
+        <!-- EDIT: one-sentence description for search engines / link previews -->
+        <meta name="description" content="A short summary of this post." />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            *,
+            *::before,
+            *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+            :root {
+                --ink: #1a1714;
+                --ink-soft: #3d3830;
+                --cream: #f5f0e8;
+                --cream-mid: #ede6d8;
+                --cream-deep: #e2d9c8;
+                --gold: #a07840;
+                --gold-light: #c4a264;
+                --gold-pale: #e8d9bc;
+                --rule: rgba(160, 120, 64, 0.35);
+                --sans: "Jost", sans-serif;
+                --serif: "Cormorant Garamond", Georgia, serif;
+                --serif-body: "Libre Baskerville", Georgia, serif;
+            }
+
+            html { scroll-behavior: smooth; }
+            body {
+                background: var(--cream);
+                color: var(--ink);
+                font-family: var(--sans);
+                font-weight: 300;
+                line-height: 1.7;
+                overflow-x: hidden;
+            }
+            .container { max-width: 1160px; margin: 0 auto; padding: 0 40px; }
+
+            /* ─── ARTICLE HEADER ──────────────────────────────────────── */
+            .article-head {
+                padding: 168px 0 0;
+                max-width: 760px;
+                margin: 0 auto;
+            }
+            .article-head .container { padding: 0 40px; }
+            .back-link {
+                display: inline-block;
+                font-size: 11px;
+                font-weight: 500;
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                color: var(--gold);
+                text-decoration: none;
+                margin-bottom: 34px;
+            }
+            .back-link:hover { color: var(--ink); }
+            .article-type {
+                font-size: 10px;
+                font-weight: 500;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: var(--gold);
+                display: block;
+                margin-bottom: 18px;
+            }
+            .article-title {
+                font-family: var(--serif);
+                font-weight: 300;
+                font-size: clamp(2.3rem, 5vw, 3.5rem);
+                line-height: 1.08;
+                letter-spacing: -0.01em;
+                margin-bottom: 20px;
+            }
+            .article-date {
+                font-size: 12px;
+                letter-spacing: 0.06em;
+                color: var(--ink-soft);
+                opacity: 0.7;
+            }
+            .article-rule {
+                width: 48px; height: 1px; background: var(--gold);
+                margin: 40px 0 0;
+            }
+
+            /* ─── ARTICLE BODY ────────────────────────────────────────── */
+            .article-body {
+                max-width: 680px;
+                margin: 0 auto;
+                padding: 48px 40px 96px;
+            }
+            .article-body p {
+                font-family: var(--serif-body);
+                font-size: 1.08rem;
+                line-height: 1.9;
+                color: var(--ink-soft);
+                margin-bottom: 28px;
+            }
+            .article-body p.lead {
+                font-family: var(--serif);
+                font-size: 1.5rem;
+                font-style: italic;
+                line-height: 1.5;
+                color: var(--ink);
+            }
+            .article-body h2 {
+                font-family: var(--serif);
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 1.2;
+                margin: 48px 0 18px;
+            }
+            .article-body h3 {
+                font-family: var(--serif);
+                font-weight: 500;
+                font-size: 1.35rem;
+                margin: 36px 0 14px;
+            }
+            .article-body blockquote {
+                border-left: 2px solid var(--gold);
+                padding-left: 28px;
+                margin: 36px 0;
+                font-family: var(--serif);
+                font-style: italic;
+                font-size: 1.4rem;
+                line-height: 1.5;
+                color: var(--ink);
+            }
+            .article-body ul,
+            .article-body ol {
+                margin: 0 0 28px 22px;
+                font-family: var(--serif-body);
+                color: var(--ink-soft);
+            }
+            .article-body li { margin-bottom: 10px; line-height: 1.8; }
+            .article-body a { color: var(--gold); }
+
+            .article-foot {
+                max-width: 680px;
+                margin: 0 auto;
+                padding: 0 40px 96px;
+                text-align: center;
+            }
+            .article-foot a {
+                display: inline-block;
+                font-size: 11px;
+                font-weight: 500;
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                color: var(--ink);
+                text-decoration: none;
+                border-bottom: 1px solid var(--gold);
+                padding-bottom: 4px;
+                transition: color 0.3s;
+            }
+            .article-foot a:hover { color: var(--gold); }
+
+            @media (max-width: 760px) {
+                .article-head { padding-top: 140px; }
+                .article-body, .article-foot { padding-left: 24px; padding-right: 24px; }
+                .container { padding: 0 24px; }
+            }
+        </style>
+    </head>
+    <body>
+        <div data-include="../partials/nav.html"></div>
+
+        <header class="article-head">
+            <div class="container">
+                <a href="/blog/" class="back-link">← The Prophetic Blog</a>
+                <!-- EDIT: post type & date -->
+                <span class="article-type">Teaching</span>
+                <h1 class="article-title">
+                    <!-- EDIT: your post headline -->
+                    Your post headline goes here
+                </h1>
+                <p class="article-date">1 January 2026</p>
+                <div class="article-rule"></div>
+            </div>
+        </header>
+
+        <!-- ============================================================
+             EDIT: ARTICLE BODY
+             Write each paragraph inside its own <p>...</p>.
+             Useful building blocks you can copy:
+               <p class="lead">An opening line with emphasis.</p>
+               <h2>A section heading</h2>
+               <blockquote>A scripture or highlighted line.</blockquote>
+               <ul><li>A bullet point</li></ul>
+             ============================================================ -->
+        <article class="article-body">
+            <p class="lead">
+                Start with a strong opening line that sets the tone for the
+                whole piece.
+            </p>
+            <p>
+                Then continue in normal paragraphs. Keep each thought in its
+                own &lt;p&gt; tag so the spacing stays even.
+            </p>
+            <h2>A section heading</h2>
+            <p>
+                More of the message here. You can use a quote block for
+                scripture or a line you want to stand out:
+            </p>
+            <blockquote>
+                "For where two or three gather in my name, there am I with
+                them."
+            </blockquote>
+            <p>And carry on to the close.</p>
+        </article>
+
+        <div class="article-foot">
+            <a href="/blog/">Read more from the blog</a>
+        </div>
+
+        <div data-include="../partials/footer.html"></div>
+        <script src="../includes.js"></script>
+    </body>
+</html>
