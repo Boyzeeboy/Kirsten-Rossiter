@@ -540,6 +540,18 @@ footer.site-footer {
   letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; transition: background 0.2s;
 }
 .page-home .email-submit:hover { background: var(--gold-light); }
+.page-home .email-submit:disabled { opacity: 0.5; cursor: default; }
+.page-home .email-note {
+  margin: 12px auto 0; max-width: 480px; font-family: var(--sans); font-size: 13px;
+  color: var(--cream); text-align: center; min-height: 1em;
+}
+.page-home .email-note:empty { display: none; }
+.page-home .email-note.error { color: #e8a0a0; }
+.page-home .email-success {
+  display: none; margin: 12px auto 0; max-width: 480px; text-align: center;
+  font-family: var(--serif); font-size: 18px; color: var(--gold-light);
+}
+.page-home .email-success.show { display: block; }
 
 /* ─── HOMEPAGE: CLOSING ────────────────────────────────────── */
 .page-home .closing {

@@ -404,16 +404,21 @@
                         Words for the Bride and the nations—shared with
                         intention, delivered straight to your inbox.
                     </p>
-                    <form class="email-form" onsubmit="return false;">
+                    <form class="email-form" id="subscribeForm">
                         <input
                             class="email-input"
                             type="email"
                             placeholder="Your email address"
+                            required
                         />
                         <button class="email-submit" type="submit">
                             Subscribe
                         </button>
                     </form>
+                    <p class="email-note" id="subscribeNote"></p>
+                    <p class="email-success" id="subscribeSuccess">
+                        You're subscribed — welcome.
+                    </p>
                 </div>
             </div>
         </section>
@@ -462,6 +467,55 @@
                 .forEach((card, i) => {
                     card.style.transitionDelay = `${i * 0.1}s`;
                 });
+        </script>
+        <script>
+            (function () {
+                var form = document.getElementById("subscribeForm");
+                var btn = form.querySelector(".email-submit");
+                var note = document.getElementById("subscribeNote");
+                var success = document.getElementById("subscribeSuccess");
+
+                form.addEventListener("submit", async function (e) {
+                    e.preventDefault();
+                    note.textContent = "";
+                    note.className = "email-note";
+
+                    var email = form.querySelector(".email-input").value.trim();
+                    if (!email) return;
+
+                    btn.disabled = true;
+                    var label = btn.textContent;
+                    btn.textContent = "Subscribing…";
+
+                    try {
+                        var res = await fetch("/api/subscribe", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ email: email }),
+                        });
+                        var data = await res.json().catch(function () {
+                            return {};
+                        });
+                        if (res.ok && data.ok) {
+                            form.style.display = "none";
+                            success.classList.add("show");
+                        } else {
+                            note.textContent =
+                                (data && data.error) ||
+                                "Something went wrong. Please try again.";
+                            note.className = "email-note error";
+                            btn.disabled = false;
+                            btn.textContent = label;
+                        }
+                    } catch (err) {
+                        note.textContent =
+                            "Network error — please check your connection.";
+                        note.className = "email-note error";
+                        btn.disabled = false;
+                        btn.textContent = label;
+                    }
+                });
+            })();
         </script>
     </body>
 </html>
