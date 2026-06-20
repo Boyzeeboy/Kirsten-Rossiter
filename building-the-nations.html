@@ -29,44 +29,16 @@
 
         <style>
             :root {
-                --cream: #f5f0e8;
                 --paper: #fbf8f2;
-                --ink: #1c1814;
                 --navy: #1a2235;
-                --gold: #a07840;
                 --gold-soft: rgba(160, 120, 64, 0.32);
                 --ink-60: rgba(28, 24, 20, 0.6);
                 --ink-40: rgba(28, 24, 20, 0.4);
                 --measure: 38rem;
                 --ease: cubic-bezier(0.22, 1, 0.36, 1);
-                /* Shared nav/footer tokens (ported from index.html) */
-                --ink-soft: #3d3830;
-                --cream-mid: #ede6d8;
-                --cream-deep: #e2d9c8;
-                --gold-light: #c4a264;
-                --gold-pale: #e8d9bc;
-                --rule: rgba(160, 120, 64, 0.35);
-                --sans: "Jost", sans-serif;
-                --serif: "Cormorant Garamond", Georgia, serif;
-                --serif-body: "Libre Baskerville", Georgia, serif;
-            }
-
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
-
-            html {
-                scroll-behavior: smooth;
             }
 
             body {
-                background: var(--cream);
-                color: var(--ink);
-                font-family: "Jost", sans-serif;
-                font-weight: 300;
-                line-height: 1.7;
                 -webkit-font-smoothing: antialiased;
                 text-rendering: optimizeLegibility;
             }
@@ -74,7 +46,7 @@
             h1,
             h2,
             h3 {
-                font-family: "Cormorant Garamond", serif;
+                font-family: var(--serif);
                 font-weight: 500;
                 line-height: 1.08;
             }
@@ -500,41 +472,6 @@
                 .rule {
                     width: var(--rule-w, 64px);
                 }
-            }
-
-            /* ============================================================
-     SHARED NAV + FOOTER (ported from index.html)
-     ============================================================ */
-            .container {
-                max-width: 1160px;
-                margin: 0 auto;
-                padding: 0 40px;
-            }
-            .label {
-                font-family: var(--sans);
-                font-size: 10px;
-                font-weight: 500;
-                letter-spacing: 0.2em;
-                text-transform: uppercase;
-                color: var(--gold);
-            }
-            .rule-line {
-                width: 48px;
-                height: 1px;
-                background: var(--gold);
-                display: inline-block;
-                vertical-align: middle;
-                margin-right: 14px;
-            }
-            .btn-gold {
-                background: var(--gold);
-                color: var(--cream);
-                border-color: var(--gold);
-            }
-            .btn-gold:hover {
-                background: var(--gold-light);
-                border-color: var(--gold-light);
-                color: var(--cream);
             }
 
         </style>
