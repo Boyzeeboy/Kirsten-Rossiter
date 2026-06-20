@@ -207,7 +207,7 @@ footer.site-footer {
 .footer-social-links a:hover { border-color: var(--gold); }
 .footer-social-links svg { width: 14px; height: 14px; fill: rgba(245, 240, 232, 0.4); }
 .footer-bottom { border-top: 1px solid rgba(245, 240, 232, 0.08); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; }
-.footer-bottom p { font-size: 11px; color: rgba(245, 240, 232, 0.25); letter-spacing: 0.04em; margin: 0; }
+.footer-bottom p { font-size: 11px; color: rgba(245, 240, 232, 0.55); letter-spacing: 0.04em; margin: 0; }
 .footer-divider-line { font-family: var(--serif); font-size: 13px; font-style: italic; color: rgba(160, 120, 64, 0.5); }
 
 /* ─── KEYFRAMES ────────────────────────────────────────────── */
