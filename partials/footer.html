@@ -1,51 +1,9 @@
 <!-- ============================================================
-     SHARED FOOTER  (single source of truth)
-     Edit this file to update the footer on every page at once.
+     SHARED FOOTER  (single source of truth — markup)
+     Edit this file to update the footer markup on every page at once.
+     Footer STYLING now lives in /styles.css (.site-footer, .footer-* rules).
      Injected into each page by includes.js via <div data-include="partials/footer.html">.
      ============================================================ -->
-<style>
-  footer.site-footer {
-    background: var(--ink, #1C1814); padding: 60px 0 40px; border-top: 1px solid rgba(160, 120, 64, 0.2);
-  }
-  .site-footer .container { max-width: 1160px; margin: 0 auto; padding: 0 40px; }
-  .footer-inner { display: grid; grid-template-columns: 1fr auto 1fr; gap: 40px; align-items: start; margin-bottom: 48px; }
-  .footer-brand .nav-logo {
-    font-family: var(--serif, 'Cormorant Garamond', Georgia, serif); font-size: 18px; font-weight: 300;
-    letter-spacing: 0.04em; color: var(--cream, #F5F0E8); text-decoration: none; line-height: 1.2; display: inline-block;
-  }
-  .footer-brand .nav-logo span {
-    display: block; font-size: 10px; font-family: var(--sans, 'Jost', sans-serif); letter-spacing: 0.18em;
-    text-transform: uppercase; color: var(--gold, #A07840); margin-top: 1px;
-  }
-  .footer-tagline { font-family: var(--serif, 'Cormorant Garamond', Georgia, serif); font-size: 13px; font-style: italic; color: rgba(245, 240, 232, 0.4); margin-top: 12px; }
-  .footer-nav { display: flex; flex-direction: column; gap: 10px; }
-  .footer-nav a {
-    font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
-    text-decoration: none; color: rgba(245, 240, 232, 0.45); transition: color 0.2s;
-  }
-  .footer-nav a:hover { color: var(--gold, #A07840); }
-  .footer-social { text-align: right; }
-  .footer-social-links { display: flex; gap: 16px; justify-content: flex-end; }
-  .footer-social-links a {
-    width: 36px; height: 36px; border: 1px solid rgba(245, 240, 232, 0.15);
-    display: flex; align-items: center; justify-content: center; text-decoration: none; transition: border-color 0.2s;
-  }
-  .footer-social-links a:hover { border-color: var(--gold, #A07840); }
-  .footer-social-links svg { width: 14px; height: 14px; fill: rgba(245, 240, 232, 0.4); }
-  .footer-bottom { border-top: 1px solid rgba(245, 240, 232, 0.08); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; }
-  .footer-bottom p { font-size: 11px; color: rgba(245, 240, 232, 0.25); letter-spacing: 0.04em; margin: 0; }
-  .footer-divider-line { font-family: var(--serif, 'Cormorant Garamond', Georgia, serif); font-size: 13px; font-style: italic; color: rgba(160, 120, 64, 0.5); }
-
-  @media (max-width: 900px) {
-    .footer-inner { grid-template-columns: 1fr; }
-    .footer-social { text-align: left; }
-    .footer-social-links { justify-content: flex-start; }
-    .site-footer .container { padding: 0 24px; }
-  }
-  @media (max-width: 640px) {
-    .footer-bottom { flex-direction: column; gap: 14px; text-align: center; }
-  }
-</style>
 
 <footer class="site-footer">
   <div class="container">
