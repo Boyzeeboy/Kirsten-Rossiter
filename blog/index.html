@@ -17,7 +17,11 @@
         <style>
             *,
             *::before,
-            *::after { box-sizing: border-box; margin: 0; padding: 0; }
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
 
             :root {
                 --ink: #1a1714;
@@ -34,7 +38,9 @@
                 --serif-body: "Libre Baskerville", Georgia, serif;
             }
 
-            html { scroll-behavior: smooth; }
+            html {
+                scroll-behavior: smooth;
+            }
             body {
                 background: var(--cream);
                 color: var(--ink);
@@ -43,7 +49,11 @@
                 line-height: 1.7;
                 overflow-x: hidden;
             }
-            .container { max-width: 1160px; margin: 0 auto; padding: 0 40px; }
+            .container {
+                max-width: 1160px;
+                margin: 0 auto;
+                padding: 0 40px;
+            }
             .label {
                 font-family: var(--sans);
                 font-size: 10px;
@@ -53,8 +63,12 @@
                 color: var(--gold);
             }
             .rule-line {
-                width: 48px; height: 1px; background: var(--gold);
-                display: inline-block; vertical-align: middle; margin-right: 14px;
+                width: 48px;
+                height: 1px;
+                background: var(--gold);
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 14px;
             }
 
             /* ─── BLOG HEADER ─────────────────────────────────────────── */
@@ -62,7 +76,10 @@
                 padding: 168px 0 56px;
                 border-bottom: 1px solid var(--rule);
             }
-            .blog-hero .label { display: inline-block; margin-bottom: 22px; }
+            .blog-hero .label {
+                display: inline-block;
+                margin-bottom: 22px;
+            }
             .blog-headline {
                 font-family: var(--serif);
                 font-weight: 300;
@@ -78,7 +95,9 @@
             }
 
             /* ─── POST LIST ───────────────────────────────────────────── */
-            .blog-list { padding: 64px 0 96px; }
+            .blog-list {
+                padding: 64px 0 96px;
+            }
 
             .post-row {
                 display: grid;
@@ -91,8 +110,12 @@
                 color: inherit;
                 transition: padding-left 0.3s ease;
             }
-            .post-row:first-child { border-top: 1px solid var(--cream-deep); }
-            .post-row:hover { padding-left: 10px; }
+            .post-row:first-child {
+                border-top: 1px solid var(--cream-deep);
+            }
+            .post-row:hover {
+                padding-left: 10px;
+            }
 
             .post-meta-col {
                 display: flex;
@@ -122,7 +145,9 @@
                 margin-bottom: 12px;
                 transition: color 0.2s;
             }
-            .post-row:hover .post-title { color: var(--gold); }
+            .post-row:hover .post-title {
+                color: var(--gold);
+            }
             .post-excerpt {
                 color: var(--ink-soft);
                 font-size: 0.98rem;
@@ -136,18 +161,30 @@
                 align-self: center;
                 transition: transform 0.3s ease;
             }
-            .post-row:hover .post-arrow { transform: translateX(6px); }
+            .post-row:hover .post-arrow {
+                transform: translateX(6px);
+            }
 
             @media (max-width: 760px) {
-                .blog-hero { padding: 140px 0 44px; }
+                .blog-hero {
+                    padding: 140px 0 44px;
+                }
                 .post-row {
                     grid-template-columns: 1fr;
                     gap: 14px;
                     padding: 30px 0;
                 }
-                .post-meta-col { flex-direction: row; gap: 16px; align-items: center; }
-                .post-arrow { display: none; }
-                .container { padding: 0 24px; }
+                .post-meta-col {
+                    flex-direction: row;
+                    gap: 16px;
+                    align-items: center;
+                }
+                .post-arrow {
+                    display: none;
+                }
+                .container {
+                    padding: 0 24px;
+                }
             }
         </style>
     </head>
@@ -176,6 +213,26 @@
                      below, point its href to your new post file, and update
                      the type, date, title, and excerpt. Newest posts go first.
                      ============================================================ -->
+
+                <a
+                    class="post-row"
+                    href="/blog/you-are-turning-the-corner.html"
+                >
+                    <div class="post-meta-col">
+                        <span class="post-type">Prophetic Insight</span>
+                        <span class="post-date">20 June 2026</span>
+                    </div>
+                    <div>
+                        <h2 class="post-title">You are turning the corner</h2>
+                        <p class="post-excerpt">
+                            The prophetic 'new era' sounds exciting, but it
+                            costs everything. Discover how God shakes the church
+                            and dries up finance to make us new and why now
+                            you'll be established.
+                        </p>
+                    </div>
+                    <span class="post-arrow">→</span>
+                </a>
 
                 <a class="post-row" href="/blog/the-seven-mountains.html">
                     <div class="post-meta-col">
@@ -210,24 +267,6 @@
                         <p class="post-excerpt">
                             Where the seer and the builder meet — and why the
                             nations need both operating together.
-                        </p>
-                    </div>
-                    <span class="post-arrow">→</span>
-                </a>
-
-                <a class="post-row" href="/blog/the-seven-mountains.html">
-                    <div class="post-meta-col">
-                        <span class="post-type">Prophetic Word</span>
-                        <span class="post-date">Coming soon</span>
-                    </div>
-                    <div>
-                        <h2 class="post-title">
-                            The sound of the bridegroom: awakening the bride to
-                            her true identity
-                        </h2>
-                        <p class="post-excerpt">
-                            A call to the Bride to hear the voice that has been
-                            pursuing her from the beginning.
                         </p>
                     </div>
                     <span class="post-arrow">→</span>
