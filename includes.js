@@ -9,6 +9,29 @@
    file directly from disk (file://) will block the fetch.
    ============================================================ */
 (function () {
+  /* ----------------------------------------------------------
+     Google Analytics (GA4)
+     Loads gtag.js and initialises tracking on every page that
+     includes this script. To change properties, edit GA_ID below.
+     ---------------------------------------------------------- */
+  var GA_ID = 'G-QVNK5XS5R8';
+
+  function loadAnalytics() {
+    if (!GA_ID || window.__gaLoaded) return;
+    window.__gaLoaded = true;
+
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+  }
+
   function initNav() {
     var hamburger = document.getElementById('hamburger');
     var drawer = document.getElementById('navDrawer');
@@ -50,6 +73,8 @@
     });
     Promise.all(jobs).then(initNav);
   }
+
+  loadAnalytics();
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', loadIncludes);
