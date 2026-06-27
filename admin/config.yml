@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: Boyzeeboy/Kirsten-Rossiter
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: blog
+    label: Blog Posts
+    folder: blog/posts
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options:
+          - Prophetic Insight
+          - Teaching
+          - Reflection
+          - Featured Revelation
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "SEO Description", name: "description", widget: "text" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
