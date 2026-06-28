@@ -157,6 +157,18 @@ for (const file of files) {
 
 posts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
 
+const activeSlugs = new Set(posts.map(p => p.slug));
+const existingHtml = fs.readdirSync(BLOG_DIR).filter(f =>
+  f.endsWith('.html') && f !== 'index.html' && f !== '_template.html'
+);
+for (const file of existingHtml) {
+  const slug = file.replace(/\.html$/, '');
+  if (!activeSlugs.has(slug)) {
+    fs.unlinkSync(path.join(BLOG_DIR, file));
+    console.log(`  removed  ${file} (no matching .md source)`);
+  }
+}
+
 for (const post of posts) {
   const outPath = path.join(BLOG_DIR, `${post.slug}.html`);
   fs.writeFileSync(outPath, post.html);
