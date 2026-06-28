@@ -2,6 +2,7 @@ backend:
   name: github
   repo: Boyzeeboy/Kirsten-Rossiter
   branch: main
+  base_url: https://sveltia-cms-auth.wgrossiter.workers.dev
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
