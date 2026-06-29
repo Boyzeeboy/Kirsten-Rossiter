@@ -13,18 +13,20 @@
 }
 
 /* ─── DESIGN TOKENS ────────────────────────────────────────── */
+/* Pipeline source: vendor/tokens.css (--kr-* vars from Figma)
+   Option A: aliases keep existing names; only :root changes.  */
 :root {
   /* ── Color palette ── */
-  --ink: #1a1714;
-  --ink-soft: #3d3830;
+  --ink: var(--kr-primitives-neutral-950);
+  --ink-soft: var(--kr-primitives-neutral-900);
   --ink-deep: #1a1310;
-  --ink-warm: #221c14;
+  --ink-warm: var(--kr-primitives-neutral-50);
   --ink-brown: #2a2218;
-  --ink-mid: #2e2820;
+  --ink-mid: var(--kr-primitives-neutral-100);
 
-  --cream: #f5f0e8;
-  --cream-mid: #ede6d8;
-  --cream-deep: #e2d9c8;
+  --cream: var(--kr-primitives-neutral-100);
+  --cream-mid: var(--kr-primitives-neutral-200);
+  --cream-deep: var(--kr-primitives-neutral-300);
   --cream-overlay: rgba(245, 240, 232, 0.92);
   --cream-strong: rgba(245, 240, 232, 0.7);
   --cream-medium: rgba(245, 240, 232, 0.5);
@@ -33,9 +35,9 @@
   --cream-ghost: rgba(245, 240, 232, 0.08);
   --cream-faint: rgba(245, 240, 232, 0.025);
 
-  --gold: #a07840;
-  --gold-light: #c4a264;
-  --gold-pale: #e8d9bc;
+  --gold: var(--kr-primitives-gold-500);
+  --gold-light: var(--kr-primitives-gold-400);
+  --gold-pale: var(--kr-primitives-gold-200);
   --gold-medium: rgba(160, 120, 64, 0.4);
   --gold-muted: rgba(160, 120, 64, 0.2);
   --gold-faint: rgba(160, 120, 64, 0.12);
@@ -49,11 +51,11 @@
   --white-faint: rgba(255, 255, 255, 0.025);
   --error: #e8a0a0;
 
-  --sans: "Jost", sans-serif;
-  --serif: "Cormorant Garamond", Georgia, serif;
-  --serif-body: "Libre Baskerville", Georgia, serif;
+  --sans: var(--kr-fonts-family-base), sans-serif;
+  --serif: var(--kr-fonts-family-display), Georgia, serif;
+  --serif-body: var(--kr-fonts-family-annotation), Georgia, serif;
 
-  /* ── Type scale (M3 structure from Figma) ── */
+  /* ── Type scale (pipeline-sourced sizes, site-authored ratios) ── */
 
   /* Display — Cormorant Garamond Light (300) */
   --display-lg: 76px;  --display-lg-lh: 1.05;  --display-lg-ls: -0.02em;
@@ -70,7 +72,7 @@
   --title-md: 20px;  --title-md-lh: 1.35;
   --title-sm: 18px;  --title-sm-lh: 1.4;
 
-  /* Body — Libre Baskerville Regular (400) / Bold (700) */
+  /* Body — Lora Regular (400) / Medium (500) */
   --body-lg: 17px;  --body-lg-lh: 1.85;
   --body-md: 15px;  --body-md-lh: 1.8;
   --body-sm: 13px;  --body-sm-lh: 1.75;
