@@ -61,6 +61,7 @@ function buildPost(filePath) {
 <title>${escapeHtml(data.title)} — Kirsten Rossiter</title>
 <meta name="description" content="${escapeHtml(data.description || data.excerpt)}" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="../vendor/tokens.css" />
 <link rel="stylesheet" href="../styles.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -118,6 +119,7 @@ function buildIndex(posts) {
 <title>Prophetic Blog — Kirsten Rossiter</title>
 <meta name="description" content="Prophetic revelation, teachings, and reflections for the Bride and the nations — from Kirsten Rossiter." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="../vendor/tokens.css" />
 <link rel="stylesheet" href="../styles.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
