@@ -53,7 +53,7 @@
 
   --sans: var(--kr-fonts-family-base), sans-serif;
   --serif: var(--kr-fonts-family-display), Georgia, serif;
-  --serif-body: var(--kr-fonts-family-annotation), Georgia, serif;
+  --serif-body: var(--kr-fonts-family-serif-body), Georgia, serif;
 
   /* ── Type scale (pipeline-sourced sizes, site-authored ratios) ── */
 
