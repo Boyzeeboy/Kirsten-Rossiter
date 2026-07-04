@@ -2,7 +2,7 @@
 title: Miracles happen in the Valley
 type: Prophetic Insight
 date: 2026-07-04
-excerpt: 'When God asked Ezekiel, "Can these bones live?" He didn''t leave him to answer alone. God gave him the words to speak — because where Ezekiel lacked faith and vision, God had both. The same is true for us today: miracles don''t live on mountain peaks. They live in the valleys, where things look dry, broken, and beyond recovery. It''s time to face your graves and prophesy, "The Lord says!"'
+excerpt: 'When God asked Ezekiel, "Can these bones live?" He didn''t leave him to answer alone. God gave him the words to speak, because where Ezekiel lacked faith and vision, God had both. The same is true for us today: miracles don''t live on mountain peaks. They live in the valleys, where things look dry, broken, and beyond recovery. It''s time to face your graves and prophesy, "The Lord says!"'
 description: Ezekiel's Valley of Dry Bones shows us where miracles live — in the dark valleys. Learn to speak God's Word over the dead and dry areas of your life.
 draft: false
 ---
