@@ -2,10 +2,14 @@
   "name": "kirsten-rossiter-blog",
   "private": true,
   "scripts": {
-    "build": "node build-blog.js"
+    "build": "node build-blog.js",
+    "sync-tokens": "bash scripts/sync-tokens.sh"
   },
   "dependencies": {
     "gray-matter": "4.0.3",
     "marked": "15.0.12"
+  },
+  "devDependencies": {
+    "kirsten-rossiter-tokens": "github:Boyzeeboy/kr-token-pipeline#v0.2.0"
   }
 }
