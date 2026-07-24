@@ -10,26 +10,24 @@
    ============================================================ */
 (function () {
   /* ----------------------------------------------------------
-     Google Analytics (GA4)
-     Loads gtag.js and initialises tracking on every page that
-     includes this script. To change properties, edit GA_ID below.
+     Analytics: Cloudflare Web Analytics (cookieless).
+     Loads the beacon on every page that includes this script.
+     The beacon must be created as a real <script> element — a
+     tag injected via innerHTML would not execute — so it is
+     appended here rather than placed in the footer partial.
+     Google Analytics (GA4) was removed 24 Jul 2026.
      ---------------------------------------------------------- */
-  var GA_ID = 'G-QVNK5XS5R8';
+  var CF_BEACON_TOKEN = 'b8dabd9848f044ecab21204759922b13';
 
   function loadAnalytics() {
-    if (!GA_ID || window.__gaLoaded) return;
-    window.__gaLoaded = true;
+    if (!CF_BEACON_TOKEN || window.__cfBeaconLoaded) return;
+    window.__cfBeaconLoaded = true;
 
     var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    s.defer = true;
+    s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    s.setAttribute('data-cf-beacon', '{"token": "' + CF_BEACON_TOKEN + '"}');
     document.head.appendChild(s);
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { window.dataLayer.push(arguments); }
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', GA_ID);
   }
 
   function initNav() {
