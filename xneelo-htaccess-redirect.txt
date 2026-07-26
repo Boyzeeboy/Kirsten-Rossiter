@@ -1,0 +1,20 @@
+# ------------------------------------------------------------
+# kirstenrossiter.com (apex) -> canonical site
+#
+# The old WordPress site in this directory is retired. The live
+# site is served by Cloudflare Pages on the www host. This file
+# 301-redirects every apex request to https://www.kirstenrossiter.com,
+# preserving the path. The old WordPress files are left in place
+# (now unreachable), so this change is fully reversible.
+#
+# .well-known is excluded so SSL certificate renewal for the apex
+# keeps working.
+# ------------------------------------------------------------
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_URI} !^/\.well-known/
+  RewriteRule ^ https://www.kirstenrossiter.com%{REQUEST_URI} [R=301,L]
+</IfModule>

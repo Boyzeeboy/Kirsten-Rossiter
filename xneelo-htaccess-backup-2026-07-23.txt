@@ -1,0 +1,41 @@
+# Backup of public_html/.htaccess on kirstenrossiter.com (Xneelo)
+# Captured 23 July 2026, before replacing with the redirect-only version.
+# This is the full current file (37 lines). Restore point if needed.
+# (Xneelo also holds its own backup: .htaccess_20260625_165834)
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# Wordfence WAF
+<Files ".user.ini">
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Order deny,allow
+  Deny from all
+</IfModule>
+</Files>
+
+# END Wordfence WAF
+# BEGIN Really Simple Security Disable directory indexing
+# The directives (lines) between "BEGIN Really Simple Security Disable directory indexing" and "END Really Simple Security Disable directory indexing" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+# Disable directory indexing to prevent listing of directory contents
+Options -Indexes
+# END Really Simple Security Disable directory indexing
+Redirect permanent / https://www.kirstenrossiter.com
