@@ -91,8 +91,28 @@ page still rendered `<strong>` until the build was re-run by hand.
 It can also be run by hand from the Actions tab (**Run workflow**) — there is a
 `workflow_dispatch` trigger, so no dummy commit is needed.
 
-**Note:** a workflow does not fire on the push that first adds it; the commit
-after is the one that triggers. Expected, not a fault.
+### Gotcha: never write the skip marker in a commit message
+
+GitHub scans the **whole** commit message — subject *and* body — for `[skip ci]`,
+and silently creates no workflow run at all. Not a skipped run you can see in the
+Actions tab: nothing.
+
+This caught us twice on 27 Jul while setting the workflow up, because the commit
+messages *described* the guard:
+
+```
+ac75bd3  message mentions the marker   -> 0 runs
+c923bae  message does not              -> 1 run  ✅
+3962093  message mentions the marker   -> 0 runs
+```
+
+Both silent pushes were diagnosed at first as "GitHub doesn't run a workflow on
+the push that adds it". That was wrong — the cause was the commit message each
+time.
+
+Referring to it in a *file* (like this one) is completely safe; only commit
+messages are scanned. If you need to mention it in a commit, break the string up
+or say "the skip marker".
 
 ### Caveat — this overlaps with the Cloudflare build
 
