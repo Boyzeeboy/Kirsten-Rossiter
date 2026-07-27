@@ -20,6 +20,9 @@ on:
   push:
     branches:
       - main
+  # Lets the build be re-run by hand from the Actions tab, without a dummy
+  # commit — useful if a run is ever skipped or needs repeating.
+  workflow_dispatch:
 
 # Needed to push the regenerated HTML back.
 permissions:
