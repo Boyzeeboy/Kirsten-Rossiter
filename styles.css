@@ -55,49 +55,58 @@
   --serif: var(--kr-fonts-family-display), Georgia, serif;
   --serif-body: var(--kr-fonts-family-serif-body), Georgia, serif;
 
-  /* ── Type scale ──
+  /* ── Type scale — fully pipeline-sourced ──
    *
-   * Sizes come from the token pipeline. Line-heights and letter-spacings are
-   * authored here, and that split is deliberate — do NOT "finish the job" by
-   * pointing -lh / -ls at --kr-fonts-line-height-* / --kr-fonts-letter-spacing-*.
+   * Sizes, line-heights and letter-spacings all come from tokens. This block
+   * holds no type values of its own; to change the scale, change Figma and
+   * re-run `npm run sync-tokens`.
    *
-   * Those tokens are absolute px, because that is what Figma stores. This site
-   * sets type fluidly:
+   * Note WHICH line-height and letter-spacing tokens are used. This site sets
+   * type fluidly:
    *
    *     font-size: clamp(var(--headline-lg), 5.5vw, var(--display-lg));
    *
-   * so the computed size moves continuously with the viewport. A unitless ratio
-   * (1.05) and an em letter-spacing (-0.02em) move with it; a fixed 80px line
-   * height does not — at a computed 44px that would be 1.8x leading instead of
-   * 1.05x. The px tokens and these ratios agree only at the top of the clamp,
-   * which is exactly what makes them look interchangeable: upstream display-lg
-   * is 76px size / 80px lh / -1.5px ls, and 80/76 = 1.05, -1.5/76 = -0.02em.
+   * so the computed size moves continuously with the viewport, and the leading
+   * has to move with it. That means:
+   *
+   *   USE  --kr-fonts-line-height-ratio-*    (unitless, e.g. 1.0526)
+   *        --kr-fonts-letter-spacing-em-*    (em,       e.g. -0.0197em)
+   *
+   *   NOT  --kr-fonts-line-height-*          (px, e.g. 80px)
+   *        --kr-fonts-letter-spacing-*       (px, e.g. -1.5px)
+   *
+   * The px pair is what Figma stores and is correct for a FIXED size. Here it
+   * would pin leading: at a computed 40px, `line-height: 80px` is 2x leading
+   * rather than 1.05x. The ratio tokens are the px values divided by their
+   * matching size token, derived upstream (tokens >= v2.1.0).
+   *
+   * --meta-* stays literal: it is a site-only role with no token counterpart.
    */
 
   /* Display — Cormorant Garamond Light (300) */
-  --display-lg: var(--kr-fonts-size-display-large);  --display-lg-lh: 1.05;  --display-lg-ls: -0.02em;
-  --display-md: var(--kr-fonts-size-display-medium);  --display-md-lh: 1.08;  --display-md-ls: -0.015em;
-  --display-sm: var(--kr-fonts-size-display-small);  --display-sm-lh: 1.1;   --display-sm-ls: -0.01em;
+  --display-lg: var(--kr-fonts-size-display-large);  --display-lg-lh: var(--kr-fonts-line-height-ratio-display-large);  --display-lg-ls: var(--kr-fonts-letter-spacing-em-display-large);
+  --display-md: var(--kr-fonts-size-display-medium);  --display-md-lh: var(--kr-fonts-line-height-ratio-display-medium);  --display-md-ls: var(--kr-fonts-letter-spacing-em-display-medium);
+  --display-sm: var(--kr-fonts-size-display-small);  --display-sm-lh: var(--kr-fonts-line-height-ratio-display-small);   --display-sm-ls: var(--kr-fonts-letter-spacing-em-display-small);
 
   /* Headline — Cormorant Garamond Light (300) / Regular (400) */
-  --headline-lg: var(--kr-fonts-size-headline-large);  --headline-lg-lh: 1.12;  --headline-lg-ls: -0.01em;
-  --headline-md: var(--kr-fonts-size-headline-medium);  --headline-md-lh: 1.16;
-  --headline-sm: var(--kr-fonts-size-headline-small);  --headline-sm-lh: 1.2;
+  --headline-lg: var(--kr-fonts-size-headline-large);  --headline-lg-lh: var(--kr-fonts-line-height-ratio-headline-large);  --headline-lg-ls: var(--kr-fonts-letter-spacing-em-headline-large);
+  --headline-md: var(--kr-fonts-size-headline-medium);  --headline-md-lh: var(--kr-fonts-line-height-ratio-headline-medium);
+  --headline-sm: var(--kr-fonts-size-headline-small);  --headline-sm-lh: var(--kr-fonts-line-height-ratio-headline-small);
 
   /* Title — Cormorant Garamond Light (300) / Regular (400) */
-  --title-lg: var(--kr-fonts-size-title-large);  --title-lg-lh: 1.3;
-  --title-md: var(--kr-fonts-size-title-medium);  --title-md-lh: 1.35;
-  --title-sm: var(--kr-fonts-size-title-small);  --title-sm-lh: 1.4;
+  --title-lg: var(--kr-fonts-size-title-large);  --title-lg-lh: var(--kr-fonts-line-height-ratio-title-large);
+  --title-md: var(--kr-fonts-size-title-medium);  --title-md-lh: var(--kr-fonts-line-height-ratio-title-medium);
+  --title-sm: var(--kr-fonts-size-title-small);  --title-sm-lh: var(--kr-fonts-line-height-ratio-title-small);
 
   /* Body — Lora Regular (400) / Medium (500) */
-  --body-lg: var(--kr-fonts-size-body-large);  --body-lg-lh: 1.85;
-  --body-md: var(--kr-fonts-size-body-medium);  --body-md-lh: 1.8;
-  --body-sm: var(--kr-fonts-size-body-small);  --body-sm-lh: 1.75;
+  --body-lg: var(--kr-fonts-size-body-large);  --body-lg-lh: var(--kr-fonts-line-height-ratio-body-large);
+  --body-md: var(--kr-fonts-size-body-medium);  --body-md-lh: var(--kr-fonts-line-height-ratio-body-medium);
+  --body-sm: var(--kr-fonts-size-body-small);  --body-sm-lh: var(--kr-fonts-line-height-ratio-body-small);
 
   /* Label — Jost Medium (500) / SemiBold (600), uppercase */
-  --label-lg: var(--kr-fonts-size-label-large);  --label-lg-lh: 1.4;  --label-lg-ls: 0.14em;
-  --label-md: var(--kr-fonts-size-label-medium);  --label-md-lh: 1.4;  --label-md-ls: 0.18em;
-  --label-sm: var(--kr-fonts-size-label-small);  --label-sm-lh: 1.4;  --label-sm-ls: 0.2em;
+  --label-lg: var(--kr-fonts-size-label-large);  --label-lg-lh: var(--kr-fonts-line-height-ratio-label-large);  --label-lg-ls: var(--kr-fonts-letter-spacing-em-label-large);
+  --label-md: var(--kr-fonts-size-label-medium);  --label-md-lh: var(--kr-fonts-line-height-ratio-label-medium);  --label-md-ls: var(--kr-fonts-letter-spacing-em-label-medium);
+  --label-sm: var(--kr-fonts-size-label-small);  --label-sm-lh: var(--kr-fonts-line-height-ratio-label-small);  --label-sm-ls: var(--kr-fonts-letter-spacing-em-label-small);
 
   /* Meta — Jost Medium (500), mixed case */
   --meta: 12px;  --meta-lh: 1.4;  --meta-ls: 0.04em;
