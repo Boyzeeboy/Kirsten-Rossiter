@@ -30,7 +30,19 @@
    - work too
    ```
 
-3. **Run the build** (see below) and commit both the `.md` file and the generated HTML.
+3. **Commit and push just the `.md` file.** You do not need to run the build —
+   the GitHub Action does it and commits the HTML for you (see *Automated
+   build* below).
+
+   Only run `node build-blog.js` yourself if you want to preview the rendered
+   page locally before pushing. If you do, commit the HTML too; the Action will
+   simply find nothing to change.
+
+> **Then `git pull`.** Whichever option you used, the Action pushes a commit
+> back, so your local clone is one commit behind the moment it finishes. Pull
+> before you next work locally, or your next `git push` is rejected. This is the
+> one habit the automation does not remove — it trades running the build for
+> remembering to pull.
 
 ## Running the build locally
 
