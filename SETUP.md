@@ -4,7 +4,13 @@ This is the one-time wiring for the book checkout and the contact form. After
 it's done, your day-to-day stays as it is now: edit, push to Git, Cloudflare deploys.
 **There is no build step per sale** — the Functions run themselves whenever
 Stripe calls them. Adding the `functions/` folder does **not** change the fact
-that this is a static site.
+that the pages are served as static files.
+
+> **Correction (27 Jul 2026):** this page originally said the site has no build
+> command at all. That was true when it was written; it is not now. The blog
+> added one — Cloudflare Pages runs `npm install && node build-blog.js` on every
+> deploy to generate the post pages from `blog/posts/*.md`. Nothing on this page
+> changes as a result: the Functions still need no build. See `BLOG.md`.
 
 ## Checking the site URL and redeploying for testing purposes. 
 
@@ -43,7 +49,19 @@ SETUP.md                    ← this file
 
 Drop the HTML pages and the `functions/` folder into your site repo so
 `functions/` sits at the **root** (next to your HTML files), then push.
-Cloudflare Pages auto-detects the `functions/` folder — you add no build command.
+Cloudflare Pages auto-detects the `functions/` folder — the Functions themselves
+need no build command.
+
+**But the project does need one, for the blog.** Set it in
+Cloudflare Pages → Settings → Builds & deployments:
+
+| Setting | Value |
+|---|---|
+| Build command | `npm install && node build-blog.js` |
+| Output directory | `/` (repo root) |
+
+Without it the Functions still work, but new blog posts will not appear.
+`BLOG.md` is the source of truth for this.
 
 ---
 

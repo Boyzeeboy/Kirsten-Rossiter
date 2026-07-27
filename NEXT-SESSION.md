@@ -100,9 +100,14 @@ So item 3's marker-comment approach is unnecessary — the simpler design applie
 `SETUP.md` still needs correcting.
 
 Consequence worth noting: because Pages rebuilds from markdown on every deploy,
-committed HTML is belt-and-braces rather than load-bearing. Gitignoring
-`blog/*.html` is a viable simplification — see the caveat at the end of the
-*Automated build* section in `BLOG.md`.
+the committed post pages are belt-and-braces rather than load-bearing.
+
+Gitignoring `blog/*.html` was considered as a simplification and **rejected** —
+the build also rewrites the root `index.html` in place (the insights block
+between its markers), which cannot leave git, so the divergence would remain and
+the Action would still be needed. Reasoning in `BLOG.md`.
+
+`SETUP.md` corrected 27 Jul.
 
 Original note:
 

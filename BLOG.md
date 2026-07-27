@@ -137,11 +137,27 @@ What the Action fixes is the **repository** being inconsistent with its own
 source, which is what caused the rejected pushes and the misleadingly clean
 merge.
 
-That makes committing generated HTML belt-and-braces rather than load-bearing.
-A simpler alternative exists and has deliberately not been taken: gitignore
-`blog/*.html` and let Cloudflare build it. That removes this whole class of
-divergence without a workflow at all — at the cost of the zero-build-deploy
-guarantee quoted above. Worth deciding on purpose rather than by default.
+That makes committing the *post pages* belt-and-braces rather than load-bearing.
+
+### Why gitignoring `blog/*.html` would not help
+
+An obvious-looking simplification — gitignore the generated HTML and let
+Cloudflare build it — was considered on 27 Jul and rejected. It does **not**
+remove the divergence, because the build writes three different kinds of thing:
+
+| output | nature | can it be gitignored? |
+|---|---|---|
+| `blog/<slug>.html` | fully generated | yes |
+| `blog/index.html` | fully generated | yes |
+| `index.html` (root) | **hand-authored, generated block injected in place** | **no** |
+
+The homepage is a real page whose insights section is replaced between the
+`<!-- INSIGHTS:START -->` / `<!-- INSIGHTS:END -->` markers. It has to stay in
+git, so a CMS edit still produces a build change to a committed file — and the
+Action is still needed. The gitignore would remove some noise from diffs while
+leaving the actual problem intact, and would cost the zero-build-deploy
+guarantee quoted above: if a Cloudflare build ever failed, the post pages would
+not exist at all rather than merely being out of date.
 
 ## Date format
 
