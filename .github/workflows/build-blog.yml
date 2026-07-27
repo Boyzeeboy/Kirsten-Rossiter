@@ -1,0 +1,76 @@
+name: Build blog
+
+# WHY THIS EXISTS
+#
+# Two things write to `main` independently:
+#   - Decap CMS (admin/) commits markdown straight to main via the GitHub API
+#     when a post is edited. It does not run the build.
+#   - `npm run build` (build-blog.js) generates the HTML from that markdown,
+#     and has historically only ever run on someone's laptop.
+#
+# So a CMS edit left the generated pages stale, and the next local build put the
+# laptop ahead of the remote — a push rejection every time, and worse, a merge
+# that resolved cleanly while shipping HTML built from pre-edit markdown (the
+# two sides touch different files, so git sees no conflict).
+#
+# This runs the build wherever the markdown changed, so the generated output is
+# never behind its source.
+
+on:
+  push:
+    branches:
+      - main
+
+# Needed to push the regenerated HTML back.
+permissions:
+  contents: write
+
+# Two runs racing to push would leave one rejected. Queue instead.
+concurrency:
+  group: build-blog
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: regenerate blog HTML
+    runs-on: ubuntu-latest
+    # Belt and braces: GitHub already skips push-triggered runs when the head
+    # commit message contains [skip ci], which is what stops this workflow's own
+    # commit from re-triggering it. Stated here too so the intent is visible.
+    if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      # kirsten-rossiter-tokens is pinned to a public GitHub tag, so no auth.
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Commit regenerated output
+        run: |
+          # --porcelain rather than `git diff --quiet`: a brand-new post produces
+          # an untracked .html file, which a tracked-only diff would miss.
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Blog output already matches its markdown — nothing to commit."
+            exit 0
+          fi
+
+          echo "Regenerated:"
+          git status --short
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "build: regenerate blog from markdown [skip ci]"
+
+          # Someone may have pushed while we were building.
+          git pull --rebase origin main
+          git push
