@@ -7,7 +7,18 @@ items 3–7, plus three things that surfaced on 26 Jul and need clearing first.
 
 ## Start here — three blockers, in this order
 
-### 0A. The repo's build output is stale — rebuild and commit
+### 0A. The repo's build output is stale — rebuild and commit — ✅ AUTOMATED 27 Jul
+
+**No longer a recurring chore.** `.github/workflows/build-blog.yml` runs the
+build on every push to `main` and commits the result, so committed HTML can no
+longer fall behind its markdown. See *Automated build* in `BLOG.md`.
+
+It bit again on 27 Jul in a nastier form than described below: a CMS edit and a
+local build touch **different files**, so git merged the two sides with no
+conflict at all while the HTML stayed built from pre-edit markdown. The rejected
+push was the visible symptom; the clean-but-wrong merge was the real hazard.
+
+Original note from 26 Jul, kept for context:
 
 `blog/posts/we-are-fighting-a-territorial-spirit.md` was committed in `6cb203e`
 but **nothing was rebuilt**. Running `npm run build` on a clean checkout of HEAD
@@ -78,7 +89,22 @@ both but overrides `--paper`, `--navy`, `--ink-60`, `--ink-40` and `--gold-soft`
 locally. So item 11 is no longer "pipeline hygiene, low urgency" — it's a visible
 inconsistency. Fold it into the 0B fix.
 
-### 0C. Verify whether Cloudflare Pages runs a build command
+### 0C. Verify whether Cloudflare Pages runs a build command — ✅ ANSWERED 27 Jul
+
+**Yes, it builds.** `BLOG.md` → *Cloudflare Pages build settings* records the
+command as `npm install && node build-blog.js`, which matches the observed
+behaviour below (the live site serving a post absent from git). `SETUP.md` and
+audit finding #3 are the things that are wrong, not the deploy.
+
+So item 3's marker-comment approach is unnecessary — the simpler design applies.
+`SETUP.md` still needs correcting.
+
+Consequence worth noting: because Pages rebuilds from markdown on every deploy,
+committed HTML is belt-and-braces rather than load-bearing. Gitignoring
+`blog/*.html` is a viable simplification — see the caveat at the end of the
+*Automated build* section in `BLOG.md`.
+
+Original note:
 
 The live site serves `/blog/we-are-fighting-a-territorial-spirit` (200), and both
 `/blog/` and the homepage list it — content that **exists nowhere in git**. That

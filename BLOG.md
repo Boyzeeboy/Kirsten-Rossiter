@@ -54,6 +54,63 @@ The build reads every `blog/posts/*.md` file, skips drafts, and outputs:
 
 These settings ensure the blog is rebuilt on every push. Existing Cloudflare Functions (`functions/`) are unaffected.
 
+## Automated build (`.github/workflows/build-blog.yml`)
+
+Added 2026-07-27. Every push to `main` runs `npm ci && npm run build`; if the
+output changed, it commits as `github-actions[bot]` and pushes back. You rarely
+need to run the build by hand any more.
+
+### Why it was needed
+
+Two things write to `main` and only one of them built:
+
+- **The CMS** commits markdown straight to `main` via the GitHub API. It does
+  not run `build-blog.js`.
+- **`npm run build`** generates the HTML, and until now only ever ran on a laptop.
+
+So a CMS edit left the committed HTML stale and put the remote ahead of your
+local clone; the next local build put you ahead of the remote. Result: `git push`
+rejected, repeatedly.
+
+The silent failure was worse than the rejection. The CMS touches
+`blog/posts/*.md`; the build touches `blog/*.html` and `index.html`. **Different
+files, so git merges the two sides without any conflict** — while the committed
+HTML stays built from pre-edit markdown. That happened on 27 Jul: the CMS
+rewrote five `**bold**` lines into `#### headings`, the merge was clean, and the
+page still rendered `<strong>` until the build was re-run by hand.
+
+### How the loop is prevented
+
+| Guard | Purpose |
+|---|---|
+| `[skip ci]` in the bot's commit message | GitHub skips push-triggered runs, so the workflow's own commit doesn't re-trigger it. Without this it runs forever. |
+| `concurrency: build-blog` | Queues overlapping runs rather than letting two race to push and one get rejected. |
+| `git pull --rebase` before push | Handles a human pushing mid-build. |
+| `git status --porcelain`, not `git diff --quiet` | A brand-new post produces an *untracked* `.html` a tracked-only diff would miss. |
+
+It can also be run by hand from the Actions tab (**Run workflow**) — there is a
+`workflow_dispatch` trigger, so no dummy commit is needed.
+
+**Note:** a workflow does not fire on the push that first adds it; the commit
+after is the one that triggers. Expected, not a fault.
+
+### Caveat — this overlaps with the Cloudflare build
+
+Cloudflare Pages already runs `npm install && node build-blog.js` on deploy (see
+the table above), so the **live site** was never at risk from stale committed
+HTML — Pages rebuilds from the markdown regardless. This also answers the open
+question in `NEXT-SESSION.md` §0C: yes, Pages genuinely builds.
+
+What the Action fixes is the **repository** being inconsistent with its own
+source, which is what caused the rejected pushes and the misleadingly clean
+merge.
+
+That makes committing generated HTML belt-and-braces rather than load-bearing.
+A simpler alternative exists and has deliberately not been taken: gitignore
+`blog/*.html` and let Cloudflare build it. That removes this whole class of
+divergence without a workflow at all — at the cost of the zero-build-deploy
+guarantee quoted above. Worth deciding on purpose rather than by default.
+
 ## Date format
 
 Dates in frontmatter use ISO format (`YYYY-MM-DD`). The build renders them as `D MMMM YYYY` (e.g. `22 June 2026`) — no leading zero on the day.
