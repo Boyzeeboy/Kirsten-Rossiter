@@ -55,32 +55,49 @@
   --serif: var(--kr-fonts-family-display), Georgia, serif;
   --serif-body: var(--kr-fonts-family-serif-body), Georgia, serif;
 
-  /* ── Type scale (pipeline-sourced sizes, site-authored ratios) ── */
+  /* ── Type scale ──
+   *
+   * Sizes come from the token pipeline. Line-heights and letter-spacings are
+   * authored here, and that split is deliberate — do NOT "finish the job" by
+   * pointing -lh / -ls at --kr-fonts-line-height-* / --kr-fonts-letter-spacing-*.
+   *
+   * Those tokens are absolute px, because that is what Figma stores. This site
+   * sets type fluidly:
+   *
+   *     font-size: clamp(var(--headline-lg), 5.5vw, var(--display-lg));
+   *
+   * so the computed size moves continuously with the viewport. A unitless ratio
+   * (1.05) and an em letter-spacing (-0.02em) move with it; a fixed 80px line
+   * height does not — at a computed 44px that would be 1.8x leading instead of
+   * 1.05x. The px tokens and these ratios agree only at the top of the clamp,
+   * which is exactly what makes them look interchangeable: upstream display-lg
+   * is 76px size / 80px lh / -1.5px ls, and 80/76 = 1.05, -1.5/76 = -0.02em.
+   */
 
   /* Display — Cormorant Garamond Light (300) */
-  --display-lg: 76px;  --display-lg-lh: 1.05;  --display-lg-ls: -0.02em;
-  --display-md: 60px;  --display-md-lh: 1.08;  --display-md-ls: -0.015em;
-  --display-sm: 48px;  --display-sm-lh: 1.1;   --display-sm-ls: -0.01em;
+  --display-lg: var(--kr-fonts-size-display-large);  --display-lg-lh: 1.05;  --display-lg-ls: -0.02em;
+  --display-md: var(--kr-fonts-size-display-medium);  --display-md-lh: 1.08;  --display-md-ls: -0.015em;
+  --display-sm: var(--kr-fonts-size-display-small);  --display-sm-lh: 1.1;   --display-sm-ls: -0.01em;
 
   /* Headline — Cormorant Garamond Light (300) / Regular (400) */
-  --headline-lg: 40px;  --headline-lg-lh: 1.12;  --headline-lg-ls: -0.01em;
-  --headline-md: 34px;  --headline-md-lh: 1.16;
-  --headline-sm: 28px;  --headline-sm-lh: 1.2;
+  --headline-lg: var(--kr-fonts-size-headline-large);  --headline-lg-lh: 1.12;  --headline-lg-ls: -0.01em;
+  --headline-md: var(--kr-fonts-size-headline-medium);  --headline-md-lh: 1.16;
+  --headline-sm: var(--kr-fonts-size-headline-small);  --headline-sm-lh: 1.2;
 
   /* Title — Cormorant Garamond Light (300) / Regular (400) */
-  --title-lg: 24px;  --title-lg-lh: 1.3;
-  --title-md: 20px;  --title-md-lh: 1.35;
-  --title-sm: 18px;  --title-sm-lh: 1.4;
+  --title-lg: var(--kr-fonts-size-title-large);  --title-lg-lh: 1.3;
+  --title-md: var(--kr-fonts-size-title-medium);  --title-md-lh: 1.35;
+  --title-sm: var(--kr-fonts-size-title-small);  --title-sm-lh: 1.4;
 
   /* Body — Lora Regular (400) / Medium (500) */
-  --body-lg: 17px;  --body-lg-lh: 1.85;
-  --body-md: 15px;  --body-md-lh: 1.8;
-  --body-sm: 13px;  --body-sm-lh: 1.75;
+  --body-lg: var(--kr-fonts-size-body-large);  --body-lg-lh: 1.85;
+  --body-md: var(--kr-fonts-size-body-medium);  --body-md-lh: 1.8;
+  --body-sm: var(--kr-fonts-size-body-small);  --body-sm-lh: 1.75;
 
   /* Label — Jost Medium (500) / SemiBold (600), uppercase */
-  --label-lg: 12px;  --label-lg-lh: 1.4;  --label-lg-ls: 0.14em;
-  --label-md: 11px;  --label-md-lh: 1.4;  --label-md-ls: 0.18em;
-  --label-sm: 10px;  --label-sm-lh: 1.4;  --label-sm-ls: 0.2em;
+  --label-lg: var(--kr-fonts-size-label-large);  --label-lg-lh: 1.4;  --label-lg-ls: 0.14em;
+  --label-md: var(--kr-fonts-size-label-medium);  --label-md-lh: 1.4;  --label-md-ls: 0.18em;
+  --label-sm: var(--kr-fonts-size-label-small);  --label-sm-lh: 1.4;  --label-sm-ls: 0.2em;
 
   /* Meta — Jost Medium (500), mixed case */
   --meta: 12px;  --meta-lh: 1.4;  --meta-ls: 0.04em;
