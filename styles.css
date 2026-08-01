@@ -36,7 +36,6 @@
 
   --gold: var(--kr-colour-action-primary);
   --gold-light: var(--kr-colour-action-primary-hover-on-inverse);
-  --gold-pale: var(--kr-primitives-gold-200);
   --gold-medium: rgba(160, 120, 64, 0.4);
   --gold-muted: rgba(160, 120, 64, 0.2);
   --gold-faint: rgba(160, 120, 64, 0.12);
@@ -534,34 +533,6 @@ footer.site-footer {
 .page-home .insight-link:hover { gap: 14px; }
 .page-home .insights-cta { text-align: center; }
 
-/* ─── HOMEPAGE: SPEAKING ───────────────────────────────────── */
-.page-home .speaking {
-  background: var(--cream-mid); padding: var(--space-section) 0; border-top: 1px solid var(--cream-deep);
-}
-.page-home .speaking-inner { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8xl); align-items: center; }
-.page-home .speaking-headline {
-  font-family: var(--serif); font-size: clamp(var(--headline-md), 4vw, var(--display-sm)); font-weight: 300;
-  color: var(--ink-soft); line-height: var(--display-sm-lh); margin-bottom: var(--space-3xl); letter-spacing: var(--display-sm-ls);
-}
-.page-home .speaking-copy {
-  font-family: var(--serif-body); font-size: var(--body-md); line-height: var(--body-md-lh);
-  color: var(--ink-soft); margin-bottom: var(--space-4xl);
-}
-.page-home .speaking-pillars { list-style: none; }
-.page-home .speaking-pillars li {
-  padding: var(--space-2xl) 0; border-bottom: 1px solid var(--cream-deep);
-  display: flex; gap: var(--space-xl); align-items: flex-start;
-}
-.page-home .pillar-num {
-  font-family: var(--serif); font-size: var(--headline-md); font-weight: 300;
-  color: var(--gold-pale); line-height: 1; flex-shrink: 0; width: 36px;
-}
-.page-home .pillar-title {
-  font-family: var(--sans); font-size: var(--label-lg); font-weight: 500;
-  letter-spacing: var(--label-lg-ls); text-transform: uppercase; color: var(--ink-soft); margin-bottom: 6px;
-}
-.page-home .pillar-desc { font-size: var(--body-sm); color: var(--ink-soft); line-height: var(--body-sm-lh); }
-
 /* ─── HOMEPAGE: EMAIL ──────────────────────────────────────── */
 .page-home .email-section {
   background: var(--surface-inverse); padding: var(--space-section) 0; text-align: center;
@@ -775,7 +746,6 @@ footer.site-footer {
   .page-home .positioning-inner,
   .page-home .about-inner,
   .page-home .book-inner,
-  .page-home .speaking-inner { grid-template-columns: 1fr; gap: var(--space-6xl); }
   .page-home .book-visual-left { order: -1; }
   .page-home .insights-featured { grid-template-columns: 1fr; }
   .container { padding: 0 var(--space-2xl); }
