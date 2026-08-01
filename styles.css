@@ -18,14 +18,14 @@
 :root {
   /* ── Color palette ── */
   --ink: var(--kr-primitives-neutral-950);
-  --ink-soft: var(--kr-primitives-neutral-900);
+  --ink-soft: var(--kr-colour-text-primary);
   --ink-deep: #1a1310;
-  --ink-warm: var(--kr-primitives-neutral-50);
-  --ink-mid: var(--kr-primitives-neutral-100);
+  --ink-warm: var(--kr-colour-background-subtle);
+  --ink-mid: var(--kr-colour-background-muted);
 
-  --cream: var(--kr-primitives-neutral-100);
-  --cream-mid: var(--kr-primitives-neutral-200);
-  --cream-deep: var(--kr-primitives-neutral-300);
+  --cream: var(--kr-colour-background-muted);
+  --cream-mid: var(--kr-colour-action-secondary);
+  --cream-deep: var(--kr-colour-action-secondary-hover);
   --cream-overlay: rgba(245, 240, 232, 0.92);
   --cream-strong: rgba(245, 240, 232, 0.7);
   --cream-medium: rgba(245, 240, 232, 0.5);
@@ -34,7 +34,7 @@
   --cream-ghost: rgba(245, 240, 232, 0.08);
   --cream-faint: rgba(245, 240, 232, 0.025);
 
-  --gold: var(--kr-primitives-gold-500);
+  --gold: var(--kr-colour-action-primary);
   --gold-light: var(--kr-primitives-gold-400);
   --gold-pale: var(--kr-primitives-gold-200);
   --gold-medium: rgba(160, 120, 64, 0.4);
