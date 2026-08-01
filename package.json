@@ -10,6 +10,6 @@
     "marked": "15.0.12"
   },
   "devDependencies": {
-    "kirsten-rossiter-tokens": "github:Boyzeeboy/kr-token-pipeline#v2.1.0"
+    "kirsten-rossiter-tokens": "github:Boyzeeboy/kr-token-pipeline#v2.2.0"
   }
 }
