@@ -101,12 +101,19 @@ holds them as a named baseline and blocks a nineteenth.
 >
 > **So after any token version bump:**
 >
-> 1. `npm run sync-tokens` — this now runs `npm run lint:tokens` for you and will
->    fail on a dangling reference or a primitive that has crept in.
-> 2. **Diff the rendered colours by eye.** The linter *cannot* catch what
->    happened above: `neutral-100` never stopped existing, its value moved. Load
->    the homepage before and after and compare.
-> 3. Re-read the `:root` alias block in `styles.css` and ask whether each alias
+> 1. `npm run sync-tokens` — this copies the new build in **and** runs
+>    `npm run lint:tokens` for you. It will fail on a dangling reference, on a
+>    primitive that has crept in, and on `vendor/tokens.css` not matching the
+>    pinned package.
+> 2. **Commit `vendor/tokens.css` along with the pin.** Bumping `package.json`
+>    alone changes nothing on the live site — Cloudflare's build installs the
+>    package and never reads it, and the pages link the *committed* file. The
+>    linter now catches this, but only once the two are compared, so keep them in
+>    one commit.
+> 3. **Diff the rendered colours by eye.** This is the step nothing automates.
+>    The linter *cannot* catch what happened above: `neutral-100` never stopped
+>    existing, its value moved. Load the homepage before and after and compare.
+> 4. Re-read the `:root` alias block in `styles.css` and ask whether each alias
 >    still means what its name says.
 
 **The standing rule:** the site consumes the pipeline's **semantic** layer only

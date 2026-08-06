@@ -13,12 +13,20 @@ name: Lint tokens
 #   - A var() pointing at a renamed token resolves to nothing at all. No error,
 #     no fallback — the declaration just stops applying.
 #
-# Neither shows up in a build log, so it has to be a gate.
+# There is a third way to break it that is quieter still. The pin in
+# package.json never reaches the deployed site on its own: Cloudflare runs
+# `npm install && node build-blog.js`, which installs the tokens package and then
+# never reads it — the pages link the *committed* vendor/tokens.css. Bump the pin
+# without running `npm run sync-tokens` and npm install succeeds, the build is
+# green, CI is green, and the site quietly serves the old tokens.
 #
-# Deliberately no `npm ci`: the linter reads only repo files and the committed
-# vendor/tokens.css, and imports nothing outside node:*. Keeping it dependency
-# free means this stays a few seconds even when the tokens package is pinned to
-# a git tag that is slow to fetch.
+# None of the three shows up in a build log, so it has to be a gate.
+#
+# `npm ci` is here for that third check only. The other three read nothing but
+# repo files, so the linter stays runnable without an install and simply reports
+# the sync check as skipped when the package is absent. Installing costs a git
+# fetch of a tag-pinned dependency, which is the slow part of this job — worth it
+# to make the pin mean something.
 
 on:
   pull_request:
@@ -38,6 +46,12 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 24
+          cache: npm
+
+      # kirsten-rossiter-tokens is pinned to a public GitHub tag, so no auth.
+      # Needed only so the linter can compare vendor/tokens.css against it.
+      - name: Install dependencies
+        run: npm ci
 
       - name: Check token consumption
         run: npm run lint:tokens

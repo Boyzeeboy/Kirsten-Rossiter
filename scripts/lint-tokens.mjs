@@ -16,23 +16,32 @@
  *     stayed that way, live, until someone noticed by eye.
  *   - The same bump renamed semantic tokens. A renamed token leaves a `var()`
  *     pointing at nothing, which CSS resolves to *nothing* rather than erroring.
+ *   - The pin in package.json does not reach the deployed site on its own.
+ *     Cloudflare runs `npm install && node build-blog.js`, which installs the
+ *     tokens package and then never reads it; the pages link the *committed*
+ *     vendor/tokens.css. Bump the pin without running `npm run sync-tokens` and
+ *     everything stays green while the site serves the old tokens.
  *
- * So this checks three things, in rough order of how badly each one bites:
+ * So this checks four things, in rough order of how badly each one bites:
  *
  *   1. ERROR   No site file consumes a primitive directly.
  *   2. ERROR   Every var(--kr-*) reference resolves to a token that exists.
- *   3. RATCHET Literal colours in the styles.css :root block may not increase.
+ *   3. ERROR   vendor/tokens.css matches the pinned package (skipped if the
+ *              package is not installed — see below).
+ *   4. RATCHET Literal colours in the styles.css :root block may not increase.
  *
  * Run: npm run lint:tokens
  */
 
-import { readFileSync, readdirSync, statSync } from 'node:fs';
+import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(fileURLToPath(import.meta.url), '..', '..');
 const TOKENS = join(ROOT, 'vendor', 'tokens.css');
 const STYLES = join(ROOT, 'styles.css');
+const PKG = join(ROOT, 'node_modules', 'kirsten-rossiter-tokens');
+const PKG_TOKENS = join(PKG, 'dist', 'light', 'variables.css');
 
 /**
  * Literal colours still sitting in the styles.css :root block.
@@ -153,7 +162,53 @@ for (const file of files) {
     });
 }
 
-// ── 3. Literal-colour ratchet ───────────────────────────────────────────────
+// ── 3. vendor/tokens.css matches the pinned package ─────────────────────────
+// The pin is not what the live site consumes — the committed vendor/tokens.css
+// is. Nothing else notices when those two disagree: `npm install` succeeds, the
+// build is green, and the site serves whatever was last committed. This is the
+// only place that disagreement surfaces.
+//
+// Skipped rather than failed when the package is absent, so the linter stays
+// runnable without `npm ci` (a git-tag dependency is slow to fetch). CI installs
+// first, so there the check is real.
+let syncState;
+
+if (!existsSync(PKG_TOKENS)) {
+  syncState = 'skipped — kirsten-rossiter-tokens not installed (run npm ci to include this check)';
+  notes.push(
+    `Token sync check skipped: ${relative(ROOT, PKG)} is not installed.\n` +
+      `    Run \`npm ci\` to verify vendor/tokens.css matches the pinned package.`
+  );
+} else {
+  const vendored = readFileSync(TOKENS, 'utf8');
+  const packaged = readFileSync(PKG_TOKENS, 'utf8');
+  const version = JSON.parse(readFileSync(join(PKG, 'package.json'), 'utf8')).version;
+
+  if (vendored === packaged) {
+    syncState = `in sync with kirsten-rossiter-tokens v${version}`;
+  } else {
+    syncState = `OUT OF SYNC with v${version}`;
+    const vLines = vendored.split('\n');
+    const pLines = packaged.split('\n');
+    const sample = [];
+    for (let i = 0; i < Math.max(vLines.length, pLines.length) && sample.length < 5; i++) {
+      if (vLines[i] !== pLines[i]) {
+        sample.push(`      vendor:  ${(vLines[i] ?? '(missing)').trim()}`);
+        sample.push(`      package: ${(pLines[i] ?? '(missing)').trim()}`);
+      }
+    }
+    errors.push(
+      `vendor/tokens.css does not match the pinned package (v${version}).\n` +
+        `    The pin was bumped without re-syncing, or vendor/tokens.css was hand-edited.\n` +
+        `    The live site serves the committed file, so it is still on the old tokens.\n` +
+        `    Fix with: npm run sync-tokens\n` +
+        `    First differences:\n` +
+        sample.join('\n')
+    );
+  }
+}
+
+// ── 4. Literal-colour ratchet ───────────────────────────────────────────────
 const { text, lineOffset } = rootBlock();
 const literals = text
   .split('\n')
@@ -193,5 +248,6 @@ if (errors.length) {
 console.log(`✓ Token lint passed (${scanned})`);
 console.log(`  no primitives consumed directly`);
 console.log(`  all var(--kr-*) references resolve`);
+console.log(`  vendor/tokens.css ${syncState}`);
 console.log(`  literal colours in :root: ${literals.length}, all known (baseline ${LITERAL_BASELINE.size})`);
 for (const n of notes) console.log(`\n  → ${n}`);
