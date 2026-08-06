@@ -11,12 +11,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
 <style>
+  /* Page-local shorthand only. Every colour resolves to a semantic token from
+     vendor/tokens.css or an alias in styles.css — nothing is hand-written here.
+     --ink-60 and --ink-40 stay literals because the pipeline carries no alpha
+     tokens; their base is #221c14, matching colour/text/primary.
+
+     --ink-60 carries 0.65, not the 0.60 its name suggests: at 0.60 the body
+     copy lands on 4.27:1 against cream and misses WCAG AA. 0.65 gives 5.00:1.
+     The old #1C1814 base managed 4.45:1 — also a fail, just a nearer miss. */
   :root {
-    --paper: #FBF8F2;
-    --navy: #1A2235;
-    --gold-soft: rgba(160, 120, 64, 0.32);
-    --ink-60: rgba(28, 24, 20, 0.60);
-    --ink-40: rgba(28, 24, 20, 0.40);
+    --paper: var(--kr-colour-background-default);
+    --gold-soft: var(--rule);
+    --ink-60: rgba(34, 28, 20, 0.65);
+    --ink-40: rgba(34, 28, 20, 0.40);
     --ease: cubic-bezier(0.22, 1, 0.36, 1);
   }
   body {
@@ -34,7 +41,7 @@
   /* Header */
   header {
     position: sticky; top: 0; z-index: 20;
-    background: rgba(245, 240, 232, 0.86); backdrop-filter: blur(10px);
+    background: var(--cream-overlay); backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--gold-soft);
   }
   .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
@@ -78,7 +85,7 @@
     display: inline-flex; align-items: center; gap: 0.7em;
     font-family: 'Jost', sans-serif; font-weight: 400; font-size: 0.82rem;
     letter-spacing: 0.16em; text-transform: uppercase; color: var(--cream);
-    background: var(--navy); padding: 17px 36px; border: 1px solid var(--navy);
+    background: var(--surface-inverse); padding: 17px 36px; border: 1px solid var(--surface-inverse);
     cursor: pointer; transition: background 0.4s var(--ease), color 0.4s var(--ease), transform 0.4s var(--ease);
   }
   .btn:hover:not(:disabled) { background: var(--gold); border-color: var(--gold); transform: translateY(-2px); }

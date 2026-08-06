@@ -7,9 +7,22 @@
 <meta name="robots" content="noindex" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="vendor/tokens.css" />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
 <style>
-  :root { --cream:#F5F0E8; --ink:#1C1814; --navy:#1A2235; --gold:#A07840; --ink-60:rgba(28,24,20,.6); }
+  /* This page is deliberately standalone — it does not link styles.css, so it
+     carries its own layout. Colours come from the token pipeline all the same.
+     --ink-60 stays a literal: the pipeline carries no alpha tokens. Its base is
+     #221c14, matching colour/text/primary. It carries 0.65, not the 0.60 its
+     name suggests — at 0.60 the body copy lands on 4.27:1 against cream and
+     misses WCAG AA. 0.65 gives 5.00:1. */
+  :root {
+    --cream: var(--kr-colour-background-default);
+    --ink-soft: var(--kr-colour-text-primary);
+    --gold: var(--kr-colour-action-primary);
+    --accent: var(--kr-colour-background-inverse);
+    --ink-60: rgba(34, 28, 20, 0.65);
+  }
   * { box-sizing:border-box; margin:0; padding:0; }
   body { background:var(--cream); color:var(--ink-soft); font-family:'Jost',sans-serif; font-weight:300; line-height:1.7; min-height:100vh; display:flex; flex-direction:column; }
   header { border-bottom:1px solid rgba(160,120,64,.32); }
@@ -22,7 +35,7 @@
   .rule { width:48px; height:1px; background:var(--gold); margin:0 auto 32px; }
   h1 { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:clamp(2.4rem,6vw,3.6rem); line-height:1.1; margin-bottom:22px; }
   p { color:var(--ink-60); font-size:1.06rem; margin:0 auto 16px; max-width:32rem; }
-  .inbox { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.3rem; color:var(--navy); margin:28px auto 8px; }
+  .inbox { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.3rem; color:var(--accent); margin:28px auto 8px; }
   .home { display:inline-block; margin-top:40px; font-size:.78rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:4px; transition:color .3s ease; }
   .home:hover { color:var(--gold); }
   footer { padding:36px 0; text-align:center; }

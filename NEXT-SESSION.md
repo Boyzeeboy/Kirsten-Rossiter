@@ -93,12 +93,20 @@ original **by design**. Nothing to do.
 - ~~The `SETUP.md` note.~~ — **done 06 Aug 2026.** `SETUP.md` → *Design tokens —
   and the one trap in them* now covers the pipeline, the bump hazard with the
   `c98ccc6` worked example, and the three checks to run after any version bump.
-- **Audit item 11 is untouched.** Re-verified 06 Aug: `thank-you.html` still
-  links neither `styles.css` nor `vendor/tokens.css` and still carries three
-  old-palette literals; `contact.html` still overrides `--paper`, `--navy`,
-  `--gold-soft`, `--ink-60`, `--ink-40` locally. Because it is standalone,
-  `thank-you.html` is *still* the only page rendering the original cream — which
-  now matches the rest of the site again by coincidence, not by wiring.
+- ~~**Audit item 9** — the two pages bypassing the token pipeline.~~ — **done
+  06 Aug 2026.** `thank-you.html` now links `vendor/tokens.css` and both pages
+  alias semantic tokens instead of carrying old-palette literals. It also fixed
+  a live bug: `thank-you.html` declared `--ink` but every usage referenced
+  `--ink-soft`, which it never defined and could not inherit, so its body text,
+  logo and return link rendered **pure black**. The off-palette `--navy`
+  (`#1A2235`) became `background/inverse`. See the PR for the contrast working.
+
+  > **Numbering correction.** This item is **9** in `SEO-AUDIT.md` ("Two pages
+  > bypass the token pipeline"), not 11 — item 11 is "building-the-nations.html
+  > is thin for a commercial page". This file called it 11 in three places from
+  > the day both documents were written in `38ae2bc`; the audit was never
+  > renumbered. Item 3's reference to "audit item 13" is wrong for the same
+  > reason — the Ahrefs/analytics item is **10**, and there is no item 13.
 
 **What #14 does and does not catch.** The lint gate (`npm run lint:tokens`, and
 on every PR) blocks direct primitive consumption, dangling `var(--kr-*)`
@@ -211,9 +219,11 @@ Confirmed state on 26 Jul:
   `building-the-nations.html` and `terms.html` are hand-authored, so the inlining
   step has to walk those too.
 
-**Do audit item 13 in the same pass:** the Ahrefs tag is still hardcoded in all
-11 HTML files *and* in the `build-blog.js` templates. Cloudflare is the chosen
-analytics now, so drop Ahrefs — you're in these exact files anyway.
+**Do audit item 10 in the same pass** (written here as "item 13" until 06 Aug —
+there is no item 13; see the numbering correction under 0B): the Ahrefs tag is
+still hardcoded in all 11 HTML files *and* in the `build-blog.js` templates.
+Cloudflare is the chosen analytics now, so drop Ahrefs — you're in these exact
+files anyway.
 
 **Verify:** load a blog post with JavaScript disabled, confirm nav and footer
 links are in the HTML. Re-enable, test the hamburger at mobile width.
