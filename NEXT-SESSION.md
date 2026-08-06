@@ -79,14 +79,20 @@ repointed in pass 2 (`c54e599`) with its visible change documented, and
 `--gold-pale` no longer exists — it went with dead CSS in `60abd66`. Neither is
 outstanding.
 
+**`--ink-soft` is correct as it stands — checked against Figma 06 Aug 2026.**
+An earlier version of this note listed it as unfixed v1.0.0 drift, on the
+reasoning that its pre-pipeline value was `#3d3830` and it now resolves to
+`#221c14`. That reasoning was wrong. `--ink-soft` aliases
+`--kr-colour-text-primary`, which is `semantic/text/primary` in Figma — the
+correct semantic home for body text. The value arrived by drift; the mapping is
+right, and the mapping is what governs. Body text is darker than the July 2026
+original **by design**. Nothing to do.
+
 **Still open from this item:**
 
-- `--ink-soft` **has** the v1.0.0 drift and is not fixed. Original `#3d3830`, now
-  `#221c14` via `text/primary`. It is the site's main body text colour, so
-  correcting it *reduces* contrast — a deliberate call, not a silent fix.
-- The `SETUP.md` note is still unwritten. `SETUP.md` currently says nothing about
-  tokens at all. #14 enforces the rule mechanically, but the trap still deserves
-  prose.
+- ~~The `SETUP.md` note.~~ — **done 06 Aug 2026.** `SETUP.md` → *Design tokens —
+  and the one trap in them* now covers the pipeline, the bump hazard with the
+  `c98ccc6` worked example, and the three checks to run after any version bump.
 - **Audit item 11 is untouched.** Re-verified 06 Aug: `thank-you.html` still
   links neither `styles.css` nor `vendor/tokens.css` and still carries three
   old-palette literals; `contact.html` still overrides `--paper`, `--navy`,

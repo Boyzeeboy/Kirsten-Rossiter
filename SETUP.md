@@ -63,6 +63,58 @@ Cloudflare Pages → Settings → Builds & deployments:
 Without it the Functions still work, but new blog posts will not appear.
 `BLOG.md` is the source of truth for this.
 
+## Design tokens — and the one trap in them
+
+Colours, type and spacing come from a token pipeline, not from hand-written CSS:
+
+| | |
+|---|---|
+| Source | `kirsten-rossiter-tokens`, pinned to an exact git tag in `package.json` |
+| Lands in | `vendor/tokens.css` — **generated, committed, never hand-edited** |
+| Sync with | `npm run sync-tokens` |
+| Consumed by | the `:root` alias block at the top of `styles.css` |
+
+`styles.css` aliases rather than naming colours — `--cream: var(--kr-colour-background-default)`
+— and the rest of the file uses the alias. To change a colour you change it
+upstream in the pipeline and re-sync, not here.
+
+Eighteen literal values do still sit in that `:root` block, and they predate the
+rule. Sixteen are `rgba()` alpha variants (`rgba(245, 240, 232, 0.35)` and
+friends) that **cannot** be fixed here — the pipeline carries no alpha tokens at
+all, so closing that gap means authoring them upstream. `npm run lint:tokens`
+holds them as a named baseline and blocks a nineteenth.
+
+> ### ⚠️ Bumping the token version can change colours without changing any code
+>
+> This has already happened once, and it was live for weeks before anyone
+> noticed.
+>
+> `c98ccc6` upgraded tokens `v0.2.0 → v1.0.0`. That bump **renumbered the neutral
+> ramp two steps**: `neutral-100` had been `#f5f0e8` and became `#e2d9c8`. The
+> alias block pointed at *primitives* at the time, so every alias silently
+> followed. The site's entire background went from cream to a darker tan, on a
+> commit that never touched `styles.css`.
+>
+> A bump can also **rename** tokens. A `var()` pointing at a name that no longer
+> exists resolves to *nothing at all* — no error, no fallback, the declaration
+> just stops applying. v1.0.0 renamed the semantic layer wholesale.
+>
+> **So after any token version bump:**
+>
+> 1. `npm run sync-tokens` — this now runs `npm run lint:tokens` for you and will
+>    fail on a dangling reference or a primitive that has crept in.
+> 2. **Diff the rendered colours by eye.** The linter *cannot* catch what
+>    happened above: `neutral-100` never stopped existing, its value moved. Load
+>    the homepage before and after and compare.
+> 3. Re-read the `:root` alias block in `styles.css` and ask whether each alias
+>    still means what its name says.
+
+**The standing rule:** the site consumes the pipeline's **semantic** layer only
+(`colour/background/default`), never primitives (`primitives/neutral/0`) and
+never a hand-written value. `npm run lint:tokens` enforces this and runs on every
+pull request. If no semantic token carries a value you need, author one upstream
+— don't reach past the layer. Full reasoning in `NEW-CLIENT-PLAYBOOK.md`.
+
 ---
 
 # Phase 1 — Development (do this now)
