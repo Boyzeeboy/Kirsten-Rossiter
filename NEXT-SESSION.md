@@ -1,11 +1,16 @@
 # Next session — 26 July 2026
 
 Items 1 and 2 of `SEO-AUDIT.md` are **done, committed and live**. What follows is
-items 3–7, plus three things that surfaced on 26 Jul and need clearing first.
+items 3–7, plus three things that surfaced on 26 Jul — all three now closed
+(0A automated 27 Jul, 0C answered 27 Jul, 0B fixed 06 Aug), each leaving
+follow-ups noted in place.
 
 ---
 
-## Start here — three blockers, in this order
+## The three 26 Jul blockers — all closed
+
+Kept for their reasoning and for the loose ends each one left behind. Nothing
+here blocks items 3–7 any more; **start at item 3.**
 
 ### 0A. The repo's build output is stale — rebuild and commit — ✅ AUTOMATED 27 Jul
 
@@ -40,7 +45,62 @@ those diffs.
 npm run build && git diff --stat
 ```
 
-### 0B. Palette regression — the whole site's background shifted
+### 0B. Palette regression — ✅ FIXED 06 Aug 2026
+
+**Fixed in #12, #13 and #14.** The `styles.css` alias block now consumes semantic
+tokens only, and a lint gate stops it drifting back.
+
+The original note below called this correctly: the aliases pointed at primitives,
+the ramp moved under them, and repointing at semantic tokens was the right fix.
+It was acted on as written.
+
+| Alias | Was | Now | |
+|---|---|---|---|
+| `--cream` | `#e2d9c8` | `#f5f0e8` | `background/default` |
+| `--cream-mid` | `#d4c9b4` | `#ede6d8` | `background/subtle` |
+| `--cream-deep` | `#b8a990` | `#e2d9c8` | `background/muted` |
+| `--ink-mid` | `#e2d9c8` | `#3d3830` | `text/secondary` |
+| `--ink-warm` | `#ede6d8` | *deleted* | had no consumers |
+
+The `--cream-*` alpha family (`rgba(245, 240, 232, …)`) was never migrated, so it
+still held the **original** cream — which means `--cream` now agrees with its own
+translucent variants again. The internal inconsistency is gone.
+
+**One correction to the note below.** It lists `--ink-warm` and `--ink-mid` among
+the aliases that "shifted too" with the ramp. They didn't — they were a separate,
+older defect. `68a45e5` mapped them to `neutral-50` / `neutral-100`, which at
+v0.2.0 were `#faf7f2` / `#f5f0e8`, while their originals were `#221c14` /
+`#2e2820`. They were mirrored across the scale and had been wrong since the day
+they were written. The visible symptom was the `.about-portrait` gradient running
+pale cream → near-black instead of staying dark.
+
+**Also resolved, contrary to the note:** `--gold-light` was deliberately
+repointed in pass 2 (`c54e599`) with its visible change documented, and
+`--gold-pale` no longer exists — it went with dead CSS in `60abd66`. Neither is
+outstanding.
+
+**Still open from this item:**
+
+- `--ink-soft` **has** the v1.0.0 drift and is not fixed. Original `#3d3830`, now
+  `#221c14` via `text/primary`. It is the site's main body text colour, so
+  correcting it *reduces* contrast — a deliberate call, not a silent fix.
+- The `SETUP.md` note is still unwritten. `SETUP.md` currently says nothing about
+  tokens at all. #14 enforces the rule mechanically, but the trap still deserves
+  prose.
+- **Audit item 11 is untouched.** Re-verified 06 Aug: `thank-you.html` still
+  links neither `styles.css` nor `vendor/tokens.css` and still carries three
+  old-palette literals; `contact.html` still overrides `--paper`, `--navy`,
+  `--gold-soft`, `--ink-60`, `--ink-40` locally. Because it is standalone,
+  `thank-you.html` is *still* the only page rendering the original cream — which
+  now matches the rest of the site again by coincidence, not by wiring.
+
+**What #14 does and does not catch.** The lint gate (`npm run lint:tokens`, and
+on every PR) blocks direct primitive consumption, dangling `var(--kr-*)`
+references, and new hand-written colours in `:root`. It **cannot** catch what
+happened here: `neutral-100` never stopped existing, its *value* moved. Catching
+that needs a resolved-value snapshot diffed across bumps — not built.
+
+Original note from 26 Jul, kept for context:
 
 `c98ccc6` upgraded tokens `v0.2.0 → v1.0.0`. That commit touched
 `vendor/tokens.css`, `package.json`, `package-lock.json` and
@@ -226,10 +286,36 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
   Xneelo. Baseline in `DNS-BASELINE-2026-07-23.md`.
 - **Never edit `vendor/tokens.css`** — it's generated. Change values upstream in
   the token pipeline and re-sync.
+- **The site consumes semantic tokens only** — never primitives, never
+  hand-written values (`NEW-CLIENT-PLAYBOOK.md:5, 37-38, 77`). `npm run
+  lint:tokens` enforces it and runs on every PR; it is also chained onto `npm run
+  sync-tokens`, so a token bump is checked at the moment it lands. If no semantic
+  token carries a value you need, author one upstream — do not reach past the
+  layer.
 
 ---
 
 ## Progress log
+
+**06 Aug 2026 — 0B closed: palette regression fixed and gated.**
+Three PRs. **#12** repointed the `--cream` ramp at `background/default` /
+`subtle` / `muted`, restoring the original `#f5f0e8` body background and
+reuniting `--cream` with its own `rgba(245, 240, 232, …)` alpha family. **#13**
+deleted the unused `--ink-warm` and put `--ink-mid` back on a dark token, fixing
+the `.about-portrait` gradient that ran pale cream → near-black. **#14** added
+`scripts/lint-tokens.mjs` and a CI workflow so the rule is enforced rather than
+remembered.
+
+Contrast improved everywhere `--cream` is a foreground (9.76:1 → 12.05:1 on the
+inverse band). Verified by reading computed styles off the running site, not by
+eye — the browser preview would not follow programmatic scrolling, so only the
+hero was confirmed visually. **A manual pass down the homepage is still worth
+doing.**
+
+Two things worth carrying forward. The `--ink-warm` / `--ink-mid` defect was
+*not* the v1.0.0 drift — it predated it, and only surfaced because the drift sent
+someone looking. And the lint gate cannot catch a repeat of 0B itself: the token
+existed, only its value moved.
 
 **06 Aug 2026 — last WordPress remnant gone.**
 Orphaned WordPress MySQL database dropped at Xneelo; Manage MySQL now shows
