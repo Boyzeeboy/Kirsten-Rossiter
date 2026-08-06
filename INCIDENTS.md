@@ -5,6 +5,50 @@ Detected by the weekly `kr-seo-health-check` scheduled task unless noted.
 
 ---
 
+## 2026-08-06 — Verification: apex redirect confirmed healthy (ad-hoc, `curl`)
+
+**Severity:** None. Not an incident — a deliberate re-check of the 3 Aug finding,
+run by hand rather than by the weekly scheduled task.
+
+**Checked:** Thu 06 Aug 2026. Read-only; nothing changed on site, DNS, or mail.
+
+### Method
+Applied the process fix the 3 Aug entry called for: `curl` straight at the live
+origin, asserting on the **status line and `Location` header**, with a **unique
+cache-buster on every request** rather than comparing page content from a single
+fetch. Deliberately not `web_fetch`, which produced the 3 Aug false alarm.
+
+### Results — all pass
+| Check | Result |
+|---|---|
+| `kirstenrossiter.com/?nocache=…` | **301** → `https://www.kirstenrossiter.com/?nocache=…` |
+| `/contact?nocache=…` | **301** → `…/contact?nocache=…` — path preserved |
+| Final page after following the redirect | **200**, `server: cloudflare`, `cf-ray` present |
+| Page identity | `<title>Kirsten Rossiter — Building the Nations from the Ground Up</title>` |
+| WordPress markers on final page | **0** |
+| `www` direct | **200** from Cloudflare; no bounce back to the apex |
+| `/.well-known/acme-challenge/…` | **404 from Apache, not a 301** — exclusion intact, SSL renewal unaffected |
+
+DNS matches `DNS-BASELINE-2026-07-23.md` exactly: `@` → A → `129.232.138.188`,
+`www` → CNAME → `kirsten-rossiter.pages.dev`, all four Xneelo nameservers
+(`ns1/ns2.host-h.net`, `ns1/ns2.dns-h.com`).
+
+### What this does and does not establish
+- **Does:** the redirect `.htaccess` restored on 31 Jul is still in place and
+  working five days on, and the apex answers from Apache with a 301 rather than
+  rendering WordPress. It also corroborates the 3 Aug false-alarm conclusion — a
+  live cache-busted read got a clean 301 immediately, with none of the WordPress
+  content the earlier check kept reporting.
+- **Does not:** say anything about whether the co-located WordPress will
+  regenerate `.htaccess` again. That failure mode is intermittent by nature, so a
+  single healthy reading is not evidence against it. The 31 Jul follow-up below
+  stays **open**.
+
+### Status
+🟢 **Healthy.** Apex redirect confirmed working for real visitors.
+
+---
+
 ## 2026-08-03 — False alarm: apex redirect is healthy; monitoring tool served stale reads
 
 **Severity:** None (site was fine throughout). Logged as a **tooling/process**
