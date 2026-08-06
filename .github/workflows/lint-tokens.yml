@@ -1,0 +1,43 @@
+name: Lint tokens
+
+# WHY THIS EXISTS
+#
+# The site consumes the token pipeline's semantic layer only — never primitives,
+# never hand-written values. That rule is documented (NEW-CLIENT-PLAYBOOK.md:5,
+# 37-38, 77) and was retrofitted in two passes (4492c64, c54e599), but until now
+# nothing enforced it, and the failure mode is silent in both directions:
+#
+#   - An alias pointed at a primitive keeps working right up until the ramp is
+#     renumbered under it. c98ccc6 did exactly that and moved the site's body
+#     background live, unnoticed, for weeks.
+#   - A var() pointing at a renamed token resolves to nothing at all. No error,
+#     no fallback — the declaration just stops applying.
+#
+# Neither shows up in a build log, so it has to be a gate.
+#
+# Deliberately no `npm ci`: the linter reads only repo files and the committed
+# vendor/tokens.css, and imports nothing outside node:*. Keeping it dependency
+# free means this stays a few seconds even when the tokens package is pinned to
+# a git tag that is slow to fetch.
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: semantic-only check
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Check token consumption
+        run: npm run lint:tokens
