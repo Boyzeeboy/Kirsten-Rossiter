@@ -321,8 +321,12 @@ footer.site-footer {
 }
 
 /* ─── HOMEPAGE: HERO ───────────────────────────────────────── */
+/* color is set explicitly so the dark band does not inherit the light-background
+   body ink (--ink-soft, #221c14), which lands on 1.23:1 here — invisible. Every
+   child already sets its own colour, so this changes nothing today; it makes the
+   default legible for anything added later. */
 .page-home .hero {
-  min-height: 100vh; background: var(--surface-inverse);
+  min-height: 100vh; background: var(--surface-inverse); color: var(--cream);
   display: grid; grid-template-columns: 1fr 1fr;
   position: relative; overflow: hidden;
 }
