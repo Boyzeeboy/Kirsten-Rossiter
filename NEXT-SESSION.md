@@ -212,8 +212,9 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
   sitemap. Also review the 18 404s and redirect any that are real old blog URLs.
 - **Weekly, Mondays ~08:30** — scheduled task `kr-seo-health-check` checks
   redirect, sitemap, robots and indexability on the live site.
-- **Orphaned WordPress MySQL database** at Xneelo — harmless, drop when
-  convenient.
+- ~~**Orphaned WordPress MySQL database** at Xneelo — harmless, drop when
+  convenient.~~ — **done 06 Aug 2026.** Dropped via Manage MySQL; the panel now
+  reports **0 of 3 databases, none listed** for `kirstenrossiter.com`.
 
 ---
 
@@ -229,6 +230,14 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
 ---
 
 ## Progress log
+
+**06 Aug 2026 — last WordPress remnant gone.**
+Orphaned WordPress MySQL database dropped at Xneelo; Manage MySQL now shows
+0 of 3 databases for `kirstenrossiter.com`. With the files deleted from
+`public_html` back on 23 Jul, **nothing of the old WordPress install remains** —
+no files, no database. Same day: the apex redirect was re-verified healthy with
+`curl` and cache-busters, and the 31 Jul "co-located WordPress regenerates
+`.htaccess`" follow-up was closed as disproven. See `INCIDENTS.md`.
 
 **23 Jul 2026 — Item 1 DONE (apex → www 301).**
 Root cause: `public_html/.htaccess` had a mod_alias `Redirect permanent /` on the
