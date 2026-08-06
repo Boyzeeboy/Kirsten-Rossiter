@@ -39,10 +39,13 @@ DNS matches `DNS-BASELINE-2026-07-23.md` exactly: `@` → A → `129.232.138.188
   rendering WordPress. It also corroborates the 3 Aug false-alarm conclusion — a
   live cache-busted read got a clean 301 immediately, with none of the WordPress
   content the earlier check kept reporting.
-- **Does not:** say anything about whether the co-located WordPress will
-  regenerate `.htaccess` again. That failure mode is intermittent by nature, so a
-  single healthy reading is not evidence against it. The 31 Jul follow-up below
-  stays **open**.
+- **Does not:** say anything about whether the redirect could fail again. A
+  single healthy reading is not evidence against an intermittent fault.
+
+> **Later the same day:** `public_html` was inspected directly and contains only
+> `.htaccess` — no WordPress. The "co-located WordPress regenerates `.htaccess`"
+> theory is therefore disproven, and the 31 Jul follow-up is **closed as nothing
+> to do**. See the correction under that entry's *Root cause*.
 
 ### Status
 🟢 **Healthy.** Apex redirect confirmed working for real visitors.
@@ -129,6 +132,19 @@ content live and indexable).
   not the Pages deployment.
 
 ### Root cause
+
+> **Correction, 06 Aug 2026 — the root cause below is wrong.** It assumed a
+> WordPress install still sitting in the apex `public_html`. There isn't one, and
+> there hasn't been since **23 Jul**, when WordPress was deleted from that
+> directory as part of the original redirect fix (see the 23 Jul progress log in
+> `NEXT-SESSION.md`). Confirmed twice since by direct inspection of `public_html`
+> in the Xneelo File Manager — on 3 Aug and again on 6 Aug, both times finding
+> only `.htaccess`. So nothing co-located could have regenerated `.htaccess` on
+> 31 Jul, and **what actually made the redirect fail that day is unexplained**.
+> Given the 3 Aug false alarm, a stale monitoring read is the leading candidate;
+> whether the `.htaccess` was ever really wiped was not verified before it was
+> rewritten. Kept below as originally written.
+
 The apex box (`129.232.138.188`, Xneelo shared hosting) still hosts the old
 WordPress install in the same `public_html` as the redirect `.htaccess`. The
 redirect `.htaccess` had been **wiped/overwritten** (WordPress or a plugin/core
@@ -158,10 +174,12 @@ Xneelo File Manager (Home Directory / public_html / .htaccess). Content matches
   SEO/redirect impact; swap the favicon reference on the Pages site when convenient.
 
 ### Follow-up / prevention
-- **Recurring root cause:** the co-located WordPress in the apex `public_html`
+- ~~**Recurring root cause:** the co-located WordPress in the apex `public_html`
   keeps regenerating `.htaccess` and wiping the redirect. The durable fix is to
   **retire the old WordPress files** from that directory (move/rename them out of
-  `public_html`) so nothing can overwrite the redirect again. Reversible; do not
-  touch mail. — *open*
+  `public_html`) so nothing can overwrite the redirect again.~~ — **closed
+  06 Aug 2026, nothing to do.** There are no WordPress files in the apex
+  `public_html` and have not been since 23 Jul — see the correction under *Root
+  cause* above. Nothing was moved or deleted to close this.
 - Consider tightening the weekly check to also confirm the apex actually issues a
   301 (not just that content differs), to catch a silent regression sooner.
