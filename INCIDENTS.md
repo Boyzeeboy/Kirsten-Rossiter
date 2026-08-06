@@ -48,8 +48,10 @@ rather than a real `.htaccess` wipe. Treat its "recurring root cause" (co-locate
 WordPress regenerating `.htaccess`) as **unconfirmed**.
 
 ### Actions
-- **Xneelo ticket NOT sent.** Draft `xneelo-support-ticket-2026-08-03.md` left in
-  the project but is unnecessary — there was nothing to fix. Nothing changed on
+- **Xneelo ticket NOT sent.** The draft `xneelo-support-ticket-2026-08-03.md` was
+  written on the false-alarm premise and has since been **deleted** — there was
+  nothing to fix. It was never committed, so no copy survives in git; the
+  `.htaccess` it quoted is in `xneelo-htaccess-redirect.txt`. Nothing changed on
   site, DNS, or mail this session (read-only check).
 - **Process fix for the weekly check:** a single `web_fetch` is not a reliable
   redirect test — it can serve cached/deduplicated results. Confirm the apex with
