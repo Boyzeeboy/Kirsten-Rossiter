@@ -23,9 +23,9 @@
   --ink-warm: var(--kr-colour-background-subtle);
   --ink-mid: var(--kr-colour-background-muted);
 
-  --cream: var(--kr-colour-background-muted);
-  --cream-mid: var(--kr-colour-action-secondary);
-  --cream-deep: var(--kr-colour-action-secondary-hover);
+  --cream: var(--kr-colour-background-default);
+  --cream-mid: var(--kr-colour-background-subtle);
+  --cream-deep: var(--kr-colour-background-muted);
   --cream-overlay: rgba(245, 240, 232, 0.92);
   --cream-strong: rgba(245, 240, 232, 0.7);
   --cream-medium: rgba(245, 240, 232, 0.5);
