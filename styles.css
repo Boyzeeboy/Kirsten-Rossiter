@@ -20,8 +20,7 @@
   --surface-inverse: var(--kr-colour-background-inverse);
   --ink-soft: var(--kr-colour-text-primary);
   --ink-deep: #1a1310;
-  --ink-warm: var(--kr-colour-background-subtle);
-  --ink-mid: var(--kr-colour-background-muted);
+  --ink-mid: var(--kr-colour-text-secondary);
 
   --cream: var(--kr-colour-background-default);
   --cream-mid: var(--kr-colour-background-subtle);
