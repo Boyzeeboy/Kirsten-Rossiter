@@ -313,10 +313,11 @@ the `.about-portrait` gradient that ran pale cream → near-black. **#14** added
 remembered.
 
 Contrast improved everywhere `--cream` is a foreground (9.76:1 → 12.05:1 on the
-inverse band). Verified by reading computed styles off the running site, not by
-eye — the browser preview would not follow programmatic scrolling, so only the
-hero was confirmed visually. **A manual pass down the homepage is still worth
-doing.**
+inverse band). Verified by reading computed styles off the running site rather
+than by eye — the browser preview would not follow programmatic scrolling, so
+only the hero was confirmed visually. **Warren completed the manual pass down the
+homepage on 06 Aug and confirmed it renders correctly.** 0B is closed on both
+counts: measured, and seen.
 
 Two things worth carrying forward. The `--ink-warm` / `--ink-mid` defect was
 *not* the v1.0.0 drift — it predated it, and only surfaced because the drift sent
