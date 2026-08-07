@@ -68,6 +68,8 @@ Wire the full toolchain now, while there's nothing to break:
 - **The version pin does not reach the deployed site.** Cloudflare runs `npm install` and then never reads the package — the pages link the *committed* `vendor/tokens.css`. Bumping the pin alone changes nothing on screen, and `npm install` succeeds, the build is green and CI is green while the site serves the old palette. Keep the pin and the vendored file in the same commit, always, and have CI fail when they diverge.
 - `npm run report` → `dist/report.html`, chained after build: doubled-segment lint, unitless-font lint, hardcoded-hex scan, fonts-link↔token match, dist↔vendor sync. **Target 8/8 passing from the first build.** On KR these checks were archaeology; on a fresh client they're a tripwire that keeps the repo clean.
 - Snapshot + changelog scripts, so every token change is diffable.
+- **Visual regression snapshots of the deployed site**, not just of Storybook. This is the one guardrail that catches a token *value* moving under a name that still resolves — the failure no lint can reason about, because nothing in the code changed. Playwright screenshots committed as baselines, or Percy/Chromatic pointed at the preview URL; a handful of full-page shots at two widths is enough. Had this existed, the KR v1.0.0 palette shift would have failed CI on the commit that introduced it instead of living on the site for weeks. Wire it before the first real page, so the baselines grow with the site rather than being backfilled.
+- **Accessibility checks in CI on every pull request** — `axe-core` via Playwright, or `pa11y-ci`, against the built pages. Contrast, landmarks, form labels and alt text are all machine-detectable, and leaving them to a Lighthouse run at launch means finding them when they are expensive. Every accessibility defect found on KR — a submit button at 3.52:1, body copy at 4.27:1, an entire page rendering black text from an undefined variable — would have been caught automatically.
 - Regenerate Storybook data contracts (`color.json`, `typography.json`, `size.json`, `guidelines.json`, `design.md`) from the client's tokens immediately — these are used by Storybook stories and will render the template's stale palette if skipped.
 
 ## Phase 4 — Figma mirror (after JSON, never before)
@@ -96,7 +98,9 @@ Only now does site code exist:
 - **Page-local custom properties get the same discipline as tokens.** An undefined `var()` resolves to *nothing* — no error, no fallback, the declaration silently stops applying. The consumer contract only inspects `--{cl}-*` names, so a page-local typo goes straight through it. KR's `thank-you.html` declared `--ink` while every usage referenced `--ink-soft`, and shipped pure-black body text on the post-purchase page until someone read the CSS.
 - **When markup moves into a partial, delete the rules it leaves behind.** KR's `contact.html` still carries `header`, `.bar`, `.mark`, `.back` and `.foot*` rules for a standalone header and footer replaced long ago. Several hold colours, so they read as pipeline drift to anyone auditing — and they are simply dead.
 - **One canonical Google Fonts link**, defined in exactly one place (a partial or a build constant) and consumed by every page and any build script (KR's blog builder had its own copy — 5 divergent variants across 12 occurrences). Load only weights the tokens use; the report's fonts-link check enforces the match.
-- `partials/` + `includes.js` for nav/footer from the first page — shared chrome is edited in one place.
+- `partials/` for nav/footer from the first page — shared chrome is edited in one place — but **inline them at build time, never fetch them at runtime.** A `data-include` div filled by `fetch()` after load means the nav and footer do not exist in the served HTML: crawlers see a page with no internal links, and the whole site's link graph disappears. KR shipped exactly this and it is still open as an SEO finding — `contact.html` serves **zero** internal links in raw HTML. Do the inlining in the same build step that generates pages, and remember hand-authored pages need walking too, not just generated ones.
+  - If any JS must survive that change (an analytics beacon, a nav toggle), give it its own entry point bound on `DOMContentLoaded`. KR's hamburger was bound inside the include's `.then()`, so removing the fetch would have silently unbound it.
+  - **Verify with JavaScript disabled.** Load a page, confirm nav and footer links are in the HTML, then re-enable and test the interactive bits.
 - Page-level `<style>` blocks and inline styles follow the same law: tokens only. New token requests go through the JSON + a rebuild, never a local literal.
 - First commit = scaffold + vendor tokens + a passing report. Cloudflare deploys it; the pipeline is proven end-to-end before any real page exists.
 
@@ -119,7 +123,8 @@ Now — and only now — design. Route by novelty:
 
 - Verify the sending domain in Resend **on launch day setup, not after** — sandbox mail goes to spam and will embarrass you during client UAT.
 - Custom domain on Cloudflare Pages; confirm redirects/SSL.
-- Final gates: report 8/8, verify-build clean, Chromatic baseline accepted, Lighthouse pass, every page's fonts render from the canonical link.
+- Final gates: report 8/8, verify-build clean, token lint green, visual regression baselines accepted, `axe` clean, Chromatic baseline accepted, Lighthouse pass, every page's fonts render from the canonical link.
+- **Load every page with JavaScript disabled** and confirm nav, footer and body content are all present in the served HTML.
 - Hand the client the specimen page + report.html as the living style guide.
 
 ---
@@ -136,11 +141,11 @@ Every time, without exception:
 
 1. **Bump the pin and run the sync in one commit.** Never separately — see Phase 3 on why the pin alone changes nothing.
 2. **Run the lint gate.** It catches dangling references, primitives that crept back, new literals, and vendor/pin divergence.
-3. **Diff the rendered pages by eye.** This is the step nothing automates and the one that matters: when a value moves under a name that still exists, no tool can know it was unintended. Load the site before and after and compare.
+3. **Read the visual regression diff.** This is the check that catches a value moving under a name that still resolves — the case the lint gate is blind to, because nothing in the code changed and every reference is still valid. A bump that was meant to change nothing should produce an empty diff; anything else is either the change you intended or the one you didn't, and both need looking at. Accept baselines deliberately, never in bulk.
 4. **Re-read any token whose *meaning* may have shifted**, not just its value — a renamed or repurposed semantic is the case a resolving `var()` cannot reveal.
 5. **Read the pipeline's changelog for renames and value moves** before trusting the build. This is what the snapshot/changelog scripts in Phase 3 are for.
 
-The lint gate cannot substitute for step 3. It verifies that every name *resolves*; it has no opinion on what it resolves to.
+The two gates answer different questions and neither substitutes for the other. The lint gate asks *does every name still resolve* — it has no opinion on what it resolves to. Visual regression asks *did the page change* — it has no idea why. A ramp renumbering passes the first and fails the second, which is precisely why KR's went unnoticed: the site had the first check and not the second.
 
 ## Why this order kills retrospective work
 
@@ -160,6 +165,9 @@ Every retrofit on KR came from one inversion: **CSS existed before tokens.** Tha
 - [ ] Every background token has a contrast-checked `on-*` partner
 - [ ] Figma file created from JSON; variables scoped at creation; text styles with verified weights
 - [ ] No alias layer — site CSS references `var(--{cl}-colour-…)` directly
-- [ ] Site scaffold: semantic tokens only, one fonts link, partials/includes, first deploy green
+- [ ] Site scaffold: semantic tokens only, one fonts link, nav/footer inlined at build time, first deploy green
+- [ ] Nav and footer present in the served HTML with JavaScript disabled
 - [ ] Token lint gate running in the **site** repo's CI on every pull request
+- [ ] Visual regression snapshots of the deployed site, baselined before the first real page
+- [ ] `axe`/`pa11y` running in CI on every pull request
 - [ ] Pin and `vendor/tokens.css` committed together; CI fails when they diverge
