@@ -1,16 +1,21 @@
 # Next session — 26 July 2026
 
-Items 1 and 2 of `SEO-AUDIT.md` are **done, committed and live**. What follows is
-items 3–7, plus three things that surfaced on 26 Jul — all three now closed
-(0A automated 27 Jul, 0C answered 27 Jul, 0B fixed 06 Aug), each leaving
+Items 1, 2 and 9 of `SEO-AUDIT.md` are **done, committed and live**. What follows
+is items 3–8 and 10–12, plus three things that surfaced on 26 Jul — all three now
+closed (0A automated 27 Jul, 0C answered 27 Jul, 0B fixed 06 Aug), each leaving
 follow-ups noted in place.
+
+> **`SEO-AUDIT.md` owns the item numbers.** This file's cross-references drifted
+> from them — both documents were written in `38ae2bc` and the numbering was
+> wrong from that day, never renumbered since. Reconciled throughout on
+> 07 Aug 2026. If the two ever disagree again, the audit is right.
 
 ---
 
 ## The three 26 Jul blockers — all closed
 
 Kept for their reasoning and for the loose ends each one left behind. Nothing
-here blocks items 3–7 any more; **start at item 3.**
+here blocks items 3–8 any more; **start at item 3.**
 
 ### 0A. The repo's build output is stale — rebuild and commit — ✅ AUTOMATED 27 Jul
 
@@ -38,7 +43,7 @@ changed:  index.html         — missing the post's insight card
 The diffs are purely the missing post; no hand-edits get clobbered. Verified in a
 scratch checkout on 26 Jul.
 
-**Do this first**, before items 3–7, so build drift doesn't get tangled into
+**Do this first**, before items 3–8, so build drift doesn't get tangled into
 those diffs.
 
 ```bash
@@ -103,10 +108,15 @@ original **by design**. Nothing to do.
 
   > **Numbering correction.** This item is **9** in `SEO-AUDIT.md` ("Two pages
   > bypass the token pipeline"), not 11 — item 11 is "building-the-nations.html
-  > is thin for a commercial page". This file called it 11 in three places from
-  > the day both documents were written in `38ae2bc`; the audit was never
-  > renumbered. Item 3's reference to "audit item 13" is wrong for the same
-  > reason — the Ahrefs/analytics item is **10**, and there is no item 13.
+  > is thin for a commercial page". This file called it 11 from the day both
+  > documents were written in `38ae2bc`; the audit was never renumbered.
+  >
+  > It was not the only one. The whole file was reconciled against the audit on
+  > 07 Aug 2026: the images item was filed as 9 (it is **8**), the Ahrefs item as
+  > 13 (it is **10**, and there is no 13), sitemap automation as item 7 (it is
+  > **not a numbered item** — item 7 is `blog/_template.html`), and
+  > `building-the-nations` as 10 (it is **11**). The 26 Jul note preserved below
+  > still says "item 11"; it means 9, and is left as written.
 
 **What #14 does and does not catch.** The lint gate (`npm run lint:tokens`, and
 on every PR) blocks direct primitive consumption, dangling `var(--kr-*)`
@@ -154,7 +164,8 @@ v1.0.0 renumbered the neutral ramp down two steps:
 Either way, add a note to `SETUP.md` that a token version bump requires
 re-reviewing the `styles.css` alias block — that's the trap that caused this.
 
-**This also reframes audit item 11.** `contact.html` and `thank-you.html` carry
+**This also reframes audit item 11** [*means item 9 — see the numbering
+correction above*]**.** `contact.html` and `thank-you.html` carry
 hardcoded literals on the **old** palette (`#F5F0E8`, `#1C1814`, `#A07840`,
 `rgba(28,24,20,…)`, `rgba(160,120,64,.32)`). Worse: `thank-you.html` links
 **neither** `styles.css` nor `vendor/tokens.css` — it is fully standalone, and is
@@ -230,7 +241,7 @@ links are in the HTML. Re-enable, test the hamburger at mobile width.
 
 ---
 
-## Items 4, 5, 6, 9 — one `<head>` commit
+## Items 4, 5, 6, 8 — one `<head>` commit
 
 Do these together. Same block, same build step.
 
@@ -245,7 +256,7 @@ Do these together. Same block, same build step.
   landscape share image.
 - **6 — JSON-LD.** `Person` on the homepage, `Book` on `building-the-nations`,
   `BlogPosting` on each post (author + dates already in frontmatter).
-- **9 — Images.** `width`/`height` on all four `<img>` tags (CLS), plus
+- **8 — Images.** `width`/`height` on all four `<img>` tags (CLS), plus
   `loading="eager"` + `fetchpriority="high"` on the hero cover and
   `loading="lazy"` on the author photo and second cover.
 
@@ -256,7 +267,11 @@ matching `.md`.
 
 ---
 
-## Item 7 — auto-generate the sitemap in `build-blog.js`
+## Sitemap automation, and item 7 — `blog/_template.html`
+
+**The sitemap work is not a numbered audit item** — it is follow-on from item 2,
+which fixed the sitemap by hand. This file previously filed it as "item 7", which
+is actually `blog/_template.html`, covered below.
 
 Worth pulling forward to sit right after item 3, rather than leaving it last.
 The hand-maintained sitemap is exactly what produced the missing post in the
@@ -266,7 +281,7 @@ Generate from the actual post list: `www` URLs, extensionless, real `lastmod`
 from frontmatter, no `<priority>`. Exclude `thank-you` (noindex) and
 `blog/_template.html`.
 
-**Item 8 while you're here:** `/blog/_template.html` is live and reachable —
+**Item 7 while you're here:** `/blog/_template.html` is live and reachable —
 it 308s to `/blog/_template`. Add `noindex`, move it out of `blog/`, or delete
 it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
 
@@ -276,7 +291,7 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
 
 | # | Item | Effort |
 |---|---|---|
-| 10 | Expand `building-the-nations` — 475 words for a commercial page | 2–3 hrs |
+| 11 | Expand `building-the-nations` — 475 words for a commercial page | 2–3 hrs |
 | 12 | Subheadings in `miracles-happen-in-the-valley`; two over-long meta descriptions | 20 min |
 
 ---
