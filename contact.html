@@ -35,7 +35,7 @@
 
   .eyebrow {
     font-family: 'Jost', sans-serif; font-weight: 400; font-size: 0.72rem;
-    letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold);
+    letter-spacing: 0.32em; text-transform: uppercase; color: var(--kr-colour-action-primary);
   }
 
   /* Header */
@@ -45,10 +45,10 @@
     border-bottom: 1px solid var(--gold-soft);
   }
   .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
-  .mark { font-weight: 400; font-size: 0.78rem; letter-spacing: 0.34em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; }
-  .mark span { color: var(--gold); }
+  .mark { font-weight: 400; font-size: 0.78rem; letter-spacing: 0.34em; text-transform: uppercase; color: var(--kr-colour-text-primary); text-decoration: none; }
+  .mark span { color: var(--kr-colour-action-primary); }
   .back { font-size: 0.74rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-60); text-decoration: none; }
-  .back:hover { color: var(--gold); }
+  .back:hover { color: var(--kr-colour-action-primary); }
 
   /* Layout */
   main { flex: 1; padding: clamp(120px, 13vw, 168px) 0 clamp(56px, 9vw, 104px); }
@@ -57,10 +57,10 @@
   .intro .eyebrow { display: block; margin-bottom: 22px; }
   .intro h1 { font-size: clamp(2.6rem, 5.6vw, 4rem); letter-spacing: -0.01em; margin-bottom: 24px; }
   .intro p { color: var(--ink-60); font-size: 1.06rem; max-width: 24rem; }
-  .intro .rule { width: 56px; height: 1px; background: var(--gold); margin: 32px 0; }
+  .intro .rule { width: 56px; height: 1px; background: var(--kr-colour-action-primary); margin: 32px 0; }
   .intro .direct { font-size: 0.92rem; color: var(--ink-60); }
-  .intro .direct a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--gold-soft); padding-bottom: 2px; }
-  .intro .direct a:hover { color: var(--gold); border-color: var(--gold); }
+  .intro .direct a { color: var(--kr-colour-text-primary); text-decoration: none; border-bottom: 1px solid var(--gold-soft); padding-bottom: 2px; }
+  .intro .direct a:hover { color: var(--kr-colour-action-primary); border-color: var(--kr-colour-action-primary); }
 
   /* Form */
   .field { margin-bottom: 26px; }
@@ -71,11 +71,11 @@
   label .opt { color: var(--ink-40); text-transform: none; letter-spacing: 0; font-style: italic; }
   input, textarea {
     width: 100%; font-family: 'Jost', sans-serif; font-weight: 300; font-size: 1rem;
-    color: var(--ink-soft); background: var(--paper);
+    color: var(--kr-colour-text-primary); background: var(--paper);
     border: 1px solid var(--gold-soft); padding: 14px 16px; border-radius: 0;
     transition: border-color 0.3s var(--ease), background 0.3s var(--ease);
   }
-  input:focus, textarea:focus { outline: none; border-color: var(--gold); background: #fff; }
+  input:focus, textarea:focus { outline: none; border-color: var(--kr-colour-action-primary); background: #fff; }
   textarea { resize: vertical; min-height: 150px; line-height: 1.6; }
 
   /* Honeypot — visually and to AT removed, but present for bots */
@@ -84,12 +84,12 @@
   .btn {
     display: inline-flex; align-items: center; gap: 0.7em;
     font-family: 'Jost', sans-serif; font-weight: 400; font-size: 0.82rem;
-    letter-spacing: 0.16em; text-transform: uppercase; color: var(--cream);
-    background: var(--surface-inverse); padding: 17px 36px; border: 1px solid var(--surface-inverse);
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--kr-colour-background-default);
+    background: var(--kr-colour-background-inverse); padding: 17px 36px; border: 1px solid var(--kr-colour-background-inverse);
     cursor: pointer; transition: background 0.4s var(--ease), color 0.4s var(--ease), transform 0.4s var(--ease);
   }
-  .btn:hover:not(:disabled) { background: var(--gold); border-color: var(--gold); transform: translateY(-2px); }
-  .btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+  .btn:hover:not(:disabled) { background: var(--kr-colour-action-primary); border-color: var(--kr-colour-action-primary); transform: translateY(-2px); }
+  .btn:focus-visible { outline: 2px solid var(--kr-colour-action-primary); outline-offset: 3px; }
   .btn:disabled { opacity: 0.55; cursor: default; }
   .btn .arrow { transition: transform 0.4s var(--ease); }
   .btn:hover:not(:disabled) .arrow { transform: translateX(4px); }
@@ -100,13 +100,13 @@
   /* Success panel */
   .success { display: none; padding: 8px 0; }
   .success.show { display: block; }
-  .success .rule { width: 48px; height: 1px; background: var(--gold); margin-bottom: 28px; }
+  .success .rule { width: 48px; height: 1px; background: var(--kr-colour-action-primary); margin-bottom: 28px; }
   .success h2 { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 16px; }
   .success p { color: var(--ink-60); font-size: 1.06rem; max-width: 28rem; }
 
   form.hide { display: none; }
 
-  footer { background: var(--surface-inverse); color: rgba(245, 240, 232, 0.6); padding: 44px 0; }
+  footer { background: var(--kr-colour-background-inverse); color: rgba(245, 240, 232, 0.6); padding: 44px 0; }
   .foot { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
   .foot .mark { color: rgba(245, 240, 232, 0.85); }
   .foot small { font-size: 0.74rem; letter-spacing: 0.08em; }

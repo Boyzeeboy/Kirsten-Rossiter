@@ -52,6 +52,21 @@ npm run build && git diff --stat
 
 ### 0B. Palette regression — ✅ FIXED 06 Aug 2026
 
+> **Superseded in part, 12 Aug 2026 — the colour aliases discussed below no
+> longer exist.** All eight (`--gold`, `--gold-light`, `--cream`, `--cream-mid`,
+> `--cream-deep`, `--ink-soft`, `--ink-mid`, `--surface-inverse`) were deleted
+> and their 190 call sites now reference `var(--kr-colour-…)` directly. The
+> reasoning is in the `styles.css :root` header comment: the alias names
+> described *hues*, so a palette retune would have made them lie, and nothing
+> checks a name for honesty. Verified no-op — computed colour hashed identically
+> across all seven pages before and after.
+>
+> The history below is left intact because it is still the record of *why* the
+> v1.0.0 drift happened, and the trap it describes (aliases silently following a
+> renumbered ramp) is exactly what deleting them removes. The `--cream-*` and
+> `--gold-*` **alpha** families survive — they have no upstream token, since the
+> pipeline carries no alpha channel.
+
 **Fixed in #12, #13 and #14.** The `styles.css` alias block now consumes semantic
 tokens only, and a lint gate stops it drifting back.
 
