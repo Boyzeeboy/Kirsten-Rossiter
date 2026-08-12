@@ -63,14 +63,14 @@
                 font-size: var(--label-md);
                 letter-spacing: 0.32em;
                 text-transform: uppercase;
-                color: var(--gold);
+                color: var(--kr-colour-action-primary);
             }
 
             /* The signature: a thin gold elevation line. It draws on reveal,
      echoing the horizon on the cover and the "from the ground up" idea. */
             .rule {
                 height: 1px;
-                background: var(--gold);
+                background: var(--kr-colour-action-primary);
                 width: 0;
                 transition: width 1.1s var(--ease);
             }
@@ -88,23 +88,23 @@
                 letter-spacing: 0.16em;
                 text-transform: uppercase;
                 text-decoration: none;
-                color: var(--cream);
-                background: var(--surface-inverse);
+                color: var(--kr-colour-background-default);
+                background: var(--kr-colour-background-inverse);
                 padding: 18px 34px;
-                border: 1px solid var(--surface-inverse);
+                border: 1px solid var(--kr-colour-background-inverse);
                 transition:
                     background 0.4s var(--ease),
                     color 0.4s var(--ease),
                     transform 0.4s var(--ease);
             }
             .btn:hover {
-                background: var(--gold);
-                border-color: var(--gold);
-                color: var(--cream);
+                background: var(--kr-colour-action-primary);
+                border-color: var(--kr-colour-action-primary);
+                color: var(--kr-colour-background-default);
                 transform: translateY(-2px);
             }
             .btn:focus-visible {
-                outline: 2px solid var(--gold);
+                outline: 2px solid var(--kr-colour-action-primary);
                 outline-offset: 3px;
             }
             .btn .arrow {
@@ -148,11 +148,11 @@
                 font-size: var(--label-lg);
                 letter-spacing: 0.34em;
                 text-transform: uppercase;
-                color: var(--ink-soft);
+                color: var(--kr-colour-text-primary);
                 text-decoration: none;
             }
             .mark span {
-                color: var(--gold);
+                color: var(--kr-colour-action-primary);
             }
             .back {
                 font-size: var(--label-md);
@@ -162,7 +162,7 @@
                 text-decoration: none;
             }
             .back:hover {
-                color: var(--gold);
+                color: var(--kr-colour-action-primary);
             }
 
             /* ---- Hero -------------------------------------------------- */
@@ -224,7 +224,7 @@
                 margin-bottom: 36px;
             }
             .foreword strong {
-                color: var(--ink-soft);
+                color: var(--kr-colour-text-primary);
                 font-weight: 400;
             }
 
@@ -239,7 +239,7 @@
                 font-family: var(--serif);
                 font-weight: 600;
                 font-size: var(--headline-lg);
-                color: var(--ink-soft);
+                color: var(--kr-colour-text-primary);
                 line-height: 1;
             }
             .price small {
@@ -257,7 +257,7 @@
                 color: var(--kr-colour-text-secondary);
             }
             .format-note span {
-                color: var(--gold);
+                color: var(--kr-colour-action-primary);
             }
 
             /* ---- About ------------------------------------------------- */
@@ -281,7 +281,7 @@
                 max-width: var(--measure);
                 font-family: var(--serif-body);
                 font-size: var(--body-lg);
-                color: var(--ink-soft);
+                color: var(--kr-colour-text-primary);
                 margin-bottom: 1.3em;
             }
             .about-body p:last-child {
@@ -296,14 +296,14 @@
                 font-style: italic;
                 font-size: clamp(var(--headline-sm), 3.6vw, var(--headline-lg));
                 line-height: 1.25;
-                color: var(--ink-soft);
+                color: var(--kr-colour-text-primary);
             }
             .about-body p.pullquote::before {
                 content: "";
                 display: block;
                 width: 40px;
                 height: 1px;
-                background: var(--gold);
+                background: var(--kr-colour-action-primary);
                 margin-bottom: 28px;
             }
 
@@ -338,7 +338,7 @@
             .theme h3 {
                 font-size: var(--title-lg);
                 margin-bottom: 12px;
-                color: var(--ink-soft);
+                color: var(--kr-colour-text-primary);
             }
             .theme p {
                 font-family: var(--serif-body);
@@ -375,13 +375,13 @@
 
             /* ---- Closing CTA ------------------------------------------- */
             .closing {
-                background: var(--surface-inverse);
-                color: var(--cream);
+                background: var(--kr-colour-background-inverse);
+                color: var(--kr-colour-background-default);
                 padding: clamp(64px, 10vw, 128px) 0;
                 text-align: center;
             }
             .closing .eyebrow {
-                color: var(--gold);
+                color: var(--kr-colour-action-primary);
                 margin-bottom: 26px;
                 display: block;
             }
@@ -395,22 +395,22 @@
                 margin: 0 auto 42px;
             }
             .closing .btn {
-                background: var(--gold);
-                border-color: var(--gold);
+                background: var(--kr-colour-action-primary);
+                border-color: var(--kr-colour-action-primary);
             }
             .closing .btn:hover {
-                background: var(--cream);
-                color: var(--ink-soft);
-                border-color: var(--cream);
+                background: var(--kr-colour-background-default);
+                color: var(--kr-colour-text-primary);
+                border-color: var(--kr-colour-background-default);
             }
             .closing .meta a {
-                color: var(--gold-light);
+                color: var(--kr-colour-action-primary-hover-on-inverse);
                 text-decoration: underline;
                 text-underline-offset: 3px;
                 transition: color 0.4s var(--ease);
             }
             .closing .meta a:hover {
-                color: var(--cream);
+                color: var(--kr-colour-background-default);
             }
             .closing .meta {
                 margin-top: 26px;
@@ -422,7 +422,7 @@
 
             /* ---- Footer ------------------------------------------------ */
             footer {
-                background: var(--surface-inverse);
+                background: var(--kr-colour-background-inverse);
                 color: var(--cream-medium);
                 padding: 48px 0;
             }
@@ -434,7 +434,7 @@
                 flex-wrap: wrap;
             }
             .foot .mark {
-                color: var(--cream);
+                color: var(--kr-colour-background-default);
             }
             .foot small {
                 font-size: var(--meta);
