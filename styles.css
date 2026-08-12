@@ -108,16 +108,39 @@
   /* Meta — Jost Medium (500), mixed case */
   --meta: 12px;  --meta-lh: 1.4;  --meta-ls: 0.04em;
 
-  /* ── Spacing scale ── */
-  --space-xs: 4px;
-  --space-sm: 8px;
+  /* ── Spacing scale ──
+   *
+   * Partially pipeline-sourced. The five steps with an exact semantic token
+   * upstream now consume it; the rest are still hand-written and are the
+   * remaining half of the gap documented in SPACING-GAP.md.
+   *
+   * MAPPED BY VALUE, NOT BY NAME — and the two scales disagree on names:
+   *
+   *     site --space-lg  (16px) -> spacing/m   NOT spacing/l  (24px)
+   *     site --space-2xl (24px) -> spacing/l   NOT spacing/2xl (56px)
+   *     site --space-5xl (40px) -> spacing/xl  NOT spacing/5xl (does not exist)
+   *
+   * The site's t-shirt sizes run about two steps below the pipeline's. Matching
+   * `--space-xl` to `--kr-spacing-xl` would silently double it, 20px -> 40px,
+   * and pass every gate — the same shape of failure as c98ccc6. If you extend
+   * this block, check the value, never the suffix.
+   *
+   * The eight unmapped steps are NOT oversights:
+   *   12, 20, 32, 48, 80px  exist only on the raw spacing/scale/* ramp, which is
+   *                         a primitive by nature and not for direct use
+   *                         (NEW-CLIENT-PLAYBOOK.md:37).
+   *   28, 60, 120px         have no token at any layer and need authoring
+   *                         upstream before they can move.
+   */
+  --space-xs: var(--kr-spacing-xs);    /* 4px  — icon gaps, tight internal spacing */
+  --space-sm: var(--kr-spacing-s);     /* 8px  — inline gaps, compact padding */
   --space-md: 12px;
-  --space-lg: 16px;
+  --space-lg: var(--kr-spacing-m);     /* 16px — standard component padding */
   --space-xl: 20px;
-  --space-2xl: 24px;
+  --space-2xl: var(--kr-spacing-l);    /* 24px — card padding, section gaps */
   --space-3xl: 28px;
   --space-4xl: 32px;
-  --space-5xl: 40px;
+  --space-5xl: var(--kr-spacing-xl);   /* 40px — layout section gaps */
   --space-6xl: 48px;
   --space-7xl: 60px;
   --space-8xl: 80px;
