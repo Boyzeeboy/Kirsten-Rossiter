@@ -303,6 +303,49 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
   sitemap. Also review the 18 404s and redirect any that are real old blog URLs.
 - **Weekly, Mondays ~08:30** — scheduled task `kr-seo-health-check` checks
   redirect, sitemap, robots and indexability on the live site.
+- **Visual regression testing — considered 07 Aug 2026, deferred. The timing
+  argument is the part worth keeping.**
+
+  It is the only check that catches what `c98ccc6` did: a token *value* moving
+  under a name that still resolves. Nothing in `styles.css` changed and every
+  reference was valid, so the lint gate would have passed it. Only something
+  comparing pictures can see it.
+
+  **The best moment to baseline is before item 3**, and that window closes when
+  item 3 lands. Items 3, 4, 5, 6 and 8 are all *meant to be visually invisible* —
+  inlining nav/footer changes delivery not markup, `<head>` tags render nothing,
+  and image `width`/`height` should not shift layout. So for each of them **an
+  empty diff is the proof you did it right**, which is otherwise an eyeball job.
+  Baseline afterwards and you have simply lost that.
+
+  Scope is small: seven templates (`index`, `building-the-nations`, `contact`,
+  `thank-you`, `terms`, `blog/index`, one representative post) × two widths = 14
+  screenshots. Playwright, self-hosted, baselines committed, in the existing
+  Actions setup. Roughly half a day.
+
+  Two things that will bite if skipped: baselines must be generated **inside the
+  CI container** (macOS and Linux render fonts differently, so local baselines
+  fail every run), and the 28 transition/animation declarations plus the three
+  keyframe animations need suppressing in-test or every screenshot is flaky.
+
+- **Automating the token pin bump — considered 07 Aug 2026, deferred; lower
+  value, and it has a prerequisite.**
+
+  A bot bumping the pin is precisely how `c98ccc6` lands again — with green CI,
+  because every name still resolves. **Do not do this before visual regression
+  exists.** After that it is genuinely good: the PR arrives carrying a picture of
+  what the new token version does to the site.
+
+  Renovate/Dependabot fit badly here. The dependency is a git tag, and more to
+  the point **bumping the pin alone is a no-op** — the deployed site reads the
+  committed `vendor/tokens.css`, so the bot must also run `npm run sync-tokens`
+  and commit the result, or the #18 check correctly fails it for divergence. A
+  scheduled GitHub Action (~30 lines) fits better than a third-party app because
+  it handles that coupling natively.
+
+  Honest value: saves minutes a few times a year on a project where you own both
+  repos. Worth an hour once the pipeline changes often enough that you forget to
+  check. Not before.
 - ~~**Orphaned WordPress MySQL database** at Xneelo — harmless, drop when
   convenient.~~ — **done 06 Aug 2026.** Dropped via Manage MySQL; the panel now
   reports **0 of 3 databases, none listed** for `kirstenrossiter.com`.
