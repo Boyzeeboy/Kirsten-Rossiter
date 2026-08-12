@@ -28,7 +28,8 @@
  *   2. ERROR   Every var(--kr-*) reference resolves to a token that exists.
  *   3. ERROR   vendor/tokens.css matches the pinned package (skipped if the
  *              package is not installed — see below).
- *   4. RATCHET Literal colours in the styles.css :root block may not increase.
+ *   4. RATCHET Hand-written values in custom-property declarations may not
+ *              increase — any file, colours and dimensions alike.
  *
  * Run: npm run lint:tokens
  */
@@ -44,38 +45,79 @@ const PKG = join(ROOT, 'node_modules', 'kirsten-rossiter-tokens');
 const PKG_TOKENS = join(PKG, 'dist', 'light', 'variables.css');
 
 /**
- * Literal colours still sitting in the styles.css :root block.
+ * Hand-written values still sitting in custom-property declarations.
  *
- * The playbook's governing rule ("no CSS value is ever hand-written") forbids
- * these too, but these 18 predate the rule and most cannot be fixed here: they
- * are rgba() alpha variants — `rgba(245, 240, 232, 0.35)` and friends — and the
- * pipeline carries no alpha tokens at all. That is a gap in the token set, not
- * drift in the site, and closing it means authoring tokens upstream.
+ * WHAT COUNTS. A declaration is flagged when its value contains a colour
+ * (`#hex`, `rgb()/rgba()`, `hsl()/hsla()`) or a dimension (`px`, `rem`, `em`).
+ * Deliberately NOT flagged, because the pipeline has nothing to offer them:
  *
- * Held by *name* rather than as a count, so that swapping one literal for
- * another is still caught. This is a ratchet: delete a name when you convert it
- * to a token. When the set empties, promote this to a hard error.
+ *   `%`, `vw`, `vh`, `fr`     viewport- and container-relative, not token material
+ *   bare numbers (`1.4`)      unitless ratios; `--meta-lh` is one
+ *   `cubic-bezier(…)`         motion; the pipeline carries no easing tokens
+ *   `0` / `0px`               zero is zero in every design system
+ *   var() with a fallback     `var(--kr-fonts-family-base), sans-serif` is correct
+ *
+ * WHY THESE SURVIVE. Two separate reasons, and they have different fixes:
+ *
+ *   The colours are rgba() alpha variants — `rgba(245, 240, 232, 0.35)` and
+ *   friends. The pipeline carries no alpha channel at all, so these cannot be
+ *   sourced upstream today. A gap in the token set, not drift in the site.
+ *
+ *   The dimensions are the remaining half of the spacing gap. Five of the
+ *   original thirteen `--space-*` steps were connected to semantic tokens on
+ *   12 Aug; these eight could not be, because five exist only on the raw
+ *   spacing/scale/* ramp (a primitive by nature — NEW-CLIENT-PLAYBOOK.md:37)
+ *   and three (28, 60, 120px) have no token at any layer. `--meta`/`--meta-ls`
+ *   are a genuine site-only role: 12px coincides with fonts/size/label-large
+ *   but the tracking differs 3.5x, so borrowing that token would couple two
+ *   unrelated roles. Full reasoning in SPACING-GAP.md.
+ *
+ * Keyed by file as well as name, so that moving a literal from styles.css into
+ * a page-local <style> block is caught rather than laundered. Held by *name*
+ * rather than as a count, so that swapping one literal for another is caught
+ * too. This is a ratchet: delete a name when you convert it to a token. When a
+ * file's set empties, drop the file. When the whole map empties, promote this
+ * to a hard error.
  */
-const LITERAL_BASELINE = new Set([
-  '--ink-deep',
-  '--cream-overlay',
-  '--cream-strong',
-  '--cream-medium',
-  '--cream-soft',
-  '--cream-muted',
-  '--cream-ghost',
-  '--cream-faint',
-  '--gold-medium',
-  '--gold-muted',
-  '--gold-faint',
-  '--gold-ghost',
-  '--rule',
-  '--shadow-heavy',
-  '--shadow-medium',
-  '--shadow-soft',
-  '--white-faint',
-  '--error',
-]);
+const LITERAL_BASELINE = {
+  'styles.css': new Set([
+    // Colour — alpha variants, no upstream equivalent.
+    '--ink-deep',
+    '--cream-overlay',
+    '--cream-strong',
+    '--cream-medium',
+    '--cream-soft',
+    '--cream-muted',
+    '--cream-ghost',
+    '--cream-faint',
+    '--gold-medium',
+    '--gold-muted',
+    '--gold-faint',
+    '--gold-ghost',
+    '--rule',
+    '--shadow-heavy',
+    '--shadow-medium',
+    '--shadow-soft',
+    '--white-faint',
+    '--error',
+    // Dimension — the unmapped half of the spacing scale.
+    '--space-md',
+    '--space-xl',
+    '--space-3xl',
+    '--space-4xl',
+    '--space-6xl',
+    '--space-7xl',
+    '--space-8xl',
+    '--space-section',
+    '--meta',
+    '--meta-ls',
+  ]),
+  // Page-local <style> blocks. These were invisible to this check until 12 Aug
+  // 2026, when it only ever read the styles.css :root block.
+  'contact.html': new Set(['--ink-40', '--ink-60']),
+  'thank-you.html': new Set(['--ink-60']),
+  'building-the-nations.html': new Set(['--measure', '--rule-w']),
+};
 
 /** Directories never worth walking. vendor/ is the token source itself. */
 const SKIP_DIRS = new Set(['node_modules', '.git', 'vendor', '.github']);
@@ -99,19 +141,57 @@ function definedTokens() {
   return new Set([...css.matchAll(/^\s*(--kr-[a-z0-9-]+)\s*:/gim)].map((m) => m[1]));
 }
 
-/** The :root { ... } block of styles.css, by brace counting. */
-function rootBlock() {
-  const css = readFileSync(STYLES, 'utf8');
-  const start = css.indexOf(':root {');
-  if (start === -1) throw new Error('styles.css has no :root block — has the file moved?');
-  let depth = 0;
-  for (let i = css.indexOf('{', start); i < css.length; i++) {
-    if (css[i] === '{') depth++;
-    else if (css[i] === '}' && --depth === 0) {
-      return { text: css.slice(start, i), lineOffset: css.slice(0, start).split('\n').length };
+const COLOUR_VALUE = /#[0-9a-f]{3,8}\b|\b(?:rgba?|hsla?)\(/i;
+const DIMENSION_VALUE = /(?<![\w.-])\d*\.?\d+(?:px|rem|em)\b/i;
+const DECLARATION = /(--[a-z0-9-]+)\s*:\s*([^;{}]+?)\s*[;}]/gi;
+
+/**
+ * Custom-property declarations carrying a hand-written value, anywhere.
+ *
+ * Comments are blanked rather than stripped so that reported line numbers stay
+ * true — a commented-out declaration must not be flagged, but the lines it
+ * occupies still have to count.
+ */
+function scanBlock(text, file, lineOffset, out) {
+  const clean = text.replace(/\/\*[\s\S]*?\*\//g, (c) => c.replace(/[^\n]/g, ' '));
+  for (const m of clean.matchAll(DECLARATION)) {
+    const [, name, value] = m;
+    if (!COLOUR_VALUE.test(value) && !DIMENSION_VALUE.test(value)) continue;
+    if (/^0(?:px|rem|em)?$/.test(value)) continue;
+    out.push({
+      file,
+      name,
+      value,
+      line: lineOffset + clean.slice(0, m.index).split('\n').length - 1,
+      kind: COLOUR_VALUE.test(value) ? 'colour' : 'dimension',
+    });
+  }
+}
+
+/**
+ * Every hand-written declaration in the site: whole-file for CSS, and the
+ * contents of each <style> block for HTML.
+ *
+ * The HTML half is the part that was missing. Three pages carry their own
+ * :root blocks — contact.html and thank-you.html hold alpha colours there, and
+ * building-the-nations.html holds layout dimensions — and none of it was ever
+ * read while this check looked only at the styles.css :root block.
+ */
+function literalDeclarations(files) {
+  const out = [];
+  for (const abs of files) {
+    const file = relative(ROOT, abs).split(sep).join('/');
+    const text = readFileSync(abs, 'utf8');
+    if (file.endsWith('.css')) {
+      scanBlock(text, file, 1, out);
+    } else if (file.endsWith('.html')) {
+      for (const m of text.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/gi)) {
+        const contentStart = m.index + m[0].indexOf('>') + 1;
+        scanBlock(m[1], file, text.slice(0, contentStart).split('\n').length, out);
+      }
     }
   }
-  throw new Error('styles.css :root block is unterminated.');
+  return out;
 }
 
 const errors = [];
@@ -208,30 +288,38 @@ if (!existsSync(PKG_TOKENS)) {
   }
 }
 
-// ── 4. Literal-colour ratchet ───────────────────────────────────────────────
-const { text, lineOffset } = rootBlock();
-const literals = text
-  .split('\n')
-  .map((line, i) => ({ line: line.trim(), no: lineOffset + i }))
-  .filter(({ line }) => /^--[a-z0-9-]+\s*:/i.test(line) && /#[0-9a-f]{3,8}\b|rgba?\(/i.test(line))
-  .map((entry) => ({ ...entry, name: entry.line.match(/^(--[a-z0-9-]+)/i)[1] }));
+// ── 4. Hand-written-value ratchet ───────────────────────────────────────────
+const literals = literalDeclarations(files);
 
-const added = literals.filter(({ name }) => !LITERAL_BASELINE.has(name));
-const removed = [...LITERAL_BASELINE].filter((name) => !literals.some((l) => l.name === name));
+const present = new Map(); // file -> Set(names)
+for (const d of literals) {
+  if (!present.has(d.file)) present.set(d.file, new Set());
+  present.get(d.file).add(d.name);
+}
+
+const added = literals.filter((d) => !LITERAL_BASELINE[d.file]?.has(d.name));
+const removed = Object.entries(LITERAL_BASELINE).flatMap(([file, names]) =>
+  [...names].filter((name) => !present.get(file)?.has(name)).map((name) => `${file} ${name}`)
+);
 
 if (added.length) {
+  const colours = added.filter((d) => d.kind === 'colour').length;
+  const dims = added.length - colours;
   errors.push(
-    `styles.css :root  ${added.length} new hand-written colour(s):\n` +
-      added.map(({ line, no }) => `      styles.css:${no}  ${line}`).join('\n') +
+    `${added.length} new hand-written value(s) ` +
+      `(${colours} colour, ${dims} dimension):\n` +
+      added.map((d) => `      ${d.file}:${d.line}  ${d.name}: ${d.value}`).join('\n') +
       `\n    No CSS value is ever hand-written (NEW-CLIENT-PLAYBOOK.md:5).\n` +
-      `    Author it as a token upstream and consume it through vendor/tokens.css.`
+      `    Author it as a token upstream and consume it through vendor/tokens.css.\n` +
+      `    If it genuinely cannot be tokenised, say why in LITERAL_BASELINE and add it there.`
   );
 }
 
 if (removed.length) {
   notes.push(
-    `${removed.length} baseline literal(s) are gone: ${removed.join(', ')}.\n` +
-      `    Remove them from LITERAL_BASELINE in scripts/lint-tokens.mjs to lock the gain in.`
+    `${removed.length} baseline literal(s) are gone:\n` +
+      removed.map((r) => `      ${r}`).join('\n') +
+      `\n    Remove them from LITERAL_BASELINE in scripts/lint-tokens.mjs to lock the gain in.`
   );
 }
 
@@ -249,5 +337,17 @@ console.log(`✓ Token lint passed (${scanned})`);
 console.log(`  no primitives consumed directly`);
 console.log(`  all var(--kr-*) references resolve`);
 console.log(`  vendor/tokens.css ${syncState}`);
-console.log(`  literal colours in :root: ${literals.length}, all known (baseline ${LITERAL_BASELINE.size})`);
+// Counted by distinct file+name, matching how the baseline is held: a property
+// declared twice (building-the-nations.html re-declares --rule-w per section)
+// is one entry to ratchet down, not two.
+const baselineSize = Object.values(LITERAL_BASELINE).reduce((n, s) => n + s.size, 0);
+const distinct = new Set(literals.map((d) => `${d.file} ${d.name}`));
+const kinds = new Map(literals.map((d) => [`${d.file} ${d.name}`, d.kind]));
+const byKind = (k) => [...kinds.values()].filter((v) => v === k).length;
+console.log(
+  `  hand-written values: ${distinct.size} (${byKind('colour')} colour, ` +
+    `${byKind('dimension')} dimension) across ${present.size} file(s), ` +
+    `all known (baseline ${baselineSize})` +
+    (literals.length === distinct.size ? '' : `, ${literals.length} declaration sites`)
+);
 for (const n of notes) console.log(`\n  → ${n}`);
