@@ -8,6 +8,14 @@ const toHex = (buf) =>
 
 // HMAC-SHA256(message) keyed by `secret`, returned as a hex string.
 export async function hmacHex(secret, message) {
+  // Fail closed. Without this, a missing secret is coerced by TextEncoder to
+  // the literal string "undefined", so every signature becomes computable by
+  // anyone. Callers guard first and return a readable error; this is the
+  // backstop for any caller that forgets.
+  if (!secret) {
+    throw new Error("hmacHex: signing secret is missing");
+  }
+
   const key = await crypto.subtle.importKey(
     "raw",
     enc(secret),

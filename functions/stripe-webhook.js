@@ -58,6 +58,16 @@ export async function onRequestPost(context) {
   }
 
   // 3 — Build a tamper-proof, time-limited download link.
+  // Without the secret the link would be signed with a guessable key, so stop
+  // before emailing one. 500 makes Stripe retry, and the buyer gets their
+  // email once the secret is set.
+  if (!env.DOWNLOAD_SIGNING_SECRET) {
+    console.error("stripe-webhook: DOWNLOAD_SIGNING_SECRET is not configured");
+    return new Response("Download signing secret not configured", {
+      status: 500,
+    });
+  }
+
   const expiry = Date.now() + DOWNLOAD_TTL_MS;
   const token = await hmacHex(env.DOWNLOAD_SIGNING_SECRET, String(expiry));
   const base = String(env.SITE_URL || "").replace(/\/$/, "");

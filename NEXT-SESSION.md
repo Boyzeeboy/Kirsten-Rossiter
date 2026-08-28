@@ -282,19 +282,23 @@ matching `.md`.
 
 ---
 
-## Sitemap automation, and item 7 — `blog/_template.html`
+## Sitemap automation — ✅ DONE 28 Aug 2026 — and item 7 — `blog/_template.html`
 
 **The sitemap work is not a numbered audit item** — it is follow-on from item 2,
 which fixed the sitemap by hand. This file previously filed it as "item 7", which
 is actually `blog/_template.html`, covered below.
 
-Worth pulling forward to sit right after item 3, rather than leaving it last.
-The hand-maintained sitemap is exactly what produced the missing post in the
-first place, and it will go stale again on the next one.
+**It went stale exactly as predicted before it was automated.** `keep-moving-forward`
+(published 27 Jul) was live and linked from the homepage but missing from
+`sitemap.xml`, and every `lastmod` still read `2026-07-09`. Found in review on
+28 Aug and fixed the same day — see the progress log.
 
-Generate from the actual post list: `www` URLs, extensionless, real `lastmod`
-from frontmatter, no `<priority>`. Exclude `thank-you` (noindex) and
-`blog/_template.html`.
+`buildSitemap()` in `build-blog.js` now generates the file from the same sorted
+post list that builds `/blog/` and the homepage cards: `www` URLs, extensionless,
+`lastmod` from frontmatter, no `<priority>`, `thank-you` and `blog/_template.html`
+excluded. **Do not hand-edit `sitemap.xml` — the next build overwrites it.** The
+one thing you do edit by hand is the `STATIC_PAGES` table at the top of
+`build-blog.js`: bump a date there when a non-post page meaningfully changes.
 
 **Item 7 while you're here:** `/blog/_template.html` is live and reachable —
 it 308s to `/blog/_template`. Add `noindex`, move it out of `blog/`, or delete
@@ -385,6 +389,27 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
 ---
 
 ## Progress log
+
+**28 Aug 2026 — Sitemap automated; two payment-function bugs fixed.** From a
+code review of the working tree. Three fixes:
+
+- **`DOWNLOAD_SIGNING_SECRET` now fails closed.** `download.js` and
+  `stripe-webhook.js` both called `hmacHex()` without checking the secret
+  exists, and `_crypto.js` coerces it through `TextEncoder`, so a missing or
+  misnamed secret in Cloudflare would make the HMAC key the literal string
+  `"undefined"` — forged download links become computable by anyone, and the
+  webhook would email links signed with that known key. Both call sites now
+  guard and return 500 (the webhook's 500 makes Stripe retry, so a real buyer
+  still gets their link once the secret is set), and `hmacHex()` throws as a
+  backstop. `verifyStripeSignature()` already did this — the HMAC path was the
+  outlier.
+- **`sitemap.xml` is generated** — see the section above.
+- **Dead scroll-reveal code removed from `index.html`.** The inline script added
+  `.visible` to `.reveal` elements and set `transitionDelay` on the insight
+  cards, but no stylesheet has ever defined `.reveal` — the homepage never
+  animated. The script, the stagger loop and all eleven now-inert `reveal`
+  classes are gone. **`building-the-nations.html` is untouched**: its reveal is
+  self-contained inline CSS on `.reveal`/`.reveal.in` and it works.
 
 **06 Aug 2026 — 0B closed: palette regression fixed and gated.**
 Three PRs. **#12** repointed the `--cream` ramp at `background/default` /
