@@ -29,6 +29,16 @@ export async function onRequestGet(context) {
   }
 
   // 2 — Signature check (proves the link was issued by us, unaltered).
+  // Guard the secret before signing: if DOWNLOAD_SIGNING_SECRET is missing or
+  // misnamed in Cloudflare, the HMAC key would be the string "undefined" and
+  // anyone could forge a working link. Refuse rather than validate weakly.
+  if (!env.DOWNLOAD_SIGNING_SECRET) {
+    console.error("download: DOWNLOAD_SIGNING_SECRET is not configured");
+    return new Response(
+      "The download is temporarily unavailable. Please contact us and we'll send your book.",
+      { status: 500 }
+    );
+  }
   const expected = await hmacHex(env.DOWNLOAD_SIGNING_SECRET, String(expiry));
   if (!timingSafeEqual(expected, token)) {
     return new Response("This download link is not valid.", { status: 403 });

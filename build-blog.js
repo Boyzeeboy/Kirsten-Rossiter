@@ -204,6 +204,53 @@ function buildHomepageInsights(posts) {
   console.log(`  built  index.html insights (${latest.length} cards)`);
 }
 
+const SITE_ORIGIN = 'https://www.kirstenrossiter.com';
+
+// Pages with no .md source. Their lastmod is maintained by hand — bump the
+// date here when you meaningfully change the page.
+const STATIC_PAGES = [
+  { path: '/building-the-nations', lastmod: '2026-07-04' },
+  { path: '/contact', lastmod: '2026-07-04' },
+  { path: '/terms', lastmod: '2026-07-04' },
+];
+
+function isoDate(dateVal) {
+  const d = new Date(dateVal);
+  const month = String(d.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(d.getUTCDate()).padStart(2, '0');
+  return `${d.getUTCFullYear()}-${month}-${day}`;
+}
+
+// sitemap.xml is generated, never hand-edited — editing it by hand is how it
+// went stale. The homepage and blog index both change whenever a post is
+// published, so their lastmod tracks the newest post.
+function buildSitemap(posts) {
+  const newest = posts.length ? isoDate(posts[0].data.date) : isoDate(Date.now());
+
+  const urls = [
+    { path: '/', lastmod: newest },
+    { path: '/blog/', lastmod: newest },
+    ...posts.map(p => ({ path: `/blog/${p.slug}`, lastmod: isoDate(p.data.date) })),
+    ...STATIC_PAGES,
+  ];
+
+  const body = urls.map(u => [
+    '  <url>',
+    `    <loc>${SITE_ORIGIN}${u.path}</loc>`,
+    `    <lastmod>${u.lastmod}</lastmod>`,
+    '  </url>',
+  ].join('\n')).join('\n');
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${body}
+</urlset>
+`;
+
+  fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), xml);
+  console.log(`  built  sitemap.xml (${urls.length} urls)`);
+}
+
 // Main
 const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md'));
 const posts = [];
@@ -238,3 +285,4 @@ fs.writeFileSync(path.join(BLOG_DIR, 'index.html'), indexHtml);
 console.log(`  built  index.html (${posts.length} posts)`);
 
 buildHomepageInsights(posts);
+buildSitemap(posts);

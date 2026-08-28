@@ -119,6 +119,16 @@ no `<priority>`. Exclude `thank-you.html` (it is `noindex`) and
 
 **Effort:** 5 min + 1 hr. **Impact:** high.
 
+**Status — 28 Aug 2026: both parts done.** The manual fix landed 23 Jul
+(`068b3f8`). The automation landed 28 Aug: `buildSitemap()` in `build-blog.js`
+now writes `sitemap.xml` from the same sorted post list that builds `/blog/` and
+the homepage cards, so a post can no longer be live and unlisted. Blog `lastmod`
+comes from frontmatter; `/` and `/blog/` track the newest post date, since both
+change on publish. The four pages with no `.md` source (`/`,
+`/building-the-nations`, `/contact`, `/terms`) sit in a hand-maintained
+`STATIC_PAGES` table — **that table is now the only part anyone edits by hand.**
+`thank-you` and `blog/_template.html` stay excluded, as specified above.
+
 ### 3. Nav and footer are invisible to crawlers
 
 `includes.js` injects the nav and footer client-side via `fetch()`. Googlebot
