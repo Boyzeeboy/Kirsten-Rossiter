@@ -1,0 +1,10 @@
+# Old WordPress URLs that still receive links, or have a page here that
+# does the same job. Everything else from the old site is a real 404 now
+# that 404.html exists; redirecting dead posts to the blog index would be
+# a soft 404 by another route. Reviewed against Search Console 12 Sep 2026.
+/about/          /#about   301
+/about           /#about   301
+/home/           /         301
+/home            /         301
+/terms-of-use/   /terms    301
+/terms-of-use    /terms    301
