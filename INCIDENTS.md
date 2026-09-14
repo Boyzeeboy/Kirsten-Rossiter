@@ -88,12 +88,16 @@ from outside.
   The package now does one job, mail, and nothing on it serves the site.
 
 ### Why monitoring missed it
-`kr-seo-health-check` reported the redirect healthy every Monday from 25 Aug on.
-It was written for the 31 Jul failure (redirect gone, WordPress served) and
-asserts on the status line and `Location` header of an `http://` fetch. An
-expired certificate does not change either. **Fix:** the check must also fetch
-`https://kirstenrossiter.com/` with certificate validation on and fail on any
-TLS error. Not yet done; tracked on ORIN-44.
+The weekly `kr-seo-health-check` was written for the 31 Jul failure (redirect
+gone, WordPress served) and asserted on the status line and `Location` header
+of an `http://` fetch, which an expired certificate does not change. Worse:
+when looked for on 14 Sep it **no longer existed** (claude.ai Scheduled empty,
+not in local Codex automations), so for some part of the period since July
+there was no check running at all. **Fix, same day:** PR #28,
+`scripts/health-check.sh` and the `Live health check` GitHub Actions workflow,
+Mondays 07:30 UTC, fetching the apex over https with TLS validation on and
+requiring both certificates to have more than 14 days left. Versioned here,
+first run green 16:45 UTC.
 
 ### Rollback, if needed
 `DNS-BASELINE-2026-09-14.md` is the Xneelo zone as it stood before the change.

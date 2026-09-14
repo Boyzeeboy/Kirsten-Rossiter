@@ -324,9 +324,13 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
   (`.github/workflows/health-check.yml`, `scripts/health-check.sh`) checks the
   apex redirect with TLS validation, certificate expiry on both hostnames,
   homepage content, robots, sitemap, a real 404, and the mail records. A failed
-  run emails the repo owner. Replaced the claude.ai scheduled task
-  `kr-seo-health-check` on 14 Sep 2026 after it missed an expired certificate
-  for twenty days (INCIDENTS.md); switch that task off once this has run green.
+  run emails the repo owner. Replaces the `kr-seo-health-check` scheduled task
+  recorded here since July. When checked on 14 Sep 2026 that task no longer
+  existed anywhere (claude.ai Scheduled was empty; not in the local Codex
+  automations either), so for some part of the period since July the site had
+  no monitoring at all, not only a check that could not see an expired
+  certificate (INCIDENTS.md, 2026-09-14). This workflow is the first check that
+  is versioned in the repo and provably running: first run green, 14 Sep 16:45.
 - **Visual regression testing — considered 07 Aug 2026, deferred. The timing
   argument is the part worth keeping.**
 
