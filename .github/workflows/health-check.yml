@@ -1,0 +1,33 @@
+name: Live health check
+
+# WHY THIS EXISTS
+#
+# The apex certificate expired on 25 August 2026 and the weekly check reported
+# the site healthy for twenty days (INCIDENTS.md, 2026-09-14). That check lived
+# outside the repo, fetched through a tool with a cache (the 3 August false
+# alarm), and asserted only on an http:// redirect, which an expired certificate
+# leaves untouched. This replaces it with scripts/health-check.sh: plain curl
+# and openssl against the live hostnames, TLS validation on, cache-busters on
+# every URL, certificates required to have more than 14 days left.
+#
+# A failed run fails the workflow, and GitHub emails the repository owner about
+# failed scheduled workflows. There is no summary to misread; the job is red or
+# it is green. Run it by hand from the Actions tab (workflow_dispatch) or
+# locally with `bash scripts/health-check.sh`.
+
+on:
+  schedule:
+    # Mondays 07:30 UTC, which is 08:30 in London through the summer and
+    # 07:30 in winter. Same slot the previous check used.
+    - cron: '30 7 * * 1'
+  workflow_dispatch:
+
+jobs:
+  check:
+    name: redirects, certificates, content, mail records
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Run the live checks
+        run: bash scripts/health-check.sh
