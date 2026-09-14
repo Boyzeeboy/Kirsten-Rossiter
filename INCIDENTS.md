@@ -79,10 +79,13 @@ from outside.
   not a file on a shared host. Both previous incidents (31 Jul, this one) were
   the apex-on-Xneelo arrangement breaking; it no longer exists.
 - **Does not:** fix the certificate on `mail.kirstenrossiter.com`. Now that the
-  apex has left Xneelo, their process can never issue for the domain again, so
-  mail clients keep seeing the expired certificate until mail moves (ORIN-45
-  phase 2, Google Workspace). It has been in that state since 25 Aug regardless.
-  Phase 2 should not drift.
+  apex has left Xneelo, their process can never issue for the domain again.
+  **Decision, same day: mail stays on Xneelo.** `kirsten@` is a real mailbox
+  Kirsten uses through Xneelo webmail, which runs on Xneelo's own hostname and
+  certificate and is unaffected. The only thing the expired certificate blocks
+  is an IMAP/SMTP client pointed at `mail.kirstenrossiter.com`; none is in use.
+  If one is ever wanted, ORIN-45 (parked) has the plan to move mail off Xneelo.
+  The package now does one job, mail, and nothing on it serves the site.
 
 ### Why monitoring missed it
 `kr-seo-health-check` reported the redirect healthy every Monday from 25 Aug on.
@@ -98,8 +101,12 @@ The Xneelo zone is untouched underneath; switching the nameservers back at
 Xneelo restores it. Not expected to be needed.
 
 ### Status
-🟢 **Fixed.** Apex on a Cloudflare certificate; mail path unchanged and verified
-by DNS; mail send/receive awaiting Warren's check.
+🟢 **Fixed.** Apex on a Cloudflare certificate. Mail path unchanged, and verified
+end to end at 16:55 UTC: a contact-form submission went Resend → `webmaster@`
+on Xneelo → forwarded to Gmail, so MX, the Xneelo server and the Resend records
+all work through the moved zone. `www` served a 522 for about three minutes
+after zone activation while Cloudflare wired the proxied record to the Pages
+project; cleared on its own.
 
 ---
 
