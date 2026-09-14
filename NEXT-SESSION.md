@@ -320,8 +320,13 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
 - **~mid-Aug 2026 — Search Console Pages report.** "Crawled – currently not
   indexed" (8) should shrink now Google has recrawled with the redirect and new
   sitemap. Also review the 18 404s and redirect any that are real old blog URLs.
-- **Weekly, Mondays ~08:30** — scheduled task `kr-seo-health-check` checks
-  redirect, sitemap, robots and indexability on the live site.
+- **Weekly, Mondays 07:30 UTC** — GitHub Actions `Live health check`
+  (`.github/workflows/health-check.yml`, `scripts/health-check.sh`) checks the
+  apex redirect with TLS validation, certificate expiry on both hostnames,
+  homepage content, robots, sitemap, a real 404, and the mail records. A failed
+  run emails the repo owner. Replaced the claude.ai scheduled task
+  `kr-seo-health-check` on 14 Sep 2026 after it missed an expired certificate
+  for twenty days (INCIDENTS.md); switch that task off once this has run green.
 - **Visual regression testing — considered 07 Aug 2026, deferred. The timing
   argument is the part worth keeping.**
 
@@ -375,8 +380,10 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
 
 - **The deployed site is whatever you committed** (pending 0C). Run
   `npm run build` locally and check the diff before pushing.
-- **Never touch MX or root SPF** on `kirstenrossiter.com`. Nameservers stay at
-  Xneelo. Baseline in `DNS-BASELINE-2026-07-23.md`.
+- **Never touch MX or root SPF** on `kirstenrossiter.com`. Mail is on Xneelo by
+  decision (INCIDENTS.md, 2026-09-14). DNS is on **Cloudflare** since 14 Sep
+  2026; the apex is a proxied placeholder plus a Redirect Rule, not a Pages
+  custom domain. Baseline in `DNS-BASELINE-2026-09-14.md`.
 - **Never edit `vendor/tokens.css`** — it's generated. Change values upstream in
   the token pipeline and re-sync.
 - **The site consumes semantic tokens only** — never primitives, never
