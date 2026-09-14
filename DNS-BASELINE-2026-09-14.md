@@ -11,9 +11,20 @@ Why the move: the apex certificate Xneelo issues expired on 25 August and
 cannot be re-issued while `www` points at Cloudflare (ORIN-44). Moving DNS
 puts the apex on a Cloudflare certificate and retires the `.htaccess` redirect.
 
-## Nameservers, before
+## Nameservers
 
-`ns1.host-h.net`, `ns2.host-h.net`, `ns1.dns-h.com`, `ns2.dns-h.com`
+Before: `ns1.host-h.net`, `ns2.host-h.net`, `ns1.dns-h.com`, `ns2.dns-h.com`
+After (changed at Xneelo ~15:40 UTC, 14 Sep): `anna.ns.cloudflare.com`,
+`hank.ns.cloudflare.com`
+
+## What the Cloudflare zone holds now
+
+Everything in the tables below except the Xneelo-specific records, plus one
+addition: `A @ 192.0.2.1`, **proxied**. A reserved address that never routes;
+with the proxy on, Cloudflare answers for the apex with its own addresses, and a
+Redirect Rule (`https://kirstenrossiter.com/*` → 301 →
+`https://www.kirstenrossiter.com/${1}`) sends everything to www. Always Use
+HTTPS is on. The apex is a redirect-only hostname with no origin.
 
 ## Mail: carried to Cloudflare byte-identical (phase 1), replaced by Google in phase 2
 
@@ -45,7 +56,7 @@ the `send.` sending subdomain. Not `send`.
 
 | Type | Host | Value | After the move |
 |---|---|---|---|
-| A | `@` | `129.232.138.188` | **not recreated**; becomes CNAME to `kirsten-rossiter.pages.dev` via CNAME flattening, with a Cloudflare redirect rule to www |
+| A | `@` | `129.232.138.188` | **not recreated**; replaced by the proxied placeholder `A 192.0.2.1` plus the redirect rule, above |
 | CNAME | `www` | `kirsten-rossiter.pages.dev.` | unchanged |
 
 ## Other, carried

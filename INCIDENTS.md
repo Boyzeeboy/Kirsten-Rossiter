@@ -5,6 +5,104 @@ Detected by the weekly `kr-seo-health-check` scheduled task unless noted.
 
 ---
 
+## 2026-09-14 — Apex certificate expired since 25 Aug; DNS moved to Cloudflare to fix it
+
+**Severity:** High. Every visitor to `https://kirstenrossiter.com/…` got a browser
+certificate warning for twenty days. `www` was unaffected throughout, so anyone
+arriving by a www link never saw it. Mail clients connecting to
+`mail.kirstenrossiter.com` over TLS saw the same expired certificate.
+
+**Found:** Fri 12 Sep 2026, while reviewing Search Console for ORIN-26. Not
+found by the weekly check, for the reason under *Why monitoring missed it*.
+
+**Expired:** 25 Aug 2026 09:07 UTC. **Fixed:** 14 Sep 2026 15:50 UTC.
+
+### Root cause
+The apex sat on Xneelo shared hosting for one job, the 301 to www, and Xneelo's
+Let's Encrypt certificate for the package covered five names: the apex, `www`,
+`mail`, `imap` and `smtp`. `www` has pointed at Cloudflare Pages since July, so
+its HTTP-01 challenge is answered by Cloudflare, fails, and one failed name fails
+the whole renewal. Issued 27 May with www still on Xneelo; www moved in July;
+every renewal attempt since failed silently; expired 25 Aug.
+
+Not the `.htaccess`. It already excluded `/.well-known/` (the 6 Aug entry
+verified that) and the exclusion was confirmed working from outside on 12 Sep.
+The first draft of the diagnosis blamed it; the certificate's own name list
+corrected that.
+
+Xneelo support confirmed on 14 Sep that their process cannot issue with `www`
+excluded. The re-issue route was closed.
+
+### Fix
+The zone moved to Cloudflare DNS, which removes the arrangement rather than
+patching it (ORIN-45, phase 1):
+
+1. Zone created on Cloudflare, records imported from a BIND file built from the
+   authoritative Xneelo zone (`DNS-BASELINE-2026-09-14.md`), every mail record
+   copied byte-identical and set DNS-only, `www` proxied.
+2. Apex given a proxied placeholder `A 192.0.2.1` (reserved, never routes;
+   with the proxy on, Cloudflare answers with its own addresses). The apex serves
+   nothing and needs no origin.
+3. Redirect Rule: `https://kirstenrossiter.com/*` → 301 →
+   `https://www.kirstenrossiter.com/${1}`, query string preserved. **Always Use
+   HTTPS** on, so `http://` bounces to `https://` first. This replaces the
+   `.htaccess` on Xneelo, which is now unreachable and can be left to die with
+   the package.
+4. Nameservers changed at Xneelo (registrar) to `anna.ns.cloudflare.com` and
+   `hank.ns.cloudflare.com` at ~15:40 UTC. Registry delegation updated within a
+   minute. Zone activated on Cloudflare 15:46. Universal certificate issued
+   15:50.
+
+Not done: the apex was **not** added as a Pages custom domain. Pages will not
+take an apex until the zone is active, and the apex does not need to reach Pages
+at all. Placeholder-plus-rule is the simpler design.
+
+### Verified from outside, 15:50 UTC, against Cloudflare's edge
+| Check | Result |
+|---|---|
+| `https://kirstenrossiter.com/` | **301** → `https://www.kirstenrossiter.com/`, TLS valid |
+| `https://kirstenrossiter.com/blog/keep-moving-forward?x=1` | **301** → same path, query preserved |
+| `http://kirstenrossiter.com/` | **301** → `https://kirstenrossiter.com/` (then the rule) |
+| Certificate | `CN=kirstenrossiter.com`, Let's Encrypt via Cloudflare, valid to 13 Dec 2026, Cloudflare renews |
+| `MX` | `10 mail.kirstenrossiter.com.` |
+| `mail` / `imap` / `smtp` | `129.232.138.188` (Xneelo, unchanged) |
+| Xneelo SPF and DKIM | byte-identical to the 14 Sep baseline |
+| Resend `send.send` MX, SPF, DKIM | present |
+| `www` | 200, unchanged |
+
+Send/receive from Kirsten's Xneelo mailbox: Warren's to confirm; not checkable
+from outside.
+
+### What this does and does not fix
+- **Does:** the apex certificate, permanently. Cloudflare issues and renews it
+  and there is nothing on Xneelo to renew. The redirect is a dashboard rule,
+  not a file on a shared host. Both previous incidents (31 Jul, this one) were
+  the apex-on-Xneelo arrangement breaking; it no longer exists.
+- **Does not:** fix the certificate on `mail.kirstenrossiter.com`. Now that the
+  apex has left Xneelo, their process can never issue for the domain again, so
+  mail clients keep seeing the expired certificate until mail moves (ORIN-45
+  phase 2, Google Workspace). It has been in that state since 25 Aug regardless.
+  Phase 2 should not drift.
+
+### Why monitoring missed it
+`kr-seo-health-check` reported the redirect healthy every Monday from 25 Aug on.
+It was written for the 31 Jul failure (redirect gone, WordPress served) and
+asserts on the status line and `Location` header of an `http://` fetch. An
+expired certificate does not change either. **Fix:** the check must also fetch
+`https://kirstenrossiter.com/` with certificate validation on and fail on any
+TLS error. Not yet done; tracked on ORIN-44.
+
+### Rollback, if needed
+`DNS-BASELINE-2026-09-14.md` is the Xneelo zone as it stood before the change.
+The Xneelo zone is untouched underneath; switching the nameservers back at
+Xneelo restores it. Not expected to be needed.
+
+### Status
+🟢 **Fixed.** Apex on a Cloudflare certificate; mail path unchanged and verified
+by DNS; mail send/receive awaiting Warren's check.
+
+---
+
 ## 2026-08-06 — Verification: apex redirect confirmed healthy (ad-hoc, `curl`)
 
 **Severity:** None. Not an incident — a deliberate re-check of the 3 Aug finding,
