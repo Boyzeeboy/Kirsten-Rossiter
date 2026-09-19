@@ -1,16 +1,11 @@
 // static-server.mjs
 //
-// Serves the repo root the way Cloudflare Pages does, for the visual
-// regression run. Two behaviours matter and neither is what a generic file
-// server gives you:
-//
-//   - Extensionless URLs. The nav and footer link to /contact, /blog and
-//     /building-the-nations; Pages resolves those to the .html file. Without
-//     this the pages still render, but every internal link 404s and any test
-//     that follows one breaks.
-//   - Partials. includes.js fetches partials/nav.html and partials/footer.html
-//     at runtime, so the pages have to be served over http — file:// blocks
-//     the fetch and the screenshots come out headless and footerless.
+// Serves the repo root the way Cloudflare Pages does, for the Playwright
+// runs. The behaviour that matters, and that a generic file server does not
+// give you, is extensionless URLs: the nav and footer link to /contact, /blog
+// and /building-the-nations, and Pages resolves those to the .html file.
+// Without it the pages still render, but every internal link 404s and any
+// test that follows one breaks.
 //
 // No dependency: it is forty lines of node:http, which is cheaper to own than
 // a package that also brings directory listings and CORS opinions.

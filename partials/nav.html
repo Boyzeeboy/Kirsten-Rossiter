@@ -2,7 +2,9 @@
      SHARED MAIN NAVIGATION  (single source of truth — markup)
      Edit this file to update the nav markup on every page at once.
      Nav STYLING now lives in /styles.css (.site-nav, .nav-* rules).
-     Injected into each page by includes.js via <div data-include="partials/nav.html">.
+     Copied into every page by build-blog.js, between that page's
+     NAV:START and NAV:END marker comments. Edit here, then run
+     `npm run build` — never edit the copies in the pages.
      ============================================================ -->
 
 <nav class="site-nav">

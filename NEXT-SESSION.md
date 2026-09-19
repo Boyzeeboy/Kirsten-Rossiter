@@ -227,7 +227,30 @@ Correct `SETUP.md` either way.
 
 ---
 
-## Item 3 — inline nav and footer at build time
+## Item 3 — inline nav and footer at build time — ✅ DONE 19 Sep 2026 (ORIN-27)
+
+**Shipped with item 10 in the same PR.** `build-blog.js` now copies
+`partials/nav.html` and `partials/footer.html` into every page between
+`NAV:START/END` and `FOOTER:START/END` marker comments — the same pattern
+as the homepage insights block — and only ever replaces what sits between the
+markers. Generated pages get it from the template strings; `index.html`,
+`contact.html`, `building-the-nations.html` and `blog/_template.html` are
+walked in place. `includes.js` became `site.js`: beacon plus hamburger,
+bound on its own, nothing fetched. Ahrefs is gone from all 14 files and both
+templates. `contact.html` went from **0** raw internal links to 20.
+
+Proof, in order of weight: the screenshot diff was **empty** against the
+ORIN-25 baselines, with no regeneration; `tests/chrome.spec.js` now checks
+with JavaScript off that every page carries the nav and footer, that the
+hamburger opens the drawer at phone width, and that the beacon is still
+requested; the build is idempotent (a second run changes nothing).
+
+**Left as it was, on purpose:** `terms.html` and `404.html` keep their own
+older nav — no drawer, and `terms` links to a `#insights` section. Moving
+them onto the partial changes what they look like, so it is its own change
+with its own baseline update, not a rider on an invisible one.
+
+Original note, kept for the traps it lists — all three were real:
 
 Audit finding #3. Highest-value remaining SEO item. `contact.html` currently
 ships **zero** internal links in raw HTML; blog posts ship one.
@@ -406,6 +429,16 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
 ---
 
 ## Progress log
+
+**19 Sep 2026 — Nav and footer inlined at build time; Ahrefs dropped (ORIN-27,
+audit items 3 and 10).** Marker-comment pattern in `build-blog.js`; the
+partials stay the single source of truth. `includes.js` → `site.js`. The
+screenshot diff against the morning's baselines was empty, which is the whole
+reason ORIN-25 went first. One trap not in the original list: a partial's own
+header comment must not contain a literal `-->` mid-text, or the header strip
+stops early and the inlined copy carries the marker text it is matched by. The
+second build then re-inlines forever. Caught by running the build twice.
+`tests/chrome.spec.js` added for the JS-off, hamburger and beacon checks.
 
 **19 Sep 2026 — Visual regression baselined (ORIN-25), ahead of the SEO items.**
 Playwright, Chromium only, eight templates × two widths (390 and 1280), full
