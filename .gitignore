@@ -4,3 +4,11 @@
 *~
 .env
 node_modules/
+
+# Visual regression. Only the Linux baselines CI generates are committed —
+# macOS renders fonts differently, so a local run's output must not compete
+# with them. Reports and test-results are per-run artefacts.
+tests/screenshots/darwin/
+tests/screenshots/win32/
+test-results/
+playwright-report/

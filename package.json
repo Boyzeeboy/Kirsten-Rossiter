@@ -4,13 +4,16 @@
   "scripts": {
     "build": "node build-blog.js",
     "lint:tokens": "node scripts/lint-tokens.mjs",
-    "sync-tokens": "bash scripts/sync-tokens.sh && node scripts/lint-tokens.mjs"
+    "sync-tokens": "bash scripts/sync-tokens.sh && node scripts/lint-tokens.mjs",
+    "test:visual": "playwright test",
+    "test:visual:update": "playwright test --update-snapshots"
   },
   "dependencies": {
     "gray-matter": "4.0.3",
     "marked": "15.0.12"
   },
   "devDependencies": {
+    "@playwright/test": "1.63.0",
     "kirsten-rossiter-tokens": "github:Boyzeeboy/kr-token-pipeline#v2.3.0"
   }
 }
