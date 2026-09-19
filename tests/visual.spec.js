@@ -54,6 +54,14 @@ test.beforeEach(async ({ page, context }) => {
 // 19 Sep 2026 this also awaited the partial fetch in includes.js; the nav and
 // footer now ship in the HTML (ORIN-27), and the baselines did not move.
 async function settle(page) {
+  // A lazy image below the fold is never `complete` in a page that does not
+  // scroll, and a full-page capture does not scroll. Flip them to eager so
+  // the wait below can finish; the pixels are the same either way.
+  await page.evaluate(() => {
+    document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
+      img.loading = 'eager';
+    });
+  });
   await page.waitForFunction(() => Array.from(document.images).every((img) => img.complete));
   await page.evaluate(() => document.fonts.ready);
 }

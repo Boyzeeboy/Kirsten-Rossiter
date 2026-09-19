@@ -220,6 +220,11 @@ different, older site, which is worse than having no canonical at all.
 
 **Effort:** 30 min. **Impact:** high.
 
+**Status — 19 Sep 2026: done (ORIN-28).** Absolute, `www`, extensionless, on
+every indexed page; not on `thank-you` or `404`, which are `noindex`.
+`buildIndex()` now links posts extensionless, matching the homepage and the
+sitemap. `tests/head.spec.js` checks canonical = `og:url` on every page.
+
 ### 5. No Open Graph or Twitter Card tags
 
 Zero of the 10 pages have any. Shared to WhatsApp, Facebook, Instagram or X, a
@@ -245,6 +250,10 @@ cover is portrait, so consider a purpose-made landscape share image.
 
 **Effort:** 1 hr. **Impact:** high.
 
+**Status — 19 Sep 2026: done (ORIN-28).** JPEG cover, absolute `www` URLs,
+`og:image:width/height` declared. `twitter:card` is `summary` because the
+cover is portrait. A landscape share image remains the better answer; deferred.
+
 ### 6. No structured data
 
 No JSON-LD on any page. Three schema types map almost exactly onto what you
@@ -259,6 +268,11 @@ have:
   which you already have in frontmatter.
 
 **Effort:** 1–2 hrs. **Impact:** high.
+
+**Status — 19 Sep 2026: done (ORIN-28).** `Person` on `/`, `Book` on
+`/building-the-nations` (with an `Offer` from the page's own £7.99), and
+`BlogPosting` on every post from frontmatter via `jsonLd()` in
+`build-blog.js`. Every block is parsed in `tests/head.spec.js`.
 
 > **Findings #4, #5, #6 and #8 are all edits to the same `<head>` block.** For
 > the four hand-authored pages, edit the files. For the blog pages, **edit the
@@ -295,6 +309,11 @@ For `loading`: `loading="eager"` + `fetchpriority="high"` on the hero book
 cover; `loading="lazy"` on the below-fold author photo and the second cover.
 
 Alt text is already 100% covered and descriptive. Leave it.
+
+**Status — 19 Sep 2026: done (ORIN-28).** All four `<img>` tags carry their
+intrinsic `width`/`height`; the hero cover is `eager` + `fetchpriority="high"`,
+the portrait and second cover are `lazy`. Screenshot diff empty, as the CSS
+already fixed every box.
 
 ### 9. Two pages bypass the token pipeline
 

@@ -285,7 +285,28 @@ change is delivery, not markup, so an empty screenshot diff is the proof
 
 ---
 
-## Items 4, 5, 6, 8 — one `<head>` commit
+## Items 4, 5, 6, 8 — one `<head>` commit — ✅ DONE 19 Sep 2026 (ORIN-28)
+
+**One commit, as specified.** Canonical, Open Graph, Twitter Card and JSON-LD
+on every indexed page; `width`/`height` on all four `<img>` tags plus the
+loading hints; `buildIndex()` links posts extensionless like the homepage and
+the sitemap. Blog pages get it all from `build-blog.js` (`socialHead()`,
+`jsonLd()`); the four hand-authored heads carry the same tags by hand.
+`thank-you` and `404` are `noindex` and were left without canonical or share
+tags on purpose — asking to be indexed and not to be, in one `<head>`.
+
+Decisions worth keeping: `twitter:card` is `summary`, because the cover is
+portrait and `summary_large_image` would show a 2:1 strip through its middle.
+A landscape share image is still the better answer and still deferred. The
+Book's facts (£7.99, ePub, 2022, foreword) are the page's own; nothing was
+invented for the schema.
+
+Proof: the screenshot diff against the ORIN-25 baselines was **empty** with
+no regeneration; `tests/head.spec.js` now reads the served HTML and checks
+canonical = `og:url`, that every JSON-LD block parses with the expected type,
+that noindex pages carry none of it, and that `/blog/` links extensionless.
+
+Original note, kept for the spec it was built from:
 
 Do these together. Same block, same build step.
 
@@ -429,6 +450,15 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
 ---
 
 ## Progress log
+
+**19 Sep 2026 — The `<head>` commit (ORIN-28, audit items 4, 5, 6 and 8).**
+Third PR of the day after ORIN-25 and ORIN-27, each proved by an empty
+screenshot diff against the morning's baselines. One test-side change the
+lazy images forced: a `loading="lazy"` image below the fold is never
+`complete` in a page that does not scroll, and `settle()` waited on exactly
+that, so the visual spec now flips lazy images to eager before waiting. Same
+pixels, same proof. `tests/head.spec.js` added; it runs once, not per width,
+because served HTML does not vary by viewport.
 
 **19 Sep 2026 — Nav and footer inlined at build time; Ahrefs dropped (ORIN-27,
 audit items 3 and 10).** Marker-comment pattern in `build-blog.js`; the
