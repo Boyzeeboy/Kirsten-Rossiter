@@ -3,6 +3,7 @@ const path = require('path');
 const matter = require('gray-matter');
 const { Marked } = require('marked');
 
+const SITE_ORIGIN = 'https://www.kirstenrossiter.com';
 const POSTS_DIR = path.join(__dirname, 'blog', 'posts');
 const BLOG_DIR = path.join(__dirname, 'blog');
 
@@ -112,6 +113,53 @@ function inlineStaticPages() {
   }
 }
 
+// ---- <head> metadata --------------------------------------------------------
+//
+// Canonical, Open Graph, Twitter Card and JSON-LD (SEO-AUDIT.md #4, #5, #6).
+// The hand-authored pages carry the same tags written by hand; keep the two
+// in step. Canonicals are absolute, www, extensionless — the form Pages
+// serves and the sitemap already uses.
+//
+// The share image is the JPEG cover, not the WebP: scrapers are inconsistent
+// about WebP. It is portrait, so the Twitter card is `summary` (a square crop)
+// rather than `summary_large_image` (a 2:1 strip through the middle of the
+// cover). A purpose-made landscape share image would be better; deferred.
+const SITE_NAME = 'Kirsten Rossiter Prophetic Ministries';
+const AUTHOR = { '@type': 'Person', name: 'Kirsten Rossiter', url: `${SITE_ORIGIN}/` };
+const SHARE_IMAGE = {
+  url: `${SITE_ORIGIN}/building-the-nations-cover.jpg`,
+  width: 1035,
+  height: 1456,
+  alt: 'Cover of Building the Nations from the Ground Up by Kirsten Rossiter',
+};
+
+function socialHead({ url, title, description, type }) {
+  return [
+    `<link rel="canonical" href="${url}" />`,
+    `<meta property="og:site_name" content="${escapeHtml(SITE_NAME)}" />`,
+    `<meta property="og:locale" content="en_GB" />`,
+    `<meta property="og:type" content="${type}" />`,
+    `<meta property="og:url" content="${url}" />`,
+    `<meta property="og:title" content="${escapeHtml(title)}" />`,
+    `<meta property="og:description" content="${escapeHtml(description)}" />`,
+    `<meta property="og:image" content="${SHARE_IMAGE.url}" />`,
+    `<meta property="og:image:width" content="${SHARE_IMAGE.width}" />`,
+    `<meta property="og:image:height" content="${SHARE_IMAGE.height}" />`,
+    `<meta property="og:image:alt" content="${escapeHtml(SHARE_IMAGE.alt)}" />`,
+    `<meta name="twitter:card" content="summary" />`,
+    `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
+    `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
+    `<meta name="twitter:image" content="${SHARE_IMAGE.url}" />`,
+    `<meta name="twitter:image:alt" content="${escapeHtml(SHARE_IMAGE.alt)}" />`,
+  ].join('\n');
+}
+
+// `<` is escaped so no value can ever close the script element early.
+function jsonLd(data) {
+  const json = JSON.stringify(data, null, 2).replace(/</g, '\\u003c');
+  return `<script type="application/ld+json">\n${json}\n</script>`;
+}
+
 function buildPost(filePath) {
   const raw = fs.readFileSync(filePath, 'utf8');
   const { data, content } = matter(raw);
@@ -120,6 +168,8 @@ function buildPost(filePath) {
 
   const slug = path.basename(filePath, '.md');
   const displayDate = formatDate(data.date);
+  const url = `${SITE_ORIGIN}/blog/${slug}`;
+  const description = data.description || data.excerpt;
 
   isFirstParagraph = true;
   const body = marked.parse(content).trim();
@@ -130,7 +180,25 @@ function buildPost(filePath) {
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>${escapeHtml(data.title)} — Kirsten Rossiter</title>
-<meta name="description" content="${escapeHtml(data.description || data.excerpt)}" />
+<meta name="description" content="${escapeHtml(description)}" />
+${socialHead({ url, title: data.title, description, type: 'article' })}
+<meta property="article:published_time" content="${isoDate(data.date)}" />
+<meta property="article:author" content="${AUTHOR.url}" />
+${jsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  mainEntityOfPage: url,
+  url,
+  headline: data.title,
+  description,
+  articleSection: data.type,
+  datePublished: isoDate(data.date),
+  dateModified: isoDate(data.date),
+  author: AUTHOR,
+  publisher: AUTHOR,
+  image: SHARE_IMAGE.url,
+  inLanguage: 'en',
+})}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="stylesheet" href="../vendor/tokens.css" />
 <link rel="stylesheet" href="../styles.css" />
@@ -167,9 +235,11 @@ ${partialBlock('FOOTER')}
   return { slug, data, displayDate, html };
 }
 
+const BLOG_DESCRIPTION = 'Prophetic revelation, teachings, and reflections for the Bride and the nations — from Kirsten Rossiter.';
+
 function buildIndex(posts) {
   const cards = posts.map(p => {
-    return `<a class="post-row" href="/blog/${p.slug}.html">
+    return `<a class="post-row" href="/blog/${p.slug}">
 <div class="post-meta-col">
 <span class="post-type">${escapeHtml(p.data.type)}</span>
 <span class="post-date">${p.displayDate}</span>
@@ -188,7 +258,8 @@ function buildIndex(posts) {
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Prophetic Blog — Kirsten Rossiter</title>
-<meta name="description" content="Prophetic revelation, teachings, and reflections for the Bride and the nations — from Kirsten Rossiter." />
+<meta name="description" content="${escapeHtml(BLOG_DESCRIPTION)}" />
+${socialHead({ url: `${SITE_ORIGIN}/blog/`, title: 'The Prophetic Blog — Kirsten Rossiter', description: BLOG_DESCRIPTION, type: 'website' })}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="stylesheet" href="../vendor/tokens.css" />
 <link rel="stylesheet" href="../styles.css" />
@@ -272,8 +343,6 @@ function buildHomepageInsights(posts) {
   fs.writeFileSync(INDEX_PATH, html.replace(re, block));
   console.log(`  built  index.html insights (${latest.length} cards)`);
 }
-
-const SITE_ORIGIN = 'https://www.kirstenrossiter.com';
 
 // Pages with no .md source. Their lastmod is maintained by hand — bump the
 // date here when you meaningfully change the page.
