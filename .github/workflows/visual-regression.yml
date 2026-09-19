@@ -1,0 +1,112 @@
+name: Visual regression
+
+# WHY THIS EXISTS
+#
+# lint-tokens.yml proves every var() resolves and vendor/tokens.css matches the
+# pin. It cannot see a token *value* moving under a name that still resolves —
+# which is what c98ccc6 did to the body background, with a green build, for
+# weeks. Only a comparison of pictures catches that, so this is the gate.
+#
+# It also makes "visually invisible" provable. Inlining the partials, adding
+# <head> tags, putting width/height on images: each should leave every
+# screenshot byte-identical, and this job is what says so.
+#
+# BASELINES
+#
+# The committed baselines under tests/screenshots/linux/ were generated in
+# this job's container, and must always be. Chromium on macOS rasterises the
+# same fonts differently, so a baseline made on a laptop fails every run here,
+# and a baseline made here fails every run on a laptop. A local run writes to
+# tests/screenshots/darwin/, which .gitignore keeps out of the repo.
+#
+# To regenerate them — because a change was *meant* to move pixels — run this
+# workflow by hand from the Actions tab (or `gh workflow run`) on the branch in
+# question with "Regenerate baselines" ticked. It commits the new PNGs back to
+# that branch. A push made with GITHUB_TOKEN does not trigger workflows, so the
+# comparison runs again on your next push, not on the bot's.
+#
+# Review the regenerated PNGs in the PR like any other diff. A baseline update
+# is the one place a regression can be waved through, and it goes through on
+# purpose or not at all.
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      update_baselines:
+        description: 'Regenerate baselines and commit them to this branch'
+        type: boolean
+        default: false
+
+# Write is only used by the baseline-update path, and only on a manual run.
+permissions:
+  contents: write
+
+concurrency:
+  group: visual-regression-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  visual:
+    name: ${{ inputs.update_baselines && 'regenerate baselines' || 'screenshot diff' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      # kirsten-rossiter-tokens is pinned to a public GitHub tag, so no auth.
+      - name: Install dependencies
+        run: npm ci
+
+      # Chromium only — see playwright.config.js. --with-deps installs the
+      # system libraries and fonts the browser needs on a bare runner.
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Compare against baselines
+        if: ${{ !inputs.update_baselines }}
+        run: npm run test:visual
+
+      # The report carries the expected, actual and diff image for every
+      # failure, which is the whole point: look at it before deciding whether
+      # the pixels were meant to move.
+      - name: Upload report
+        if: ${{ failure() && !inputs.update_baselines }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 14
+
+      - name: Regenerate baselines
+        if: ${{ inputs.update_baselines }}
+        run: npm run test:visual:update
+
+      - name: Commit regenerated baselines
+        if: ${{ inputs.update_baselines }}
+        run: |
+          if [ -z "$(git status --porcelain tests/screenshots/linux)" ]; then
+            echo "Baselines already match the current render — nothing to commit."
+            exit 0
+          fi
+
+          echo "Regenerated:"
+          git status --short tests/screenshots/linux
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tests/screenshots/linux
+          git commit -m "test: regenerate visual regression baselines in CI"
+
+          # Someone may have pushed while we were rendering.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

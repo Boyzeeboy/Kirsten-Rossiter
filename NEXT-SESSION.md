@@ -137,7 +137,10 @@ original **by design**. Nothing to do.
 on every PR) blocks direct primitive consumption, dangling `var(--kr-*)`
 references, and new hand-written colours in `:root`. It **cannot** catch what
 happened here: `neutral-100` never stopped existing, its *value* moved. Catching
-that needs a resolved-value snapshot diffed across bumps — not built.
+that needs a resolved-value snapshot diffed across bumps — not built. What *is*
+built, since 19 Sep 2026, is the screenshot diff (`visual-regression.yml`),
+which catches the same class of change by its visible effect rather than its
+value.
 
 Original note from 26 Jul, kept for context:
 
@@ -252,7 +255,10 @@ Cloudflare is the chosen analytics now, so drop Ahrefs — you're in these exact
 files anyway.
 
 **Verify:** load a blog post with JavaScript disabled, confirm nav and footer
-links are in the HTML. Re-enable, test the hamburger at mobile width.
+links are in the HTML. Re-enable, test the hamburger at mobile width. And
+**the visual regression job must stay green with no baseline update** — this
+change is delivery, not markup, so an empty screenshot diff is the proof
+(baselined 19 Sep 2026, ORIN-25).
 
 ---
 
@@ -331,30 +337,25 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
   no monitoring at all, not only a check that could not see an expired
   certificate (INCIDENTS.md, 2026-09-14). This workflow is the first check that
   is versioned in the repo and provably running: first run green, 14 Sep 16:45.
-- **Visual regression testing — considered 07 Aug 2026, deferred. The timing
-  argument is the part worth keeping.**
+- **Visual regression testing — considered 07 Aug 2026, deferred; ✅ DONE 19
+  Sep 2026 (ORIN-25), before item 3 landed, which was the whole point.**
 
   It is the only check that catches what `c98ccc6` did: a token *value* moving
   under a name that still resolves. Nothing in `styles.css` changed and every
   reference was valid, so the lint gate would have passed it. Only something
-  comparing pictures can see it.
+  comparing pictures can see it. And items 3, 4, 5, 6 and 8 are all *meant to
+  be visually invisible*, so for each of them **an empty diff is now the proof
+  you did it right** rather than an eyeball job.
 
-  **The best moment to baseline is before item 3**, and that window closes when
-  item 3 lands. Items 3, 4, 5, 6 and 8 are all *meant to be visually invisible* —
-  inlining nav/footer changes delivery not markup, `<head>` tags render nothing,
-  and image `width`/`height` should not shift layout. So for each of them **an
-  empty diff is the proof you did it right**, which is otherwise an eyeball job.
-  Baseline afterwards and you have simply lost that.
-
-  Scope is small: seven templates (`index`, `building-the-nations`, `contact`,
-  `thank-you`, `terms`, `blog/index`, one representative post) × two widths = 14
-  screenshots. Playwright, self-hosted, baselines committed, in the existing
-  Actions setup. Roughly half a day.
-
-  Two things that will bite if skipped: baselines must be generated **inside the
-  CI container** (macOS and Linux render fonts differently, so local baselines
-  fail every run), and the 28 transition/animation declarations plus the three
-  keyframe animations need suppressing in-test or every screenshot is flaky.
+  What exists: `tests/visual.spec.js` (eight templates — the seven listed on 07
+  Aug plus the `404.html` added 14 Sep — × two widths = 16 screenshots),
+  `playwright.config.js`, `scripts/static-server.mjs` (serves extensionless
+  URLs the way Pages does), and `.github/workflows/visual-regression.yml`, which
+  runs on every PR and push to `main`. Baselines live in
+  `tests/screenshots/linux/` and are generated **only in the CI container** —
+  run the workflow by hand with "Regenerate baselines" ticked and it commits
+  them to the branch. The workflow header says why and how. Local runs write
+  to `tests/screenshots/darwin/`, which is gitignored, and are for smoke only.
 
 - **Automating the token pin bump — considered 07 Aug 2026, deferred; lower
   value, and it has a prerequisite.**
@@ -396,10 +397,28 @@ it. Add `Disallow: /blog/_template.html` to `robots.txt` if it stays.
   sync-tokens`, so a token bump is checked at the moment it lands. If no semantic
   token carries a value you need, author one upstream — do not reach past the
   layer.
+- **Every PR runs the screenshot diff** (`.github/workflows/visual-regression.yml`).
+  A red run is a question, not an obstacle: open the report, look at the diff
+  image, and decide whether the pixels were meant to move. If they were,
+  regenerate the baselines by dispatching the workflow with the box ticked —
+  never from a laptop — and review the new PNGs in the PR like any other change.
 
 ---
 
 ## Progress log
+
+**19 Sep 2026 — Visual regression baselined (ORIN-25), ahead of the SEO items.**
+Playwright, Chromium only, eight templates × two widths (390 and 1280), full
+page. What had to be handled to make it deterministic, in case any of it is
+ever removed: the partial `fetch` in `includes.js` is awaited (and the wait
+is a no-op once the partials are inlined); the homepage hero's delayed
+`fadeUp … forwards` animations are fast-forwarded to their end state, not
+switched off, which would have frozen the hero invisible; reduced motion is
+emulated so `building-the-nations` shows its scroll-reveal blocks without an
+IntersectionObserver; the clock is pinned so `thank-you.html`'s year does not
+rot; Ahrefs and the Cloudflare beacon are blocked; Google Fonts are allowed and
+awaited. Three consecutive local runs were pixel-identical. Baselines are made
+in the CI container only — see the workflow header.
 
 **28 Aug 2026 — Sitemap automated; two payment-function bugs fixed.** From a
 code review of the working tree. Three fixes:
