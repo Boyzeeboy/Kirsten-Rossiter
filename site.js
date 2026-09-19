@@ -1,21 +1,26 @@
 /* ============================================================
-   Shared-partial loader.
-   Any element with data-include="path/to/file.html" has that
-   file's contents fetched and injected. After all includes load,
-   the mobile-nav hamburger is wired up.
+   Page behaviour. Two jobs, each bound on its own:
 
-   Note: because this uses fetch(), pages must be served over
-   http(s) (your live site or a local server) — opening the HTML
-   file directly from disk (file://) will block the fetch.
+     1. the Cloudflare Web Analytics beacon
+     2. the mobile-nav hamburger
+
+   This file replaced includes.js on 19 Sep 2026. That script also
+   fetched partials/nav.html and partials/footer.html into the page
+   after load, and bound the hamburger only once those fetches had
+   resolved. The nav and footer now ship in the HTML — build-blog.js
+   copies them in between NAV/FOOTER marker comments — so there is
+   nothing to fetch, and the hamburger is bound directly against
+   markup that is already in the DOM.
    ============================================================ */
 (function () {
   /* ----------------------------------------------------------
      Analytics: Cloudflare Web Analytics (cookieless).
      Loads the beacon on every page that includes this script.
      The beacon must be created as a real <script> element — a
-     tag injected via innerHTML would not execute — so it is
-     appended here rather than placed in the footer partial.
+     tag injected via innerHTML would not execute — which is why
+     it lives here rather than in the footer partial.
      Google Analytics (GA4) was removed 24 Jul 2026.
+     Ahrefs analytics was removed 19 Sep 2026.
      ---------------------------------------------------------- */
   var CF_BEACON_TOKEN = 'b8dabd9848f044ecab21204759922b13';
 
@@ -57,26 +62,11 @@
     });
   }
 
-  function loadIncludes() {
-    var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-include]'));
-    var jobs = nodes.map(function (el) {
-      var url = el.getAttribute('data-include');
-      return fetch(url)
-        .then(function (res) {
-          if (!res.ok) throw new Error('Failed to load ' + url + ' (' + res.status + ')');
-          return res.text();
-        })
-        .then(function (html) { el.innerHTML = html; })
-        .catch(function (err) { console.error(err); });
-    });
-    Promise.all(jobs).then(initNav);
-  }
-
   loadAnalytics();
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadIncludes);
+    document.addEventListener('DOMContentLoaded', initNav);
   } else {
-    loadIncludes();
+    initNav();
   }
 })();

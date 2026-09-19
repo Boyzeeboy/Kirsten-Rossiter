@@ -2,7 +2,9 @@
      SHARED FOOTER  (single source of truth — markup)
      Edit this file to update the footer markup on every page at once.
      Footer STYLING now lives in /styles.css (.site-footer, .footer-* rules).
-     Injected into each page by includes.js via <div data-include="partials/footer.html">.
+     Copied into every page by build-blog.js, between that page's
+     FOOTER:START and FOOTER:END marker comments. Edit here, then run
+     `npm run build` — never edit the copies in the pages.
      ============================================================ -->
 
 <footer class="site-footer">

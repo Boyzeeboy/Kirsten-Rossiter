@@ -50,16 +50,10 @@ test.beforeEach(async ({ page, context }) => {
   await page.clock.setFixedTime(FIXED_TIME);
 });
 
-// The three things a page is waiting on before it is settled enough to
-// photograph. Each is written to hold true once the underlying mechanism is
-// removed, so that removing it is a no-op here rather than a broken test.
+// What a page is waiting on before it is settled enough to photograph. Until
+// 19 Sep 2026 this also awaited the partial fetch in includes.js; the nav and
+// footer now ship in the HTML (ORIN-27), and the baselines did not move.
 async function settle(page) {
-  // includes.js fills every [data-include] by fetch. When ORIN-27 inlines
-  // the partials there will be no such elements, and every() over an empty
-  // list is true.
-  await page.waitForFunction(() =>
-    Array.from(document.querySelectorAll('[data-include]')).every((el) => el.children.length > 0),
-  );
   await page.waitForFunction(() => Array.from(document.images).every((img) => img.complete));
   await page.evaluate(() => document.fonts.ready);
 }

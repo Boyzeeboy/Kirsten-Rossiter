@@ -9,7 +9,13 @@ name: Visual regression
 #
 # It also makes "visually invisible" provable. Inlining the partials, adding
 # <head> tags, putting width/height on images: each should leave every
-# screenshot byte-identical, and this job is what says so.
+# screenshot byte-identical, and this job is what says so. (The partials were
+# inlined 19 Sep 2026 and the diff was empty.)
+#
+# tests/chrome.spec.js runs in the same job: it checks that the nav and footer
+# are in the served HTML with JavaScript off, that the hamburger works, and
+# that the analytics beacon is still requested. Not pictures, but the same
+# question — did something that should be invisible break something.
 #
 # BASELINES
 #

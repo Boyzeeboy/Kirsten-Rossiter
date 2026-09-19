@@ -183,6 +183,13 @@ so the inlining step needs to walk those too.
 
 **Effort:** 1–2 hrs. **Impact:** high. Highest-value change after #1.
 
+**Status — 19 Sep 2026: done (ORIN-27).** Marker-comment pattern as prescribed
+above; `build-blog.js` walks the hand-authored pages too. All three breakage
+risks were handled and each is now a test in `tests/chrome.spec.js`. The
+screenshot diff against the same-day baselines was empty. `contact.html` now
+serves 20 internal links. `terms.html` and `404.html` keep their own nav for
+now; unifying them is visible, so it is a separate change.
+
 ### 4. No canonical tags anywhere
 
 Zero of the 10 pages have `<link rel="canonical">`. Confirmed by grep across all
@@ -315,6 +322,9 @@ likely no longer read.
 all pages (and the `build-blog.js` templates) — free performance win, one fewer
 third-party request. Sequence this **with** finding #3, since that work is
 already in these files and in `includes.js`.
+
+**Status — 19 Sep 2026: done, with #3 (ORIN-27).** Gone from all 14 files and
+both templates.
 
 ### 11. `building-the-nations.html` is thin for a commercial page
 
