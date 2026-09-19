@@ -23,7 +23,9 @@ name: Visual regression
 # workflow by hand from the Actions tab (or `gh workflow run`) on the branch in
 # question with "Regenerate baselines" ticked. It commits the new PNGs back to
 # that branch. A push made with GITHUB_TOKEN does not trigger workflows, so the
-# comparison runs again on your next push, not on the bot's.
+# comparison runs again on your next push, not on the bot's. Re-running the
+# PR's red check does not help either: a re-run checks out the merge commit
+# it originally ran against, which predates the bot's commit. Push something.
 #
 # Review the regenerated PNGs in the PR like any other diff. A baseline update
 # is the one place a regression can be waved through, and it goes through on
