@@ -1,0 +1,35 @@
+---
+title: Global Systems are Falling, Local Industries are Rising!
+type: Prophetic Insight
+date: 2021-09-29
+excerpt: As I was standing in one of our shopping malls this week, waiting for the shops to open, I clearly heard the Lord say, 'The global systems are falling! The monopolies that set the fashion and industry trends are crashing!'
+description: As I was standing in one of our shopping malls this week, waiting for the shops to open, I clearly heard the Lord say, 'The global systems are falling! The monopolies that set the fashion and industry trends are crashing!'
+draft: true
+---
+
+As I was standing in one of our shopping malls this week, waiting for the shops to open, I clearly heard the Lord say, *'The global systems are falling! The monopolies that set the fashion and industry trends are crashing! Those who use slave labour to produce products sold at high prices are coming down. They have branded their cheap goods as elite and sought-after, at the cost of the producer and the buyer - however, I am exposing their deeds and uprooting their works. **They, who were called the plunderer, will now become the plundered.***
+
+*Look and see the glory of your King as I step into the affairs of man. Do not be discouraged by what you see around you. **At the sound of their crashing, there will be a resounding, vibrating and thundering sound of praise, making way for spiritual, social and economic explosion of favour in the nations.** I am building the nations from the ground up! Local industry is about to burst forth and expand in ways never seen before. I am doing a new thing, keep your ears to My chest and hear what I am releasing in this hour.*
+
+***This new era will celebrate what is unique, original, local, individual and cultural. I am causing a new appreciation for cultural heritage, traditions and values that will brand nations afresh, woven together with Heaven's redemptive power and Kingdom identity.** Local industry will erupt with colourful streaks and splashes unique to its location and people. Incredible innovation is coming forth in this time as nations and communities start working with what's in their hands. **It's time to create and produce! It's time to manufacture and innovate!***
+
+*In this era you will look from the inside out, creating solutions for problems not solved. Across every sector in society, creativity will abound. **The old way will not be referred to anymore, nor will it have any place in society. I am doing a new thing, and what will be built in this era will carry life, not death. Blessing, not a curse. Giving, not taking. It will all revolve around stewardship and upliftment.'***
+
+As I looked at the shops, the Lord showed me a picture of local businesses. I saw fashion designers, furniture makers, and industrial designers, amongst many. I saw their unique products, and I heard the Lord say, ***'There are faithful ones who have been producing against the grain without reward and recognition. They have used their talents and skills in the place of the shadows, growing their businesses incrementally. However, I am about to transform their landscapes. As the global systems crash, their businesses will rise out of the ashes. Their work will be sought-after at the local-level, and I will cause an accelerated increase at a global-level.'*** I saw foreigners visiting, being blown away by the innovative creative production, saying, 'I am buying that to sell in my own nation!' Wholesale buyers will build the economies of foreign nations. Production will expand quickly, get ready for expansion beyond your wildest expectation! **I see bridges stretched out between nations, these are economic bridges of commerce that will uplift local industries at a global level.**
+
+**No more will a few globalist elite own monopolies that dictate business trends and growth, whilst suppressing others. The Lord is uprooting and destroying the work of the destroyer.** He is establishing the faithful ones, who have been faithful for years without reward. The Lord is bestowing His favour and blessing upon His people. I see financial streams rerouting and flooding into local businesses. **The economies of nations will be built up by its small-business sector... the very ones the enemy has been trying to snuff out.**
+
+**If you are in America, the Lord is saying, 'America first! Build and produce locally, and see how I will expand you globally.' If you are in Africa, the Lord is saying, 'Africa first! Build here, produce here, and see the wealth of the nations flow like mighty streams into our African economy.' Whatever nation you are from, make that your creed! Your nation first, produce and manufacture locally for your own people... then you will expand to the left and the right.** For the Lord is BUILDING the nations, not just offering PROVISION. **The globalist system provided butter for the bread in the midst of struggle. The local industry will build wealth and economic growth and stability in the nations. Each nation will take hold of its dominion mandate to care and steward its own. Then, once strong, will expand to be a blessing to the surrounding nations.**
+
+*'**Take courage, My faithful ones. The destroyer, with all his weapons and accusations, cannot touch you.** You are Mine and I will watch over you all your days. Your inheritance and vindication comes from Me. **That which seems to be your toughest season in the natural, is about to change in your favour. There is great resistance and a war in the spiritual realm set against My anointed ones, but know, that I am with you, fighting for you and opening up a double-door of blessing and expansion on all sides. Keep standing, keep walking, and keep decreeing. It's about to turn in your favour!'***
+
+> ***Isaiah 54:10-17 (TPT)*
+> **
+> *Even if the mountains were to crumble and the hills disappear, my heart of steadfast, faithful love will never leave you, and my covenant of peace with you will never be shaken,” says Yahweh, whose love and compassion will never give up on you.*
+>
+> *“You unhappy one, storm-tossed and troubled, I am ready to rebuild you with precious stones and embed your foundation with sapphires. I will make your towers of rubies, your gates of sparkling jewels, and all your walls of precious, delightful stones.*
+>
+> *All your children will be taught by Yahweh, and great will be their peace and prosperity. You will be established in righteousness. Oppression—be far from them! Fear—be far from them!  Yes, terror will not come near you, nor will you be afraid. If anyone dares to stir up strife against you, it is not from me! Those who challenge you will go down in defeat.*
+>
+> ***See, I am the one who created the craftsman who fans the coals into a fire and forges a weapon fit for its purpose, and I am the one who created the destroyer to destroy.
+> But I promise you, no weapon meant to hurt you will succeed, and you will refute every accusing word spoken against you. This promise is the inheritance of Yahweh’s servants, and their vindication is from me,” says Yahweh.***
