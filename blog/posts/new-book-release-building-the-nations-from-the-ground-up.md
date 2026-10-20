@@ -13,7 +13,7 @@ One of those really bigger-than-life storms prepared me for downloads and revela
 
 Little did I know, this was the beginning of my first book. It is with deep gratitude and joy that I can announce the soon launch and release of my book, *'Building the nations from the ground up'*. If you are in Cape Town, and would like to attend the launch, please pop me a mail asap as numbers are limited. It will be in Cape Town on the 26th of February from 10 am - 12 pm. Copies will be sold at the event, and will also become available on my website in March.
 
-![](blog/media/2022/01/Cover.jpg)
+![](/blog/media/2022/01/Cover.jpg)
 
 > A few glimpses from my book:
 >

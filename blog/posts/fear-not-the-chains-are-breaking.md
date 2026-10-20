@@ -22,7 +22,7 @@ https://www.youtube.com/watch?v=MyAcCzveSV4
 
 Lots of love and blessings, Kirsten
 
-[![](blog/media/2022/04/Cover-1.jpg)](https://afrikarise.co/product/building-the-nations-from-the-ground-up/)
+[![](/blog/media/2022/04/Cover-1.jpg)](https://afrikarise.co/product/building-the-nations-from-the-ground-up/)
 
 > ***Matthew 13:24-30***
 >

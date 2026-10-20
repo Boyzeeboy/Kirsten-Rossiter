@@ -123,6 +123,11 @@ function parsePost({ section, title, lines }) {
   while (bodyLines.length && bodyLines[bodyLines.length - 1].trim() === '') bodyLines.pop();
   while (bodyLines.length && bodyLines[0].trim() === '') bodyLines.shift();
 
+  // The export links the recovered images as blog/media/..., relative to the
+  // repo root. A post is served at /blog/<slug>, where that would resolve to
+  // /blog/blog/media/..., so make them root-absolute.
+  const body = bodyLines.join('\n').replace(/\]\(blog\/media\//g, '](/blog/media/');
+
   return {
     section,
     title,
@@ -130,7 +135,7 @@ function parsePost({ section, title, lines }) {
     slug: (meta['Slug'] || '').replace(/`/g, '').trim(),
     categories: (meta['Categories'] || '').split(',').map(s => s.trim()).filter(Boolean),
     excerpt,
-    body: bodyLines.join('\n'),
+    body,
   };
 }
 

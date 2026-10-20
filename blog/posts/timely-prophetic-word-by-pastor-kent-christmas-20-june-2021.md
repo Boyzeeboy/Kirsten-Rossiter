@@ -13,7 +13,7 @@ We are living in a 'Red-Sea' moment where we will witness the intervention of ou
 
 May the God of peace strengthen you with His might and fill you up with His unending, immeasurable love. He is seated on the throne and He is fully in control in the midst of the storm.
 
-[![](blog/media/2021/07/download-1024x576.jpeg)](https://www.youtube.com/watch?v=TOKZOTjpi_4)
+[![](/blog/media/2021/07/download-1024x576.jpeg)](https://www.youtube.com/watch?v=TOKZOTjpi_4)
 
 **About Kent Christmas**
 
