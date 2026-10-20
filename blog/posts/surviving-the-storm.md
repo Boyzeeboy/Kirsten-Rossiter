@@ -4,7 +4,7 @@ type: Reflection
 date: 2024-07-18
 excerpt: The Lord has foretold us that we will face an immense storm this year. Nothing could have prepared us for the intensity and heat of this storm. I hear the Lord say, 'Keep standing amid the storm.
 description: The Lord has foretold us that we will face an immense storm this year. Nothing could have prepared us for the intensity and heat of this storm. I hear the Lord say, 'Keep standing amid the storm.
-draft: true
+draft: false
 ---
 
 The Lord has foretold us that we will face an immense storm this year. Nothing could have prepared us for the intensity and heat of this storm.
