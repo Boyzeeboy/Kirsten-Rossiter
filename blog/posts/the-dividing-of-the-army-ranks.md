@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2024-05-23
 excerpt: I hear the Lord say, 'I am dividing the ranks in My army. I am rearranging the order.'
 description: I hear the Lord say, 'I am dividing the ranks in My army. I am rearranging the order.'
-draft: true
+draft: false
 ---
 
 ### Dividing of the ranks
