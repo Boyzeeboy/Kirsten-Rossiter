@@ -1,0 +1,36 @@
+---
+title: Obedience and Generosity Release His Miraculous!
+type: Prophetic Insight
+date: 2019-06-08
+excerpt: The Lord would say, 'Will you put your ears to My Chest and hear the beat of My heart? Will you listen for My instruction in the midst of your situation?
+description: The Lord would say, 'Will you put your ears to My Chest and hear the beat of My heart? Will you listen for My instruction in the midst of your situation?
+draft: true
+---
+
+The Lord would say, *'****Will you put your ears to My Chest and hear the beat of My heart? Will you listen for My instruction in the midst of your situation?*** *For I am God, and I am here, speaking Words of Life, Words of Direction, Words of Instruction, propelling you forward, breaking the barrier of circumstantial resistance and impossibilities by My Miraculous Intervention.*
+
+***Align yourself with Me.* ***Hear and obey. Wait and see what I will do in the midst of your circumstances that seem frozen, unmovable, and impossible. For as you walk by faith, according to My instruction, I will cause your circumstances to bow before you.* ***Just as I strategically aligned the widow with My purposes, so I am aligning others with My purposes for your life.***
+
+***Speak and walk as Elijah did, as one who hears, obeys and understands that I operate according to your faith.*** *I performed a miracle, not only for Elijah but also for the widow who had nothing more to lose, as she was at the end of her own supply.*
+
+***Wherever you find yourself, in the matrix of your own needs, there you are surrounded by a people whom I long to touch, heal, deliver, and save.*** *Keep your eyes fixed on Me, hear My Voice, and you will see your circumstances change before your eyes.*
+
+*Look and see what I have in store for you and those around you.* ***I am the God of Miracles, I work, and who can hinder the work of My Hands?***
+
+*Will you be My Vessel of Blessing, Favour, and Miraculous Release to others,  in the midst of your own needs?* ***For it's in that place of faith, generosity, and obedience that I step in.***
+
+***Every obstacle, every situation demanding a supernatural intervention, is set up to declare My faithfulness and goodness. If you walk, trusting Me above what you see, pleading for others, and aligning to My Will according to your prayers, faith, and deeds, you will release My Answers, My Miraculous, and My Divine Interventions in your own life, and those around you, causing a people who did not know me, to know and trust Me with all their hearts.'***
+
+> ***1 Kings 17***
+>
+> *Elijah Predicts a Drought*
+>
+> **[***1***](http://biblehub.com/1_kings/17-1.htm)***Now Elijah the Tishbite, of Tishbe***[*a*](https://biblehub.com/esv/1_kings/17.htm#footnotes)*** in Gilead, said to Ahab, “As the LORD, the God of Israel, lives, before whom I stand, there shall be neither dew nor rain these years, except by my word.” ***[***2***](http://biblehub.com/1_kings/17-2.htm)***And the word of the LORD came to him: ***[***3***](http://biblehub.com/1_kings/17-3.htm)***“Depart from here and turn eastward and hide yourself by the brook Cherith, which is east of the Jordan. ***[***4***](http://biblehub.com/1_kings/17-4.htm)***You shall drink from the brook, and I have commanded the ravens to feed you there.” ***[***5***](http://biblehub.com/1_kings/17-5.htm)***So he went and did according to the word of the LORD. He went and lived by the brook Cherith that is east of the Jordan. ***[***6***](http://biblehub.com/1_kings/17-6.htm)***And the ravens brought him bread and meat in the morning, and bread and meat in the evening, and he drank from the brook. ***[***7***](http://biblehub.com/1_kings/17-7.htm)***And after a while the brook dried up, because there was no rain in the land.*
+>
+> *The Widow of Zarephath*
+>
+> **[***8***](http://biblehub.com/1_kings/17-8.htm)***Then the word of the LORD came to him, ***[***9***](http://biblehub.com/1_kings/17-9.htm)***“Arise, go to Zarephath, which belongs to Sidon, and dwell there. Behold, I have commanded a widow there to feed you.” ***[***10***](http://biblehub.com/1_kings/17-10.htm)***So he arose and went to Zarephath. And when he came to the gate of the city, behold, a widow was there gathering sticks. And he called to her and said, “Bring me a little water in a vessel, that I may drink.” ***[***11***](http://biblehub.com/1_kings/17-11.htm)***And as she was going to bring it, he called to her and said, “Bring me a morsel of bread in your hand.” ***[***12***](http://biblehub.com/1_kings/17-12.htm)***And she said, “As the LORD your God lives, I have nothing baked, only a handful of flour in a jar and a little oil in a jug. And now I am gathering a couple of sticks that I may go in and prepare it for myself and my son, that we may eat it and die.” ***[***13***](http://biblehub.com/1_kings/17-13.htm)***And Elijah said to her, “Do not fear; go and do as you have said. But first make me a little cake of it and bring it to me, and afterward make something for yourself and your son. ***[***14***](http://biblehub.com/1_kings/17-14.htm)***For thus says the LORD, the God of Israel, ‘The jar of flour shall not be spent, and the jug of oil shall not be empty, until the day that the LORD sends rain upon the earth.’”***[***15***](http://biblehub.com/1_kings/17-15.htm)***And she went and did as Elijah said. And she and he and her household ate for many days. ***[***16***](http://biblehub.com/1_kings/17-16.htm)***The jar of flour was not spent, neither did the jug of oil become empty, according to the word of the LORD that he spoke by Elijah.*
+>
+> *Elijah Raises the Widow’s Son*
+>
+> **[***17***](http://biblehub.com/1_kings/17-17.htm)***After this the son of the woman, the mistress of the house, became ill. And his illness was so severe that there was no breath left in him. ***[***18***](http://biblehub.com/1_kings/17-18.htm)***And she said to Elijah, “What have you against me, O man of God? You have come to me to bring my sin to remembrance and to cause the death of my son!” ***[***19***](http://biblehub.com/1_kings/17-19.htm)***And he said to her, “Give me your son.” And he took him from her arms and carried him up into the upper chamber where he lodged, and laid him on his own bed. ***[***20***](http://biblehub.com/1_kings/17-20.htm)***And he cried to the LORD, “O LORD my God, have you brought calamity even upon the widow with whom I sojourn, by killing her son?” ***[***21***](http://biblehub.com/1_kings/17-21.htm)***Then he stretched himself upon the child three times and cried to the LORD, “O LORD my God, let this child’s life***[*b*](https://biblehub.com/esv/1_kings/17.htm#footnotes)*** come into him again.” ***[***22***](http://biblehub.com/1_kings/17-22.htm)***And the LORD listened to the voice of Elijah. And the life of the child came into him again, and he revived. ***[***23***](http://biblehub.com/1_kings/17-23.htm)***And Elijah took the child and brought him down from the upper chamber into the house and delivered him to his mother. And Elijah said, “See, your son lives.” ***[***24***](http://biblehub.com/1_kings/17-24.htm)***And the woman said to Elijah, “Now I know that you are a man of God, and that the word of the LORD in your mouth is truth.”*

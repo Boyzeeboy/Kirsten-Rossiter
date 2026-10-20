@@ -1,0 +1,200 @@
+---
+title: 'Prophetic Word for 2024: Year of Reward'
+type: Prophetic Insight
+date: 2023-12-31
+excerpt: This last year has been one of the Lord pulling us near Himself. He has been speaking whispers to His beloved. Whispers of love and adoration, blueprints and visions. Everything that the Lord is going to build in us, through us, and for us, will come from the place of intimacy with Him.
+description: This last year has been one of the Lord pulling us near Himself. He has been speaking whispers to His beloved. Whispers of love and adoration, blueprints and visions. Everything that the Lord is going to build in us, through us, and for us, will come from the place of intimacy with Him.
+draft: true
+---
+
+This last year has been one of the Lord pulling us near Himself. He has been speaking whispers to His beloved. Whispers of love and adoration, blueprints and visions. Everything that the Lord is going to build in us, through us, and for us, will come from the place of intimacy with Him.
+
+The heartbeat of our God will be seen and heard in all our works. The remnant is going forth as that resurrected army as described in Ezekiel 37, a new people with a new mandate for a new era.
+
+The Lord would say, *‘2024 will mark the physical manifestation of the ‘new’. My remnant have been faithful, holding on, standing strong, and keeping the faith. This next year will mark a new season upon the earth where people will see what it looks like when Almighty God involves Himself with the affairs of man. **You will see the new handiwork of the Lord take shape. The unrecognisable will become visually recognisable.***
+
+*The wicked have mocked Me as Sennacherib, king of Assyria, mocked Me in the days of old. (2 Kings 19) I will deal with them and defend your cities to save them, for My own sake and the sake of My remnant. The enemy’s boasting of all his victories, conquests and spoils will come to an abrupt end when I put My hook in his nose and My bit in his mouth, turning him back on the way he came.*
+
+*As I gave My remnant a sign in the days of Hezekiah, I will give you a sign that it is I, the Lord God Almighty, who saves, defends, and brings My people into their inheritance. That which you have laboured for, that which you have carried in your womb without delivery, will be delayed no more. You will birth My promises and eat from the land I am giving you. You will go from lack to abundance, and the soil that rendered only enough will now burst forth into more-than-enough.*
+
+***It is in the place of intimacy with My Spirit that your labour will transition into full-term delivery, accompanied by the celebration and joy that comes with it. I’m bringing My people into a place of relief and respite, and I am changing your season from labour to reward.’***
+
+**Sarahs giving birth**
+
+*'There are Sarahs upon the earth who have walked their whole lives, trusting and waiting for the release to birth My promises for their nation. They have been faithful intercessors who have endured the night season without giving up. The wait has been longer than they had imagined, and they have even made peace with the fact that they, like Moses, might see the promised land from afar, but never get to enter. **As I brought Sarah to delivery, so I will bring these Sarahs through to experience the breaking of My water in their spiritual wombs to bring forth My promises on the earth.***
+
+*These are spiritual mothers who have, in their youth, experienced and seen the outpouring and power of My Spirit. They have longed to see it again, for they know that it is only My presence and power that will change the course of their children’s lives and nations. They have seen the waywardness and the rebellion both in the nations and the church, and they know that it’s only a return to Me with wholly repentant hearts, that will bring the nations back into freedom and prophesied destiny again.*
+
+*I am going to bring them to the place of birthing, with the help of young midwives. Those who have not been made weary by the wait will come alongside them to birth My promises for their cities. Young and old must work as one, the one with purity and vigour must work with the one with mature vision and wisdom, for these two will birth together. It’s a time of transfer. **Those who laboured for decades will share with, and pass the anointing and mantle they carry to the young generation, and the Lord, Himself, will instruct them and help them walk under the weight of that call as prophetic intercessors who will shift the destinies of nations.**'*
+
+**Snowball on the mountaintop**
+
+*'I have been shaping My remnant, on the heights of My mountaintops. As a snowball gets bigger and firmer with constant adding, pressing, and shaping, I have shaped you. **Get ready to be rolled down by My hand. For that which has been shaped in secret, will become visible, and it will have tremendous speed and power when released.** I will use you to flatten obstacles and cause My momentum to reposition and relocate you, suddenly. Get ready for an adventure with Me.'*
+
+**Judges and justices**
+
+*'There are judges and justices in the nations who have been slandered, mocked, threatened, abused, accused, and controlled. They have been feeling trapped in a nightmare jungle where they can’t work out the path to the light. **I am about to make a clear path for them, in a sudden moment they will see a way of escape that needs to be taken quickly. In the same way as David stood before Goliath, and Samson stood between the pillars, these judges are standing amongst the giants, needing to act swiftly to change the course of history.** I am with them, and as I gave David a swift victory, I will give them victory in the ring that they find themselves in. Watch and pray for courageous judges and justices to take their place once again.'*
+
+**Missing puzzle pieces of truth**
+
+*'I am going to cause the missing pieces of truth to be found. My people have been kept in darkness due to lies and deception that have laid a counterfeit foundation for what is known. Get ready to hear of things unheard and things unseen. **The nations are entering a time of the Great Reveal. I am pulling the covers off the props that have been set in place to create a historical, scientific and religious narrative that is both false and untrue. The end of the string will be discovered and pulled, and with it, the missing pieces and links will be found that are necessary to build a true picture. Biblical prophecies and timelines will become illuminated with understanding and revelation-knowledge. That which the enemy used to divide My church through ignorance by the hiding of truth will now become the glue that will bring them together as one. The uncovering of truth will set the nations free and cause the prodigals to rush home.**'*
+
+**Sparks flying**
+
+*'**2024 will be a year of explosive sparks flying.** As the truth trumpets out, the enemy will continue to fight and control the nations at all costs. We will witness those who are puppets in the enemy’s hands, make spectacles of themselves, parading nakedly before the nations, unaware that their nakedness is covered no more. Their pomp and pageantry will not be esteemed anymore, but it will be abhorred as grotesque and the fame that once made them great, will now be their public shame. **The blind eyes and deaf ears of the people are being opened again and they will roar with a voice that will be heard above the raucous noise. The Lord is with His people and He is defending His nations. His army is rising!**'*
+
+**Full circle**
+
+*'As Jacob came full circle from the place of encounter to the place of inheritance, so My people will experience the completion of a full circle in their lives and even in the lives of nations. Those who have endured will inherit the promises I have made. The nations will see the goodness of the Lord in the land of Zion. **Those who were known as vagabonds will now be known as wealthy owners of land. The nations will reap from the faithfulness of My remnant who have stood in the gap for its people.'***
+
+**Batons in the field**
+
+*'I am putting a hunger in the hearts of nations to seek Me out again. Multitudes will awaken and rush to My courts. The only place where they will feel safe and secure will be My presence. It’s in that place that I will pour out My Spirit in great measure and will cause a fountain of Living Waters to reside in the cities that welcome Me in. Batons are lying on the field, waiting to be picked up by those who will release and steward My presence on the earth again. **These batons can only be carried by faithful stewards of My presence. Only those who know Me intimately and follow My lead completely will be given the authority to carry these batons. When anyone makes the baton their own and takes control of what belongs to My Spirit, I will remove the baton from them and give it to the one whom I trust with My presence and power.** Prepare yourselves for a mighty outpouring of My Spirit upon the earth and see how I connect My new move with My last move. I am lifting My finger off the pause button that I pressed when man interfered to make what is Mine, their own. My remnant, whom I have prepared and trust, will be given authority to continue the work of My Spirit once again.*
+
+*Enlarge the place of your territory. Expect the supernatural intervention of Almighty God. Expect My Visitation. As I’ve visited the earth in times gone by, so I am coming again. I am setting up a House of Worship and Prayer in the nations that will hold My glory so that it won’t be lost or be fleeting again.'*
+
+**On a personal note**
+
+I have recently read a brilliant book, [‘The Seer’](https://shop.vineyardworship.org.uk/product/seer-paperback-goll-james-w-destiny-image-inc-9780768422320) by James W. Goll. For the church to embrace and manage the fresh outpouring and manifest presence of God, we need to understand how He interacts with His Bride. Many things we regard as taboo because of counterfeit demonstrations of the authentic are the original ways that God speaks and shows Himself to us. If you want to understand the prophetic and seer anointing within the church and know how to cultivate and grow these giftings in your own life, I would highly recommend this read.
+
+Thank you for reading my prophetic blog, I hope it will continue to be a blessing and encouragement to you. May it impart what the Holy Spirit wants to impart, and activate what He wants to activate in your life.
+
+Wishing you a very blessed 2024,
+Love and blessings,
+Kirsten
+
+> ***Joel 2***
+>
+> *1 Blow a trumpet in Zion;
+> sound an alarm on my holy mountain!
+> Let all the inhabitants of the land tremble,
+> for the day of the Lord is coming; it is near,
+> 2 a day of darkness and gloom,
+> a day of clouds and thick darkness!
+> Like blackness there is spread upon the mountains
+> a great and powerful people;
+> their like has never been before,
+> nor will be again after them
+> through the years of all generations.
+> 3 Fire devours before them,
+> and behind them a flame burns.
+> The land is like the garden of Eden before them,
+> but behind them a desolate wilderness,
+> and nothing escapes them.
+> 4 Their appearance is like the appearance of horses,
+> and like war horses they run.
+> 5 As with the rumbling of chariots,
+> they leap on the tops of the mountains,
+> like the crackling of a flame of fire
+> devouring the stubble,
+> like a powerful army
+> drawn up for battle.
+> 6 Before them peoples are in anguish;
+> all faces grow pale.
+> 7 Like warriors they charge;
+> like soldiers they scale the wall.
+> They march each on his way;
+> they do not swerve from their paths.
+> 8 They do not jostle one another;
+> each marches in his path;
+> they burst through the weapons
+> and are not halted.
+> 9 They leap upon the city,
+> they run upon the walls,
+> they climb up into the houses,
+> they enter through the windows like a thief.
+> 10 The earth quakes before them;
+> the heavens tremble.
+> The sun and the moon are darkened,
+> and the stars withdraw their shining.
+> 11 The Lord utters his voice
+> before his army,
+> for his camp is exceedingly great;
+> he who executes his word is powerful.
+> For the day of the Lord is great and very awesome;
+> who can endure it?*
+>
+> ***Return to the Lord***
+>
+> *12 “Yet even now,” declares the Lord,
+> “return to me with all your heart,
+> with fasting, with weeping, and with mourning;
+> 13 and rend your hearts and not your garments.”
+> Return to the Lord your God,
+> for he is gracious and merciful,
+> slow to anger, and abounding in steadfast love;
+> and he relents over disaster.
+> 14 Who knows whether he will not turn and relent,
+> and leave a blessing behind him,
+> a grain offering and a drink offering
+> for the Lord your God?
+> 15 Blow the trumpet in Zion;
+> consecrate a fast;
+> call a solemn assembly;
+> 16 gather the people.
+> Consecrate the congregation;
+> assemble the elders;
+> gather the children,
+> even nursing infants.
+> Let the bridegroom leave his room,
+> and the bride her chamber.
+> 17 Between the vestibule and the altar
+> let the priests, the ministers of the Lord, weep
+> and say, “Spare your people, O Lord,
+> and make not your heritage a reproach,
+> a byword among the nations.
+> Why should they say among the peoples,
+> ‘Where is their God?’”*
+>
+> ***The Lord Had Pity***
+>
+> *18 Then the Lord became jealous for his land
+> and had pity on his people.
+> 19 The Lord answered and said to his people,
+> “Behold, I am sending to you
+> grain, wine, and oil,
+> and you will be satisfied;
+> and I will no more make you
+> a reproach among the nations.
+> 20 “I will remove the northerner far from you,
+> and drive him into a parched and desolate land,
+> his vanguard into the eastern sea,
+> and his rear guard into the western sea;
+> the stench and foul smell of him will rise,
+> for he has done great things.
+> 21 “Fear not, O land;
+> be glad and rejoice,
+> for the Lord has done great things!
+> 22 Fear not, you beasts of the field,
+> for the pastures of the wilderness are green;
+> the tree bears its fruit;
+> the fig tree and vine give their full yield.
+> 23 “Be glad, O children of Zion,
+> and rejoice in the Lord your God,
+> for he has given the early rain for your vindication;
+> he has poured down for you abundant rain,
+> the early and the latter rain, as before.
+> 24 “The threshing floors shall be full of grain;
+> the vats shall overflow with wine and oil.
+> 25 I will restore to you the years
+> that the swarming locust has eaten,
+> the hopper, the destroyer, and the cutter,
+> my great army, which I sent among you.
+> 26 “You shall eat in plenty and be satisfied,
+> and praise the name of the Lord your God,
+> who has dealt wondrously with you.
+> And my people shall never again be put to shame.
+> 27 You shall know that I am in the midst of Israel,
+> and that I am the Lord your God and there is none else.
+> And my people shall never again be put to shame.*
+>
+> ***The Lord Will Pour Out His Spirit***
+>
+> *28 “And it shall come to pass afterward,
+> that I will pour out my Spirit on all flesh;
+> your sons and your daughters shall prophesy,
+> your old men shall dream dreams,
+> and your young men shall see visions.
+> 29 Even on the male and female servants
+> in those days I will pour out my Spirit.
+> 30 “And I will show wonders in the heavens and on the earth, blood and fire and columns of smoke. 31 The sun shall be turned to darkness, and the moon to blood, before the great and awesome day of the Lord comes. 32 And it shall come to pass that everyone who calls on the name of the Lord shall be saved. For in Mount Zion and in Jerusalem there shall be those who escape, as the Lord has said, and among the survivors shall be those whom the Lord calls.*
