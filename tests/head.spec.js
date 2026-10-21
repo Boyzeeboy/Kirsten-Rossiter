@@ -28,7 +28,9 @@ const INDEXED = [
 
 // noindex pages must not carry a canonical or share tags: that would be
 // asking to be indexed and asking not to be in the same <head>.
-const NOINDEX = ['/thank-you', '/404.html'];
+// _template.html is a scaffold, not a post, but it ships and is fetchable
+// live, so it is held to the same rule (SEO review 21 Oct 2026).
+const NOINDEX = ['/thank-you', '/404.html', '/blog/_template.html'];
 
 const attr = (html, re) => (html.match(re) || [])[1];
 
