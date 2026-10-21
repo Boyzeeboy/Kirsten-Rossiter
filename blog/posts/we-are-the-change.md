@@ -2,6 +2,7 @@
 title: We are the Change
 type: Reflection
 date: 2020-09-04
+legacy_path: /we-are-the-change/
 excerpt: '''We are the Change'' was created to be a blessing and a gift for South Africa, to point your focus and vision on God, inspiring and encouraging you to be all God has called you to be… His salt and light, transforming the nation as you build it through faith, love, forgiveness, and unity.'
 description: '''We are the Change'' was created to be a blessing and a gift for South Africa, to point your focus and vision on God, inspiring and encouraging you to be all God has called you to be… His salt and light, transforming the nation as you build it through faith, love, forgiveness, and unity.'
 draft: false
