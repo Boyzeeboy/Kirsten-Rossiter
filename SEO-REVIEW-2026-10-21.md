@@ -236,6 +236,69 @@ it. Two things to know:
   impressions, add `legacy_path: /we-are-the-change/` to it by hand; the build
   will pick it up.
 
+### Status — the archive is published, and `/blog/` is paginated
+
+Closes recommendation 4 as well as the bulk of recommendation 1.
+
+**Pagination first, because publishing 271 posts onto a flat list would have
+made the problem before it made the content discoverable.** 20 posts a page,
+14 pages. Page 1 stays at `/blog/` so the nav, the posts' back-links and every
+inbound link keep working; later pages are `/blog/page/N`, and `/blog/page/1`
+301s to `/blog/` rather than duplicating it. Each page canonicalises to
+*itself* — canonicalising page 2 to page 1 would tell Google the posts listed
+only there are duplicates of a page that does not mention them. Every index
+page is in the sitemap with the lastmod of its newest post. The number list is
+windowed (first, last, current ± 2), so no page is more than two clicks from
+any other however long the archive gets. At a single page the output is
+byte-identical to the old flat index, so the pagination change alone moved no
+pixels.
+
+**271 of the 290 drafts are now published; 280 posts live.** The triage in
+recommendation 1 above assumed the archive was mostly thin. It is not — measured
+across the 290 drafts:
+
+| Words | Posts |
+|---|---|
+| 1,000+ | 85 |
+| 600–1,000 | 87 |
+| 400–600 | 48 |
+| 200–400 | 47 |
+| under 200 | 23 |
+
+172 of 290 are 600+ words, and the nine already-live posts span 86–1,418 words,
+so the archive is not thinner than what the site already published. "279 weak
+pages" was the wrong worry. Recommendation 3 was also overstated: only **9 image
+references exist across all 298 posts**, and 3 of them resolve to the surviving
+files in `blog/media/`, which are no longer orphaned. There was no broken-image
+problem to strip.
+
+**19 posts are held as drafts, for reasons that are not about length:**
+
+- **2 whose bodies did not survive the recovery.** One body is the literal
+  string `(no content in the database for this post)`; the other is the single
+  word "When". These would have published verbatim.
+- **15 that are other people's prophecies** — Cindy Jacobs, Chuck Pierce (×2),
+  Lana Vawser (×4), Charlie Shamp (×2), Kent Christmas, Veronika West, Dr
+  Jonathan David, Sharell Barrera, The Elijah List, and a radio interview.
+  Republishing these is a permission question before it is an SEO one, and as
+  duplicates of the originals they would not rank regardless. **This is the one
+  item here that needs a decision from Kirsten rather than from the build.**
+- **2 carrying Amazon affiliate images** (`tag=kirstenrossit-20`) that need
+  `rel="sponsored"` before they go live.
+
+Nothing is deleted. Each is one line from being published.
+
+Two WordPress numeric slugs were re-slugged — `4816-2` → `we-need-to-know-the-god-whom-we-serve`,
+`8620` → `joshua-and-caleb`. `legacy_path` makes that free: `/4816-2/` and
+`/8620/` still 301 to the new URLs. The two "My Testimony" posts (2017 and 2021)
+are different, substantial pieces that shared a title, so the year now
+disambiguates them; worth rewording editorially.
+
+**Still open, and worth a pass but not blocking:** 136 of the published archive
+posts have meta descriptions over 160 characters, and every one is identical to
+its excerpt, so Google will rewrite most snippets. 28 titles exceed 60
+characters. Both are inherited from the import's derivation, not authored.
+
 ---
 
 ## 2. MEDIUM — `blog/_template.html` is live and indexable
