@@ -289,6 +289,32 @@ it.
 `workflow_dispatch` for precisely this case — "useful if a run is ever skipped").
 One minute, no PR. Then work out how the run was missed, because it will recur.
 
+**Status — 21 Oct 2026: fixed, and the cause was not what this section guessed.**
+`Build blog` was dispatched on `main` and pushed `9f7f63a`, adding the missing
+HTML and updating `blog/index.html` and `sitemap.xml`. `main` now serves 9 post
+rows, lists the post in the sitemap, and `npm run build` on a clean checkout
+produces no diff.
+
+The run was **not skipped — it failed.** Run `39481825963` errored:
+
+```
+CONFLICT (content): Merge conflict in blog/index.html
+CONFLICT (content): Merge conflict in sitemap.xml
+error: could not apply 0523d7c... build: regenerate blog from markdown [skip ci]
+```
+
+Two edits landed close together. The first run built and pushed `1019366`; the
+second built its own regenerate commit and then tried to **rebase** it onto a
+`main` that already carried different generated output. `blog/index.html` and
+`sitemap.xml` are wholly generated, so two generations of them conflict textually
+every time. The rebase aborted and nothing was pushed.
+
+**This will recur**, and the concurrency group does not prevent it — queuing the
+runs is what creates the stale-base rebase. Generated files should never be
+rebased: the job should pull or reset to the tip first and then **re-run the
+build**, so the output is derived from the current source rather than merged with
+someone else's copy of it. Worth fixing in `build-blog.yml` as its own change.
+
 ### 9. The visual regression baselines are stale and `main` is red
 
 `blog-index` fails the screenshot diff on a **clean checkout of `origin/main`**
@@ -306,6 +332,19 @@ baselines used by CI are almost certainly stale the same way — meaning
 `update_baselines: true` on `main` to recapture. Do it in that order — rebaselining
 before the output is correct would bake the stale page in, which is the exact
 failure the workflow's own header warns about.
+
+**Status — 21 Oct 2026: fixed, in that order.** `Build blog` first (finding 8),
+then `visual-regression` with `update_baselines: true` on `main`, which pushed
+`8105510`. It changed **exactly two files** — `linux/desktop/blog-index.png` and
+`linux/mobile/blog-index.png` — and nothing else, which is the useful signal: no
+other page had drifted, so the long-red check was not masking a second
+regression.
+
+**One correction to this section:** it assumed the darwin baselines were a repo
+problem too. They are not — `tests/screenshots/darwin/` is **gitignored**
+(`.gitignore:11`), so only the linux baselines are tracked and CI only ever uses
+those. The stale darwin baseline was a purely local artifact on one machine,
+fixed by `npm run test:visual:update` and committed nowhere.
 
 ---
 
@@ -332,8 +371,9 @@ a ranking issue; logged so the token pipeline drift does not get forgotten.
 | 9 | Derive `STATIC_PAGES` `lastmod` from git | 30 min | Low |
 | 10 | Detokenised colours in `contact` / `thank-you` | 30 min | Not SEO |
 | **1b** | **301s from `/<slug>/` for the 9 published archive posts** — the republish recovers no equity without them | 1 hr | **High** |
-| 11 | Re-run `Build blog` on `main`; find out how the run was missed | 15 min | Medium |
-| 12 | Regenerate visual baselines (after 11) — `main` is currently red | 15 min | Medium |
+| ~~11~~ | ~~Re-run `Build blog` on `main`~~ — **done 21 Oct** (`9f7f63a`); cause found: a rebase conflict on generated files, not a skip | — | Medium |
+| ~~12~~ | ~~Regenerate visual baselines~~ — **done 21 Oct** (`8105510`), two files, no hidden regression | — | Medium |
+| **13** | **Stop `build-blog.yml` rebasing generated output** — re-run the build on the current tip instead; finding 8 will otherwise recur | 30 min | Medium |
 
 Items 2, 5 and 7 landed on 21 Oct. `npm run build` was re-run and the
 regenerated output is in the working tree, awaiting a commit (Cloudflare serves
