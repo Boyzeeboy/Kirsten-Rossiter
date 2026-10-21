@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-06-10
 legacy_path: /prophecy-russ-kitty-walden-8-04-2017/
 excerpt: '"Oh, South Africa! I have adorned your gates with fair colors and your foundations with precious stones.“'
-description: '"Oh, South Africa! I have adorned your gates with fair colors and your foundations with precious stones.“'
+description: 'A word for South Africa given by Russ and Kitty Walden: a kairos moment, the deeps of His Spirit opening, and new authority coming out of obscurity.'
 draft: false
 ---
 

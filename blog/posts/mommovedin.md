@@ -4,7 +4,7 @@ type: Reflection
 date: 2017-07-18
 legacy_path: /mommovedin/
 excerpt: Taking care of our elderly parents when we're still caring for our young, is a challenge we're often not prepared for, nor anticipate at that particular time. God is there with us to help us...
-description: Taking care of our elderly parents when we're still caring for our young, is a challenge we're often not prepared for, nor anticipate at that particular time. God is there with us to help us...
+description: 'A poem written when a mother moved in: the juggling, the grief of a reversed role, and the weight learnt to be passed to the shoulders of God.'
 draft: false
 ---
 

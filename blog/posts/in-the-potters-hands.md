@@ -4,7 +4,7 @@ type: Reflection
 date: 2017-05-22
 legacy_path: /in-the-potters-hands/
 excerpt: We are the lump of clay on our Heavenly Potter's wheel... being refined, moulded, shaped and beatified by Him. It is a continual process.
-description: We are the lump of clay on our Heavenly Potter's wheel... being refined, moulded, shaped and beatified by Him. It is a continual process.
+description: We are clay on the Potter's wheel, and the real test comes when things go wrong. A call to submit to the Hands that cut away and reshape us.
 draft: false
 ---
 

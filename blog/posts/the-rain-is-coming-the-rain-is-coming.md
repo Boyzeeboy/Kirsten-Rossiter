@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-04-05
 legacy_path: /the-rain-is-coming-the-rain-is-coming/
 excerpt: Just as we are about to witness a release of rain in the natural, we will see the Lord align the natural with the spiritual in the days and weeks ahead.
-description: Just as we are about to witness a release of rain in the natural, we will see the Lord align the natural with the spiritual in the days and weeks ahead.
+description: 'As rain comes in the natural, so an outpouring comes on this land: ancient wounds healed, extremes reconciled, and Sauls turned into Pauls.'
 draft: false
 ---
 

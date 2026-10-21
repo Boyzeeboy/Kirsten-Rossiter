@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-08-27
 legacy_path: /what-is-your-name/
 excerpt: What is your name? Not necessarily the name you were given at birth, but the name the Lord is calling you now.
-description: What is your name? Not necessarily the name you were given at birth, but the name the Lord is calling you now.
+description: Not the name you were given at birth, but the name He calls you now. On hearing it above the accuser's whispers, and becoming who He says you are.
 draft: false
 ---
 

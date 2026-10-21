@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-03-20
 legacy_path: /the-acdp-gods-vehicle-for-change/
 excerpt: The Lord has given me many Prophetic Words for the ACDP throughout the years, and seeing that we are drawing near the elections, I thought I would share some of the insights the Lord has been giving…
-description: The Lord has given me many Prophetic Words for the ACDP throughout the years, and seeing that we are drawing near the elections, I thought I would share some of the insights the Lord has been giving…
+description: 'Prophetic words given for the ACDP over the years: a vision of an arc in a dry valley, with multitudes walking towards it as a vehicle for change.'
 draft: false
 ---
 

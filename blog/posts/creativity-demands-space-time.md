@@ -4,7 +4,7 @@ type: Reflection
 date: 2017-11-18
 legacy_path: /creativity-demands-space-time/
 excerpt: 'Video: https://www.youtube.com/watch?v=uh8zh0W0As0 I''ve been so inspired and encouraged by this Youtube video clip of Alma Deutscher.'
-description: 'Video: https://www.youtube.com/watch?v=uh8zh0W0As0 I''ve been so inspired and encouraged by this Youtube video clip of Alma Deutscher.'
+description: 'Inspired by Alma Deutscher: creativity needs free space, time and even boredom, so guard your family''s hours against busyness and hurry.'
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-12-11
 legacy_path: /will-done-earth-heaven/
 excerpt: This is such a powerful part of The Lord's Prayer. Do you realize that God's Will is settled in Heaven?
-description: This is such a powerful part of The Lord's Prayer. Do you realize that God's Will is settled in Heaven?
+description: God's will is already settled in Heaven. On praying one line of the Lord's Prayer daily, and the limitations it pushes out of the way.
 draft: false
 ---
 

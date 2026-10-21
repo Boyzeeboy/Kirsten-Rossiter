@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-10-26
 legacy_path: /keep-moving-forward/
 excerpt: The hardest thing, in the midst of opposition, is to move past the discouragement that wants to set in and keep moving forward.
-description: The hardest thing, in the midst of opposition, is to move past the discouragement that wants to set in and keep moving forward.
+description: Discouragement is the accuser's first work, and it drains our strength. On moving past it and pressing forward when opposition sets in.
 draft: false
 ---
 

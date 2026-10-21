@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-08-06
 legacy_path: /be-outlandishly-generous/
 excerpt: God is calling us to be outlandishly generous! Do we give freely, without calculating how we can benefit?
-description: God is calling us to be outlandishly generous! Do we give freely, without calculating how we can benefit?
+description: A call to give without calculating the return, because the very heart of the Gospel is generous, and to weigh what our giving is really built on.
 draft: false
 ---
 

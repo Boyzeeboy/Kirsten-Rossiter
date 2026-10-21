@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-09-24
 legacy_path: /seek-wise-counsel/
 excerpt: When treading new ground, we need to be very selective about who we invite into our territories as advisors and counselors.
-description: When treading new ground, we need to be very selective about who we invite into our territories as advisors and counselors.
+description: Be selective about who you invite into new territory. On counsel from fathers who see cause and effect, not sons who seize the moment, as in 1 Kings 12.
 draft: false
 ---
 

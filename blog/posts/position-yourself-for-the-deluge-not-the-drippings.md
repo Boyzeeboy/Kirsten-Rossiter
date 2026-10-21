@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2022-09-19
 legacy_path: /position-yourself-for-the-deluge-not-the-drippings/
 excerpt: What you expect is what you will get. The Lord is challenging us to put out large, pliable and expandable vessels by faith, so that we can catch and hold the rain of abundance He is pouring from Heaven.
-description: What you expect is what you will get. The Lord is challenging us to put out large, pliable and expandable vessels by faith, so that we can catch and hold the rain of abundance He is pouring from Heaven.
+description: What you expect is what you will get. A call to set out large, expandable vessels for the rain of abundance, not to settle for the drippings.
 draft: false
 ---
 

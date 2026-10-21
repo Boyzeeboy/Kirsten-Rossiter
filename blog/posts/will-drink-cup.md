@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-01-11
 legacy_path: /will-drink-cup/
 excerpt: '''Will you drink from My cup?'', is a question Jesus is asking each of us today.'
-description: '''Will you drink from My cup?'', is a question Jesus is asking each of us today.'
+description: '''Will you drink from My cup?'' A Bride called to shine is also called to share His suffering, and must count the cost before she says yes.'
 draft: false
 ---
 

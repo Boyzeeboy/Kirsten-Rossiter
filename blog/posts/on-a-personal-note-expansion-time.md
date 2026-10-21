@@ -4,7 +4,7 @@ type: Reflection
 date: 2022-04-27
 legacy_path: /on-a-personal-note-expansion-time/
 excerpt: I started this blog in 2016 when I needed a platform to showcase my music. However, little did I know at the time, that this blog was the beginning of my book-writing journey.
-description: I started this blog in 2016 when I needed a platform to showcase my music. However, little did I know at the time, that this blog was the beginning of my book-writing journey.
+description: How a blog started in 2016 to showcase music became a prophetic journal, and then a first self-published book. On faithfulness in small things.
 draft: false
 ---
 

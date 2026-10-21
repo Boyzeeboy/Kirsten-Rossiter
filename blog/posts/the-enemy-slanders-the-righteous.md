@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-07-21
 legacy_path: /the-enemy-slanders-the-righteous/
 excerpt: The enemy rouses the ungodly to speak lies and false accusations against the Righteous, he uses them to devise evil plans to further their own agendas.
-description: The enemy rouses the ungodly to speak lies and false accusations against the Righteous, he uses them to devise evil plans to further their own agendas.
+description: Slanderers persecuted Christ and gossips came against David. As the Bride is elevated, she must tighten her borders and guard her heart from bitterness.
 draft: false
 ---
 

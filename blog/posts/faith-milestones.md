@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-10-13
 legacy_path: /faith-milestones/
 excerpt: Our lives are filled with opportunities to trust God for miracles - big and small. Every answered prayer and miracle performed, lays a memorial stone of remembrance of thát which God has done.
-description: Our lives are filled with opportunities to trust God for miracles - big and small. Every answered prayer and miracle performed, lays a memorial stone of remembrance of thát which God has done.
+description: Every answered prayer lays a memorial stone. The story of a lost parrot, a son's faith crisis, and the God who makes Himself known to a child.
 draft: false
 ---
 

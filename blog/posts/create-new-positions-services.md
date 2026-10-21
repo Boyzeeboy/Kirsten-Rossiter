@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-09-10
 legacy_path: /create-new-positions-services/
 excerpt: Many are feeling stuck in their lives at this present moment... unable to work out how to move forward.
-description: Many are feeling stuck in their lives at this present moment... unable to work out how to move forward.
+description: Many feel stuck. Out of His downloads of new ideas come new positions, services and products shaped around the gifting and desire He has placed in you.
 draft: false
 ---
 

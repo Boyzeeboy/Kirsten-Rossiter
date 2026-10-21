@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-09-19
 legacy_path: /its-all-about-jesus/
 excerpt: There is only one answer to our nation's problems... After going out for a 'market-meal' in our local area last week, we had a chat to the parking guy.
-description: There is only one answer to our nation's problems... After going out for a 'market-meal' in our local area last week, we had a chat to the parking guy.
+description: A conversation with a parking attendant who sings under the stars, and why no government, however good, can answer this nation's problems.
 draft: false
 ---
 

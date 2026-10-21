@@ -3,7 +3,7 @@ title: Crown of Silver and Gold
 type: Reflection
 date: 2020-06-21
 excerpt: The Old Testament is filled with prophetic words and visions that are relevant to past and future times.
-description: The Old Testament is filled with prophetic words and visions that are relevant to past and future times.
+description: 'Zechariah''s vision of the horses and chariots read for this era: His army angels sent to the four winds with judgment and victory in hand.'
 draft: false
 ---
 

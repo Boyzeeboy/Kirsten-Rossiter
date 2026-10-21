@@ -4,7 +4,7 @@ type: Teaching
 date: 2017-06-25
 legacy_path: /prophetic-visions-dreams-visitations/
 excerpt: I regard Rick Joyner as a spiritual father in the area of the prophetic.
-description: I regard Rick Joyner as a spiritual father in the area of the prophetic.
+description: 'Recommended reading on the prophetic: the Rick Joyner books on visions, dreams and visitations that shape an understanding of our times.'
 draft: false
 ---
 

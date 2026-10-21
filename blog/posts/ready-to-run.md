@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-11-03
 legacy_path: /ready-to-run/
 excerpt: Be ready to receive your mantle from Heaven!
-description: Be ready to receive your mantle from Heaven!
+description: A season of mantles being handed out. Elisha left his field the day the mantle fell on him, and we are called to wait as ready as that.
 draft: false
 ---
 

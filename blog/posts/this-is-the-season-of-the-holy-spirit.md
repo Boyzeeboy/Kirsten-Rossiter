@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-01-05
 legacy_path: /this-is-the-season-of-the-holy-spirit/
 excerpt: The Lord is about to open up His Heavens over the earth, releasing His Holy Spirit in great measure... are you ready to stand soaked under the Shower of His Manifest Presence?
-description: The Lord is about to open up His Heavens over the earth, releasing His Holy Spirit in great measure... are you ready to stand soaked under the Shower of His Manifest Presence?
+description: He is about to open the heavens and pour out His Spirit in great measure. A call to gather, in a house or a field, and wait for His visitation.
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2021-08-05
 legacy_path: /a-violent-eruption-is-coming-fear-not/
 excerpt: For a few months now, I've been hearing the words, 'eruption' and 'explosion'.
-description: For a few months now, I've been hearing the words, 'eruption' and 'explosion'.
+description: The Lord warns of an eruption that will shoot all that is hidden into the open, drawing the enemy out in his pride to be caught in his own trap.
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2022-02-25
 legacy_path: /recognise-the-war-of-distraction/
 excerpt: The enemy always draws attention to himself. He creates chaos and uproars trying to divert attention away from what God is doing, hoping that the course of events will be altered in his favour. This is his ancient tactic and we see it throughout the Word of God.
-description: The enemy always draws attention to himself. He creates chaos and uproars trying to divert attention away from what God is doing, hoping that the course of events will be altered in his favour. This is his ancient tactic and we see it throughout the Word of God.
+description: The enemy's oldest tactic is to pull our eyes off what God is doing. A dream of parted waters, and the mark of Cain laid on those who betray their own.
 draft: false
 ---
 

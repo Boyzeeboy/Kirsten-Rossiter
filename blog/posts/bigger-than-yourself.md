@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-10-21
 legacy_path: /bigger-than-yourself/
 excerpt: That which God has called us to, is so much bigger than ourselves. We tend to focus on our own lives, our own vision and our own dreams within our natural abilities... but even our biggest dreams are smaller than that which He has in store for us.
-description: That which God has called us to, is so much bigger than ourselves. We tend to focus on our own lives, our own vision and our own dreams within our natural abilities... but even our biggest dreams are smaller than that which He has in store for us.
+description: Even our biggest dreams are smaller than what He has in store. On the mantles and heavenly downloads that stretch us beyond our natural sphere.
 draft: false
 ---
 

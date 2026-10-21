@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-06-24
 legacy_path: /how-do-i-vote-as-a-christian/
 excerpt: We, as God's people, have a great responsibility before Him, when we approach the voting day.
-description: We, as God's people, have a great responsibility before Him, when we approach the voting day.
+description: Voting carries responsibility before God. On His instructions for choosing Israel's kings, and not rushing for a Saul while waiting to be shown a David.
 draft: false
 ---
 

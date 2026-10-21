@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-08-27
 legacy_path: /be-still-and-find-your-authentic-self/
 excerpt: We are most effective in everything we do, when we learn the skill of being still. It's in the quiet that we find our perspectives sharpened, able to hear God with clarity and get in touch with our authentic selves in the process.
-description: We are most effective in everything we do, when we learn the skill of being still. It's in the quiet that we find our perspectives sharpened, able to hear God with clarity and get in touch with our authentic selves in the process.
+description: 'We are most effective when we learn the skill of being still: in the quiet, comparing and striving are pulled out and our true selves are found.'
 draft: false
 ---
 

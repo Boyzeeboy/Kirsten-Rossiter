@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-03-07
 legacy_path: /the-renaissance-of-the-21st-century/
 excerpt: I keep hearing the Lord say, 'The world is entering a new Renaissance period that will be recorded in history as the greatest period of rebirthing in all areas of society.
-description: I keep hearing the Lord say, 'The world is entering a new Renaissance period that will be recorded in history as the greatest period of rebirthing in all areas of society.
+description: As the Reformation freed a society in darkness and birthed a Renaissance, so the world now enters its greatest period of rebirth in every sphere.
 draft: false
 ---
 

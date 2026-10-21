@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-06-22
 legacy_path: /how-to-walk-in-his-power/
 excerpt: I have been very aware of my own need and desire to walk in God's Power. The more I see the evil around me, the more I realize how I need God... ALL OF HIM!
-description: I have been very aware of my own need and desire to walk in God's Power. The more I see the evil around me, the more I realize how I need God... ALL OF HIM!
+description: Jesus went into the desert full of the Spirit and came out full of power. On the fasting and crucified flesh that come before a ministry of miracles.
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-03-12
 legacy_path: /war-for-the-nations/
 excerpt: There is a war going on in the spiritual realm for the nations of the earth. The enemy knows his fate, he knows his time is short, and he knows every Word spoken over the nations for this season.
-description: There is a war going on in the spiritual realm for the nations of the earth. The enemy knows his fate, he knows his time is short, and he knows every Word spoken over the nations for this season.
+description: The enemy knows his time is short and every word spoken over this season. On nations healed and established, and the Bride taking her place.
 draft: false
 ---
 

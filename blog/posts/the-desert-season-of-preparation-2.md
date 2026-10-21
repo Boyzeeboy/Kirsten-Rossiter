@@ -4,7 +4,7 @@ type: Reflection
 date: 2020-03-27
 legacy_path: /the-desert-season-of-preparation-2/
 excerpt: DESIRE LED TO SEPARATION When Jesus called his disciples, they left what they were busy with and immediately got up and followed Him where He went.
-description: DESIRE LED TO SEPARATION When Jesus called his disciples, they left what they were busy with and immediately got up and followed Him where He went.
+description: Part two, desire led to separation. The dissatisfaction He placed in the humble drew them out of church systems and into true intimacy with Him.
 draft: false
 ---
 

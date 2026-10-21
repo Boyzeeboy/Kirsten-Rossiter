@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-06-03
 legacy_path: /god-is-uniting-christians-and-jews/
 excerpt: As the spirit of the Anti-Christ increases in our modern age, so the Lord is uniting Christians and Jews to stand together. I have just read this news article at www.breakingisraelnews.
-description: As the spirit of the Anti-Christ increases in our modern age, so the Lord is uniting Christians and Jews to stand together. I have just read this news article at www.breakingisraelnews.
+description: As the anti-Christ spirit grows, the Lord draws Christians and Jews to stand together against the assault on Judeo-Christian values.
 draft: false
 ---
 

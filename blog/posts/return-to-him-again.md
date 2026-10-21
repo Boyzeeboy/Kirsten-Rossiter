@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-05-27
 legacy_path: /return-to-him-again/
 excerpt: The Lord is calling creation to return to Him again. Those who have stumbled and strayed along their way, He is calling back to Himself again.
-description: The Lord is calling creation to return to Him again. Those who have stumbled and strayed along their way, He is calling back to Himself again.
+description: 'A call for creation to return: repentance for our own sins and those of our offspring, and the Father calling every prodigal and lost sheep home.'
 draft: false
 ---
 

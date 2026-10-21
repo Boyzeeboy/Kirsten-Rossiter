@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-12-26
 legacy_path: /word-of-the-lord-for-2019/
 excerpt: Word of the Lord for 2019,
-description: Word of the Lord for 2019,
+description: 'A word for 2019: the Bride standing at His double doors, where everything is measured in twin and multiple measures, and new wine needs new wineskins.'
 draft: false
 ---
 

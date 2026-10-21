@@ -4,7 +4,7 @@ type: Reflection
 date: 2020-09-03
 legacy_path: /8620/
 excerpt: It's time for the Bride of Christ to rise up like Joshua and Caleb, with a report that says, 'Our God is strong! The giants are small! Our God has delivered them all, into our hands! This song is for Africa and the nations of the earth, to take hold of God's Promise to give you your land as an inheritance.
-description: It's time for the Bride of Christ to rise up like Joshua and Caleb, with a report that says, 'Our God is strong! The giants are small! Our God has delivered them all, into our hands! This song is for Africa and the nations of the earth, to take hold of God's Promise to give you your land as an inheritance.
+description: 'The lyrics of ''Joshua and Caleb'': a report that says our God is strong and the giants are small, sung over Africa and the nations of the earth.'
 draft: false
 ---
 

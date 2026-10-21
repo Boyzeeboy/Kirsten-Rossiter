@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-09-10
 legacy_path: /an-oasis-in-the-midst-of-the-desert/
 excerpt: '''My beautiful beloved. Do you know that even though you are standing on dry desert sand, and are surrounded by endless horizons of more sand, there is a place of bounty in this desert?'
-description: '''My beautiful beloved. Do you know that even though you are standing on dry desert sand, and are surrounded by endless horizons of more sand, there is a place of bounty in this desert?'
+description: Even on endless desert sand He has made an oasis. Come to His living pool to be renewed, and let His melody of joy be carried across the dry place.
 draft: false
 ---
 

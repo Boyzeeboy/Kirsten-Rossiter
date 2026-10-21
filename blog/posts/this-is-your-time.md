@@ -4,7 +4,7 @@ type: Reflection
 date: 2017-01-15
 legacy_path: /this-is-your-time/
 excerpt: This your time... it is your finest hour. God gave me a song for His Bride, at this opportune time.
-description: This your time... it is your finest hour. God gave me a song for His Bride, at this opportune time.
+description: 'The song ''This is your time'', given for the Bride when the world looks bleak: arise and shine, for your light has come and nations will come.'
 draft: false
 ---
 

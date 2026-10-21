@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-06-03
 legacy_path: /the-year-of-the-roar/
 excerpt: The Lord would say, 'This is the year of the Mouth, the Roar!
-description: The Lord would say, 'This is the year of the Mouth, the Roar!
+description: 'The year of the mouth and the roar: truth once muted by accusation and shame now shouted from the hilltops, and a humble call to repent.'
 draft: false
 ---
 

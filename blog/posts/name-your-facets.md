@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-08-28
 legacy_path: /name-your-facets/
 excerpt: Following from my last blog post, 'What is your Name?'
-description: Following from my last blog post, 'What is your Name?'
+description: 'A picture of a diamond: He names us as a jewel is named and cuts facets that reflect His character. A prophetic act of writing down your new name.'
 draft: false
 ---
 

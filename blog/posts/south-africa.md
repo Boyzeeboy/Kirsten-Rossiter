@@ -4,7 +4,7 @@ type: Reflection
 date: 2016-09-07
 legacy_path: /south-africa/
 excerpt: South Africa - Your beauty is a story Of colour and texture Of courage and honour We remember the ones who fought for you For freedom and for future Let us never forget the tears and blood They…
-description: South Africa - Your beauty is a story Of colour and texture Of courage and honour We remember the ones who fought for you For freedom and for future Let us never forget the tears and blood They…
+description: 'A poem for South Africa, honouring those who poured out blood for her freedom, and ending where it must: no more asking for change, we are the change.'
 draft: false
 ---
 

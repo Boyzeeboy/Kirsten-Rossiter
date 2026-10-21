@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-07-18
 legacy_path: /i-shall-build-you-a-house-says-the-lord/
 excerpt: I've had the Holy Remnant so much on my heart in the last while. The Lord has brought about a unity, humility, and camaraderie amongst His chosen ones through the suffering they have endured and the fire they've been in.
-description: I've had the Holy Remnant so much on my heart in the last while. The Lord has brought about a unity, humility, and camaraderie amongst His chosen ones through the suffering they have endured and the fire they've been in.
+description: As David was taken from the sheepfold, so the bear, the lion and the Goliath have been your training for reigning. Now He promises to build you a house.
 draft: false
 ---
 

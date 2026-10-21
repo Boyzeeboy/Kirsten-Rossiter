@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2021-09-20
 legacy_path: /break-open-the-seal-of-gods-prophetic-promises-for-now/
 excerpt: The Lord is unveiling His prophetic promises hidden in the pages of His Word. Prophetic revelation remains a mystery until the time of its appointed unveiling, and even then, it is only made visible to those who have eyes to see, ears to hear and a mind to understand.
-description: The Lord is unveiling His prophetic promises hidden in the pages of His Word. Prophetic revelation remains a mystery until the time of its appointed unveiling, and even then, it is only made visible to those who have eyes to see, ears to hear and a mind to understand.
+description: Prophetic promises stay sealed until their appointed hour. A call to delve into His Word with hunger, and to come near as His Bride to the feast.
 draft: false
 ---
 

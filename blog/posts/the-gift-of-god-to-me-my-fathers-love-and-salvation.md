@@ -3,7 +3,7 @@ title: The Gift of God to Me - My Father's Love and Salvation
 type: Reflection
 date: 2021-05-08
 excerpt: This week I have been on the fastest rollercoaster-ride of my life!
-description: This week I have been on the fastest rollercoaster-ride of my life!
+description: Praying for a father's salvation since the age of ten, the letters written when speaking was too hard, and the week God answered that long prayer.
 draft: false
 ---
 

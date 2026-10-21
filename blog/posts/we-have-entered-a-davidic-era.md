@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-05-13
 legacy_path: /we-have-entered-a-davidic-era/
 excerpt: The Lord has been speaking very clearly to me about this new era that we have entered. He is saying, 'My children, you have entered a Davidic era.
-description: The Lord has been speaking very clearly to me about this new era that we have entered. He is saying, 'My children, you have entered a Davidic era.
+description: 'An era of conquest and territories: fed by ravens in the wilderness, His remnant now moves into rich fulfilment and war with His hand on theirs.'
 draft: false
 ---
 

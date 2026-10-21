@@ -4,7 +4,7 @@ type: Reflection
 date: 2018-06-18
 legacy_path: /look-into-my-face/
 excerpt: 'Video: https://www.youtube.com/watch?v=xBCOw3i-iVg This famous, old song, ''Oh Lord, You''re Beautiful'', has ministered so much to me in the last few weeks.'
-description: 'Video: https://www.youtube.com/watch?v=xBCOw3i-iVg This famous, old song, ''Oh Lord, You''re Beautiful'', has ministered so much to me in the last few weeks.'
+description: 'An old song and a vision: the image we have made of Him shatters into pieces, and He begins to reveal His true nature as we behold Him.'
 draft: false
 ---
 

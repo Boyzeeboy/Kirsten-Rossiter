@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-11-06
 legacy_path: /substance-precedes-inheritance/
 excerpt: The Lord is faithful to all of His promises.
-description: The Lord is faithful to all of His promises.
+description: Delay is not denial. The lean years dig the deep trenches of substance, making a people who will stand and not fall when the inheritance comes.
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-03-22
 legacy_path: /preach-to-your-soul/
 excerpt: It is important that we recognize the workings of our soul, and the need to lay our lives - body, soul and spirit - before the cross daily.
-description: It is important that we recognize the workings of our soul, and the need to lay our lives - body, soul and spirit - before the cross daily.
+description: On the difference between soul and spirit, and preaching the Word to your own soul each time it errs, so that it stays submitted to His Spirit.
 draft: false
 ---
 

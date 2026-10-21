@@ -4,7 +4,7 @@ type: Reflection
 date: 2019-05-07
 legacy_path: /revival/
 excerpt: Songwriter-recording As we seek the Lord with hungry and thirsty hearts, He is going to shower His Revival Spirit upon us, His Wind, and His Fire!
-description: Songwriter-recording As we seek the Lord with hungry and thirsty hearts, He is going to shower His Revival Spirit upon us, His Wind, and His Fire!
+description: The song 'Revival Spirit', shared to be learnt and played at home or in worship bands, for those crying out, 'More of You, Lord! More of You!'
 draft: false
 ---
 

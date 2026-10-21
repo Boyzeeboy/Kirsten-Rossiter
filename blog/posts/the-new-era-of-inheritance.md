@@ -4,7 +4,7 @@ type: Reflection
 date: 2020-03-30
 legacy_path: /the-new-era-of-inheritance/
 excerpt: HOLY GROUND AT THE JORDAN https://www.youtube.com/watch?v=lEuowPQFAe4 The Lord is standing in our midst as He stood before Joshua, and He is saying, 'Behold My Holiness, behold My Glory.
-description: HOLY GROUND AT THE JORDAN https://www.youtube.com/watch?v=lEuowPQFAe4 The Lord is standing in our midst as He stood before Joshua, and He is saying, 'Behold My Holiness, behold My Glory.
+description: 'Holy ground at the Jordan: He stands in our midst as He stood before Joshua, in the midnight hour before the dawn, promising not to delay.'
 draft: false
 ---
 

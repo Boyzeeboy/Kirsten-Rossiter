@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-03-08
 legacy_path: /keywords-new-wineskin-season/
 excerpt: This season for the Bride is new in every possible way.
-description: This season for the Bride is new in every possible way.
+description: The fire of the last season burst the old wineskin. Out of a people humbled and dead to themselves, His new wine is poured into a living vessel.
 draft: false
 ---
 

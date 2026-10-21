@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-04-03
 legacy_path: /rise-up-africa-and-declare-and-decree-your-way-into-your-inheritance/
 excerpt: The Lord is trumpeting out with a loud voice, 'Rise up Africa, and declare and decree your way into your inheritance!
-description: The Lord is trumpeting out with a loud voice, 'Rise up Africa, and declare and decree your way into your inheritance!
+description: Africa is called to a higher sphere than what the natural eye beholds. He holds this continent's answers, released from the place of intimacy.
 draft: false
 ---
 

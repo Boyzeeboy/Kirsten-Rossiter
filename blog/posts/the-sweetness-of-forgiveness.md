@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-06-14
 legacy_path: /the-sweetness-of-forgiveness/
 excerpt: The story of Job, as hard as it is to read, has a powerful message for each of us.
-description: The story of Job, as hard as it is to read, has a powerful message for each of us.
+description: Job's friends judged him on the surface, and he charged God with injustice. His breakthrough began when his eyes opened to God's sovereignty.
 draft: false
 ---
 

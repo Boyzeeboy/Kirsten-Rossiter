@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2023-06-13
 legacy_path: /out-of-rest-will-come-the-reset/
 excerpt: The Lord has been speaking so much about entering the place of His rest over the last few months. I believe it is imperative for us to lean so deeply into Him in trust so that He can fill us with the assurance of His peace in the midst of the world's storm and His calm in the midst of the waves.
-description: The Lord has been speaking so much about entering the place of His rest over the last few months. I believe it is imperative for us to lean so deeply into Him in trust so that He can fill us with the assurance of His peace in the midst of the world's storm and His calm in the midst of the waves.
+description: The enemy's lies are burning down like a candle's last wax. On leaning into His rest while new foundations are laid where corrupt systems fell.
 draft: false
 ---
 

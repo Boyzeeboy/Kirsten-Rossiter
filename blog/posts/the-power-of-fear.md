@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-03-12
 legacy_path: /the-power-of-fear/
 excerpt: I was reminded yesterday of the power that fear has in our lives, when not rooted out.
-description: I was reminded yesterday of the power that fear has in our lives, when not rooted out.
+description: Fear has many disguises, and controlling our surroundings only feels like safety. The one road to freedom is complete abandonment to Christ.
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-11-04
 legacy_path: /building-the-kingdom-bears-fruit/
 excerpt: Just because something is labeled 'church', it doesn't mean that it is 'Kingdom'. In fact, we must search our hearts and ensure that we are building one kingdom only, and that is the Kingdom of God.
-description: Just because something is labeled 'church', it doesn't mean that it is 'Kingdom'. In fact, we must search our hearts and ensure that we are building one kingdom only, and that is the Kingdom of God.
+description: 'Labelled ''church'' is not the same as Kingdom. Check the fruit: are the people empowered, free and maturing, or used to build someone''s ambition?'
 draft: false
 ---
 

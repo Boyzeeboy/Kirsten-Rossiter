@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-10-09
 legacy_path: /divine-downloads-of-heavens-models/
 excerpt: Over the last year, I've had so many Divine downloads from Heaven regarding the 'New Kingdom Model', many scribbles and pictures have filled my diaries.
-description: Over the last year, I've had so many Divine downloads from Heaven regarding the 'New Kingdom Model', many scribbles and pictures have filled my diaries.
+description: 'A year of downloads about the New Kingdom Model: He gives eyes to see what is already established in Heaven, and asks us to write it and build it.'
 draft: false
 ---
 

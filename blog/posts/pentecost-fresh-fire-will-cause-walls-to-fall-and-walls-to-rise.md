@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2022-06-03
 legacy_path: /pentecost-fresh-fire-will-cause-walls-to-fall-and-walls-to-rise/
 excerpt: The Lord says, 'I know the cries of your heart, and I am coming with My Fresh Fire to refresh, renew and restore you. I am going to heal your broken hearts and recalibrate your souls so that that which traumatised you before, will have no hold on you anymore.'
-description: The Lord says, 'I know the cries of your heart, and I am coming with My Fresh Fire to refresh, renew and restore you. I am going to heal your broken hearts and recalibrate your souls so that that which traumatised you before, will have no hold on you anymore.'
+description: 'Fresh fire for a people worn down by a long desert journey: broken hearts healed, souls recalibrated, and old trauma losing its hold.'
 draft: false
 ---
 

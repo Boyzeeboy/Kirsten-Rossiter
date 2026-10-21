@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-09-11
 legacy_path: /in-spite-of-me/
 excerpt: God uses us despite our imperfections. He's looking for hearts that are bowed down before Him in full surrender, love and obedience.
-description: God uses us despite our imperfections. He's looking for hearts that are bowed down before Him in full surrender, love and obedience.
+description: God uses sticky, lumpy clay. On the ordinary, imperfect people in church history whom He used, and the qualification that comes through Christ alone.
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2021-06-14
 legacy_path: /that-which-seems-upside-down-is-being-turned-right-side-up/
 excerpt: In the natural it seems like everything is turned upside-down. The earth has never been so out of kilter as it is right now. However, it is in this very act of resistance and attack against everything right and just, that God is going to flip the world back on track.
-description: In the natural it seems like everything is turned upside-down. The earth has never been so out of kilter as it is right now. However, it is in this very act of resistance and attack against everything right and just, that God is going to flip the world back on track.
+description: The wheat and the weeds grow together until the harvest. On the rising tension between kingdoms, and the flipping of a world turned upside-down.
 draft: false
 ---
 

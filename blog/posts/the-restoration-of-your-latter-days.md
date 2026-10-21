@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-05-07
 legacy_path: /the-restoration-of-your-latter-days/
 excerpt: Get ready for the restoration of your latter days!
-description: Get ready for the restoration of your latter days!
+description: 'For those exhausted by a long season of hardship: His fresh wind on a dry soul, and a small tree becoming a deeply rooted oak that shelters others.'
 draft: false
 ---
 

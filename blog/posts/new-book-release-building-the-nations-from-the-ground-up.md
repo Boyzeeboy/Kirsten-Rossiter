@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2022-01-31
 legacy_path: /new-book-release-building-the-nations-from-the-ground-up/
 excerpt: God has such a good sense of humour! It's hard to see the purpose of our storm when we're in the thick of it. However, when we come out, we start to see the fruit that started to grow inside of us, together with the fortitude and endurance that only such a heat could produce.
-description: God has such a good sense of humour! It's hard to see the purpose of our storm when we're in the thick of it. However, when we come out, we start to see the fruit that started to grow inside of us, together with the fortitude and endurance that only such a heat could produce.
+description: Announcing 'Building the nations from the ground up', the book that grew out of two years of diaries, pictures and keywords given in the storm.
 draft: false
 ---
 

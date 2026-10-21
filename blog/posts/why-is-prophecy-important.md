@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-06-24
 legacy_path: /why-is-prophecy-important/
 excerpt: When we know the Will of God for our lives and our nation, we have the authority to stand on that Word, and war for our future.
-description: When we know the Will of God for our lives and our nation, we have the authority to stand on that Word, and war for our future.
+description: Daniel found Jeremiah's seventy years in the books and acted. On the four things he did to end a captivity, and why prophecy gives authority.
 draft: false
 ---
 

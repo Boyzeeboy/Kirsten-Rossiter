@@ -4,7 +4,7 @@ type: Reflection
 date: 2017-10-28
 legacy_path: /remember-gods-works/
 excerpt: I will Remember the Works of the Lord
-description: I will Remember the Works of the Lord
+description: 'A poem for a nation stripped bare: farmlands red and the poor shouting, yet a people who will stand and remember the works of the Lord.'
 draft: false
 ---
 

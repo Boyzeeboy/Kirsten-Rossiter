@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-07-26
 legacy_path: /4816-2/
 excerpt: We need to know the God Whom we serve. That He is Almighty and able to deliver us out of the miry clay, the vulture's claw, the hunter's net... and if we die, we die trusting God...
-description: We need to know the God Whom we serve. That He is Almighty and able to deliver us out of the miry clay, the vulture's claw, the hunter's net... and if we die, we die trusting God...
+description: Daniel and his three friends were stubborn in their faith. On trusting God in the midst of lawlessness and bad reports, even to the point of death.
 draft: false
 ---
 

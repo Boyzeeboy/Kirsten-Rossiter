@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-08-27
 legacy_path: /worldview-checks/
 excerpt: Sometimes we don't realise that the worldview we hold is polluted and influenced by modern thinking, the media, our own humanistic ideas and/or our own experiences.
-description: Sometimes we don't realise that the worldview we hold is polluted and influenced by modern thinking, the media, our own humanistic ideas and/or our own experiences.
+description: Our worldview is more polluted by media and humanistic thinking than we notice. On checking it regularly and letting Him expose the deception.
 draft: false
 ---
 

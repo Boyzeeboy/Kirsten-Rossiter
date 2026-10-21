@@ -4,7 +4,7 @@ type: Reflection
 date: 2023-11-28
 legacy_path: /my-name-is-perfect-love-who-casts-out-all-fear/
 excerpt: The Lord is saying, 'I am revealing Myself to My people in this hour of shaking, this hour of the storm. You will know Me by a new name, and you, too, will be known by a new name.'
-description: The Lord is saying, 'I am revealing Myself to My people in this hour of shaking, this hour of the storm. You will know Me by a new name, and you, too, will be known by a new name.'
+description: In the hour of the storm He makes Himself known by a new name. Those who run in fear fall into the traps; those who walk by faith block the enemy.
 draft: false
 ---
 

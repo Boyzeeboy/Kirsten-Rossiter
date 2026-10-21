@@ -4,7 +4,7 @@ type: Reflection
 date: 2018-01-30
 legacy_path: /the-lord-is-raising-up-a-holy-remnant/
 excerpt: 'Video: https://www.youtube.com/watch?v=GHX9yxZL8C8 David Wilkerson, God is training a holy remnant The Lord is raising up a holy remnant, who will be His army in the last days.'
-description: 'Video: https://www.youtube.com/watch?v=GHX9yxZL8C8 David Wilkerson, God is training a holy remnant The Lord is raising up a holy remnant, who will be His army in the last days.'
+description: 'A David Wilkerson message, and the holy remnant God has kept in every generation: a praying Bride united under His headship alone.'
 draft: false
 ---
 

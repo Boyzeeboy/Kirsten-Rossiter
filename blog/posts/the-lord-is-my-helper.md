@@ -4,7 +4,7 @@ type: Reflection
 date: 2017-07-06
 legacy_path: /the-lord-is-my-helper/
 excerpt: The Lord is My Helper
-description: The Lord is My Helper
+description: 'A poem of help at all times: He turns the hands on the clock and calls each season by name, inviting us to dive into His pools of love.'
 draft: false
 ---
 

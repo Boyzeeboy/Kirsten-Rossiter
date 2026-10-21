@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-03-27
 legacy_path: /the-desert-season-of-preparation/
 excerpt: For us to know the Lord, intimately and passionately, we must go through the fire of testing.
-description: For us to know the Lord, intimately and passionately, we must go through the fire of testing.
+description: Part one. We are saved at the cross and sanctified in the wilderness. On the fire of testing that produces patience, endurance and maturity.
 draft: false
 ---
 

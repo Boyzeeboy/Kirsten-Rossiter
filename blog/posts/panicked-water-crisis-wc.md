@@ -4,7 +4,7 @@ type: Reflection
 date: 2018-01-20
 legacy_path: /panicked-water-crisis-wc/
 excerpt: 'Video: https://www.youtube.com/watch?v=uYnUER_djVw Are you panicked about the water crisis in the Western Cape? Let your hearts be stilled as you listen to the message that the Lord is giving us.'
-description: 'Video: https://www.youtube.com/watch?v=uYnUER_djVw Are you panicked about the water crisis in the Western Cape? Let your hearts be stilled as you listen to the message that the Lord is giving us.'
+description: 'A message for the Western Cape water crisis: the rain is coming, but there is something South Africans are asked to do before Heaven releases it.'
 draft: false
 ---
 

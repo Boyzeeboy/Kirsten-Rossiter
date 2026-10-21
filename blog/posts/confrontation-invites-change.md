@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-12-04
 legacy_path: /confrontation-invites-change/
 excerpt: One of the greatest challenges as a Christian is to know when to be silent, waiting for God's vindication and intervention in a situation, and when to confront it.
-description: One of the greatest challenges as a Christian is to know when to be silent, waiting for God's vindication and intervention in a situation, and when to confront it.
+description: Knowing when to wait and when to confront. A season of confronting for the Bride, where boundaries spoken in His truth open the way for healing.
 draft: false
 ---
 

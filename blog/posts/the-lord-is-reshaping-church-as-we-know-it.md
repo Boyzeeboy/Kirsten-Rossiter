@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-07-29
 legacy_path: /the-lord-is-reshaping-church-as-we-know-it/
 excerpt: The Lord is reshaping 'Church' as we know it, and He is calling forth a company of church leaders who will become the new wineskins for the new wine.
-description: The Lord is reshaping 'Church' as we know it, and He is calling forth a company of church leaders who will become the new wineskins for the new wine.
+description: 'A call to church leaders to become the new wineskins: stepping out of the man-managed boat and letting Him be the Head of the church again.'
 draft: false
 ---
 

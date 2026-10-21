@@ -4,7 +4,7 @@ type: Reflection
 date: 2017-06-28
 legacy_path: /when-the-enemy-is-on-his-knees/
 excerpt: It's easy to love our friends, but the power of love is displayed best when we love with a higher kind of love... loving our enemy when he is weak, and on his knees.
-description: It's easy to love our friends, but the power of love is displayed best when we love with a higher kind of love... loving our enemy when he is weak, and on his knees.
+description: Love is shown best when the enemy is weak and on his knees. Lyrics from the African Bride musical, on grace given to the most undeserving.
 draft: false
 ---
 
