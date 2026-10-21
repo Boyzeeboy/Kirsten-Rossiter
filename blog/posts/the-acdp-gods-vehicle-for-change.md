@@ -5,7 +5,7 @@ date: 2019-03-20
 legacy_path: /the-acdp-gods-vehicle-for-change/
 excerpt: The Lord has given me many Prophetic Words for the ACDP throughout the years, and seeing that we are drawing near the elections, I thought I would share some of the insights the Lord has been giving…
 description: The Lord has given me many Prophetic Words for the ACDP throughout the years, and seeing that we are drawing near the elections, I thought I would share some of the insights the Lord has been giving…
-draft: true
+draft: false
 ---
 
 The Lord has given me many Prophetic Words for the [ACDP](https://www.acdp.org.za/) throughout the years, and seeing that we are drawing near the elections, I thought I would share some of the insights the Lord has been giving me.

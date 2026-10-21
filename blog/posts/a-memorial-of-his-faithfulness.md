@@ -5,7 +5,7 @@ date: 2020-05-26
 legacy_path: /a-memorial-of-his-faithfulness/
 excerpt: Our Beautiful God has shown His people such great, unfailing love. A faithful Husband, He has been, to a wife who has turned away from Him, over and over again. In His wrath He struck her, drawing her back through hardship and suffering, every time she wandered into adultery.
 description: Our Beautiful God has shown His people such great, unfailing love. A faithful Husband, He has been, to a wife who has turned away from Him, over and over again. In His wrath He struck her, drawing her back through hardship and suffering, every time she wandered into adultery.
-draft: true
+draft: false
 ---
 
 How many wounds has His Heart not gained? How many tears has He not shed? Even in His deepest affliction caused by repetitive betrayal, His Love goes further and beyond her unfaithfulness. He knows that in His shaking, many will fall, but there is a sure remnant who will come forth as gold, remaining through the shaking.

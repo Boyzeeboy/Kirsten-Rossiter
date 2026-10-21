@@ -5,7 +5,7 @@ date: 2020-08-03
 legacy_path: /your-testimony-will-become-your-teaching/
 excerpt: The Lord would say, 'In this era, many will become teachers who will raise spiritual sons and daughters. Get ready to pen down that which I have taught you by My Spirit in this last era. Write down the revelation I am unlocking and unveiling. For in this era there will be a mighty unleashing of all My Spiritual gifts upon My Holy Remnant. There will be a spectacular array of colour to show forth My Glory in this time. Teach, train and equip the new generation that will be grafted in. For many will come, they will come from afar, from the north, the south, the east and the west.
 description: The Lord would say, 'In this era, many will become teachers who will raise spiritual sons and daughters. Get ready to pen down that which I have taught you by My Spirit in this last era. Write down the revelation I am unlocking and unveiling. For in this era there will be a mighty unleashing of all My Spiritual gifts upon My Holy Remnant. There will be a spectacular array of colour to show forth My Glory in this time. Teach, train and equip the new generation that will be grafted in. For many will come, they will come from afar, from the north, the south, the east and the west.
-draft: true
+draft: false
 ---
 
 Everything is new in this era. In the place of the wilderness, survival was the focus. There you learnt My Faithfulness, there you surrendered and submitted yourself to Me. Now I am teaching you the balance between complete and utter surrender and dependability, and complete freedom and autonomy. I have brought you to a good land, can you not perceive it? It is a land that stretches without borders for it is called, '**Freedom**' and '**Conquest**'.

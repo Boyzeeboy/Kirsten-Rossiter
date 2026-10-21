@@ -5,7 +5,7 @@ date: 2018-03-22
 legacy_path: /preach-to-your-soul/
 excerpt: It is important that we recognize the workings of our soul, and the need to lay our lives - body, soul and spirit - before the cross daily.
 description: It is important that we recognize the workings of our soul, and the need to lay our lives - body, soul and spirit - before the cross daily.
-draft: true
+draft: false
 ---
 
 **It is important that we recognize the workings of our soul, and the need to lay our lives - body, soul and spirit - before the cross daily.** One of the ways to keep our soul in the right alignment, submitted to God's Spirit, is to **preach the Word of God to it** **every time we err in the wrong direction. We need ears to hear the promptings of the Holy Spirit** as He shines His Light on that which needs surrendering.

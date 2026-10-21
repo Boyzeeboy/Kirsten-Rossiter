@@ -5,7 +5,7 @@ date: 2020-03-29
 legacy_path: /the-desert-season-of-preparation-4/
 excerpt: '''Now, My child, your eyes have opened up to the things of My Spirit.'
 description: '''Now, My child, your eyes have opened up to the things of My Spirit.'
-draft: true
+draft: false
 ---
 
 **EYES OF REVELATION**

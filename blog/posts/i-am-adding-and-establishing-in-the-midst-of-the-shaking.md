@@ -5,7 +5,7 @@ date: 2020-08-15
 legacy_path: /i-am-adding-and-establishing-in-the-midst-of-the-shaking/
 excerpt: I've been hearing the Lord say, 'I'm adding to My Holy Remnant, and not taking away. As I've aligned your thoughts to Mine, regarding identity, purpose, and value – shifting you from orphan/slave to heir, so I am aligning your thoughts regarding finance and economy. For I have been preparing you to be all you are called to be, now I am aligning and shifting you to take hold of all that I've stored up for you.
 description: I've been hearing the Lord say, 'I'm adding to My Holy Remnant, and not taking away. As I've aligned your thoughts to Mine, regarding identity, purpose, and value – shifting you from orphan/slave to heir, so I am aligning your thoughts regarding finance and economy. For I have been preparing you to be all you are called to be, now I am aligning and shifting you to take hold of all that I've stored up for you.
-draft: true
+draft: false
 ---
 
 I'm calling you to think as the heir that you are. As your Father Who owns all the gold and silver, I am lifting you to a place of wild expectation. The time of restriction and smallness has passed, My beloved. Think and dream big, expect My impossible to erupt in your lives, bringing forth that which only I can.

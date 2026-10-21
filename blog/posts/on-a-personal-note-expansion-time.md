@@ -5,7 +5,7 @@ date: 2022-04-27
 legacy_path: /on-a-personal-note-expansion-time/
 excerpt: I started this blog in 2016 when I needed a platform to showcase my music. However, little did I know at the time, that this blog was the beginning of my book-writing journey.
 description: I started this blog in 2016 when I needed a platform to showcase my music. However, little did I know at the time, that this blog was the beginning of my book-writing journey.
-draft: true
+draft: false
 ---
 
 I started this blog in 2016 when I needed a platform to showcase my music. However, little did I know at the time, that this blog was the beginning of my book-writing journey. In 2018 the Lord started giving me prophetic downloads in my sleep and throughout the day. I kept a prophetic journal with me at all times, as I knew I had to pen it down the moment I received it so it wouldn't be lost.

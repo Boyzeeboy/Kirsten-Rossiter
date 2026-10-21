@@ -5,7 +5,7 @@ date: 2024-02-09
 legacy_path: /my-finger-has-pressed-the-lever-called-change/
 excerpt: The Lord is saying, 'Hold fast! Change is upon you!! Like a lever is pulled, a button is pressed, to set in motion what has been prepared, so I have pressed My finger on this button, labeled, 'Change'.
 description: The Lord is saying, 'Hold fast! Change is upon you!! Like a lever is pulled, a button is pressed, to set in motion what has been prepared, so I have pressed My finger on this button, labeled, 'Change'.
-draft: true
+draft: false
 ---
 
 **Corridor of change**

@@ -5,7 +5,7 @@ date: 2019-05-07
 legacy_path: /revival/
 excerpt: Songwriter-recording As we seek the Lord with hungry and thirsty hearts, He is going to shower His Revival Spirit upon us, His Wind, and His Fire!
 description: Songwriter-recording As we seek the Lord with hungry and thirsty hearts, He is going to shower His Revival Spirit upon us, His Wind, and His Fire!
-draft: true
+draft: false
 ---
 
 *Songwriter-recording*

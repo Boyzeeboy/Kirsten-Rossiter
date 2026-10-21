@@ -5,7 +5,7 @@ date: 2018-02-23
 legacy_path: /understanding-the-kingdom-of-god/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/02/chris-brignola-20871-unsplash-300x200.'
 description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/02/chris-brignola-20871-unsplash-300x200.'
-draft: true
+draft: false
 ---
 
 ***(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/02/chris-brignola-20871-unsplash-300x200.jpg (file not in the 2024 backup))***

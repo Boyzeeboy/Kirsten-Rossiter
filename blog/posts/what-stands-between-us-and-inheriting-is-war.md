@@ -5,7 +5,7 @@ date: 2023-10-17
 legacy_path: /what-stands-between-us-and-inheriting-is-war/
 excerpt: The Lord has promised us our inheritance, our land of promise. Just as the Israelites stood on the banks of the Jordan, looking at Canaan, they knew that the only thing that stood between them and the life of promised establishment and blessing, was war.
 description: The Lord has promised us our inheritance, our land of promise. Just as the Israelites stood on the banks of the Jordan, looking at Canaan, they knew that the only thing that stood between them and the life of promised establishment and blessing, was war.
-draft: true
+draft: false
 ---
 
 I'm reading an excellent book, *'Pearl in the Sand'* by Tessa Afshar. It is the story of Rahab, the prostitute, who hid the two spies on her rooftop before their attack on Jericho.

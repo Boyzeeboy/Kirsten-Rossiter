@@ -5,7 +5,7 @@ date: 2016-09-11
 legacy_path: /in-spite-of-me/
 excerpt: God uses us despite our imperfections. He's looking for hearts that are bowed down before Him in full surrender, love and obedience.
 description: God uses us despite our imperfections. He's looking for hearts that are bowed down before Him in full surrender, love and obedience.
-draft: true
+draft: false
 ---
 
 **God uses us despite our imperfections. He's looking for hearts that are bowed down before Him in full surrender, love and obedience. Clay that is sticky, messy and lumpy. He uses us as we are, we don't have to become fully mature and whole before our lives are used to advance the Kingdom of Heaven.**

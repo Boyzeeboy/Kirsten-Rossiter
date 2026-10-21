@@ -5,7 +5,7 @@ date: 2019-01-14
 legacy_path: /just-do-it/
 excerpt: I've been hearing the Lord say, over and over, 'just do it!' What you have on your heart to do, just do it!
 description: I've been hearing the Lord say, over and over, 'just do it!' What you have on your heart to do, just do it!
-draft: true
+draft: false
 ---
 
 I've been hearing the Lord say, over and over, ***'just do it!'*** What you have on your heart to do, just do it! Even if it's new and daunting, and you lack the experience in doing it – let it not keep you from stepping out and just doing it.

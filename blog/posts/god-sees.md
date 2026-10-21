@@ -5,7 +5,7 @@ date: 2017-06-16
 legacy_path: /god-sees/
 excerpt: There is great comfort in knowing that God sees all things, and not one wicked act done, will go unnoticed or unpunished.
 description: There is great comfort in knowing that God sees all things, and not one wicked act done, will go unnoticed or unpunished.
-draft: true
+draft: false
 ---
 
 There is great comfort in knowing that God sees all things, and not one wicked act done, will go unnoticed or unpunished. When I read how God feels about bloodshed and violence – how He hates it; and how He loves righteousness and justice, I am assured once more, that He, Who sits upon His throne, high above the earth, will judge the living and the dead.

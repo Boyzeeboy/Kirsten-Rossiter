@@ -5,7 +5,7 @@ date: 2017-06-14
 legacy_path: /the-sweetness-of-forgiveness/
 excerpt: The story of Job, as hard as it is to read, has a powerful message for each of us.
 description: The story of Job, as hard as it is to read, has a powerful message for each of us.
-draft: true
+draft: false
 ---
 
 The story of Job, as hard as it is to read, has a powerful message for each of us. When life hits us with curveballs, suffering, and hardship, we often find ourselves questioning and struggling with God, just as Job did. We feel wounded by God, and often struggle to trust Him again. We even charge Him for acting unjustly in our lives, measuring His actions by our standards.

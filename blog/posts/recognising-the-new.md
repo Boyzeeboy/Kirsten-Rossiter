@@ -4,7 +4,7 @@ type: Reflection
 date: 2023-05-23
 excerpt: Hearing about and expecting the 'new' is one thing. Recognizing it and swimming in its stream, is another thing, altogether.
 description: Hearing about and expecting the 'new' is one thing. Recognizing it and swimming in its stream, is another thing, altogether.
-draft: true
+draft: false
 ---
 
 Hearing about and expecting the 'new' is one thing. Recognizing it and swimming in its stream, is another thing, altogether.

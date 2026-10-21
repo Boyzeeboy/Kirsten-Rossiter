@@ -5,7 +5,7 @@ date: 2018-11-25
 legacy_path: /the-shaking-of-the-western-world/
 excerpt: The Lord is shaking and will continue to shake the Western World. He is calling the lands who once followed Him back to Himself.
 description: The Lord is shaking and will continue to shake the Western World. He is calling the lands who once followed Him back to Himself.
-draft: true
+draft: false
 ---
 
 **The Lord is shaking and will continue to shake the Western World.** He is calling the lands who once followed Him back to Himself. For they have fallen away, following their own ways, elevating themselves with lofty thoughts and human philosophies. The Lord looks down from Heaven, and with compassion and mercy, He stretches out His Hands to shake all that can be shaken so that a pure remnant will come forth again... **a remnant who will co-labor with Him for the healing and restoration of the nations.**

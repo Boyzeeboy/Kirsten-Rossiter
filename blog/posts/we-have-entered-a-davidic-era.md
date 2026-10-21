@@ -5,7 +5,7 @@ date: 2020-05-13
 legacy_path: /we-have-entered-a-davidic-era/
 excerpt: The Lord has been speaking very clearly to me about this new era that we have entered. He is saying, 'My children, you have entered a Davidic era.
 description: The Lord has been speaking very clearly to me about this new era that we have entered. He is saying, 'My children, you have entered a Davidic era.
-draft: true
+draft: false
 ---
 
 **AN ERA OF CONQUEST**

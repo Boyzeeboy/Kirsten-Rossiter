@@ -5,7 +5,7 @@ date: 2018-09-18
 legacy_path: /as-bright-lights-are-sent-out-new-ones-are-brought-in/
 excerpt: The Lord showed me a picture of us - His Bright Lights all across our nation.
 description: The Lord showed me a picture of us - His Bright Lights all across our nation.
-draft: true
+draft: false
 ---
 
 The Lord showed me a picture of us - His Bright Lights all across our nation. **It may seem dark right now, as the levels of corruption get exposed more and more, but in the midst of the darkness, we are shining brighter and brighter with His Glory and His Power!**

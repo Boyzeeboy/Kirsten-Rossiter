@@ -5,7 +5,7 @@ date: 2017-06-10
 legacy_path: /prophetic-song-africa-kirsten-rossiter-2016/
 excerpt: When I wrote this song, I really felt the love that Jesus has for Africa. He looks at her, and sees beauty beyond words.
 description: When I wrote this song, I really felt the love that Jesus has for Africa. He looks at her, and sees beauty beyond words.
-draft: true
+draft: false
 ---
 
 ***When I wrote this song, I really felt the love that Jesus has for Africa. He looks at her, and sees beauty beyond words. He is in awe of her, and is lifting her up out of the ashes of her past, and holding her in the palm of His hand for the whole world to see her beauty and her brightness.***

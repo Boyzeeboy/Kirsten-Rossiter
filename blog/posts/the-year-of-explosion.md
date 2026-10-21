@@ -5,7 +5,7 @@ date: 2017-12-14
 legacy_path: /the-year-of-explosion/
 excerpt: I have been hearing the Lord say, '2018 is the Year of Explosion!'
 description: I have been hearing the Lord say, '2018 is the Year of Explosion!'
-draft: true
+draft: false
 ---
 
 I have been hearing the Lord say, ***'2018 is the Year of Explosion!'*** This last year has been incredibly tough and challenging for many, but as we've been standing at the '***Threshold of the Open Door in 2017',*** **God has been revealing more of His plans for our lives, our gifting, and our call. It has also been a time of realignment and reprogramming.** For many, the flame has only been a faint flicker at times, **but God's about to blow His Breath upon that flicker, causing it to ignite into a powerful flame.**

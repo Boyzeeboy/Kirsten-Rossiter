@@ -5,7 +5,7 @@ date: 2020-10-30
 legacy_path: /as-daniel-saw-a-prophetic-alignment-in-his-time-so-we-see-the-end-of-our-captivity/
 excerpt: Just as Daniel's eyes were opened by the Holy Spirit to recognise that they have come to the end of their seventy-year period of captivity as prophesied by the prophet Jeremiah, so the Holy Spirit is opening our eyes to see that we, also, have come to the end of our captivity as Israel amongst the nations.
 description: Just as Daniel's eyes were opened by the Holy Spirit to recognise that they have come to the end of their seventy-year period of captivity as prophesied by the prophet Jeremiah, so the Holy Spirit is opening our eyes to see that we, also, have come to the end of our captivity as Israel amongst the nations.
-draft: true
+draft: false
 ---
 
 Just as Daniel's eyes were opened by the Holy Spirit to recognise that they have come to the end of their seventy-year period of captivity as prophesied by the prophet Jeremiah, so the Holy Spirit is opening our eyes to see that we, also, have come to the end of our captivity as Israel amongst the nations. Let's have a look at Daniel's account and Jeremiah's prophecy as written in Dan. 1:1,2 and Jer. 29:10-14:

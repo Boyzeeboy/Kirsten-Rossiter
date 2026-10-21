@@ -5,7 +5,7 @@ date: 2017-09-11
 legacy_path: /prayer-for-south-africa-rise-up-and-sing-out-loud/
 excerpt: As I was praying for South Africa this morning, I saw a picture of the devil trying to strangle her. He is determined to destroy her.
 description: As I was praying for South Africa this morning, I saw a picture of the devil trying to strangle her. He is determined to destroy her.
-draft: true
+draft: false
 ---
 
 As I was praying for South Africa this morning, I saw a picture of the devil trying to strangle her. He is determined to destroy her. **I felt the Lord say that he is using fear to get her into a position of passivity, giving him power over her.**

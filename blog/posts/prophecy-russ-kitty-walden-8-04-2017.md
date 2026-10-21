@@ -5,7 +5,7 @@ date: 2017-06-10
 legacy_path: /prophecy-russ-kitty-walden-8-04-2017/
 excerpt: '"Oh, South Africa! I have adorned your gates with fair colors and your foundations with precious stones.“'
 description: '"Oh, South Africa! I have adorned your gates with fair colors and your foundations with precious stones.“'
-draft: true
+draft: false
 ---
 
 > **Word for South Africa**

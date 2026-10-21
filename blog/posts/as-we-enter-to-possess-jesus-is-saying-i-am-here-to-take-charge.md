@@ -5,7 +5,7 @@ date: 2021-11-09
 legacy_path: /as-we-enter-to-possess-jesus-is-saying-i-am-here-to-take-charge/
 excerpt: Joshua's encounter with the Commander of the Armies of Heaven mirrors what the Lord is saying to us right now.
 description: Joshua's encounter with the Commander of the Armies of Heaven mirrors what the Lord is saying to us right now.
-draft: true
+draft: false
 ---
 
 Joshua's encounter with the Commander of the Armies of Heaven mirrors what the Lord is saying to us right now. They had just crossed the Jordan on dry ground, having seen the second-time miracle of the waters open by God, Himself. As the priests stepped into the Jordan, the Presence of the Lord that they carried in the Ark of the Covenant, caused the waters to part.

@@ -5,7 +5,7 @@ date: 2017-05-28
 legacy_path: /use-me-lord/
 excerpt: The Lord has heard our cry, 'Use me Lord! Let my life have purpose and meaning'. He has hidden us in the palm of His hand... He has held us close to His heart.
 description: The Lord has heard our cry, 'Use me Lord! Let my life have purpose and meaning'. He has hidden us in the palm of His hand... He has held us close to His heart.
-draft: true
+draft: false
 ---
 
 The Lord has heard our cry, *'Use me Lord! Let my life have purpose and meaning'.* He has hidden us in the palm of His hand... He has held us close to His heart. For many have prospered and run ahead of us, but the Lord has held us close, He has kept us in the shadows and the warmth of His love.

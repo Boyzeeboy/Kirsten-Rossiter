@@ -5,7 +5,7 @@ date: 2019-06-21
 legacy_path: /the-unveiling-of-his-sons-and-daughters/
 excerpt: I clearly hear the Lord say, 'This is the time of the unveiling of My sons and daughters. For I have kept you hidden deep under My Wing, I have held you tight against the Feathers of My Chest.
 description: I clearly hear the Lord say, 'This is the time of the unveiling of My sons and daughters. For I have kept you hidden deep under My Wing, I have held you tight against the Feathers of My Chest.
-draft: true
+draft: false
 ---
 
 I clearly hear the Lord say, *'**This is the time of the unveiling of My sons and daughters.** For I have kept you hidden deep under My Wing, I have held you tight against the Feathers of My Chest. For in this last season I have pulled you aside and called you close to Me. There's been a stripping, wounding, nakedness, brokenness, and desperateness that have caused a surrendered leaning on Me as never before.*

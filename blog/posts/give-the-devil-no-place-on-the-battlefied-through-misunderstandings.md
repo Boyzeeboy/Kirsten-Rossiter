@@ -5,7 +5,7 @@ date: 2019-11-07
 legacy_path: /give-the-devil-no-place-on-the-battlefied-through-misunderstandings/
 excerpt: As the mature Bride of Christ, we need to be wholly surrendered and committed to living in the Word and the Spirit, at all times.
 description: As the mature Bride of Christ, we need to be wholly surrendered and committed to living in the Word and the Spirit, at all times.
-draft: true
+draft: false
 ---
 
 As the mature Bride of Christ, we need to be wholly surrendered and committed to living in the Word and the Spirit, at all times. For in that place, we will walk in Truth, and our eyes will see beyond the veil of circumstances.

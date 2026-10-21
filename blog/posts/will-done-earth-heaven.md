@@ -5,7 +5,7 @@ date: 2017-12-11
 legacy_path: /will-done-earth-heaven/
 excerpt: This is such a powerful part of The Lord's Prayer. Do you realize that God's Will is settled in Heaven?
 description: This is such a powerful part of The Lord's Prayer. Do you realize that God's Will is settled in Heaven?
-draft: true
+draft: false
 ---
 
 **This is such a powerful part of The Lord's Prayer. Do you realize that God's Will is settled in Heaven? When we pray, 'Your Will be done on earth as it is in Heaven, we are releasing Divine interventions, miracles and the supernatural workings of the Lord.**

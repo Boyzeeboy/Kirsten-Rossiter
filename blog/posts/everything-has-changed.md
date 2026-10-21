@@ -5,7 +5,7 @@ date: 2022-08-16
 legacy_path: /everything-has-changed/
 excerpt: The Lord is saying, 'Everything has changed! That which you have been longing for... have been crying for, is right before you. Look at the ground your feet is standing on, it is fertile soil.'
 description: The Lord is saying, 'Everything has changed! That which you have been longing for... have been crying for, is right before you. Look at the ground your feet is standing on, it is fertile soil.'
-draft: true
+draft: false
 ---
 
 The Lord is saying, **'Everything has changed! That which you have been longing for... have been crying for, is right before you. Look at the ground your feet is standing on, it is fertile soil. Listen to the sound around you, it is echoing shouts of victory.** For I have brought My remnant into the land of promise, the walls are fallen, the way is open. Everything is different to what you've known and what you've walked in before.

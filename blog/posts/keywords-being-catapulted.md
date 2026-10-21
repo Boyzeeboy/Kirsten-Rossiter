@@ -5,7 +5,7 @@ date: 2019-02-12
 legacy_path: /keywords-being-catapulted/
 excerpt: This new season for the Bride of Christ will be marked by people working alongside each other in unity of vision, focus, passion, obedience to the Lord, and faithfulness.
 description: This new season for the Bride of Christ will be marked by people working alongside each other in unity of vision, focus, passion, obedience to the Lord, and faithfulness.
-draft: true
+draft: false
 ---
 
 This new season for the Bride of Christ will be marked by people working alongside each other in unity of vision, focus, passion, obedience to the Lord, and faithfulness. Just as the First Church was marked by community, fellowship, support, and generosity, so this Kingdom Era will be marked.

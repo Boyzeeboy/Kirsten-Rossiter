@@ -5,7 +5,7 @@ date: 2021-08-05
 legacy_path: /a-violent-eruption-is-coming-fear-not/
 excerpt: For a few months now, I've been hearing the words, 'eruption' and 'explosion'.
 description: For a few months now, I've been hearing the words, 'eruption' and 'explosion'.
-draft: true
+draft: false
 ---
 
 For a few months now, I've been hearing the words, 'eruption' and 'explosion'. I have seen images in my spirit's eyes of volcanoes erupting, and I've been hearing the Lord say, 'An eruption is coming, a violent explosion where all that is hidden deep within the mountain of deceit will shoot out from beneath for all to see. Be strong and courageous, My children, for there's a violent shaking and quaking that will come from this eruption. For the earth is entering a time of violent confrontation and combat for the nations. I am with you, be not afraid.

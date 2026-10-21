@@ -5,7 +5,7 @@ date: 2017-09-10
 legacy_path: /create-new-positions-services/
 excerpt: Many are feeling stuck in their lives at this present moment... unable to work out how to move forward.
 description: Many are feeling stuck in their lives at this present moment... unable to work out how to move forward.
-draft: true
+draft: false
 ---
 
 Many are feeling stuck in their lives at this present moment... unable to work out how to move forward. I strongly feel the Lord say, that out of His downloads of new ideas and thinking will come **new positions, new services and new products** that we will offer in the market place.

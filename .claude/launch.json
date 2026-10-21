@@ -4,8 +4,22 @@
     {
       "name": "site",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["http-server", "-p", "8001", "-c-1"],
+      "runtimeArgs": [
+        "http-server",
+        "-p",
+        "8001",
+        "-c-1"
+      ],
       "port": 8001
+    },
+    {
+      "name": "site (pages-like)",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "scripts/static-server.mjs",
+        "4173"
+      ],
+      "port": 4173
     }
   ]
 }

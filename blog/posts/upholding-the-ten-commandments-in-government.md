@@ -5,7 +5,7 @@ date: 2018-08-06
 legacy_path: /upholding-the-ten-commandments-in-government/
 excerpt: Upholding the Ten Commandments in Government releases incredible blessing upon a nation. The Bible is very clear about the manifold blessings that will come upon those who trust, obey and honour Him.
 description: Upholding the Ten Commandments in Government releases incredible blessing upon a nation. The Bible is very clear about the manifold blessings that will come upon those who trust, obey and honour Him.
-draft: true
+draft: false
 ---
 
 **Upholding the Ten Commandments in Government releases incredible blessing upon a nation.** The Bible is very clear about the manifold blessings that will come upon those who trust, obey and honour Him. You can read about it [here.](https://biblehub.com/niv/deuteronomy/28.htm)

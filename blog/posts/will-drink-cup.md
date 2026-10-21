@@ -5,7 +5,7 @@ date: 2018-01-11
 legacy_path: /will-drink-cup/
 excerpt: '''Will you drink from My cup?'', is a question Jesus is asking each of us today.'
 description: '''Will you drink from My cup?'', is a question Jesus is asking each of us today.'
-draft: true
+draft: false
 ---
 
 ***'Will you drink from My cup?'***, is a question Jesus is asking each of us today. **For as He is calling His Bride to a place of shining, as His Glory is seen through her, so He is also calling her to drink from His cup and partake in His suffering.**

@@ -5,7 +5,7 @@ date: 2017-12-05
 legacy_path: /the-blessing-follows-unity/
 excerpt: The Lord has been showing me more and more how pivotal unity is in the process of inheritance. He is calling us to live by a standard that is marked by unity.
 description: The Lord has been showing me more and more how pivotal unity is in the process of inheritance. He is calling us to live by a standard that is marked by unity.
-draft: true
+draft: false
 ---
 
 **The Lord has been showing me more and more how pivotal unity is in the process of inheritance. He is calling us to live by a standard that is marked by unity.** For the enemy's tactic is to drive separation and division amongst people, confusing their vision and purpose, breaking trust in relationships, and making them a people easily overtaken and overruled by his wicked plots and plans.

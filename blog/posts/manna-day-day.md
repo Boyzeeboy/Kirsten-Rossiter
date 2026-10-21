@@ -5,7 +5,7 @@ date: 2016-11-17
 legacy_path: /manna-day-day/
 excerpt: God in His Wisdom, told us to seek His Kingdom first, then everything that we need will be added to us. He adds to us daily what we need.
 description: God in His Wisdom, told us to seek His Kingdom first, then everything that we need will be added to us. He adds to us daily what we need.
-draft: true
+draft: false
 ---
 
 **God in His Wisdom, told us to seek His Kingdom first, then everything that we need will be added to us. He adds to us daily what we need. He doesn't want us to worry or be anxious about the next day, week, or year, but He wants us to rely on Him as our Father, knowing that as we busy ourselves with Him and His Kingdom, He will take care of us... just as He takes care of the lilies of the field, and the birds of the air.**

@@ -5,7 +5,7 @@ date: 2018-01-22
 legacy_path: /introducing-new-song-ive-completely-undone/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/I-have-been-completely-undone-voice.'
 description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/I-have-been-completely-undone-voice.'
-draft: true
+draft: false
 ---
 
 *(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/I-have-been-completely-undone-voice.mp3 (file not in the 2024 backup))*

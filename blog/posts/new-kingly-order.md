@@ -5,7 +5,7 @@ date: 2017-06-05
 legacy_path: /new-kingly-order/
 excerpt: This is the time of God raising up and releasing a new generation of kings and priests to rule and reign in the nations.
 description: This is the time of God raising up and releasing a new generation of kings and priests to rule and reign in the nations.
-draft: true
+draft: false
 ---
 
 **This is the time of God raising up and releasing a new generation of kings and priests to rule and reign in the nations. A new people who replace the old kingly order, with an order established in righteousness, truth and justice.**

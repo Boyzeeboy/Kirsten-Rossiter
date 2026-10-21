@@ -5,7 +5,7 @@ date: 2017-08-28
 legacy_path: /name-your-facets/
 excerpt: Following from my last blog post, 'What is your Name?'
 description: Following from my last blog post, 'What is your Name?'
-draft: true
+draft: false
 ---
 
 **Following from my last blog post, *'What is your Name?',* I saw a picture of a diamond and felt the Lord say that He names us as a jewel is named, and cuts facets onto us, that reflect different aspects of His Character in us.**

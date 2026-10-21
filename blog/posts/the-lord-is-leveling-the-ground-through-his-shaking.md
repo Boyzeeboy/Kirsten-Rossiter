@@ -5,7 +5,7 @@ date: 2019-04-20
 legacy_path: /the-lord-is-leveling-the-ground-through-his-shaking/
 excerpt: The Lord has been showing me a picture of Him holding a shaker, pouring in many varieties of coloured sand.
 description: The Lord has been showing me a picture of Him holding a shaker, pouring in many varieties of coloured sand.
-draft: true
+draft: false
 ---
 
 The Lord has been showing me a picture of Him holding a shaker, pouring in many varieties of coloured sand. I see Him closing the lid, shaking it until all the colours have blended, then tipping it over, letting the sand flow out.

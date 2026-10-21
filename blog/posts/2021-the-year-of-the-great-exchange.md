@@ -5,7 +5,7 @@ date: 2021-01-05
 legacy_path: /2021-the-year-of-the-great-exchange/
 excerpt: I keep hearing the Lord say, 'This is the year of the great exchange where My people will trample on the scorpions and adders, destroying the works of darkness set against them, putting in motion My miraculous intervention of protection, provision and blessing.'
 description: I keep hearing the Lord say, 'This is the year of the great exchange where My people will trample on the scorpions and adders, destroying the works of darkness set against them, putting in motion My miraculous intervention of protection, provision and blessing.'
-draft: true
+draft: false
 ---
 
 I keep hearing the Lord say, '**This is the year of the great exchange where My people will trample on the scorpions and adders, destroying the works of darkness set against them, putting in motion My miraculous intervention of protection, provision and blessing.** It is in the lifting of your burdens in complete trust that I will give you rest in the midst of the battle, exchanging your heaviness for My joy, for in it lies your strength.

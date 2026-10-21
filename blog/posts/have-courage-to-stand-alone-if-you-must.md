@@ -5,7 +5,7 @@ date: 2016-08-27
 legacy_path: /have-courage-to-stand-alone-if-you-must/
 excerpt: One thing history-makers and shakers have in common, is they have the courage to stand alone, if they must.
 description: One thing history-makers and shakers have in common, is they have the courage to stand alone, if they must.
-draft: true
+draft: false
 ---
 
 **One thing history-makers and shakers have in common, is they have the courage to stand alone, if they must. To be part of the change that they fight and stand for, demands inner-strength and courage to stand in the midst of pointing fingers, criticism and rejection, often joint with violent opposition. They are willing to go against the grain, and keep on pushing until the grain gives way.**

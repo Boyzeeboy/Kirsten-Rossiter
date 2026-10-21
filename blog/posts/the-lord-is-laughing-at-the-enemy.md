@@ -5,7 +5,7 @@ date: 2020-04-01
 legacy_path: /the-lord-is-laughing-at-the-enemy/
 excerpt: SUPERNATURAL SALVATION OUT OF EGYPT The Lord knows the beginning from the end. He sees all. Can we hear Him laughing in the Heavens?
 description: SUPERNATURAL SALVATION OUT OF EGYPT The Lord knows the beginning from the end. He sees all. Can we hear Him laughing in the Heavens?
-draft: true
+draft: false
 ---
 
 **SUPERNATURAL SALVATION OUT OF EGYPT**

@@ -5,7 +5,7 @@ date: 2016-09-19
 legacy_path: /identity-reveals-love/
 excerpt: Our identities are directly linked to our effectiveness to reveal the love of God.
 description: Our identities are directly linked to our effectiveness to reveal the love of God.
-draft: true
+draft: false
 ---
 
 **Our identities are directly linked to our effectiveness to reveal the love of God. **

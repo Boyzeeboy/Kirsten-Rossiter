@@ -5,7 +5,7 @@ date: 2017-10-11
 legacy_path: /make-haste-to-help-me/
 excerpt: Many are crying, 'Make haste to help me, Lord! Do not tarry.' This was David's cry too. When our world is being shaken, God is saying, 'I am your Stable-Ground'.
 description: Many are crying, 'Make haste to help me, Lord! Do not tarry.' This was David's cry too. When our world is being shaken, God is saying, 'I am your Stable-Ground'.
-draft: true
+draft: false
 ---
 
 Many are crying, ***'Make haste to help me, Lord! Do not tarry.'***

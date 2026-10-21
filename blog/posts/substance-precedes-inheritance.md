@@ -5,7 +5,7 @@ date: 2017-11-06
 legacy_path: /substance-precedes-inheritance/
 excerpt: The Lord is faithful to all of His promises.
 description: The Lord is faithful to all of His promises.
-draft: true
+draft: false
 ---
 
 **The Lord is faithful to all of His promises. When there seems to be a delay in inheriting His promises, He is working in us, solidifying us to be a people who will stand and not fall, run and not stumble. He is establishing a people of substance.**

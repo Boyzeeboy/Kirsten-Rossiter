@@ -5,7 +5,7 @@ date: 2022-07-01
 legacy_path: /open-gateways-and-ring-of-fire/
 excerpt: There is a call from Heaven for us, His Beloved, to recognise that He is in our midst, walking among us and responding to us as we pour out our affection on Him.
 description: There is a call from Heaven for us, His Beloved, to recognise that He is in our midst, walking among us and responding to us as we pour out our affection on Him.
-draft: true
+draft: false
 ---
 
 There is a call from Heaven for us, His Beloved, to recognise that He is in our midst, walking among us and responding to us as we pour out our affection on Him. Whilst in corporate worship recently, I saw in the Spirit, Jacob's ladder rest on the ground, stretching all the way into Heaven. Angels were descending and ascending, and I heard the Lord say, *'You are standing on holy ground for I am standing in your midst. I am walking among you and I am conversing in dialogue-form with My people. It is time to wait and listen for My response and it is time to linger for the manifestation of My visitation. There are angels in your midst, expect to hear them join your song, expect to see the supernatural and the miraculous break forth, and expect to feel the touch of My hand as it brushes over your shoulder as I walk by.*

@@ -5,7 +5,7 @@ date: 2020-12-15
 legacy_path: /the-prayers-of-the-chinese-people-have-gone-forth-for-china-and-the-nations/
 excerpt: The Chinese people have paid a price for the freedom of the nations. Their prayers and cries are for China and the rest of the world, to be set free from the snare of the enemy!
 description: The Chinese people have paid a price for the freedom of the nations. Their prayers and cries are for China and the rest of the world, to be set free from the snare of the enemy!
-draft: true
+draft: false
 ---
 
 The Lord have been laying the Chinese Christians on my heart over the last while, and I heard the Lord say, *'**They have been My faithful ones who have cried out for China and the nations of the earth to be delivered from the snare of the enemy working through the CCP (Chinese Communist Party).** They are My prayer warriors, set on fire with My glory in the place of great suffering. How they have cried for you, for your eyes to open, your ears to hear, and your courage and faith in God to help you fight against the Jezebel spirit of control and manipulation operating through the CCP within the nations.*

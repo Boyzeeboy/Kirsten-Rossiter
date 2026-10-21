@@ -5,7 +5,7 @@ date: 2016-08-27
 legacy_path: /the-power-of-his-joy/
 excerpt: The one area that the enemy loves to target in our lives, is our joy. He knows it's power, for there is nothing that can defeat us, and no hold he can have on us, when we walk in His joy.
 description: The one area that the enemy loves to target in our lives, is our joy. He knows it's power, for there is nothing that can defeat us, and no hold he can have on us, when we walk in His joy.
-draft: true
+draft: false
 ---
 
 **The one area that the enemy loves to target in our lives, is our joy. He knows it's power, for there is nothing that can defeat us, and no hold he can have on us, when we walk in His joy. It causes us to see God's hand in every circumstance, allowing Him to turn everything around for our good, and His glory.**

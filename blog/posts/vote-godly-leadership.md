@@ -5,7 +5,7 @@ date: 2016-11-10
 legacy_path: /vote-godly-leadership/
 excerpt: It is such a wake-up call for us as a nation, to see how God has answered the prayers of His people in the USA this last week.
 description: It is such a wake-up call for us as a nation, to see how God has answered the prayers of His people in the USA this last week.
-draft: true
+draft: false
 ---
 
 **It is such a wake-up call for us as a nation, to see how God has answered the prayers of His people in the USA this last week.**

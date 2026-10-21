@@ -5,7 +5,7 @@ date: 2017-07-06
 legacy_path: /a-new-song/
 excerpt: '''My son and My daughter, be ready to sing a new song. I am releasing a new sound and a new song to My Bride.'''
 description: '''My son and My daughter, be ready to sing a new song. I am releasing a new sound and a new song to My Bride.'''
-draft: true
+draft: false
 ---
 
 > ***'My son and My daughter, be ready to sing a new song.** I am releasing a **new sound** and a **new song** to My Bride. In this last season, there has been a tiredness, a weariness, and a heaviness. What I have promised has not yet come, and the delay has caused many hearts to grow weary and heavy-laden. But this is the hour of release. **I am releasing My refreshing oil from Heaven. I am releasing My creativity and innovation that will set you on a new course, a new way.***

@@ -5,7 +5,7 @@ date: 2017-07-09
 legacy_path: /the-call-of-the-bride/
 excerpt: The Call of The Bride
 description: The Call of The Bride
-draft: true
+draft: false
 ---
 
 > ***The Call of the Bride***

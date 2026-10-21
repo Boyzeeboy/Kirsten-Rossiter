@@ -5,7 +5,7 @@ date: 2020-05-07
 legacy_path: /the-trumpet-is-blowing-this-is-the-day-of-the-lord/
 excerpt: As I've been studying the book of Joel, I've been feeling such an excitement in my spirit about what the Lord is doing right now.
 description: As I've been studying the book of Joel, I've been feeling such an excitement in my spirit about what the Lord is doing right now.
-draft: true
+draft: false
 ---
 
 As I've been studying the book of Joel, I've been feeling such an excitement in my spirit about what the Lord is doing right now. He wants to give us understanding and revelation so we don't walk in fear but faith, nor trepidation but expectation.

@@ -5,7 +5,7 @@ date: 2016-08-27
 legacy_path: /seasons-and-opportunities/
 excerpt: Our lives are filled with different seasons. It is important to know the season we're in. I've had to learn to be patient in one season, embracing the 'now' and be at peace with the laying down of things that are yet to come.
 description: Our lives are filled with different seasons. It is important to know the season we're in. I've had to learn to be patient in one season, embracing the 'now' and be at peace with the laying down of things that are yet to come.
-draft: true
+draft: false
 ---
 
 **Our lives are filled with different seasons. It is important to know the season we're in. I've had to learn to be patient in one season, embracing the *'now'* and be at peace with the laying down of things that are yet to come. If we let God work patience and long-suffering in us, the fruit of it is sweet when the next season comes.**

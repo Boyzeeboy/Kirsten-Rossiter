@@ -5,7 +5,7 @@ date: 2021-04-17
 legacy_path: /battle-weary-or-not-evict-the-locusts-off-your-land/
 excerpt: '''It''s time to evict the locusts off your land! Let the king and watchman arise in you! Take hold of your authority in Me and command the locusts to flee.'''
 description: '''It''s time to evict the locusts off your land! Let the king and watchman arise in you! Take hold of your authority in Me and command the locusts to flee.'''
-draft: true
+draft: false
 ---
 
 The Lord showed me a vision of locusts and said,

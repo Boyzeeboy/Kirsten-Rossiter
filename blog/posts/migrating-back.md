@@ -5,7 +5,7 @@ date: 2016-12-13
 legacy_path: /migrating-back/
 excerpt: I saw vivid images yesterday, of migrating birds flying over lands and seas, migrating herd running over fields.
 description: I saw vivid images yesterday, of migrating birds flying over lands and seas, migrating herd running over fields.
-draft: true
+draft: false
 ---
 
 I saw vivid images yesterday, of migrating birds flying over lands and seas, migrating herd running over fields. These are the words of the song that was birthed:

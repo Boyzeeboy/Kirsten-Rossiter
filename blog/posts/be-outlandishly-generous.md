@@ -5,7 +5,7 @@ date: 2017-08-06
 legacy_path: /be-outlandishly-generous/
 excerpt: God is calling us to be outlandishly generous! Do we give freely, without calculating how we can benefit?
 description: God is calling us to be outlandishly generous! Do we give freely, without calculating how we can benefit?
-draft: true
+draft: false
 ---
 
 **God is calling us to be outlandishly generous!** Do we give freely, without calculating how we can benefit? Do we think of how our lives can serve and bless others without getting anything in return, other than the joy of giving?

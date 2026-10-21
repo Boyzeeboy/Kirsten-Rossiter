@@ -5,7 +5,7 @@ date: 2017-06-24
 legacy_path: /how-do-i-vote-as-a-christian/
 excerpt: We, as God's people, have a great responsibility before Him, when we approach the voting day.
 description: We, as God's people, have a great responsibility before Him, when we approach the voting day.
-draft: true
+draft: false
 ---
 
 **We, as God's people, have a great responsibility before Him, when we approach the voting day. Firstly, we have to be Spirit-lead, and secondly, we have to look at His instructions according to His laws of old, regarding choosing Israel's kings. Why is it relevant today? It is relevant because even though we don't live under the law anymore, God's Wisdom in His instructions never outdates or changes. The earth is the Lord's, and the nations belong to Him. The Bride's Call is to co-labour with God in bringing the nations into their God-appointed destinies.**

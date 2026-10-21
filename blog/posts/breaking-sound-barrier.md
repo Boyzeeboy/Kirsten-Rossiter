@@ -5,7 +5,7 @@ date: 2017-04-29
 legacy_path: /breaking-sound-barrier/
 excerpt: God has a call on His church to enter into her promised land at this time. To inherit that which she's been prepared for.
 description: God has a call on His church to enter into her promised land at this time. To inherit that which she's been prepared for.
-draft: true
+draft: false
 ---
 
 God has a call on His church to enter into her promised land at this time. To inherit that which she's been prepared for. Many are feeling great resistance at this time, circumstances pushing in from all sides... I see a picture of us standing behind a thick, glass wall, looking at our inheritance, but unable to pass through to possess. We are pleading for it to be moved, crumble or break, so we can possess God's promises for this season... but our voices seem snuffed out by the thick glass... and little seems to change.

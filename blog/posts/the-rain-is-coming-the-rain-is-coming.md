@@ -5,7 +5,7 @@ date: 2019-04-05
 legacy_path: /the-rain-is-coming-the-rain-is-coming/
 excerpt: Just as we are about to witness a release of rain in the natural, we will see the Lord align the natural with the spiritual in the days and weeks ahead.
 description: Just as we are about to witness a release of rain in the natural, we will see the Lord align the natural with the spiritual in the days and weeks ahead.
-draft: true
+draft: false
 ---
 
 **Just as we are about to witness a release of rain in the natural, we will see the Lord align the natural with the spiritual in the days and weeks ahead.** For the Lord is declaring from Heaven, ***'The rain is coming! The rain is coming! Prepare yourselves for a Mighty Outpouring upon the soil of this land.** For very quickly, I will do a deep and thorough work, healing ancient wounds, reconciling extremes, turning Sauls into Pauls, and establishing this nation for My Glory.*

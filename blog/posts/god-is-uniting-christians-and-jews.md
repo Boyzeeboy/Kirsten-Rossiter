@@ -5,7 +5,7 @@ date: 2018-06-03
 legacy_path: /god-is-uniting-christians-and-jews/
 excerpt: As the spirit of the Anti-Christ increases in our modern age, so the Lord is uniting Christians and Jews to stand together. I have just read this news article at www.breakingisraelnews.
 description: As the spirit of the Anti-Christ increases in our modern age, so the Lord is uniting Christians and Jews to stand together. I have just read this news article at www.breakingisraelnews.
-draft: true
+draft: false
 ---
 
 **As the spirit of the Anti-Christ increases in our modern age, so the Lord is uniting Christians and Jews to stand together.** I have just read this news article at [www.breakingisraelnews.com](https://www.breakingisraelnews.com/108290/for-the-first-time-ever-a-jewish-christian-party-to-run-for-knesset/) and found it very interesting how God is beginning to connect Jews and Christians politically in Israel.

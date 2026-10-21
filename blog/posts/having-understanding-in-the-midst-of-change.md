@@ -5,7 +5,7 @@ date: 2018-08-24
 legacy_path: /having-understanding-in-the-midst-of-change/
 excerpt: When we are transitioning into the 'new' that the Lord has for us, we often feel unsettled, perplexed and confused at times, as we try to figure out what the Lord is doing.
 description: When we are transitioning into the 'new' that the Lord has for us, we often feel unsettled, perplexed and confused at times, as we try to figure out what the Lord is doing.
-draft: true
+draft: false
 ---
 
 When we are transitioning into the 'new' that the Lord has for us, we often feel unsettled, perplexed and confused at times, as we try to figure out what the Lord is doing. It can be likened to being in a tumble-dryer, you're spinning around and around but can't work out whether you're up or down... without a sense of direction.

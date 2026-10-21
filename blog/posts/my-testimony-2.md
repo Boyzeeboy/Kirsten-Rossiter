@@ -1,11 +1,11 @@
 ---
-title: My Testimony
+title: My Testimony (2021)
 type: Reflection
 date: 2021-06-03
 legacy_path: /my-testimony-2/
 excerpt: Coming to know the Lord Jesus Christ at the age of ten, carried me through my teens. I discovered and encountered the unconditional and powerful Love of God, and how much He valued and prized me as His own.
 description: Coming to know the Lord Jesus Christ at the age of ten, carried me through my teens. I discovered and encountered the unconditional and powerful Love of God, and how much He valued and prized me as His own.
-draft: true
+draft: false
 ---
 
 I came to know the Lord Jesus Christ as my Saviour at the age of ten. My mom, who was going through a traumatic divorce at the time, had a radical conversion three months prior to my salvation. Normally I wouldn’t condone forcing a child into doing something they absolutely refuse, but in my case, her stubborn defiance to take me to her new church against my will, paid off.

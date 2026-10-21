@@ -5,7 +5,7 @@ date: 2020-09-01
 legacy_path: /brace-yourself-america/
 excerpt: I have been hearing the words, ‘Brace yourself’, repeatedly over the last few weeks over America, just as Pastor Dana from Coverstone heard the Lord say.
 description: I have been hearing the words, ‘Brace yourself’, repeatedly over the last few weeks over America, just as Pastor Dana from Coverstone heard the Lord say.
-draft: true
+draft: false
 ---
 
 **The Lord is wanting the American church to brace themselves for the storm that is coming. I’ve been seeing a vivid picture of a large dark swirling wind approaching the coast of America.** The Lord is saying, ‘It is time for My Church to awaken from her slumber and prepare, for a great storm is approaching. It is the wind of darkness and destruction sent out by the Pit of Hell with the purpose to bring forth the kingdom of darkness and his rule upon the earth and within the nations. It is a full-force demonic storm targeted directly at the United States, and nothing will thwart this storm from coming.

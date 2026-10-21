@@ -5,7 +5,7 @@ date: 2021-01-17
 legacy_path: /the-book-of-esther-parallels-our-current-crisis-in-the-nations/
 excerpt: There's so much happening in the world right now. As we are seeing the spirit of Haman rise in the nations, we recognise that the book of Esther parallels our crisis. No matter how bad things look, God is still on His throne and His word is still true.
 description: There's so much happening in the world right now. As we are seeing the spirit of Haman rise in the nations, we recognise that the book of Esther parallels our crisis. No matter how bad things look, God is still on His throne and His word is still true.
-draft: true
+draft: false
 ---
 
 There's so much happening in the world right now. As we are seeing the spirit of Haman rise in the nations, we recognise that the book of Esther parallels our crisis. No matter how bad things look, God is still on His throne and His word is still true. He is going to bring to pass everything that He has promised. We need to walk in complete trust in Him and let the shaking have its full purpose, for the Lord is shaking everything that can be shaken so that only the unshakeable will remain.

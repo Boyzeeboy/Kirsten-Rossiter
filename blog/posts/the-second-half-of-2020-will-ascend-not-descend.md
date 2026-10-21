@@ -5,7 +5,7 @@ date: 2020-07-06
 legacy_path: /the-second-half-of-2020-will-ascend-not-descend/
 excerpt: The Lord showed me a picture of 2020, where His holy remnant have been chased down a mountain into a valley over the first half of the year.
 description: The Lord showed me a picture of 2020, where His holy remnant have been chased down a mountain into a valley over the first half of the year.
-draft: true
+draft: false
 ---
 
 The Lord showed me a picture of 2020, where His holy remnant have been chased down a mountain into a valley over the first half of the year. It has been like a whirlwind, as there's been attacks and harassments on every side. The enemy has chased closely behind us, causing chaos all around. Within this chaos and noise, there has been lots of confusion and disorientation... many have been feeling a sense of being disorientated with life and even vision. Just as they were about to get a grip on something, another harassment would hit.

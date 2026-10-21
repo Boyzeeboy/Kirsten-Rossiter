@@ -5,7 +5,7 @@ date: 2019-11-28
 legacy_path: /the-secret-dens-will-implode-from-the-inside/
 excerpt: The Lord showed me a vision of a very large and dark stretched-out den of evil operations where sexual immorality, child sacrifice, and the basest of practices take place.
 description: The Lord showed me a vision of a very large and dark stretched-out den of evil operations where sexual immorality, child sacrifice, and the basest of practices take place.
-draft: true
+draft: false
 ---
 
 The Lord showed me a vision of a very large and dark stretched-out den of evil operations where sexual immorality, child sacrifice, and the basest of practices take place. I saw an underground world beneath the surface, that works with its own rules and laws, where the portals to the demonic are wide open. Here the air is thick and heavy as heartless controllers,  manipulators, abusers and deceivers, worship and practice all that is wicked and debauched, sacrificing the innocent in exchange for more power.

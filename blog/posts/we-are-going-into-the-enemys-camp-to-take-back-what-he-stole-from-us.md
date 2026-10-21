@@ -5,7 +5,7 @@ date: 2020-05-10
 legacy_path: /we-are-going-into-the-enemys-camp-to-take-back-what-he-stole-from-us/
 excerpt: What does the enemy do before he is slain? He increases his taunting and mocking of God and His People. He lives in an illusion that he is greater than God.
 description: What does the enemy do before he is slain? He increases his taunting and mocking of God and His People. He lives in an illusion that he is greater than God.
-draft: true
+draft: false
 ---
 
 **CHARGING AHEAD!**

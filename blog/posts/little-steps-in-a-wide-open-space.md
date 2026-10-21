@@ -5,7 +5,7 @@ date: 2016-08-27
 legacy_path: /little-steps-in-a-wide-open-space/
 excerpt: This is the season of wide, open space for the beloved of the Lord.
 description: This is the season of wide, open space for the beloved of the Lord.
-draft: true
+draft: false
 ---
 
 **This is the season of wide, open space for the beloved of the Lord. The season of waiting for delayed promises is over, and the time has come where the Spirit of the Lord is declaring, "You have been created for a time such as this, My beloved. Those who have been downtrodden and despised, are the ones who will be my shining prize. Behold my lovely one, My long-awaited Bride, your tears will no more be that of mourning, but will be tears of joy.**

@@ -5,7 +5,7 @@ date: 2017-06-13
 legacy_path: /national-shaking/
 excerpt: In the midst of last week's events in the Cape Province – the storm in Cape Town and the huge fires spreading up the Garden Route, I felt the Lord say, that the next two years leading up to the elections will be a time of national shaking.
 description: In the midst of last week's events in the Cape Province – the storm in Cape Town and the huge fires spreading up the Garden Route, I felt the Lord say, that the next two years leading up to the elections will be a time of national shaking.
-draft: true
+draft: false
 ---
 
 **In the midst of last week's events in the Cape Province – the storm in Cape Town and the huge fires spreading up the Garden Route, I felt the Lord say, that the next two years leading up to the elections will be a time of national shaking. Everything that can shake, will be shaken. Everything that can fall, will fall. For in the natural, things will seem very dark and very hopeless, but in the Spirit, this very current climate of shaking will be the springboard for the Bride of Christ to run in her destiny for this time, and the time ahead.**

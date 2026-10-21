@@ -5,7 +5,7 @@ date: 2019-03-08
 legacy_path: /keywords-new-wineskin-season/
 excerpt: This season for the Bride is new in every possible way.
 description: This season for the Bride is new in every possible way.
-draft: true
+draft: false
 ---
 
 This season for the Bride is new in every possible way. For the Lord has brought forth a Holy Remnant, a tribal people wholly devoted and crucified with Him, who willingly walked through the fire of the last season, abandoned and surrendered. Wounded and broken. Trusting in the One she's come to know and love more than anything.

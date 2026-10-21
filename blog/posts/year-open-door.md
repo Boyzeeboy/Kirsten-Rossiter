@@ -5,7 +5,7 @@ date: 2016-12-18
 legacy_path: /year-open-door/
 excerpt: I hear the Lord say, 'This is the year of The Open Door. I am The Open Door, who is set before you.
 description: I hear the Lord say, 'This is the year of The Open Door. I am The Open Door, who is set before you.
-draft: true
+draft: false
 ---
 
 I hear the Lord say, **'This is the year of The Open Door. I am The Open Door, who is set before you. I am about to bring My children over My threshold into a territory that is borderless, limitless and full of opportunity. For I am bringing you into the realm of My Spirit, where you will access the supernatural with ease, and release My power upon the earth.**

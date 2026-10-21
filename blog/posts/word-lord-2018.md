@@ -5,7 +5,7 @@ date: 2018-01-19
 legacy_path: /word-lord-2018/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/Cindy-Jacobs-300x236.'
 description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/Cindy-Jacobs-300x236.'
-draft: true
+draft: false
 ---
 
 *(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/Cindy-Jacobs-300x236.jpg (file not in the 2024 backup))*

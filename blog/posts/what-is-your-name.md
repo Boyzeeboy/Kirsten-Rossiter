@@ -5,7 +5,7 @@ date: 2017-08-27
 legacy_path: /what-is-your-name/
 excerpt: What is your name? Not necessarily the name you were given at birth, but the name the Lord is calling you now.
 description: What is your name? Not necessarily the name you were given at birth, but the name the Lord is calling you now.
-draft: true
+draft: false
 ---
 
 **What is your name? **Not necessarily the name you were given at birth, but **the name the Lord is calling you now.** He has a special name for each of us, that will **encompass our call and purpose for this time.**

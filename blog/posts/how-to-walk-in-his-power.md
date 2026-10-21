@@ -5,7 +5,7 @@ date: 2017-06-22
 legacy_path: /how-to-walk-in-his-power/
 excerpt: I have been very aware of my own need and desire to walk in God's Power. The more I see the evil around me, the more I realize how I need God... ALL OF HIM!
 description: I have been very aware of my own need and desire to walk in God's Power. The more I see the evil around me, the more I realize how I need God... ALL OF HIM!
-draft: true
+draft: false
 ---
 
 I have been very aware of my own need and desire to walk in God's Power. The more I see the evil around me, the more I realize how I need God... ALL OF HIM! It's not enough to just live my life as a Christian, eating all the fruits and enjoying all the blessings made available to me and my family. **I'm surrounded by desertland, I hold the Oasis of Life inside of me... how do I release the waters and let it flow all around me? Causing new life to sprout forth out of newly-saturated ground, that was fallow just yesterday.**

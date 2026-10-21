@@ -5,7 +5,7 @@ date: 2021-12-31
 legacy_path: /i-hear-the-lord-say-it-is-done/
 excerpt: There is a time and a season for everything. When we are in the waiting season, it feels like it will never end. However, when God says, 'It is done!', we can know for sure, it is done, the 'new' has begun!
 description: There is a time and a season for everything. When we are in the waiting season, it feels like it will never end. However, when God says, 'It is done!', we can know for sure, it is done, the 'new' has begun!
-draft: true
+draft: false
 ---
 
 There is a time and a season for everything. When we are in the waiting season, it feels like it will never end. It just goes on and on like a desert land with horizons stretching as far as the eye can see - sand, and more sand. **However, when we are brought to the edge of the desert, and taken over the Jordan, we know for certain, the waiting season is over. It is finished.**

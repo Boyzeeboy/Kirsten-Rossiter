@@ -5,7 +5,7 @@ date: 2020-04-03
 legacy_path: /pray-in-the-spirit-in-one-accord/
 excerpt: PROPHETIC WORSHIP SONG https://www.youtube.com/watch?v=qwOdh_Ni_0s Please join me as I enter into the High Places in the Spirit. The Lord is calling His Bride to worship Him in Spirit and Truth.
 description: PROPHETIC WORSHIP SONG https://www.youtube.com/watch?v=qwOdh_Ni_0s Please join me as I enter into the High Places in the Spirit. The Lord is calling His Bride to worship Him in Spirit and Truth.
-draft: true
+draft: false
 ---
 
 **PROPHETIC WORSHIP SONG**

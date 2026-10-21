@@ -5,7 +5,7 @@ date: 2019-01-29
 legacy_path: /word-for-2019/
 excerpt: Hear what the Spirit of the Lord is speaking through His prophets across the earth. It is so exciting, let's open our ears to hear, and let our hearts be encouraged at His trumpeting.
 description: Hear what the Spirit of the Lord is speaking through His prophets across the earth. It is so exciting, let's open our ears to hear, and let our hearts be encouraged at His trumpeting.
-draft: true
+draft: false
 ---
 
 Hear what the Spirit of the Lord is speaking through His prophets across the earth. It is so exciting, let's open our ears to hear, and let our hearts be encouraged at His trumpeting.

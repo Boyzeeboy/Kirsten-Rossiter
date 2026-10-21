@@ -5,7 +5,7 @@ date: 2018-11-18
 legacy_path: /god-cares-for-us-all/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/11/gemma-evans-64661-unsplash-300x213.'
 description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/11/gemma-evans-64661-unsplash-300x213.'
-draft: true
+draft: false
 ---
 
 *(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/11/gemma-evans-64661-unsplash-300x213.jpg (file not in the 2024 backup))*

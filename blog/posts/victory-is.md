@@ -5,7 +5,7 @@ date: 2017-05-08
 legacy_path: /victory-is/
 excerpt: Sometimes, I think, we are conditioned to think of victory as overcoming a hardship/challenge when we reach the end of it, and the obstacle of that challenge is removed at last.
 description: Sometimes, I think, we are conditioned to think of victory as overcoming a hardship/challenge when we reach the end of it, and the obstacle of that challenge is removed at last.
-draft: true
+draft: false
 ---
 
 Sometimes, I think, we are conditioned to think of victory as overcoming a hardship/challenge when we reach the end of it, and the obstacle of that challenge is removed at last. Inside of us, is a yearning for life to become easier... with less stress, less responsibility, more freedom, more fun, more money, more choices etc. We hold a picture of our ideal life in our minds, striving towards that.

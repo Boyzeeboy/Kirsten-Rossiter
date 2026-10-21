@@ -5,7 +5,7 @@ date: 2020-03-16
 legacy_path: /the-world-is-being-changed-by-his-reset-button/
 excerpt: The Lord has been speaking repeatedly about new systems, new models, new ways of working, new ways of living.
 description: The Lord has been speaking repeatedly about new systems, new models, new ways of working, new ways of living.
-draft: true
+draft: false
 ---
 
 The Lord has been speaking repeatedly about new systems, new models, new ways of working, new ways of living. He has been speaking of healing families and working through unity as communities work together - opposites putting their skills and strengths together to create a new synergy with innovative outcomes. He has been speaking about us coming into intimacy with Him, laying down everything that hinders His Work in our lives, and keeping Him as our Main Focus and Greatest Love, being filled with His Spirit and Fire. He has been speaking about Church being demolished as we know it, and us, His Living Stones, walking as the One New Man in Christ, resurrected by Him, living in the place of Divine Encounter in His Manifest Presence with accompanying signs and wonders.

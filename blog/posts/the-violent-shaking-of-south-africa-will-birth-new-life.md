@@ -5,7 +5,7 @@ date: 2019-07-14
 legacy_path: /the-violent-shaking-of-south-africa-will-birth-new-life/
 excerpt: I've been feeling such a burden for South Africa, and in particular for our people. There is great pressure, great suffering, and a violent shaking happening right now.
 description: I've been feeling such a burden for South Africa, and in particular for our people. There is great pressure, great suffering, and a violent shaking happening right now.
-draft: true
+draft: false
 ---
 
 I've been feeling such a burden for South Africa, and in particular for our people. There is great pressure, great suffering, and a violent shaking happening right now. Many are feeling unsettled, insecure and worried about the future, and highly stressed from the mounting pressures in our nation and in their personal lives.

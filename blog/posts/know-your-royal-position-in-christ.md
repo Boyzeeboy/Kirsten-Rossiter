@@ -5,7 +5,7 @@ date: 2016-08-27
 legacy_path: /know-your-royal-position-in-christ/
 excerpt: Remind yourself today of who you are, and what your position is in God's Kingdom. You are the head and not the tail, above and not beneath, favored and not despised, a son and not a slave.
 description: Remind yourself today of who you are, and what your position is in God's Kingdom. You are the head and not the tail, above and not beneath, favored and not despised, a son and not a slave.
-draft: true
+draft: false
 ---
 
 **Remind yourself today of who you are, and what your position is in God's Kingdom. You are the head and not the tail, above and not beneath, favored and not despised, a son and not a slave.**

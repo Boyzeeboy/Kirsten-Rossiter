@@ -5,7 +5,7 @@ date: 2019-06-08
 legacy_path: /obedience-and-generosity-release-his-miraculous/
 excerpt: The Lord would say, 'Will you put your ears to My Chest and hear the beat of My heart? Will you listen for My instruction in the midst of your situation?
 description: The Lord would say, 'Will you put your ears to My Chest and hear the beat of My heart? Will you listen for My instruction in the midst of your situation?
-draft: true
+draft: false
 ---
 
 The Lord would say, *'****Will you put your ears to My Chest and hear the beat of My heart? Will you listen for My instruction in the midst of your situation?*** *For I am God, and I am here, speaking Words of Life, Words of Direction, Words of Instruction, propelling you forward, breaking the barrier of circumstantial resistance and impossibilities by My Miraculous Intervention.*
