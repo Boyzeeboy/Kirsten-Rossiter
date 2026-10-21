@@ -2,6 +2,7 @@
 title: Watchman of your street
 type: Reflection
 date: 2017-06-20
+legacy_path: /watchman-of-your-street/
 excerpt: Watchman of your street
 description: Watchman of your street
 draft: true

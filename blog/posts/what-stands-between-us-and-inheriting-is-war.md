@@ -2,6 +2,7 @@
 title: What stands between us and inheriting, is War
 type: Prophetic Insight
 date: 2023-10-17
+legacy_path: /what-stands-between-us-and-inheriting-is-war/
 excerpt: The Lord has promised us our inheritance, our land of promise. Just as the Israelites stood on the banks of the Jordan, looking at Canaan, they knew that the only thing that stood between them and the life of promised establishment and blessing, was war.
 description: The Lord has promised us our inheritance, our land of promise. Just as the Israelites stood on the banks of the Jordan, looking at Canaan, they knew that the only thing that stood between them and the life of promised establishment and blessing, was war.
 draft: true

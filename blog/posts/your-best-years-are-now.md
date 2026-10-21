@@ -2,6 +2,7 @@
 title: Your Best Years are Now!
 type: Prophetic Insight
 date: 2019-08-11
+legacy_path: /your-best-years-are-now/
 excerpt: For those who have entered the latter part of their lives, the Lord is saying, 'Your best years are now!
 description: For those who have entered the latter part of their lives, the Lord is saying, 'Your best years are now!
 draft: true

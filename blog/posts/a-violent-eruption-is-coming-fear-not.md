@@ -2,6 +2,7 @@
 title: A violent eruption is coming - FEAR NOT!
 type: Prophetic Insight
 date: 2021-08-05
+legacy_path: /a-violent-eruption-is-coming-fear-not/
 excerpt: For a few months now, I've been hearing the words, 'eruption' and 'explosion'.
 description: For a few months now, I've been hearing the words, 'eruption' and 'explosion'.
 draft: true

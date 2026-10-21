@@ -2,6 +2,7 @@
 title: ‘Brace Yourself, America’
 type: Reflection
 date: 2020-09-01
+legacy_path: /brace-yourself-america/
 excerpt: I have been hearing the words, ‘Brace yourself’, repeatedly over the last few weeks over America, just as Pastor Dana from Coverstone heard the Lord say.
 description: I have been hearing the words, ‘Brace yourself’, repeatedly over the last few weeks over America, just as Pastor Dana from Coverstone heard the Lord say.
 draft: true

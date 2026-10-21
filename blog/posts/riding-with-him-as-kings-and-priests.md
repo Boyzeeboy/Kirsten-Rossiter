@@ -2,6 +2,7 @@
 title: Riding with Him as Kings and Priests
 type: Prophetic Insight
 date: 2019-09-29
+legacy_path: /riding-with-him-as-kings-and-priests/
 excerpt: I saw a vision of Jesus riding on a white horse, saying, 'I have come to conquer, and I am conquering!' I saw Him lifting each one of us to ride into battle with Him.
 description: I saw a vision of Jesus riding on a white horse, saying, 'I have come to conquer, and I am conquering!' I saw Him lifting each one of us to ride into battle with Him.
 draft: true

@@ -2,6 +2,7 @@
 title: The Restoration of your Latter Days
 type: Prophetic Insight
 date: 2018-05-07
+legacy_path: /the-restoration-of-your-latter-days/
 excerpt: Get ready for the restoration of your latter days!
 description: Get ready for the restoration of your latter days!
 draft: true

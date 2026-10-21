@@ -2,6 +2,7 @@
 title: We've been Tested by the Word of the Lord
 type: Prophetic Insight
 date: 2021-03-04
+legacy_path: /weve-been-tested-by-the-word-of-the-lord/
 excerpt: Once Joseph received his prophetic dreams, he entered a period of testing. He was tested by the Word of the Lord to see if he would remain steadfast and faithful, trusting and holding onto God, knowing that He would fulfil what He had promised.
 description: Once Joseph received his prophetic dreams, he entered a period of testing. He was tested by the Word of the Lord to see if he would remain steadfast and faithful, trusting and holding onto God, knowing that He would fulfil what He had promised.
 draft: true

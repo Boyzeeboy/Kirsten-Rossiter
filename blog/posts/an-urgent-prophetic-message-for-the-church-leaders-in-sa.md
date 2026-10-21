@@ -2,6 +2,7 @@
 title: An URGENT Prophetic Message for the Church Leaders in SA
 type: Prophetic Insight
 date: 2018-08-22
+legacy_path: /an-urgent-prophetic-message-for-the-church-leaders-in-sa/
 excerpt: The Lord woke me up this morning with a very clear message for the church leaders in South Africa.
 description: The Lord woke me up this morning with a very clear message for the church leaders in South Africa.
 draft: true

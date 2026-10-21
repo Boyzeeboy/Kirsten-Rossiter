@@ -2,6 +2,7 @@
 title: Name your Facets
 type: Prophetic Insight
 date: 2017-08-28
+legacy_path: /name-your-facets/
 excerpt: Following from my last blog post, 'What is your Name?'
 description: Following from my last blog post, 'What is your Name?'
 draft: true

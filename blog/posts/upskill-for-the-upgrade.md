@@ -2,6 +2,7 @@
 title: Upskill for the Upgrade
 type: Prophetic Insight
 date: 2022-10-17
+legacy_path: /upskill-for-the-upgrade/
 excerpt: I've been hearing the Lord say, 'Upskill for the upgrade'. The Lord's Almighty Arm has moved into action. He is shifting, moving, changing, relocating, and releasing His army into their divine calling for this new era.
 description: I've been hearing the Lord say, 'Upskill for the upgrade'. The Lord's Almighty Arm has moved into action. He is shifting, moving, changing, relocating, and releasing His army into their divine calling for this new era.
 draft: true

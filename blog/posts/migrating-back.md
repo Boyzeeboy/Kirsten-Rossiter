@@ -2,6 +2,7 @@
 title: Migrating back
 type: Prophetic Insight
 date: 2016-12-13
+legacy_path: /migrating-back/
 excerpt: I saw vivid images yesterday, of migrating birds flying over lands and seas, migrating herd running over fields.
 description: I saw vivid images yesterday, of migrating birds flying over lands and seas, migrating herd running over fields.
 draft: true

@@ -2,6 +2,7 @@
 title: How to access His JOY!
 type: Prophetic Insight
 date: 2019-03-08
+legacy_path: /how-to-access-his-joy/
 excerpt: Why is the devil so adamant to steal our joy? He strategically targets it, knowing that as he robs us of it, he also drains us of our strength. How do we access His Joy continually?
 description: Why is the devil so adamant to steal our joy? He strategically targets it, knowing that as he robs us of it, he also drains us of our strength. How do we access His Joy continually?
 draft: true

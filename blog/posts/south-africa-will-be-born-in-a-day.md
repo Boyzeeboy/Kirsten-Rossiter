@@ -2,6 +2,7 @@
 title: South Africa will be Born in a Day
 type: Prophetic Insight
 date: 2018-07-12
+legacy_path: /south-africa-will-be-born-in-a-day/
 excerpt: The Lord is going to cause South Africa to be born in a day. I would like to share with you the following vision that I've received from the Lord.
 description: The Lord is going to cause South Africa to be born in a day. I would like to share with you the following vision that I've received from the Lord.
 draft: true

@@ -11,6 +11,12 @@
  * site has not been decided; build-blog.js skips drafts, so nothing written
  * here is published until someone flips draft: false on a post by hand.
  *
+ * Each post recovered from the *published* side of the export also gets a
+ * `legacy_path` — the root-level URL it was indexed at, since the old
+ * permalink structure was /%postname%/. build-blog.js turns that into a 301
+ * for every such post that is published. The 14 recovered WordPress drafts
+ * never had a public URL, so they get no `legacy_path`.
+ *
  * It never overwrites a file. If blog/posts/<slug>.md already exists with
  * different content (one of the live posts, or an imported post someone has
  * since edited), the post is skipped and listed. Re-running is safe: files
@@ -160,6 +166,26 @@ function slugify(title) {
     .replace(/^-+|-+$/g, '');
 }
 
+// A recovered post keeps the slug WordPress gave it, because that slug *is* its
+// old URL. Where the site already has an unrelated post under that slug, the
+// file moves to a date-qualified slug, while `legacy_path` keeps pointing at the
+// original — so the 301 still lands on the right post.
+//
+// This bites exactly once today: WordPress's "Keep Moving Forward" (2016-10-26)
+// against the 2026 post at blog/posts/keep-moving-forward.md. Previously the
+// older post was silently skipped at write time, which left the slug looking
+// free when in fact /keep-moving-forward/ belonged to the 2016 post — publish
+// the draft under that slug and its redirect would have shadowed the newer post.
+function slugTakenByAnotherPost(slug, date) {
+  const file = path.join(POSTS_DIR, `${slug}.md`);
+  if (!fs.existsSync(file)) return false;
+  const { data } = matter(fs.readFileSync(file, 'utf8'));
+  const existing = data.date instanceof Date
+    ? data.date.toISOString().slice(0, 10)
+    : String(data.date).slice(0, 10);
+  return existing !== date;
+}
+
 // The excerpt is shown escaped, as plain text, on the blog index, so inline
 // Markdown would show up as literal asterisks.
 function plainText(md) {
@@ -239,6 +265,7 @@ function render(post) {
     `title: ${yamlString(post.title)}`,
     `type: ${post.type}`,
     `date: ${post.date}`,
+    ...(post.legacyPath ? [`legacy_path: ${yamlString(post.legacyPath)}`] : []),
     `excerpt: ${yamlString(post.excerptText)}`,
     `description: ${yamlString(post.excerptText)}`,
     'draft: true',
@@ -253,6 +280,7 @@ function check(post, file) {
   if (data.title !== post.title) problems.push('title');
   if (data.type !== post.type) problems.push('type');
   if (!(data.date instanceof Date) || data.date.toISOString().slice(0, 10) !== post.date) problems.push('date');
+  if ((data.legacy_path || null) !== (post.legacyPath || null)) problems.push('legacy_path');
   if (data.excerpt !== post.excerptText) problems.push('excerpt');
   if (data.description !== post.excerptText) problems.push('description');
   if (data.draft !== true) problems.push('draft');
@@ -271,6 +299,7 @@ console.log(`Parsed ${posts.length} posts (${counts.published} published, ${coun
 
 const taken = new Set(posts.map(p => p.slug).filter(Boolean));
 const derived = [];
+const requalified = [];
 for (const p of posts) {
   if (!/^\d{4}-\d\d-\d\d$/.test(p.date)) throw new Error(`"${p.title}": bad date "${p.date}"`);
   if (!p.slug) {
@@ -280,6 +309,17 @@ for (const p of posts) {
     taken.add(slug);
     p.slug = slug;
     derived.push(p);
+  } else if (p.section === 'published') {
+    // The slug from the export is the URL Google indexed, whatever the file
+    // ends up being called.
+    p.legacyPath = `/${p.slug}/`;
+    if (slugTakenByAnotherPost(p.slug, p.date)) {
+      const qualified = `${p.slug}-${p.date}`;
+      if (taken.has(qualified)) throw new Error(`"${p.title}": cannot date-qualify "${p.slug}"`);
+      taken.add(qualified);
+      requalified.push({ from: p.slug, to: qualified, title: p.title });
+      p.slug = qualified;
+    }
   }
   p.type = typeFor(p.categories);
   const ex = excerptFor(p);
@@ -315,6 +355,10 @@ console.log(`  skipped    ${skipped.length} (file already exists with different 
 for (const p of skipped) console.log(`             ${p.slug}.md  ← "${p.title}" (${p.date})`);
 console.log(`  types      ${Object.entries(byType).map(([k, v]) => `${k}: ${v}`).join(', ')}`);
 console.log(`  excerpts   ${Object.entries(bySource).map(([k, v]) => `from ${k}: ${v}`).join(', ')}`);
+if (requalified.length) {
+  console.log(`  slugs date-qualified (an unrelated post already holds the slug): ${requalified.length}`);
+  for (const r of requalified) console.log(`             ${r.to}.md  ← "${r.title}" (legacy_path stays /${r.from}/)`);
+}
 if (derived.length) {
   console.log(`  slugs derived from the title (none in the export): ${derived.length}`);
   for (const p of derived) console.log(`             ${p.slug}.md  ← "${p.title}"`);

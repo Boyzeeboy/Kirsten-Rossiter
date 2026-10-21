@@ -2,6 +2,7 @@
 title: What is your Name?
 type: Prophetic Insight
 date: 2017-08-27
+legacy_path: /what-is-your-name/
 excerpt: What is your name? Not necessarily the name you were given at birth, but the name the Lord is calling you now.
 description: What is your name? Not necessarily the name you were given at birth, but the name the Lord is calling you now.
 draft: true

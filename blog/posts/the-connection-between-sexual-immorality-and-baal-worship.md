@@ -2,6 +2,7 @@
 title: The Connection between Sexual Immorality and Baal Worship
 type: Prophetic Insight
 date: 2019-11-21
+legacy_path: /the-connection-between-sexual-immorality-and-baal-worship/
 excerpt: Over the last few months, the Lord has been opening up the workings of the Jezebel spirit to me.
 description: Over the last few months, the Lord has been opening up the workings of the Jezebel spirit to me.
 draft: true

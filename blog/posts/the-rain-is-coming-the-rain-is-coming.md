@@ -2,6 +2,7 @@
 title: The Rain is Coming! The Rain is Coming!
 type: Prophetic Insight
 date: 2019-04-05
+legacy_path: /the-rain-is-coming-the-rain-is-coming/
 excerpt: Just as we are about to witness a release of rain in the natural, we will see the Lord align the natural with the spiritual in the days and weeks ahead.
 description: Just as we are about to witness a release of rain in the natural, we will see the Lord align the natural with the spiritual in the days and weeks ahead.
 draft: true

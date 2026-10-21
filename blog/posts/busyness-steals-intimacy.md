@@ -2,6 +2,7 @@
 title: Busyness Steals Intimacy
 type: Prophetic Insight
 date: 2017-03-29
+legacy_path: /busyness-steals-intimacy/
 excerpt: I have found that when I've been intentional about making my life uncluttered and less busy, I could connect with God more intimately, hear Him clearer, and feel His presence more.
 description: I have found that when I've been intentional about making my life uncluttered and less busy, I could connect with God more intimately, hear Him clearer, and feel His presence more.
 draft: true

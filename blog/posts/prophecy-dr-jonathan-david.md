@@ -2,6 +2,7 @@
 title: Prophecy by Dr Jonathan David
 type: Prophetic Insight
 date: 2018-02-28
+legacy_path: /prophecy-dr-jonathan-david/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/02/Screen-Shot-2018-02-28-at-7.39.24-PM-300x269.'
 description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/02/Screen-Shot-2018-02-28-at-7.39.24-PM-300x269.'
 draft: true

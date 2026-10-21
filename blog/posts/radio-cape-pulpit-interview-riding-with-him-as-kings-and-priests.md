@@ -2,6 +2,7 @@
 title: 'Radio Cape Pulpit Interview: Riding with Him as Kings and Priests'
 type: Reflection
 date: 2019-10-07
+legacy_path: /radio-cape-pulpit-interview-riding-with-him-as-kings-and-priests/
 excerpt: A recent interview with Vuyokazi Matu from Radio Cape Pulpit about my blog post, 'Riding with Him as Kings and Priests'. https://soundcloud.
 description: A recent interview with Vuyokazi Matu from Radio Cape Pulpit about my blog post, 'Riding with Him as Kings and Priests'. https://soundcloud.
 draft: true

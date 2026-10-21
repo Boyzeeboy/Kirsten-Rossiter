@@ -2,6 +2,7 @@
 title: The Second Half of 2020 will Ascend not Descend!
 type: Prophetic Insight
 date: 2020-07-06
+legacy_path: /the-second-half-of-2020-will-ascend-not-descend/
 excerpt: The Lord showed me a picture of 2020, where His holy remnant have been chased down a mountain into a valley over the first half of the year.
 description: The Lord showed me a picture of 2020, where His holy remnant have been chased down a mountain into a valley over the first half of the year.
 draft: true

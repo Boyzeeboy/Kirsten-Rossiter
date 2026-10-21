@@ -2,6 +2,7 @@
 title: As Bright Lights are sent out, New Lights are brought in
 type: Prophetic Insight
 date: 2018-09-18
+legacy_path: /as-bright-lights-are-sent-out-new-ones-are-brought-in/
 excerpt: The Lord showed me a picture of us - His Bright Lights all across our nation.
 description: The Lord showed me a picture of us - His Bright Lights all across our nation.
 draft: true

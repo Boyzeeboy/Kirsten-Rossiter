@@ -2,6 +2,7 @@
 title: The Discomfort of Enlargement
 type: Prophetic Insight
 date: 2017-04-25
+legacy_path: /the-discomfort-of-enlargement/
 excerpt: Have you been hit by a curveball? An unforeseen crisis, that left you speechless and overwhelmed? Are you struck with the reality that you are not in control of your situation, and that there's nothing you can do to fix or solve it in your own strength?
 description: Have you been hit by a curveball? An unforeseen crisis, that left you speechless and overwhelmed? Are you struck with the reality that you are not in control of your situation, and that there's nothing you can do to fix or solve it in your own strength?
 draft: true

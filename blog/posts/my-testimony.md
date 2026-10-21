@@ -2,6 +2,7 @@
 title: My Testimony
 type: Reflection
 date: 2017-06-27
+legacy_path: /my-testimony/
 excerpt: I came to know the Lord Jesus Christ as my Saviour at the age of ten. My mom, who was going through a traumatic divorce at the time, had a radical conversion three months prior to my salvation.
 description: I came to know the Lord Jesus Christ as my Saviour at the age of ten. My mom, who was going through a traumatic divorce at the time, had a radical conversion three months prior to my salvation.
 draft: true

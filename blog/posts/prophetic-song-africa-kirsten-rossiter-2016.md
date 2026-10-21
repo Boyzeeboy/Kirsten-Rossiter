@@ -2,6 +2,7 @@
 title: Prophetic Song for Africa by Kirsten Rossiter 2016
 type: Reflection
 date: 2017-06-10
+legacy_path: /prophetic-song-africa-kirsten-rossiter-2016/
 excerpt: When I wrote this song, I really felt the love that Jesus has for Africa. He looks at her, and sees beauty beyond words.
 description: When I wrote this song, I really felt the love that Jesus has for Africa. He looks at her, and sees beauty beyond words.
 draft: true

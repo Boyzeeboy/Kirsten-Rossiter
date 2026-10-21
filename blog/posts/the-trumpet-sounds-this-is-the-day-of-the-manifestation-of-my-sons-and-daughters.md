@@ -2,6 +2,7 @@
 title: 'The Trumpet Sounds: This is the Day of the Manifestation of My Sons and Daughters!'
 type: Prophetic Insight
 date: 2020-10-03
+legacy_path: /the-trumpet-sounds-this-is-the-day-of-the-manifestation-of-my-sons-and-daughters/
 excerpt: A tangible shift and change have occurred in the Heavenlies since Rosh Hashanah. Can you feel it too? It's like there are a buzz and excitement, a renewed expectation and energy, that is supernatural and Holy Spirit-inspired.
 description: A tangible shift and change have occurred in the Heavenlies since Rosh Hashanah. Can you feel it too? It's like there are a buzz and excitement, a renewed expectation and energy, that is supernatural and Holy Spirit-inspired.
 draft: true

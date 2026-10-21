@@ -2,6 +2,7 @@
 title: Timely Prophetic Word by Pastor Kent Christmas - 20 June 2021
 type: Prophetic Insight
 date: 2021-07-03
+legacy_path: /timely-prophetic-word-by-pastor-kent-christmas-20-june-2021/
 excerpt: We are in a time of incredible shaking as the Lord is releasing judgment on the wicked and salvation to the nations. This is a very timely word of the Lord, and I'm sharing it in the hope that it will encourage you and give you deeper insight into the workings of the Holy Spirit as God moves across the earth to bring forth His purposes.
 description: We are in a time of incredible shaking as the Lord is releasing judgment on the wicked and salvation to the nations. This is a very timely word of the Lord, and I'm sharing it in the hope that it will encourage you and give you deeper insight into the workings of the Holy Spirit as God moves across the earth to bring forth His purposes.
 draft: true

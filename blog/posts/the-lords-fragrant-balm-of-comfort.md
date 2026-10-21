@@ -2,6 +2,7 @@
 title: The Lord's Fragrant Balm of Comfort
 type: Reflection
 date: 2017-11-15
+legacy_path: /the-lords-fragrant-balm-of-comfort/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/09/Sleeping-Beauty.'
 description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/09/Sleeping-Beauty.'
 draft: true

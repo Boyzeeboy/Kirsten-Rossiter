@@ -2,6 +2,7 @@
 title: This is Your Time
 type: Reflection
 date: 2017-01-15
+legacy_path: /this-is-your-time/
 excerpt: This your time... it is your finest hour. God gave me a song for His Bride, at this opportune time.
 description: This your time... it is your finest hour. God gave me a song for His Bride, at this opportune time.
 draft: true

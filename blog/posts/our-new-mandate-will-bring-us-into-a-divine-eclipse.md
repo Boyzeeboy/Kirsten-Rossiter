@@ -2,6 +2,7 @@
 title: Our New Mandate will bring us into a Divine Eclipse
 type: Prophetic Insight
 date: 2020-06-10
+legacy_path: /our-new-mandate-will-bring-us-into-a-divine-eclipse/
 excerpt: The Lord has been speaking to me a lot about alignment in the last while. I saw a picture of an eclipse being formed when His holy remnant and their purpose is in perfect alignment with God.
 description: The Lord has been speaking to me a lot about alignment in the last while. I saw a picture of an eclipse being formed when His holy remnant and their purpose is in perfect alignment with God.
 draft: true

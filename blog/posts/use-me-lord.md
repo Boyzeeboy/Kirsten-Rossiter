@@ -2,6 +2,7 @@
 title: Use Me Lord!
 type: Prophetic Insight
 date: 2017-05-28
+legacy_path: /use-me-lord/
 excerpt: The Lord has heard our cry, 'Use me Lord! Let my life have purpose and meaning'. He has hidden us in the palm of His hand... He has held us close to His heart.
 description: The Lord has heard our cry, 'Use me Lord! Let my life have purpose and meaning'. He has hidden us in the palm of His hand... He has held us close to His heart.
 draft: true

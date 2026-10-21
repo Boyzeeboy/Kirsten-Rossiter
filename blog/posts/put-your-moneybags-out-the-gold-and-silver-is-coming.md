@@ -2,6 +2,7 @@
 title: Put your Moneybags OUT, the Gold and Silver is Coming!
 type: Prophetic Insight
 date: 2019-04-17
+legacy_path: /put-your-moneybags-out-the-gold-and-silver-is-coming/
 excerpt: I clearly hear the Lord say, 'Put your moneybags out, for the gold and silver is coming! Create open channels that will be able to receive the blessing that I'm releasing to My Children in this hour.
 description: I clearly hear the Lord say, 'Put your moneybags out, for the gold and silver is coming! Create open channels that will be able to receive the blessing that I'm releasing to My Children in this hour.
 draft: true

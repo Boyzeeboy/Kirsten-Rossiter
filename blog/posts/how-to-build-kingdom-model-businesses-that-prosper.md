@@ -2,6 +2,7 @@
 title: How to Build Kingdom-model Businesses that Prosper
 type: Prophetic Insight
 date: 2018-09-17
+legacy_path: /how-to-build-kingdom-model-businesses-that-prosper/
 excerpt: The Lord has been speaking to me, saying, 'If you build businesses that build and empower others, I will cause you to prosper.'
 description: The Lord has been speaking to me, saying, 'If you build businesses that build and empower others, I will cause you to prosper.'
 draft: true

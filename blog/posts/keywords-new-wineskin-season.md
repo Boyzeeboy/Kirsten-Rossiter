@@ -2,6 +2,7 @@
 title: 'Keywords: New Wineskin Season'
 type: Prophetic Insight
 date: 2019-03-08
+legacy_path: /keywords-new-wineskin-season/
 excerpt: This season for the Bride is new in every possible way.
 description: This season for the Bride is new in every possible way.
 draft: true

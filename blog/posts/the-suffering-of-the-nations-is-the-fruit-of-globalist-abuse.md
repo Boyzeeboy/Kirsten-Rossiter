@@ -2,6 +2,7 @@
 title: The Suffering of the Nations is the Fruit of Globalist Abuse
 type: Prophetic Insight
 date: 2020-09-12
+legacy_path: /the-suffering-of-the-nations-is-the-fruit-of-globalist-abuse/
 excerpt: The globalist agenda has caused an incredible level of suffering within the nations right now. It reminds me of a person being in an abusive relationship, where the abuse isn't recognised by the victim, and the toxic environment seems 'normal'.
 description: The globalist agenda has caused an incredible level of suffering within the nations right now. It reminds me of a person being in an abusive relationship, where the abuse isn't recognised by the victim, and the toxic environment seems 'normal'.
 draft: true

@@ -2,6 +2,7 @@
 title: God can Multiply the Last of your Resources
 type: Prophetic Insight
 date: 2018-01-27
+legacy_path: /god-can-multiply-last-resources/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/diego-ph-259050-240x300.'
 description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/diego-ph-259050-240x300.'
 draft: true

@@ -2,6 +2,7 @@
 title: The Lord works through Imperfect People - Election Message
 type: Prophetic Insight
 date: 2019-04-25
+legacy_path: /the-lord-works-through-imperfect-people-election-message/
 excerpt: As we draw near to the elections, let's be very careful to not get caught up with anything other than listening to the Lord, and seeking His Wisdom and Understanding for our nation at this pivotal…
 description: As we draw near to the elections, let's be very careful to not get caught up with anything other than listening to the Lord, and seeking His Wisdom and Understanding for our nation at this pivotal…
 draft: true

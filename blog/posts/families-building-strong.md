@@ -2,6 +2,7 @@
 title: Families Building Strong
 type: Prophetic Insight
 date: 2017-01-28
+legacy_path: /families-building-strong/
 excerpt: One thing that God has shown me over the years, is that everything He's called us to, will always flow supportively, alongside our family lives.
 description: One thing that God has shown me over the years, is that everything He's called us to, will always flow supportively, alongside our family lives.
 draft: true

@@ -2,6 +2,7 @@
 title: Ready to run!
 type: Prophetic Insight
 date: 2016-11-03
+legacy_path: /ready-to-run/
 excerpt: Be ready to receive your mantle from Heaven!
 description: Be ready to receive your mantle from Heaven!
 draft: true

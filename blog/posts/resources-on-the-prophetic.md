@@ -2,6 +2,7 @@
 title: 'Resources: Prophetic and Apostolic Ministry'
 type: Teaching
 date: 2017-06-17
+legacy_path: /resources-on-the-prophetic/
 excerpt: If you desire to understand the prophetic ministry and grow in your prophetic gifting; and understand the workings of the Spirit within the Body of Christ from past to present, learning about the…
 description: If you desire to understand the prophetic ministry and grow in your prophetic gifting; and understand the workings of the Spirit within the Body of Christ from past to present, learning about the…
 draft: true

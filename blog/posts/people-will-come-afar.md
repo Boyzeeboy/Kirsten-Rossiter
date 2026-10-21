@@ -2,6 +2,7 @@
 title: Your People Will Come From Afar
 type: Prophetic Insight
 date: 2017-06-15
+legacy_path: /people-will-come-afar/
 excerpt: The Lord would say, ‘My children, this is the season you’ve been waiting for. For I am releasing My children into their destinies at this very moment.
 description: The Lord would say, ‘My children, this is the season you’ve been waiting for. For I am releasing My children into their destinies at this very moment.
 draft: true

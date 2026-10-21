@@ -2,6 +2,7 @@
 title: We are Brought into Abundance
 type: Prophetic Insight
 date: 2017-10-04
+legacy_path: /we-are-brought-into-an-abundant-place/
 excerpt: When we are tried and tested as silver is tested by fire... be assured that God is working intricately and lovingly, and He will bring us out and take us into the place of abundance.
 description: When we are tried and tested as silver is tested by fire... be assured that God is working intricately and lovingly, and He will bring us out and take us into the place of abundance.
 draft: true

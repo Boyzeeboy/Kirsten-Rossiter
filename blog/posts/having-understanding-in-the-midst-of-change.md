@@ -2,6 +2,7 @@
 title: Having Understanding in the Midst of Change
 type: Prophetic Insight
 date: 2018-08-24
+legacy_path: /having-understanding-in-the-midst-of-change/
 excerpt: When we are transitioning into the 'new' that the Lord has for us, we often feel unsettled, perplexed and confused at times, as we try to figure out what the Lord is doing.
 description: When we are transitioning into the 'new' that the Lord has for us, we often feel unsettled, perplexed and confused at times, as we try to figure out what the Lord is doing.
 draft: true
