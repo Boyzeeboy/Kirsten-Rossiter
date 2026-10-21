@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-12-14
 legacy_path: /the-year-of-explosion/
 excerpt: I have been hearing the Lord say, '2018 is the Year of Explosion!'
-description: I have been hearing the Lord say, '2018 is the Year of Explosion!'
+description: 'A word for 2018 as the year of explosion: the faint flicker breathed on until it ignites, and the covers lifted off those long hidden.'
 draft: false
 ---
 

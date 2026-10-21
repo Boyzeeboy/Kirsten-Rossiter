@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-06-08
 legacy_path: /obedience-and-generosity-release-his-miraculous/
 excerpt: The Lord would say, 'Will you put your ears to My Chest and hear the beat of My heart? Will you listen for My instruction in the midst of your situation?
-description: The Lord would say, 'Will you put your ears to My Chest and hear the beat of My heart? Will you listen for My instruction in the midst of your situation?
+description: Elijah and the widow both received the miracle. On listening for His instruction in a frozen situation, and the obedience that moves immovable things.
 draft: false
 ---
 

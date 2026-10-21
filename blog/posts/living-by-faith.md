@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-11-18
 legacy_path: /living-by-faith/
 excerpt: Living by faith is the standard by which we are called to live, however many of us only embrace it in desperate times. It is so funny, we so often say, 'I've tried everything, but nothing is working!
-description: Living by faith is the standard by which we are called to live, however many of us only embrace it in desperate times. It is so funny, we so often say, 'I've tried everything, but nothing is working!
+description: Faith is the standard, not the last resort we reach when nothing else works. On letting go of control, since fear is the only enemy of faith.
 draft: false
 ---
 

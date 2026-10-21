@@ -4,7 +4,7 @@ type: Reflection
 date: 2017-06-20
 legacy_path: /watchman-of-your-street/
 excerpt: Watchman of your street
-description: Watchman of your street
+description: 'A poem asking who will be watchman of their own street: a soldier in armour, pulling down strongholds on the bloodstained roads.'
 draft: false
 ---
 

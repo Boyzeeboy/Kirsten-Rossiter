@@ -4,7 +4,7 @@ type: Reflection
 date: 2020-09-04
 legacy_path: /we-are-the-change/
 excerpt: '''We are the Change'' was created to be a blessing and a gift for South Africa, to point your focus and vision on God, inspiring and encouraging you to be all God has called you to be… His salt and light, transforming the nation as you build it through faith, love, forgiveness, and unity.'
-description: '''We are the Change'' was created to be a blessing and a gift for South Africa, to point your focus and vision on God, inspiring and encouraging you to be all God has called you to be… His salt and light, transforming the nation as you build it through faith, love, forgiveness, and unity.'
+description: The heart behind the 'We are the Change' music video, made in 24 hours on a shoestring as a gift of love and a call to be salt and light here.
 draft: false
 ---
 

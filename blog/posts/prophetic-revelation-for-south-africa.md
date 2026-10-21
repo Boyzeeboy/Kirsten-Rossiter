@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-08-01
 legacy_path: /prophetic-revelation-for-south-africa/
 excerpt: The Lord has been showing me a picture of a drain, with water flowing out of it.
-description: The Lord has been showing me a picture of a drain, with water flowing out of it.
+description: 'A picture of a drain with the nation''s wealth flowing out: the Lord humbling South Africa''s government until it falls on its knees and seeks unity.'
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-05-02
 legacy_path: /hush-and-step-aside-so-the-king-of-glory-can-enter/
 excerpt: THE REPOSITIONING OF HIS BRIDE The Lord would say, 'Hush and hear My Voice. Quieten yourselves before Me and linger in My Presence.
-description: THE REPOSITIONING OF HIS BRIDE The Lord would say, 'Hush and hear My Voice. Quieten yourselves before Me and linger in My Presence.
+description: 'The repositioning of the Bride: the prophets called into His inner chambers, and the many voices hushed so that He may speak to His remnant Himself.'
 draft: false
 ---
 

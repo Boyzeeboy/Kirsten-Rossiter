@@ -4,7 +4,7 @@ type: Reflection
 date: 2020-03-29
 legacy_path: /the-desert-season-of-preparation-4/
 excerpt: '''Now, My child, your eyes have opened up to the things of My Spirit.'
-description: '''Now, My child, your eyes have opened up to the things of My Spirit.'
+description: Part four, eyes of revelation. No longer Forsaken nor the land Desolate, but brought out of the fire as pure gold and a new wineskin for new wine.
 draft: false
 ---
 

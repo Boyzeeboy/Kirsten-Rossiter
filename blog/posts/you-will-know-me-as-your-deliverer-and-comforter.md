@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2021-10-16
 legacy_path: /you-will-know-me-as-your-deliverer-and-comforter/
 excerpt: The Lord has been dealing so tenderly with me over the last few weeks. I have been experiencing His comfort in very deep ways.
-description: The Lord has been dealing so tenderly with me over the last few weeks. I have been experiencing His comfort in very deep ways.
+description: Exposure of hidden evil brings a trauma that needs His comfort. A word for those with clarity in the fog, who cry, 'how much longer, Lord?'
 draft: false
 ---
 

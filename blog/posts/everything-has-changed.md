@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2022-08-16
 legacy_path: /everything-has-changed/
 excerpt: The Lord is saying, 'Everything has changed! That which you have been longing for... have been crying for, is right before you. Look at the ground your feet is standing on, it is fertile soil.'
-description: The Lord is saying, 'Everything has changed! That which you have been longing for... have been crying for, is right before you. Look at the ground your feet is standing on, it is fertile soil.'
+description: The walls are fallen and the ground underfoot is fertile. As the guard changes, His remnant is given new assignments for a new era. The waiting is over.
 draft: false
 ---
 

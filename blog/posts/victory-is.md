@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-05-08
 legacy_path: /victory-is/
 excerpt: Sometimes, I think, we are conditioned to think of victory as overcoming a hardship/challenge when we reach the end of it, and the obstacle of that challenge is removed at last.
-description: Sometimes, I think, we are conditioned to think of victory as overcoming a hardship/challenge when we reach the end of it, and the obstacle of that challenge is removed at last.
+description: We are conditioned to call victory the end of a hardship. But victory was won at the cross, and we walk in it through the process, not after it.
 draft: false
 ---
 

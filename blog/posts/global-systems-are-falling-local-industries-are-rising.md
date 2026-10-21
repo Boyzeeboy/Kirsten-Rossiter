@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2021-09-29
 legacy_path: /global-systems-are-falling-local-industries-are-rising/
 excerpt: As I was standing in one of our shopping malls this week, waiting for the shops to open, I clearly heard the Lord say, 'The global systems are falling! The monopolies that set the fashion and industry trends are crashing!'
-description: As I was standing in one of our shopping malls this week, waiting for the shops to open, I clearly heard the Lord say, 'The global systems are falling! The monopolies that set the fashion and industry trends are crashing!'
+description: 'A word heard in a shopping mall: the monopolies built on slave labour are crashing, and local industry will burst forth as He builds the nations up.'
 draft: false
 ---
 

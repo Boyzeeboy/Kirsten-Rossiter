@@ -4,7 +4,7 @@ type: Reflection
 date: 2017-07-09
 legacy_path: /the-call-of-the-bride/
 excerpt: The Call of The Bride
-description: The Call of The Bride
+description: 'A poem on the Bride''s call: not confined to a building of stones, but living in the field, gathering a harvest and tending the wounded beside her.'
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-08-27
 legacy_path: /the-power-of-servant-hood/
 excerpt: The road of servanthood is not discovered by all, but once you tread this ground, you won't veer off this path easily. It brings with it such rich blessings and benefits, joy being the greatest of all.
-description: The road of servanthood is not discovered by all, but once you tread this ground, you won't veer off this path easily. It brings with it such rich blessings and benefits, joy being the greatest of all.
+description: The road of servanthood is not found by all. On choosing to give rather than take, and serving even those who do not notice or recognise it.
 draft: false
 ---
 

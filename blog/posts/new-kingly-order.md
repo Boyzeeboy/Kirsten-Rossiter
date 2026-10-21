@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-06-05
 legacy_path: /new-kingly-order/
 excerpt: This is the time of God raising up and releasing a new generation of kings and priests to rule and reign in the nations.
-description: This is the time of God raising up and releasing a new generation of kings and priests to rule and reign in the nations.
+description: A new generation of kings and priests replaces the old order. As Hezekiah tore down what Ahaz built, so righteousness and justice are re-established.
 draft: false
 ---
 

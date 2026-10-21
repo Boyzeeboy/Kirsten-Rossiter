@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2022-11-07
 legacy_path: /we-hold-the-keys-to-lock-and-unlock/
 excerpt: There is a fresh revelation in the area of 'RESPONSIBILITY'. The keys that lock and unlock doors to the spiritual - both the demonic and the holy, are in our hands. It's 'wake-up' time for the Bride of Christ to walk in her godly authority as king and queen. What she loosens, will be loosened. What she binds, will be bound.
-description: There is a fresh revelation in the area of 'RESPONSIBILITY'. The keys that lock and unlock doors to the spiritual - both the demonic and the holy, are in our hands. It's 'wake-up' time for the Bride of Christ to walk in her godly authority as king and queen. What she loosens, will be loosened. What she binds, will be bound.
+description: The keys that lock and unlock spiritual doors are in our hands. On recognising the familiar spirit at the door before the arrow lands.
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-06-18
 legacy_path: /embrace-the-bends-of-change-for-they-will-accelerate-your-ride/
 excerpt: The Lord is saying, 'I am building My House in the nations at this time of the shaking. My Holy Remnant amongst the nations is rising as strong, tall oak trees that will not be shaken in this shaking.
-description: The Lord is saying, 'I am building My House in the nations at this time of the shaking. My Holy Remnant amongst the nations is rising as strong, tall oak trees that will not be shaken in this shaking.
+description: His remnant stands like oak trees through the shaking. A picture of a toboggan, and the call to lean into the bends of change rather than brace.
 draft: false
 ---
 

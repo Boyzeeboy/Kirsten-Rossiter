@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-11-07
 legacy_path: /give-the-devil-no-place-on-the-battlefied-through-misunderstandings/
 excerpt: As the mature Bride of Christ, we need to be wholly surrendered and committed to living in the Word and the Spirit, at all times.
-description: As the mature Bride of Christ, we need to be wholly surrendered and committed to living in the Word and the Spirit, at all times.
+description: The enemy gains ground when we answer from old wounds. A call to weigh every response on the Word and the Spirit, especially on social media.
 draft: false
 ---
 

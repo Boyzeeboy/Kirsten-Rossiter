@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-11-25
 legacy_path: /the-shaking-of-the-western-world/
 excerpt: The Lord is shaking and will continue to shake the Western World. He is calling the lands who once followed Him back to Himself.
-description: The Lord is shaking and will continue to shake the Western World. He is calling the lands who once followed Him back to Himself.
+description: He is calling the lands that once followed Him back to Himself. On the pure remnant coming forth, shining brighter as the darkness increases.
 draft: false
 ---
 

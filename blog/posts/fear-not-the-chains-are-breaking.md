@@ -3,7 +3,7 @@ title: Fear not! The chains are breaking!
 type: Prophetic Insight
 date: 2022-04-07
 excerpt: This is the time to arise in faith, not buckle in fear. The Lord is setting the nations free! We will not be shaken, but will arise in this hour of shaking!
-description: This is the time to arise in faith, not buckle in fear. The Lord is setting the nations free! We will not be shaken, but will arise in this hour of shaking!
+description: The Lord shakes the nations to separate wheat from weeds. Stand in your legislative authority as His Bride, for the chains of bondage are being cut.
 draft: false
 ---
 

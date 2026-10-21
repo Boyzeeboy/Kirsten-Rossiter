@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-04-20
 legacy_path: /the-lord-is-leveling-the-ground-through-his-shaking/
 excerpt: The Lord has been showing me a picture of Him holding a shaker, pouring in many varieties of coloured sand.
-description: The Lord has been showing me a picture of Him holding a shaker, pouring in many varieties of coloured sand.
+description: 'A picture of coloured sand shaken in His hand until it blends: mountains brought down, valleys lifted, and a nation woven into one tapestry.'
 draft: false
 ---
 

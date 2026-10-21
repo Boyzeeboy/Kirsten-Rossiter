@@ -4,7 +4,7 @@ type: Reflection
 date: 2018-01-25
 legacy_path: /lord-works-wonders-earth/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/andy-fitzsimon-104515-300x200.'
-description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/andy-fitzsimon-104515-300x200.'
+description: 'The lyrics of ''Africa, you are loved'': a declaration that the heavens will open, rivers will flow, and the Lord will hear the poor and the needy.'
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-06-07
 legacy_path: /introducing-prophetic-words/
 excerpt: I am posting some of the prophetic words that have been spoken over South Africa and Africa by respected and recognized prophets, to encourage us, build our faith, and remind us of God's promises for our beautiful land and continent.
-description: I am posting some of the prophetic words that have been spoken over South Africa and Africa by respected and recognized prophets, to encourage us, build our faith, and remind us of God's promises for our beautiful land and continent.
+description: 'Why prophetic words spoken over South Africa and Africa are posted here: to build faith and to steady hearts in times of hardship and change.'
 draft: false
 ---
 

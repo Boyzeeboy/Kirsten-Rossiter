@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-08-27
 legacy_path: /little-steps-in-a-wide-open-space/
 excerpt: This is the season of wide, open space for the beloved of the Lord.
-description: This is the season of wide, open space for the beloved of the Lord.
+description: The season of waiting for delayed promises is over. On little steps into wide, open space, and a birthing season that need not be rushed.
 draft: false
 ---
 

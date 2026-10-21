@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-07-06
 legacy_path: /the-fire-of-delay-produces-endurance/
 excerpt: It is through the fire of delay that God produces hearts of endurance. As we walk in places of suffering, He causes a stretching of our heart muscles to endure more than we thought possible.
-description: It is through the fire of delay that God produces hearts of endurance. As we walk in places of suffering, He causes a stretching of our heart muscles to endure more than we thought possible.
+description: The fire of delay stretches the heart to endure more than we thought possible. Bulbs lying under the ground will burst forth in colour and scent.
 draft: false
 ---
 

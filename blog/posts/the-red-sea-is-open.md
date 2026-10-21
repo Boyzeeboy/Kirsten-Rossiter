@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-04-09
 legacy_path: /the-red-sea-is-open/
 excerpt: Yesterday was the first day of Passover 2020. When I awoke, the Lord spoke so clearly, 'Today is the day that you will begin to see the Red Sea open before you.'
-description: Yesterday was the first day of Passover 2020. When I awoke, the Lord spoke so clearly, 'Today is the day that you will begin to see the Red Sea open before you.'
+description: 'A word on the first day of Passover 2020: what was shut up in Egypt becomes attainable, as we walk on dry ground through an opened sea.'
 draft: false
 ---
 

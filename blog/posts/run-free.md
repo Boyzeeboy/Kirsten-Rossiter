@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-09-07
 legacy_path: /run-free/
 excerpt: We all have a past that has influenced the person we've become. The struggles, hurts, disappointments and even abuse that we've suffered, often cause us to build an armour to protect us throughout our lives.
-description: We all have a past that has influenced the person we've become. The struggles, hurts, disappointments and even abuse that we've suffered, often cause us to build an armour to protect us throughout our lives.
+description: The armour we build from past hurt is made of fear and control. Jesus asks us to drop it and stand vulnerable, so He can clothe us with His love.
 draft: false
 ---
 

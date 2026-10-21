@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-09-21
 legacy_path: /honouring-the-fathers/
 excerpt: There is incredible power and a greater forward thrust when the young and old generations take hands and build together.
-description: There is incredible power and a greater forward thrust when the young and old generations take hands and build together.
+description: The world discards what it calls old, but the Kingdom weaves it in. A call to the young generation to honour the fathers and mothers and build together.
 draft: false
 ---
 

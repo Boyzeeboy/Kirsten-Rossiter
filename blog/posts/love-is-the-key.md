@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-10-10
 legacy_path: /love-is-the-key/
 excerpt: A friend of mine told me that when her grandmother lay on her dying bed, her last words were 'I have lived well, but love is the key'.
-description: A friend of mine told me that when her grandmother lay on her dying bed, her last words were 'I have lived well, but love is the key'.
+description: A grandmother's last words were, 'I have lived well, but love is the key'. On drinking from His well until our hearts overflow to those around us.
 draft: false
 ---
 

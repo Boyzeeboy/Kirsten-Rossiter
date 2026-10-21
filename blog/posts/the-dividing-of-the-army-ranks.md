@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2024-05-23
 legacy_path: /the-dividing-of-the-army-ranks/
 excerpt: I hear the Lord say, 'I am dividing the ranks in My army. I am rearranging the order.'
-description: I hear the Lord say, 'I am dividing the ranks in My army. I am rearranging the order.'
+description: 'The Lord is rearranging the order of His army: after a great sifting, those who know His Presence will lead as generals in the battle for the nations.'
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-09-06
 legacy_path: /the-apple-of-his-eye/
 excerpt: A real 'blow-me-away' thought about God's love, is that when He looks at me, He sees only me... as if I am the only one who exists to Him.
-description: A real 'blow-me-away' thought about God's love, is that when He looks at me, He sees only me... as if I am the only one who exists to Him.
+description: When He looks at you He sees no one else. On the Father's words that build identity, and releasing earthly fathers from our unmet expectations.
 draft: false
 ---
 

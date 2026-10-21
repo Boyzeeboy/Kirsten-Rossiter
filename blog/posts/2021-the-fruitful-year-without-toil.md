@@ -3,7 +3,7 @@ title: '2021: The Fruitful Year without Toil!'
 type: Reflection
 date: 2020-12-31
 excerpt: Our God is a God of passion and desire, He is perfect love and the only giver of life. So colourful and creative, brimming with life and vigour!
-description: Our God is a God of passion and desire, He is perfect love and the only giver of life. So colourful and creative, brimming with life and vigour!
+description: 'A word for 2021: an apostolic era of flaming arrows and miracles, where we build His Kingdom from God-given passion and bear fruit without toil.'
 draft: false
 ---
 

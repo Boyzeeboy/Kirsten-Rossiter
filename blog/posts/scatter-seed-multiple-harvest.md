@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-10-14
 legacy_path: /scatter-seed-multiple-harvest/
 excerpt: I see God giving us handfuls of seed - of mixed varieties - and He is saying, 'scatter them, for from this seed will come multiple harvests'.
-description: I see God giving us handfuls of seed - of mixed varieties - and He is saying, 'scatter them, for from this seed will come multiple harvests'.
+description: Handfuls of mixed seed to scatter for multiple harvests. The season of restriction underground has enlarged us for the giant steps now being taken.
 draft: false
 ---
 

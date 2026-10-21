@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-05-12
 legacy_path: /reflecting-on-2019-elections/
 excerpt: The build-up towards the 2019 elections have been quite intense, and I think in many ways, many of us have been feeling a great anti-climax since the release of the results.
-description: The build-up towards the 2019 elections have been quite intense, and I think in many ways, many of us have been feeling a great anti-climax since the release of the results.
+description: 'On the anti-climax after the 2019 elections, and why the growth stayed incremental: old wineskins used for new work, and counsel that must be new too.'
 draft: false
 ---
 

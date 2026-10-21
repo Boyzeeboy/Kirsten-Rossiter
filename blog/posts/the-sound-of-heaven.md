@@ -4,7 +4,7 @@ type: Reflection
 date: 2020-09-04
 legacy_path: /the-sound-of-heaven/
 excerpt: The Lord is releasing a New Sound! Will you partner with Him? Shout with a voice of triumph! Roar with a roar of the Lion of Judah! Rise up, Army-Bride, and take your place! It is time to war in praise!
-description: The Lord is releasing a New Sound! Will you partner with Him? Shout with a voice of triumph! Roar with a roar of the Lion of Judah! Rise up, Army-Bride, and take your place! It is time to war in praise!
+description: 'The lyrics of ''The Sound of Heaven'': a shout of triumph and the roar of the Lion of Judah, calling the Army-Bride to war in praise.'
 draft: false
 ---
 

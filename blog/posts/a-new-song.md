@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-07-06
 legacy_path: /a-new-song/
 excerpt: '''My son and My daughter, be ready to sing a new song. I am releasing a new sound and a new song to My Bride.'''
-description: '''My son and My daughter, be ready to sing a new song. I am releasing a new sound and a new song to My Bride.'''
+description: 'A new sound and a new song for the weary Bride: no time has been lost in the delay, for He has dug deep trenches from which battles are won.'
 draft: false
 ---
 

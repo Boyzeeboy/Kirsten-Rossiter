@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-09-18
 legacy_path: /as-bright-lights-are-sent-out-new-ones-are-brought-in/
 excerpt: The Lord showed me a picture of us - His Bright Lights all across our nation.
-description: The Lord showed me a picture of us - His Bright Lights all across our nation.
+description: As corruption is exposed, He uses the darkness to turn up our brightness, sending His bright lights out to the nations and bringing new ones in.
 draft: false
 ---
 

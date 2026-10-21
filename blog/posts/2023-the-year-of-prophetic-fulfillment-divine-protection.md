@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2023-01-21
 legacy_path: /2023-the-year-of-prophetic-fulfillment-divine-protection/
 excerpt: I am so overwhelmed by the goodness and faithfulness of Abba. 2023 is a year of prophetic fulfillment of promises that have been shelved for decades. It is the season of the New Book, and with it comes fresh white pages on which the Holy Spirit is writing His words of life and promise as it is made manifest in our lives.
-description: I am so overwhelmed by the goodness and faithfulness of Abba. 2023 is a year of prophetic fulfillment of promises that have been shelved for decades. It is the season of the New Book, and with it comes fresh white pages on which the Holy Spirit is writing His words of life and promise as it is made manifest in our lives.
+description: '2023 opens the New Book: promises shelved for decades are fulfilled, world systems break, and His banner of protection covers us through the stripping.'
 draft: false
 ---
 

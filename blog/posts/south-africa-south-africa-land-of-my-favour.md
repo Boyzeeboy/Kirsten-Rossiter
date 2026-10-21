@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-03-20
 legacy_path: /south-africa-south-africa-land-of-my-favour/
 excerpt: South Africa, South Africa, Land of My Favour!
-description: South Africa, South Africa, Land of My Favour!
+description: 'A word over South Africa: the years of pressing have gathered a remnant who look to Him as their only refuge, and a harvest of souls is at hand.'
 draft: false
 ---
 

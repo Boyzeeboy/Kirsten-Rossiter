@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-11-27
 legacy_path: /divine-surprises-await-us/
 excerpt: The Lord has been stirring my heart in the last day, saying,
-description: The Lord has been stirring my heart in the last day, saying,
+description: 'A word of divine surprises: His favour overtakes you in this new day, and Heaven''s plans break into earthly reality after the labour and the tears.'
 draft: false
 ---
 

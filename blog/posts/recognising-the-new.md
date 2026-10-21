@@ -3,7 +3,7 @@ title: Recognising the 'New'
 type: Reflection
 date: 2023-05-23
 excerpt: Hearing about and expecting the 'new' is one thing. Recognizing it and swimming in its stream, is another thing, altogether.
-description: Hearing about and expecting the 'new' is one thing. Recognizing it and swimming in its stream, is another thing, altogether.
+description: Expecting the 'new' is one thing; recognising it is another. He is undoing the systems built to hold the old, and the old must bow to the new day.
 draft: false
 ---
 

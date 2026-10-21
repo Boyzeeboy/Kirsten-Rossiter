@@ -3,7 +3,7 @@ title: The God of Abraham, Isaac and Jacob
 type: Reflection
 date: 2022-05-08
 excerpt: Which generation are you falling in right now? The one who have tarried for God's promises, the one who will inherit, or the one who will be a living transformation?
-description: Which generation are you falling in right now? The one who have tarried for God's promises, the one who will inherit, or the one who will be a living transformation?
+description: 'Three generations: those who tarry as Abraham did, those who inherit as Isaac, and those who become a living transformation. Which are you in?'
 draft: false
 ---
 

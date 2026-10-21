@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2021-09-03
 legacy_path: /god-enthroned-speaks-to-rebel-kings-laughing-at-their-schemes/
 excerpt: Psalm 2 paints a vivid theatrical picture of God, the Son, and the Holy Spirit, speaking to the wicked world leaders who have set themselves against Yahweh.
-description: Psalm 2 paints a vivid theatrical picture of God, the Son, and the Holy Spirit, speaking to the wicked world leaders who have set themselves against Yahweh.
+description: 'Psalm 2 read for our hour: God-Enthroned mocks the schemes of the rebel-kings, while Christ and His Bride are given the nations as their inheritance.'
 draft: false
 ---
 

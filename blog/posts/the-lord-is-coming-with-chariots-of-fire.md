@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-04-09
 legacy_path: /the-lord-is-coming-with-chariots-of-fire/
 excerpt: For at least a week now I have been hearing a loud rumbling sound in my spirit, and keep seeing large wooden wheels riding violently over a rocky dirt road.
-description: For at least a week now I have been hearing a loud rumbling sound in my spirit, and keep seeing large wooden wheels riding violently over a rocky dirt road.
+description: 'A week of rumbling wheels heard in the spirit: His chariots of fire descending to shake the land and dismantle the high places built by men''s hands.'
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-09-03
 legacy_path: /get-rain-buckets-ready/
 excerpt: The Lord is about to pour out His Glory Rain upon our land. We have stepped into the new season of His outpouring... we must expect His visitation in this hour.
-description: The Lord is about to pour out His Glory Rain upon our land. We have stepped into the new season of His outpouring... we must expect His visitation in this hour.
+description: His Glory Rain is about to fall on South Africa. Chariots of fire will ride from south to north, so repair the gutters and get the rain buckets ready.
 draft: false
 ---
 

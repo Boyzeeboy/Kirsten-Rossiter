@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-08-04
 legacy_path: /in-whose-strength-do-we-trust/
 excerpt: In whose strength do we trust?
-description: In whose strength do we trust?
+description: When nothing goes our way, whose strength do we run to? Hezekiah fell through flattery and pride; the Bride must walk with her eyes wide open.
 draft: false
 ---
 

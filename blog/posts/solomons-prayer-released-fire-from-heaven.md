@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-01-21
 legacy_path: /solomons-prayer-released-fire-from-heaven/
 excerpt: When Solomon dedicated the Temple to God, he prayed fervently, asking whether He would hear the prayers of His people when they turn from their wicked ways, would He forgive them and keep His…
-description: When Solomon dedicated the Temple to God, he prayed fervently, asking whether He would hear the prayers of His people when they turn from their wicked ways, would He forgive them and keep His…
+description: Fire fell the moment Solomon finished praying at the dedication of the Temple. On the promise that followed, and the prayer that still moves Heaven.
 draft: false
 ---
 

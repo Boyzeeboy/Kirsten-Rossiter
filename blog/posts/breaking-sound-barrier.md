@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-04-29
 legacy_path: /breaking-sound-barrier/
 excerpt: God has a call on His church to enter into her promised land at this time. To inherit that which she's been prepared for.
-description: God has a call on His church to enter into her promised land at this time. To inherit that which she's been prepared for.
+description: We stand behind a glass wall, seeing our inheritance but unable to possess it. Praise and declaration break the barrier that keeps us silent.
 draft: false
 ---
 

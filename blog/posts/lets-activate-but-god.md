@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-09-01
 legacy_path: /lets-activate-but-god/
 excerpt: There is a global agenda at work in the world, to bring all nations together under a One World Order.
-description: There is a global agenda at work in the world, to bring all nations together under a One World Order.
+description: A global agenda works through the cracks in a nation's walls. A call to discernment, and to hear His divine strategy trumpeted over the flood.
 draft: false
 ---
 

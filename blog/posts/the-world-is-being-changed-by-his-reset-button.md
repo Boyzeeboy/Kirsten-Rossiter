@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-03-16
 legacy_path: /the-world-is-being-changed-by-his-reset-button/
 excerpt: The Lord has been speaking repeatedly about new systems, new models, new ways of working, new ways of living.
-description: The Lord has been speaking repeatedly about new systems, new models, new ways of working, new ways of living.
+description: He did not create the virus, but He is using it. On new systems and models, families healed, and church demolished as we have known it.
 draft: false
 ---
 

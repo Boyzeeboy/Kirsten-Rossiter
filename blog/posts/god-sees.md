@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-06-16
 legacy_path: /god-sees/
 excerpt: There is great comfort in knowing that God sees all things, and not one wicked act done, will go unnoticed or unpunished.
-description: There is great comfort in knowing that God sees all things, and not one wicked act done, will go unnoticed or unpunished.
+description: There is comfort in knowing no wicked act goes unnoticed. He is Defender of the poor, the fatherless and the widow, and He alone is our safe place.
 draft: false
 ---
 

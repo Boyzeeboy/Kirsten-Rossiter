@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-12-13
 legacy_path: /migrating-back/
 excerpt: I saw vivid images yesterday, of migrating birds flying over lands and seas, migrating herd running over fields.
-description: I saw vivid images yesterday, of migrating birds flying over lands and seas, migrating herd running over fields.
+description: Images of migrating birds and herds, and the song they birthed. A call home for the thirsty, in the season of the prodigals' return.
 draft: false
 ---
 

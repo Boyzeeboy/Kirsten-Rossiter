@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-09-19
 legacy_path: /identity-reveals-love/
 excerpt: Our identities are directly linked to our effectiveness to reveal the love of God.
-description: Our identities are directly linked to our effectiveness to reveal the love of God.
+description: We cannot reveal a perfect love while our own identity is insecure. On being healed and secured in His affection, so His love spills over without words.
 draft: false
 ---
 

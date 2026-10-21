@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-12-15
 legacy_path: /the-prayers-of-the-chinese-people-have-gone-forth-for-china-and-the-nations/
 excerpt: The Chinese people have paid a price for the freedom of the nations. Their prayers and cries are for China and the rest of the world, to be set free from the snare of the enemy!
-description: The Chinese people have paid a price for the freedom of the nations. Their prayers and cries are for China and the rest of the world, to be set free from the snare of the enemy!
+description: A word on the Chinese Christians whose prayers in great suffering have gone up for China and the nations, against the Jezebel spirit of control.
 draft: false
 ---
 

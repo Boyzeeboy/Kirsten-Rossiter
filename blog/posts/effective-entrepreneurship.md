@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2017-07-15
 legacy_path: /effective-entrepreneurship/
 excerpt: Many dream of being an effective, innovative entrepreneur, free from the corporate systems and earning more than a mere monthly salary.
-description: Many dream of being an effective, innovative entrepreneur, free from the corporate systems and earning more than a mere monthly salary.
+description: Instead of chasing the one big idea, build many small businesses from your natural gifting, keeping the overheads low and the offering unique.
 draft: false
 ---
 

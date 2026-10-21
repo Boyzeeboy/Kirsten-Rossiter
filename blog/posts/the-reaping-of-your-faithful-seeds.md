@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-01-11
 legacy_path: /the-reaping-of-your-faithful-seeds/
 excerpt: I hear the Lord say, "Those who have been faithful with little will be made ruler over much in this season. My eyes are ever-watchful, and where others haven't seen, I have.
-description: I hear the Lord say, "Those who have been faithful with little will be made ruler over much in this season. My eyes are ever-watchful, and where others haven't seen, I have.
+description: Those faithful with little will be made ruler over much. He has kept your tears in His bottle and watered every seed sown in the hidden places.
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-10-19
 legacy_path: /the-time-of-judgment-has-come/
 excerpt: A few days ago the Spirit of the Lord moved so deeply in my soul, it was as if I could feel the Lord's pain and sorrow for the sins of the wicked and the impending judgment that awaits them.
-description: A few days ago the Spirit of the Lord moved so deeply in my soul, it was as if I could feel the Lord's pain and sorrow for the sins of the wicked and the impending judgment that awaits them.
+description: Feeling the Lord's own sorrow over the sins of the wicked, and the point at which the enemy goes too far and He steps in, as in the days of Noah.
 draft: false
 ---
 

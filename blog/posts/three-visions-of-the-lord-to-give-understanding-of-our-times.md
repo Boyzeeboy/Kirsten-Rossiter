@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2023-10-04
 legacy_path: /three-visions-of-the-lord-to-give-understanding-of-our-times/
 excerpt: This is a very important message from the Lord to help us understand our times. God has been showing me three visions over the last few weeks that I would like to share here.
-description: This is a very important message from the Lord to help us understand our times. God has been showing me three visions over the last few weeks that I would like to share here.
+description: 'Three visions for understanding our times, beginning with a gearbox: He is changing gears, and the neutral moment is not a loss of control.'
 draft: false
 ---
 

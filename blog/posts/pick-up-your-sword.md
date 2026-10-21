@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-05-19
 legacy_path: /pick-up-your-sword/
 excerpt: The Lord called out to me this week, 'Pick up your Sword!', 'Pick up your Sword!'
-description: The Lord called out to me this week, 'Pick up your Sword!', 'Pick up your Sword!'
+description: '''Pick up your Sword!'' Isaiah 34 and the Sword of the Lord: when we take up the Word, the enemy''s lies about God''s goodness are exposed.'
 draft: false
 ---
 

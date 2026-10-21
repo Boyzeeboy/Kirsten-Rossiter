@@ -4,7 +4,7 @@ type: Reflection
 date: 2018-01-22
 legacy_path: /lord-gathers-unrighteous/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/11/You-are-Mine-2016_11_21-4.28-PM.'
-description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/11/You-are-Mine-2016_11_21-4.28-PM.'
+description: He gathers the unrighteous and declares salvation over them. On the mercy extended to every prodigal, and the Gentiles grafted in with the Jews.
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-11-12
 legacy_path: /heavens-curtains-are-opened-tip-over-the-oil-catch-the-fire/
 excerpt: The Lord is calling His People to come before Him, seeking Him out, for He is opening the Heavens as a curtain, and He is making available the weighty richness of His Anointing Oil, pouring it out…
-description: The Lord is calling His People to come before Him, seeking Him out, for He is opening the Heavens as a curtain, and He is making available the weighty richness of His Anointing Oil, pouring it out…
+description: Heaven's curtain stands open to those with clean hands and pure hearts. A call to tip over the vessel of His anointing oil and hold the torch high.
 draft: false
 ---
 

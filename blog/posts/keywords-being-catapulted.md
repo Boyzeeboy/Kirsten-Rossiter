@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-02-12
 legacy_path: /keywords-being-catapulted/
 excerpt: This new season for the Bride of Christ will be marked by people working alongside each other in unity of vision, focus, passion, obedience to the Lord, and faithfulness.
-description: This new season for the Bride of Christ will be marked by people working alongside each other in unity of vision, focus, passion, obedience to the Lord, and faithfulness.
+description: 'A season marked by community: a net formed of joined hands and feet, and a picture of one person swinging another high and catapulting them forward.'
 draft: false
 ---
 

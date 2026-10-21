@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2020-01-27
 legacy_path: /word-of-the-lord-for-south-africa-davids-arise/
 excerpt: The Lord would say to you, South Africa, 'My Hand I have removed from the Sauls who have ruled and ruined this nation.
-description: The Lord would say to you, South Africa, 'My Hand I have removed from the Sauls who have ruled and ruined this nation.
+description: 'A word over South Africa: His hand removed from the Sauls who ruled and ruined her, and His anointing now on the Davids prepared in secret.'
 draft: false
 ---
 

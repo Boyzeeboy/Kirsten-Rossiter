@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-08-06
 legacy_path: /the-visitation-of-the-lord-on-the-wicked/
 excerpt: As I've been studying the book of Jeremiah, the Lord has been drawing parallels between Babylon and South Africa that I'd like to share with you.
-description: As I've been studying the book of Jeremiah, the Lord has been drawing parallels between Babylon and South Africa that I'd like to share with you.
+description: 'Jeremiah''s Babylon read against South Africa: the pattern of oppression, repentance and deliverance, and the visitation that falls on the oppressor.'
 draft: false
 ---
 

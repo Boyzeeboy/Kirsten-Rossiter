@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-08-27
 legacy_path: /have-courage-to-stand-alone-if-you-must/
 excerpt: One thing history-makers and shakers have in common, is they have the courage to stand alone, if they must.
-description: One thing history-makers and shakers have in common, is they have the courage to stand alone, if they must.
+description: History-makers share the courage to stand alone under criticism, and let maturity finish its work until old chains fly as flags of freedom.
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2019-03-12
 legacy_path: /i-am-your-inheritance/
 excerpt: When the Israelites came to their Promised Land, the Lord instructed Joshua to allocate the land between the eleven tribes, but the Levitical tribe, He said, will not be given land as an…
-description: When the Israelites came to their Promised Land, the Lord instructed Joshua to allocate the land between the eleven tribes, but the Levitical tribe, He said, will not be given land as an…
+description: The Levites were given no land, for He was their inheritance. On the seasons of lack that teach us He is Provider, and why they ask for higher trust.
 draft: false
 ---
 

@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-08-28
 legacy_path: /red-alert-pray-in-the-spirit-for-south-africa/
 excerpt: 'RED ALERT: South Africa ? Call to all Intercessors to release Arrows of Light and Arrows of Blood into the enemy strongholds Dear leader and intercessor, We write this to you as a matter of urgency!'
-description: 'RED ALERT: South Africa ? Call to all Intercessors to release Arrows of Light and Arrows of Blood into the enemy strongholds Dear leader and intercessor, We write this to you as a matter of urgency!'
+description: 'An urgent call to South African intercessors, shared from Mirjam Horak: a strategy to expose and pull down the strongholds behind plans for civil war.'
 draft: false
 ---
 

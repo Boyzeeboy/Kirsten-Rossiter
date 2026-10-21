@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2021-11-09
 legacy_path: /as-we-enter-to-possess-jesus-is-saying-i-am-here-to-take-charge/
 excerpt: Joshua's encounter with the Commander of the Armies of Heaven mirrors what the Lord is saying to us right now.
-description: Joshua's encounter with the Commander of the Armies of Heaven mirrors what the Lord is saying to us right now.
+description: Joshua met the Commander of Heaven's armies as Israel entered Canaan. So Jesus steps in to take charge as we cross over to possess our inheritance.
 draft: false
 ---
 

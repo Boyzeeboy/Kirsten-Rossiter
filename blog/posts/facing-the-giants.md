@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2016-12-28
 legacy_path: /facing-the-giants/
 excerpt: We are living in a world that is changing at a rapid pace... that which is right is seen as wrong, and that which is wrong is seen as right.
-description: We are living in a world that is changing at a rapid pace... that which is right is seen as wrong, and that which is wrong is seen as right.
+description: Right is called wrong as the globalist agenda rises. On the sifting of the church, and the Warrior-Bride arising with truth in her mouth.
 draft: false
 ---
 

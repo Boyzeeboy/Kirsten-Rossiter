@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2018-02-23
 legacy_path: /understanding-the-kingdom-of-god/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/02/chris-brignola-20871-unsplash-300x200.'
-description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/02/chris-brignola-20871-unsplash-300x200.'
+description: Why understanding the Kingdom matters for discerning our times, with teachings from Rick Joyner and Dr Bill Hamon on its establishing in the last days.
 draft: false
 ---
 

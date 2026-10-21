@@ -4,7 +4,7 @@ type: Reflection
 date: 2020-04-06
 legacy_path: /let-spontaneous-worship-erupt/
 excerpt: REFLECTING ON THE WELSH AND AZUSA STREET REVIVALS I just love reading about the Holy Spirit's outpourings on the earth.
-description: REFLECTING ON THE WELSH AND AZUSA STREET REVIVALS I just love reading about the Holy Spirit's outpourings on the earth.
+description: 'Reflecting on the Welsh and Azusa Street revivals: humble people sought God until He came, and spontaneous worship erupted when He did.'
 draft: false
 ---
 
