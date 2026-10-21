@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const matter = require('gray-matter');
 const { Marked } = require('marked');
 
@@ -578,6 +579,96 @@ function buildRedirects(posts) {
   console.log(`  built  _redirects (${rules.length} archive rules for ${legacy.length} posts, ${total}/${STATIC_REDIRECT_LIMIT} static)`);
 }
 
+// ---- Asset versioning -------------------------------------------------------
+//
+// styles.css, vendor/tokens.css and site.js are served with
+// `cache-control: public, max-age=14400`, while the HTML is `max-age=0`. A
+// returning visitor therefore picks up new markup at once and keeps the old
+// stylesheet for up to four hours. That is not theoretical: the paginated blog
+// index shipped on 21 Oct 2026 and rendered as unstyled blue links for anyone
+// who had loaded the site earlier that day — new HTML, four-hour-old CSS.
+//
+// So the HTML asks for the file by content hash. A changed asset is a changed
+// URL, which no browser has cached, and the stale copy is simply never
+// requested again. An unchanged asset keeps its URL and stays cached — the
+// hash is of the bytes, not of the build.
+//
+// Every HTML file is rewritten, not just the generated ones: terms.html and
+// 404.html are deliberately left out of the nav/footer inlining because that
+// would change how they look, but a query string on a stylesheet link changes
+// nothing visually, so there is no reason to leave them stale.
+const VERSIONED_ASSETS = ['styles.css', 'vendor/tokens.css', 'site.js'];
+
+// Source, not output: partials/ is inlined into the pages (and versioned
+// there), admin/ is the CMS and loads its own bundle from a CDN.
+const VERSION_SKIP_DIRS = new Set([
+  'node_modules', '.git', '.github', '.claude', 'test-results', 'tests', 'partials', 'admin', 'vendor',
+]);
+
+function assetVersions() {
+  const versions = {};
+  for (const rel of VERSIONED_ASSETS) {
+    const file = path.join(__dirname, rel);
+    if (!fs.existsSync(file)) throw new Error(`versioned asset missing: ${rel}`);
+    const bytes = fs.readFileSync(file);
+    versions[rel] = crypto.createHash('sha256').update(bytes).digest('hex').slice(0, 8);
+  }
+  return versions;
+}
+
+// Anchored on the opening quote so a prefix cannot be matched loosely — a
+// bare `styles.css` pattern would otherwise match the tail of `mystyles.css`.
+// An existing ?v= is replaced, which is what makes a rebuild idempotent.
+function versionAssetLinks(html, versions) {
+  let out = html;
+  for (const [rel, hash] of Object.entries(versions)) {
+    const escaped = rel.replace(/\./g, '\\.');
+    const re = new RegExp(`(href|src)="((?:\\.\\./)*|/)${escaped}(?:\\?v=[0-9a-f]+)?"`, 'g');
+    out = out.replace(re, (_m, attr, prefix) => `${attr}="${prefix}${rel}?v=${hash}"`);
+  }
+  return out;
+}
+
+function versionAssetsEverywhere(versions) {
+  const files = [];
+  (function walk(dir) {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (entry.isDirectory()) {
+        if (VERSION_SKIP_DIRS.has(entry.name)) continue;
+        walk(path.join(dir, entry.name));
+      } else if (entry.name.endsWith('.html')) {
+        files.push(path.join(dir, entry.name));
+      }
+    }
+  })(__dirname);
+
+  let changed = 0;
+  const unversioned = [];
+  for (const file of files) {
+    const before = fs.readFileSync(file, 'utf8');
+    const after = versionAssetLinks(before, versions);
+    if (after !== before) {
+      fs.writeFileSync(file, after);
+      changed++;
+    }
+    // Anything still bare means a reference this pass does not understand —
+    // a new asset, or a path shape the pattern misses. Caching it hard would
+    // be the very bug this exists to prevent, so fail loudly.
+    for (const rel of VERSIONED_ASSETS) {
+      const escaped = rel.replace(/\./g, '\\.');
+      if (new RegExp(`(href|src)="((?:\\.\\./)*|/)?${escaped}"`).test(after)) {
+        unversioned.push(`${path.relative(__dirname, file)} -> ${rel}`);
+      }
+    }
+  }
+  if (unversioned.length) {
+    throw new Error(`unversioned asset reference(s) left behind:\n  ${unversioned.join('\n  ')}`);
+  }
+
+  const summary = Object.entries(versions).map(([rel, h]) => `${rel}=${h}`).join(' ');
+  console.log(`  built  asset versions in ${files.length} page(s), ${changed} rewritten (${summary})`);
+}
+
 // sitemap.xml is generated, never hand-edited — editing it by hand is how it
 // went stale. The homepage and blog index both change whenever a post is
 // published, so their lastmod tracks the newest post.
@@ -650,3 +741,4 @@ buildHomepageInsights(posts);
 inlineStaticPages();
 buildSitemap(posts, indexPages);
 buildRedirects(posts);
+versionAssetsEverywhere(assetVersions());

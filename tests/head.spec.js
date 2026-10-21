@@ -74,6 +74,21 @@ test.describe('noindex pages', () => {
   }
 });
 
+// styles.css, tokens.css and site.js are cached for four hours while the HTML
+// is not cached at all, so a returning visitor gets new markup against an old
+// stylesheet. That shipped once: the paginated blog index rendered as unstyled
+// blue links for anyone who had loaded the site earlier that day. The content
+// hash in the URL is what prevents it, and a page that loses it would look
+// perfectly fine until the next CSS change.
+for (const path of ['/', '/blog/', '/blog/page/2', '/blog/keep-moving-forward', '/contact', '/terms', '/404.html']) {
+  test(`assets are version-stamped on ${path}`, async ({ request }) => {
+    const html = await (await request.get(path)).text();
+    const refs = [...html.matchAll(/(?:href|src)="([^"]*(?:styles\.css|tokens\.css|site\.js)[^"]*)"/g)].map((m) => m[1]);
+    expect(refs.length).toBeGreaterThan(0);
+    for (const ref of refs) expect(ref, `${ref} is not version-stamped`).toMatch(/\?v=[0-9a-f]{8}$/);
+  });
+}
+
 test('blog index links posts extensionless, like the homepage and sitemap', async ({ request }) => {
   const html = await (await request.get('/blog/')).text();
   const hrefs = [...html.matchAll(/class="post-row" href="([^"]+)"/g)].map((m) => m[1]);
