@@ -4,7 +4,7 @@ type: Reflection
 date: 2020-06-21
 excerpt: The Old Testament is filled with prophetic words and visions that are relevant to past and future times.
 description: The Old Testament is filled with prophetic words and visions that are relevant to past and future times.
-draft: true
+draft: false
 ---
 
 The Old Testament is filled with prophetic words and visions that are relevant to past and future times. Zechariah receives a vision from the Lord in the 6th chapter that I want to share with you, as it is very relevant to this new era.

@@ -5,7 +5,7 @@ date: 2019-03-20
 legacy_path: /south-africa-south-africa-land-of-my-favour/
 excerpt: South Africa, South Africa, Land of My Favour!
 description: South Africa, South Africa, Land of My Favour!
-draft: true
+draft: false
 ---
 
 > South Africa, South Africa, land of My Favour!  Turn your eyes to Me, and let Me show you Heaven’s Perspective over your past, present, and future. **For it is I Who created you, Who called you by name, Who set you apart for My Purposes, to declare and show forth My Glory and carry My Fire to the ends of the earth.**

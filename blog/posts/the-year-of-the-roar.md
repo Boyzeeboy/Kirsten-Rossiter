@@ -5,7 +5,7 @@ date: 2020-06-03
 legacy_path: /the-year-of-the-roar/
 excerpt: The Lord would say, 'This is the year of the Mouth, the Roar!
 description: The Lord would say, 'This is the year of the Mouth, the Roar!
-draft: true
+draft: false
 ---
 
 The Lord would say, ***'This is the year of the Mouth, the Roar!** For the mouth of Truth that has been muted in the last era by accusations, lies, and shame, has now been opened, and will speak with a roar and a shout. Truth will be roared from the hilltops. It will be declared in the streets. **For I have turned on the Light of Truth, and every single hidden dark thing will be exposed.***

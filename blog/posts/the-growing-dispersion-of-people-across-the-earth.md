@@ -5,7 +5,7 @@ date: 2018-08-01
 legacy_path: /the-growing-dispersion-of-people-across-the-earth/
 excerpt: There is going to be a growing dispersion of people across the earth as nations choose whom they will serve. The Bible speaks of sheep and goat nations at the end of the Age.
 description: There is going to be a growing dispersion of people across the earth as nations choose whom they will serve. The Bible speaks of sheep and goat nations at the end of the Age.
-draft: true
+draft: false
 ---
 
 **There is going to be a growing dispersion of people across the earth as nations choose whom they will serve.** The Bible speaks of sheep and goat nations at the end of the Age. The Lord is shaking and sifting the nations, His remnant is called to establish sheep nations, and those who are anti-Christ will gather together and establish goat nations.

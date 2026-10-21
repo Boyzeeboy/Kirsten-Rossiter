@@ -5,7 +5,7 @@ date: 2019-12-23
 legacy_path: /word-of-the-lord-for-2020/
 excerpt: The Lord would say to His Bride, 'My Beloved, you have crossed the threshold of the old to the new. You have stepped into My Timing for My End-Time Bride...
 description: The Lord would say to His Bride, 'My Beloved, you have crossed the threshold of the old to the new. You have stepped into My Timing for My End-Time Bride...
-draft: true
+draft: false
 ---
 
 The Lord would say to His Bride, *'My Beloved, you have crossed the threshold of the old to the new. You have stepped into My Timing for My End-Time Bride... for as I've taken you through your own desert and wilderness, where I have humbled, stripped, and prepared you, so I am taking you into your place of fruitfulness and harvest.*

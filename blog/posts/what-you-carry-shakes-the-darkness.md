@@ -5,7 +5,7 @@ date: 2021-05-22
 legacy_path: /what-you-carry-shakes-the-darkness/
 excerpt: 'Rather than focussing on the natural at what we see, we need to focus on the spiritual at what we carry. When looking at the account of Jesus stepping off the boat after the storm at sea, into a region that was filled with demonic activity, he used one word to deal with the situation: ''Go!''.'
 description: 'Rather than focussing on the natural at what we see, we need to focus on the spiritual at what we carry. When looking at the account of Jesus stepping off the boat after the storm at sea, into a region that was filled with demonic activity, he used one word to deal with the situation: ''Go!''.'
-draft: true
+draft: false
 ---
 
 Rather than focussing on the natural at what we see, we need to focus on the spiritual at what we carry. When looking at the account of Jesus stepping off the boat after the storm at sea, into a region that was filled with demonic activity, he used one word to deal with the situation: 'Go!'. Immediately, the demons obeyed, leaving the men and entering the pigs.

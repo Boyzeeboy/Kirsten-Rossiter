@@ -5,7 +5,7 @@ date: 2022-10-17
 legacy_path: /upskill-for-the-upgrade/
 excerpt: I've been hearing the Lord say, 'Upskill for the upgrade'. The Lord's Almighty Arm has moved into action. He is shifting, moving, changing, relocating, and releasing His army into their divine calling for this new era.
 description: I've been hearing the Lord say, 'Upskill for the upgrade'. The Lord's Almighty Arm has moved into action. He is shifting, moving, changing, relocating, and releasing His army into their divine calling for this new era.
-draft: true
+draft: false
 ---
 
 I've been hearing the Lord say, ***'Upskill for the upgrade'**.* The Lord's Almighty Arm has moved into action. He is shifting, moving, changing, relocating, and releasing His army into their divine calling for this new era. We have waited and waited - the nighttime has been long, but the dawn has come and the breaking of the new day is here. Can you hear the sound of Heaven in the atmosphere?

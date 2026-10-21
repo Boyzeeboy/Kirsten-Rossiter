@@ -5,7 +5,7 @@ date: 2023-12-31
 legacy_path: /prophetic-word-for-2024-year-of-reward/
 excerpt: This last year has been one of the Lord pulling us near Himself. He has been speaking whispers to His beloved. Whispers of love and adoration, blueprints and visions. Everything that the Lord is going to build in us, through us, and for us, will come from the place of intimacy with Him.
 description: This last year has been one of the Lord pulling us near Himself. He has been speaking whispers to His beloved. Whispers of love and adoration, blueprints and visions. Everything that the Lord is going to build in us, through us, and for us, will come from the place of intimacy with Him.
-draft: true
+draft: false
 ---
 
 This last year has been one of the Lord pulling us near Himself. He has been speaking whispers to His beloved. Whispers of love and adoration, blueprints and visions. Everything that the Lord is going to build in us, through us, and for us, will come from the place of intimacy with Him.

@@ -5,7 +5,7 @@ date: 2019-05-19
 legacy_path: /pick-up-your-sword/
 excerpt: The Lord called out to me this week, 'Pick up your Sword!', 'Pick up your Sword!'
 description: The Lord called out to me this week, 'Pick up your Sword!', 'Pick up your Sword!'
-draft: true
+draft: false
 ---
 
 The Lord called out to me this week, *'Pick up your Sword!', 'Pick up your Sword!'*. For the battle has been fierce, leaving many of God's people feeling weary, tired, discouraged, and asking, *'Where are you, Lord?'*.

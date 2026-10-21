@@ -5,7 +5,7 @@ date: 2018-10-18
 legacy_path: /when-we-come-to-the-end-of-ourselves-miracles-happen/
 excerpt: The process of coming to the end of ourselves is a very painful one, but very freeing. It is in our nature to solve problems and assist God in bringing about that which He promises.
 description: The process of coming to the end of ourselves is a very painful one, but very freeing. It is in our nature to solve problems and assist God in bringing about that which He promises.
-draft: true
+draft: false
 ---
 
 **The process of coming to the end of ourselves is a very painful one, but very freeing.** It is in our nature to solve problems and assist God in bringing about that which He promises. When we've tried all doors and avenues and still end up at the same place, completely exhausted and perplexed, we are kind of forced to let it all go and trust that God is in control regardless of what we see in the natural. **To inherit the 'New' requires the abandonment of old mindsets striving according to old ways. We need new mindsets, ready to receive that which we haven't yet seen or known, with eyes fixed and hearts fully reliant on Him alone.**

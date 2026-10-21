@@ -5,7 +5,7 @@ date: 2019-11-21
 legacy_path: /the-connection-between-sexual-immorality-and-baal-worship/
 excerpt: Over the last few months, the Lord has been opening up the workings of the Jezebel spirit to me.
 description: Over the last few months, the Lord has been opening up the workings of the Jezebel spirit to me.
-draft: true
+draft: false
 ---
 
 Over the last few months, the Lord has been opening up the workings of the Jezebel spirit to me. I've been feeling a pressing need to learn about her character, methods, schemes and motives, as the Lord is wanting to clear the smoke before our eyes, which keeps us from seeing her operating in our midst. For Jezebel will be our biggest demonic opponent in this End-Time battle for the nations. She works through deceiving us with her lies by using terminologies that give the impression that what she builds is for the better good, but her motives are wicked, and whatever she puts her hands to, and wherever she gains ground, is for the establishment of the institution of Baal.

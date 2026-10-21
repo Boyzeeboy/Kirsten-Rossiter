@@ -5,7 +5,7 @@ date: 2020-08-23
 legacy_path: /what-happens-in-america-will-affect-the-whole-world/
 excerpt: I have been so burdened for America, President Trump, and his entire administration. The Lord has shown me a picture a few months ago, I saw the hordes of hell charging at him, and I heard the Lord say, “My people need to fast and pray for Trump and America as they are facing the battle for the nations head-on. The battlefield for the nations are fought on American soil right now.”
 description: I have been so burdened for America, President Trump, and his entire administration. The Lord has shown me a picture a few months ago, I saw the hordes of hell charging at him, and I heard the Lord say, “My people need to fast and pray for Trump and America as they are facing the battle for the nations head-on. The battlefield for the nations are fought on American soil right now.”
-draft: true
+draft: false
 ---
 
 The Word of the Lord has been declared over America and the nations, that this is a time of Kingdom-building and Sheep-establishing across the earth. The Bride of Christ is called to rise to her place of authority and position to be the co-laborer she is called to be, working on the earth to establish the Kingdom of God and the Will of God - as it is in Heaven, on earth.

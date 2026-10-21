@@ -5,7 +5,7 @@ date: 2020-01-11
 legacy_path: /the-reaping-of-your-faithful-seeds/
 excerpt: I hear the Lord say, "Those who have been faithful with little will be made ruler over much in this season. My eyes are ever-watchful, and where others haven't seen, I have.
 description: I hear the Lord say, "Those who have been faithful with little will be made ruler over much in this season. My eyes are ever-watchful, and where others haven't seen, I have.
-draft: true
+draft: false
 ---
 
 I hear the Lord say, *"Those who have been faithful with little will be made ruler over much in this season. My eyes are ever-watchful, and where others haven't seen, I have. Where others haven't heard, I have. My children, I am flying My banner of love over you. My Perfect Love. All fear has to flee in My Presence. Rest in My Love, knowing that even in the midst of the transition of the 'new', I am in control, and you need not fear... only trust and obey as I lead you.*

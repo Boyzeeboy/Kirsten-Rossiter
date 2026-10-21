@@ -5,7 +5,7 @@ date: 2020-04-25
 legacy_path: /preparing-for-revival/
 excerpt: LESSONS FROM PREVIOUS REVIVALS The Lord is shaking the earth, getting her ready for the greatest Holy Spirit outpouring the world has ever seen or experienced.
 description: LESSONS FROM PREVIOUS REVIVALS The Lord is shaking the earth, getting her ready for the greatest Holy Spirit outpouring the world has ever seen or experienced.
-draft: true
+draft: false
 ---
 
 **LESSONS FROM PREVIOUS REVIVALS**

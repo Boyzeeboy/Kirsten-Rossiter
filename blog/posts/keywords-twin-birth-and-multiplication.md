@@ -5,7 +5,7 @@ date: 2019-01-29
 legacy_path: /keywords-twin-birth-and-multiplication/
 excerpt: Twin-birth refers to the 'double portion' that the Lord has for His Bride.
 description: Twin-birth refers to the 'double portion' that the Lord has for His Bride.
-draft: true
+draft: false
 ---
 
 Twin-birth refers to the 'double portion' that the Lord has for His Bride. It speaks of His favour and blessing which is released in great measure when His Bride walks and operates in the five-fold ministry - pastoral, evangelical, teacher, apostolic and prophetic. The latter two are the significant ones that complete the five-fold ministry, releasing explosive and unprecedented favour that will cause Heaven to invade earth.

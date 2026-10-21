@@ -5,7 +5,7 @@ date: 2018-03-06
 legacy_path: /a-word-of-encouragement-a-well-watered-garden-you-are/
 excerpt: 'A Word of Encouragement: A Well-Watered Garden You are'
 description: 'A Word of Encouragement: A Well-Watered Garden You are'
-draft: true
+draft: false
 ---
 
 > *You say, 'Lord, how long must the shovels and picks have access in my dry soil? How long will they plunge into my deep?', the Lord replies, **'these tools, sharp and rough, will hit a Well that's deep within, and release a continual flow from the Sweetest Spot of Me.***

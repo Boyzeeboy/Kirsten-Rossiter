@@ -5,7 +5,7 @@ date: 2021-02-14
 legacy_path: /the-thinning-of-the-army-produces-warrior-pioneers/
 excerpt: As God thinned out Gideon's army, so He is thinning out His frontline ranks. What seems to be delay upon delay is His fire of purification and separation.
 description: As God thinned out Gideon's army, so He is thinning out His frontline ranks. What seems to be delay upon delay is His fire of purification and separation.
-draft: true
+draft: false
 ---
 
 **As God thinned out Gideon's army, so He is thinning out His frontline ranks.** What seems to be delay upon delay is His fire of purification and separation.

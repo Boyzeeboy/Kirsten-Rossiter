@@ -5,7 +5,7 @@ date: 2020-04-18
 legacy_path: /prophetic-song-of-comfort/
 excerpt: SOAK IN THE FOLDS OF HIS LOVE https://www.youtube.com/watch?v=73Km9ztMltI Come and soak in the comfort of the Holy Spirit as I minister in prophetic song.
 description: SOAK IN THE FOLDS OF HIS LOVE https://www.youtube.com/watch?v=73Km9ztMltI Come and soak in the comfort of the Holy Spirit as I minister in prophetic song.
-draft: true
+draft: false
 ---
 
 SOAK IN THE FOLDS OF HIS LOVE

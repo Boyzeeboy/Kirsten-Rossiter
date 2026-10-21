@@ -5,7 +5,7 @@ date: 2021-06-14
 legacy_path: /that-which-seems-upside-down-is-being-turned-right-side-up/
 excerpt: In the natural it seems like everything is turned upside-down. The earth has never been so out of kilter as it is right now. However, it is in this very act of resistance and attack against everything right and just, that God is going to flip the world back on track.
 description: In the natural it seems like everything is turned upside-down. The earth has never been so out of kilter as it is right now. However, it is in this very act of resistance and attack against everything right and just, that God is going to flip the world back on track.
-draft: true
+draft: false
 ---
 
 In the natural it seems like everything is turned upside-down. The earth has never been so out of kilter as it is right now. Words are being used by governments and organisations of influence in ways that convey one thing, but means another. Policies and laws are being pushed to further break down Godly foundations in the nations. However, it is in this very act of resistance and attack against everything right and just, that God is going to flip the world back on track.

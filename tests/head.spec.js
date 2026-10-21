@@ -23,6 +23,10 @@ const INDEXED = [
   { path: '/contact', canonical: `${ORIGIN}/contact` },
   { path: '/terms', canonical: `${ORIGIN}/terms` },
   { path: '/blog/', canonical: `${ORIGIN}/blog/` },
+  // A paginated page canonicalises to itself, never back to /blog/. Pointing
+  // it at page 1 would tell Google the posts listed only here are duplicates
+  // of a page that does not mention them, and they would drop out.
+  { path: '/blog/page/2', canonical: `${ORIGIN}/blog/page/2` },
   { path: '/blog/keep-moving-forward', canonical: `${ORIGIN}/blog/keep-moving-forward`, ld: 'BlogPosting' },
 ];
 

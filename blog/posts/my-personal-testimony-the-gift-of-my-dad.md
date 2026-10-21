@@ -4,7 +4,7 @@ type: Reflection
 date: 2021-05-18
 excerpt: The last few weeks have been a whirlwind for me. God gave me the gift of time with my dying father to see the fulfilment of two prayers. Reconciliation and salvation.
 description: The last few weeks have been a whirlwind for me. God gave me the gift of time with my dying father to see the fulfilment of two prayers. Reconciliation and salvation.
-draft: true
+draft: false
 ---
 
 The last few weeks have been a whirlwind for me. God gave me the gift of time with my dying father to see the fulfilment of two prayers. Reconciliation and salvation.

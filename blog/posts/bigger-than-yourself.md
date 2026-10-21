@@ -5,7 +5,7 @@ date: 2016-10-21
 legacy_path: /bigger-than-yourself/
 excerpt: That which God has called us to, is so much bigger than ourselves. We tend to focus on our own lives, our own vision and our own dreams within our natural abilities... but even our biggest dreams are smaller than that which He has in store for us.
 description: That which God has called us to, is so much bigger than ourselves. We tend to focus on our own lives, our own vision and our own dreams within our natural abilities... but even our biggest dreams are smaller than that which He has in store for us.
-draft: true
+draft: false
 ---
 
 **Thát which God has called us to, is so much bigger than ourselves. We tend to focus on our own lives, our own vision, and our own dreams within our natural abilities... but even our biggest dreams are smaller than thát which He has in store for us.**

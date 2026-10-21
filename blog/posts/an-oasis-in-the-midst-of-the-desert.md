@@ -5,7 +5,7 @@ date: 2018-09-10
 legacy_path: /an-oasis-in-the-midst-of-the-desert/
 excerpt: '''My beautiful beloved. Do you know that even though you are standing on dry desert sand, and are surrounded by endless horizons of more sand, there is a place of bounty in this desert?'
 description: '''My beautiful beloved. Do you know that even though you are standing on dry desert sand, and are surrounded by endless horizons of more sand, there is a place of bounty in this desert?'
-draft: true
+draft: false
 ---
 
 *'My beautiful beloved. Do you know that even though you are standing on dry desert sand, and are surrounded by endless horizons of more sand, **there is a place of bounty in this desert?** That which you are staring at, seem to have no end, **but I have made a way within this place of struggle, I have made a place of victory within this place of challenge.***

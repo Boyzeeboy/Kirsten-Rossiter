@@ -5,7 +5,7 @@ date: 2017-08-04
 legacy_path: /in-whose-strength-do-we-trust/
 excerpt: In whose strength do we trust?
 description: In whose strength do we trust?
-draft: true
+draft: false
 ---
 
 **In whose strength do we trust?** When nothing goes our way and we're desperate for change, do we put all our trust in God's Strength and Ability to save us, or are we running around, trying to make things happen in our own strength or seeking out man to save us?

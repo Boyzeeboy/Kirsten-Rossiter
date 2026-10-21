@@ -5,7 +5,7 @@ date: 2020-03-24
 legacy_path: /the-third-world-war-has-officially-begun/
 excerpt: The enemy has stirred the hearts of an evil elite who has been plotting and scheming to bring down the nations one by one.
 description: The enemy has stirred the hearts of an evil elite who has been plotting and scheming to bring down the nations one by one.
-draft: true
+draft: false
 ---
 
 The enemy has stirred the hearts of an evil elite who has been plotting and scheming to bring down the nations one by one. **We've been at war, without even knowing it, but in this hour, the Lord is using the enemy's attack to awaken the nations to the reality that the war has begun!** The Lord, our God, is standing in our midst at the banks of the Jordan, and He is saying, *'I am here. You are not alone. Take your sandals off, for the place where you are standing is holy.'*

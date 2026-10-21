@@ -5,7 +5,7 @@ date: 2020-07-02
 legacy_path: /salvation-is-coming-to-the-nations/
 excerpt: When reading through the prophetic books of the Old Testament, it is evident that the Lord isn't only speaking about literal Israel, but His covenantal people, the believing Jews and Gentiles.
 description: When reading through the prophetic books of the Old Testament, it is evident that the Lord isn't only speaking about literal Israel, but His covenantal people, the believing Jews and Gentiles.
-draft: true
+draft: false
 ---
 
 When reading through the prophetic books of the Old Testament, it is evident that the Lord isn't only speaking about literal Israel, but His covenantal people, the believing Jews and Gentiles. **We have been given a mandate under this covenant to rule and reign in three spheres: spiritually, socially, and culturally, establishing His Kingdom within the nations. Just as Israel was called as a mediatorial nation, living according to the Word of God, so we are called.** Surrounding nations would take note of and desire the blessings, wonder and glory of life with and under this beneficiary reign. Israel is called to set the standard within the nations, releasing God's blessing and favour.

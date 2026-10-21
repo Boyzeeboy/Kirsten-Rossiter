@@ -5,7 +5,7 @@ date: 2020-07-18
 legacy_path: /i-shall-build-you-a-house-says-the-lord/
 excerpt: I've had the Holy Remnant so much on my heart in the last while. The Lord has brought about a unity, humility, and camaraderie amongst His chosen ones through the suffering they have endured and the fire they've been in.
 description: I've had the Holy Remnant so much on my heart in the last while. The Lord has brought about a unity, humility, and camaraderie amongst His chosen ones through the suffering they have endured and the fire they've been in.
-draft: true
+draft: false
 ---
 
 He is saying, as He said to David, ' I took you from the sheepfold, from the pastures, where I've trained and equipped you, training your ears to hear My Voice and your hands to make war. For there you've had to face the bear, the Goliath and the lion. **Opposition, accusation, lack, criticism, judgement, oppression, restriction have all been part of your training for reigning.** **As I have prepared David, so I have prepared you to step into a place of kingship and authority where you will execute My Justice and Truth, establishing Kingdom Nations within the earth.** For I am shaking and shifting even the demographics of society. My Hand is at work and you are in the center of My workings.

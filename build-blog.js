@@ -6,6 +6,7 @@ const { Marked } = require('marked');
 const SITE_ORIGIN = 'https://www.kirstenrossiter.com';
 const POSTS_DIR = path.join(__dirname, 'blog', 'posts');
 const BLOG_DIR = path.join(__dirname, 'blog');
+const PAGE_DIR = path.join(BLOG_DIR, 'page');
 
 const marked = new Marked();
 
@@ -237,8 +238,92 @@ ${partialBlock('FOOTER')}
 
 const BLOG_DESCRIPTION = 'Prophetic revelation, teachings, and reflections for the Bride and the nations — from Kirsten Rossiter.';
 
-function buildIndex(posts) {
-  const cards = posts.map(p => {
+// ---- The blog index --------------------------------------------------------
+//
+// Paginated, because the archive is not six posts any more. A flat list of the
+// whole republished archive would be a slow page that buries everything below
+// the first screen, and it hands a crawler one enormous page instead of a
+// shallow tree (SEO-REVIEW-2026-10-21.md §1, recommendation 4).
+//
+// Page 1 stays at /blog/, so the nav, the posts' back-links and every existing
+// inbound link keep working untouched. Later pages are /blog/page/2 … /page/N,
+// which is where the old WordPress site put them too.
+//
+// Each page's canonical points at *itself*, never back at /blog/.
+// Canonicalising page 2 to page 1 is the usual pagination mistake: it tells
+// Google the posts listed only on page 2 are duplicates of a page that does not
+// mention them, and they drop out of the index. rel=prev/next goes in as well —
+// Google retired it as an indexing signal in 2019, but Bing still reads it and
+// it costs two tags.
+const POSTS_PER_PAGE = 20;
+
+const pageUrlPath = (n) => (n === 1 ? '/blog/' : `/blog/page/${n}`);
+
+function paginate(posts) {
+  const pages = [];
+  for (let i = 0; i < posts.length; i += POSTS_PER_PAGE) {
+    pages.push(posts.slice(i, i + POSTS_PER_PAGE));
+  }
+  // An empty blog still gets one page, so /blog/ is never a missing file.
+  return pages.length ? pages : [[]];
+}
+
+// First, last, and the current page ± 2, with gaps collapsed to an ellipsis.
+// Keeping first and last in every window means no page is more than two clicks
+// from any other, which is what stops the far end of the archive sitting at
+// crawl depth 14.
+function pageWindow(current, total) {
+  const numbers = new Set([1, total]);
+  for (let n = current - 2; n <= current + 2; n++) {
+    if (n >= 1 && n <= total) numbers.add(n);
+  }
+  const out = [];
+  let previous = 0;
+  for (const n of [...numbers].sort((a, b) => a - b)) {
+    if (previous && n - previous > 1) out.push(null); // ellipsis
+    out.push(n);
+    previous = n;
+  }
+  return out;
+}
+
+function paginationNav(current, total) {
+  if (total < 2) return '';
+
+  const link = (n, label, cls) =>
+    `<a class="${cls}" href="${pageUrlPath(n)}">${label}</a>`;
+
+  const numbers = pageWindow(current, total).map((n) => {
+    if (n === null) return '<span class="page-gap" aria-hidden="true">…</span>';
+    if (n === current) {
+      return `<span class="page-number is-current" aria-current="page">${n}</span>`;
+    }
+    return link(n, String(n), 'page-number');
+  }).join('\n');
+
+  return `<nav class="pagination" aria-label="Blog pages">
+${current > 1 ? link(current - 1, '← Newer', 'page-step') : '<span class="page-step is-disabled" aria-hidden="true">← Newer</span>'}
+<div class="page-numbers">
+${numbers}
+</div>
+${current < total ? link(current + 1, 'Older →', 'page-step') : '<span class="page-step is-disabled" aria-hidden="true">Older →</span>'}
+</nav>`;
+}
+
+function buildIndexPage(pagePosts, current, total) {
+  // Pages below the first sit one directory deeper, so the relative asset
+  // links need an extra hop. The nav and footer partials are root-absolute
+  // and need no adjustment.
+  const up = current === 1 ? '..' : '../..';
+  const url = `${SITE_ORIGIN}${pageUrlPath(current)}`;
+  const title = current === 1
+    ? 'The Prophetic Blog — Kirsten Rossiter'
+    : `The Prophetic Blog — Page ${current} — Kirsten Rossiter`;
+  const description = current === 1
+    ? BLOG_DESCRIPTION
+    : `${BLOG_DESCRIPTION} Page ${current} of ${total}.`;
+
+  const cards = pagePosts.map(p => {
     return `<a class="post-row" href="/blog/${p.slug}">
 <div class="post-meta-col">
 <span class="post-type">${escapeHtml(p.data.type)}</span>
@@ -257,12 +342,12 @@ function buildIndex(posts) {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Prophetic Blog — Kirsten Rossiter</title>
-<meta name="description" content="${escapeHtml(BLOG_DESCRIPTION)}" />
-${socialHead({ url: `${SITE_ORIGIN}/blog/`, title: 'The Prophetic Blog — Kirsten Rossiter', description: BLOG_DESCRIPTION, type: 'website' })}
+<title>${escapeHtml(current === 1 ? 'Prophetic Blog — Kirsten Rossiter' : `Prophetic Blog — Page ${current} — Kirsten Rossiter`)}</title>
+<meta name="description" content="${escapeHtml(description)}" />
+${socialHead({ url, title, description, type: 'website' })}${current > 1 ? `\n<link rel="prev" href="${SITE_ORIGIN}${pageUrlPath(current - 1)}" />` : ''}${current < total ? `\n<link rel="next" href="${SITE_ORIGIN}${pageUrlPath(current + 1)}" />` : ''}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="stylesheet" href="../vendor/tokens.css" />
-<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="${up}/vendor/tokens.css" />
+<link rel="stylesheet" href="${up}/styles.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
 </head>
@@ -273,21 +358,53 @@ ${partialBlock('NAV')}
 <div class="container">
 <span class="label"><span class="rule-line"></span>Prophetic Writings</span>
 <h1 class="blog-headline">The Prophetic Blog</h1>
-<p class="blog-sub">Prophetic revelation, teachings, and reflections for the Bride and the nations. Words to awaken, equip, and mobilise the Ekklesia for this hour.</p>
+<p class="blog-sub">Prophetic revelation, teachings, and reflections for the Bride and the nations. Words to awaken, equip, and mobilise the Ekklesia for this hour.</p>${total > 1 ? `\n<p class="blog-page-of">Page ${current} of ${total}</p>` : ''}
 </div>
 </header>
 
 <main class="blog-list">
 <div class="container">
-${cards}
+${[cards, paginationNav(current, total)].filter(Boolean).join('\n')}
 </div>
 </main>
 
 ${partialBlock('FOOTER')}
-<script src="../site.js"></script>
+<script src="${up}/site.js"></script>
 </body>
 </html>
 `;
+}
+
+function buildIndexPages(posts) {
+  const pages = paginate(posts);
+  const total = pages.length;
+  const built = [];
+
+  for (let i = 0; i < total; i++) {
+    const current = i + 1;
+    const html = buildIndexPage(pages[i], current, total);
+    const outPath = current === 1
+      ? path.join(BLOG_DIR, 'index.html')
+      : path.join(PAGE_DIR, `${current}.html`);
+    fs.mkdirSync(path.dirname(outPath), { recursive: true });
+    fs.writeFileSync(outPath, html);
+    built.push({ current, path: pageUrlPath(current), newest: pages[i][0] });
+  }
+
+  // A page that no longer exists because posts were unpublished would
+  // otherwise linger and be served, listing posts that have gone.
+  if (fs.existsSync(PAGE_DIR)) {
+    for (const file of fs.readdirSync(PAGE_DIR).filter(f => f.endsWith('.html'))) {
+      const n = Number(file.replace(/\.html$/, ''));
+      if (!Number.isInteger(n) || n < 2 || n > total) {
+        fs.unlinkSync(path.join(PAGE_DIR, file));
+        console.log(`  removed  page/${file} (beyond the last page)`);
+      }
+    }
+  }
+
+  console.log(`  built  index.html + ${total - 1} more page(s) (${posts.length} posts, ${POSTS_PER_PAGE}/page)`);
+  return built;
 }
 
 function buildHomepageInsights(posts) {
@@ -464,12 +581,19 @@ function buildRedirects(posts) {
 // sitemap.xml is generated, never hand-edited — editing it by hand is how it
 // went stale. The homepage and blog index both change whenever a post is
 // published, so their lastmod tracks the newest post.
-function buildSitemap(posts) {
+function buildSitemap(posts, indexPages) {
   const newest = posts.length ? isoDate(posts[0].data.date) : isoDate(Date.now());
 
   const urls = [
     { path: '/', lastmod: newest },
-    { path: '/blog/', lastmod: newest },
+    // Every index page, not just /blog/. They are real indexable pages with
+    // their own canonicals, and listing them gives the crawler the whole
+    // archive without having to walk prev/next links. Each one's lastmod is
+    // the newest post it lists.
+    ...indexPages.map(pg => ({
+      path: pg.path,
+      lastmod: pg.newest ? isoDate(pg.newest.data.date) : newest,
+    })),
     ...posts.map(p => ({ path: `/blog/${p.slug}`, lastmod: isoDate(p.data.date) })),
     ...STATIC_PAGES,
   ];
@@ -520,11 +644,9 @@ for (const post of posts) {
   console.log(`  built  ${post.slug}.html`);
 }
 
-const indexHtml = buildIndex(posts);
-fs.writeFileSync(path.join(BLOG_DIR, 'index.html'), indexHtml);
-console.log(`  built  index.html (${posts.length} posts)`);
+const indexPages = buildIndexPages(posts);
 
 buildHomepageInsights(posts);
 inlineStaticPages();
-buildSitemap(posts);
+buildSitemap(posts, indexPages);
 buildRedirects(posts);

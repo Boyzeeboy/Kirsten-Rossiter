@@ -5,7 +5,7 @@ date: 2019-08-06
 legacy_path: /the-visitation-of-the-lord-on-the-wicked/
 excerpt: As I've been studying the book of Jeremiah, the Lord has been drawing parallels between Babylon and South Africa that I'd like to share with you.
 description: As I've been studying the book of Jeremiah, the Lord has been drawing parallels between Babylon and South Africa that I'd like to share with you.
-draft: true
+draft: false
 ---
 
 As I've been studying the book of Jeremiah, the Lord has been drawing parallels between Babylon and South Africa that I'd like to share with you.

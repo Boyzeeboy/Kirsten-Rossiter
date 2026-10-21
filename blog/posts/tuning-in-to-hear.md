@@ -5,7 +5,7 @@ date: 2016-10-02
 legacy_path: /tuning-in-to-hear/
 excerpt: We serve a living God who loves to talk to His people. I've been reading the Old Testament over the last few months, and have been so moved by how much God loves His people.
 description: We serve a living God who loves to talk to His people. I've been reading the Old Testament over the last few months, and have been so moved by how much God loves His people.
-draft: true
+draft: false
 ---
 
 **We serve a living God who loves to talk to His people.**

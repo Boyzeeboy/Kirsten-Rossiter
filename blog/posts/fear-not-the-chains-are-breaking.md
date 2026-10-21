@@ -4,7 +4,7 @@ type: Prophetic Insight
 date: 2022-04-07
 excerpt: This is the time to arise in faith, not buckle in fear. The Lord is setting the nations free! We will not be shaken, but will arise in this hour of shaking!
 description: This is the time to arise in faith, not buckle in fear. The Lord is setting the nations free! We will not be shaken, but will arise in this hour of shaking!
-draft: true
+draft: false
 ---
 
 **The Lord is shaking the nations to separate the wheat from the weeds.** Be not afraid in this hour, but stand in your legislative authority as His Bride. He is moving to cut the chains that have held the earth in bondage. Get ready for a free-fall, but know that the nations are in the palm of His hands. Is. 60, Is. 24, Ps. 2.

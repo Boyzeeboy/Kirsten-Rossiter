@@ -5,7 +5,7 @@ date: 2017-06-25
 legacy_path: /intercession/
 excerpt: Praying fervently, with power, authority, and results, is what we all long for. Dutch Sheets has a strong calling and teaching gift in the area of Intercession.
 description: Praying fervently, with power, authority, and results, is what we all long for. Dutch Sheets has a strong calling and teaching gift in the area of Intercession.
-draft: true
+draft: false
 ---
 
 Praying fervently, with power, authority, and results, is what we all long for. **Dutch Sheets** has a strong calling and teaching gift in the area of Intercession. I would highly recommend all of his books, but these have been especially useful to me.

@@ -5,7 +5,7 @@ date: 2019-05-04
 legacy_path: /gates-be-opened-the-king-of-glory-is-coming-in/
 excerpt: South Africa, rejoice! Lift up your heads, O gates! And be lifted up, O ancient doors, that the King of glory may come in. The King of glory, the Lord, strong in mighty, He is mighty in battle!
 description: South Africa, rejoice! Lift up your heads, O gates! And be lifted up, O ancient doors, that the King of glory may come in. The King of glory, the Lord, strong in mighty, He is mighty in battle!
-draft: true
+draft: false
 ---
 
 *South Africa, rejoice! Lift up your heads, O gates! And be lifted up, O ancient doors, that the King of glory may come in.

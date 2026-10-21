@@ -5,7 +5,7 @@ date: 2019-08-01
 legacy_path: /prophetic-revelation-for-south-africa/
 excerpt: The Lord has been showing me a picture of a drain, with water flowing out of it.
 description: The Lord has been showing me a picture of a drain, with water flowing out of it.
-draft: true
+draft: false
 ---
 
 The Lord has been showing me a picture of a drain, with water flowing out of it. I heard the Lord say, *'Just as I revealed My Will to Jeremiah during a time of rebellion, giving direction, an opportunity for repentance, and the understanding of My Purposes in the midst of approaching captivity and calamity, so I am revealing My Will to My People. For I work all things together for good, and I use what you seem 'unfit' to bring My Purposes about.'*

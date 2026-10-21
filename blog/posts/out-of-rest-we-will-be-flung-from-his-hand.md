@@ -5,7 +5,7 @@ date: 2022-12-13
 legacy_path: /out-of-rest-we-will-be-flung-from-his-hand/
 excerpt: As we go into the unwinding of 2022, the Lord is calling us to a deep place of rest and trust. His waves of healing are flowing over our souls, bodies, and spirits to refresh and restore all weary places.
 description: As we go into the unwinding of 2022, the Lord is calling us to a deep place of rest and trust. His waves of healing are flowing over our souls, bodies, and spirits to refresh and restore all weary places.
-draft: true
+draft: false
 ---
 
 **As we go into the unwinding of 2022, the Lord is calling us to a deep place of rest and trust. His waves of healing are flowing over our souls, bodies, and spirits to refresh and restore all weary places.**

@@ -5,7 +5,7 @@ date: 2018-04-03
 legacy_path: /rise-up-africa-and-declare-and-decree-your-way-into-your-inheritance/
 excerpt: The Lord is trumpeting out with a loud voice, 'Rise up Africa, and declare and decree your way into your inheritance!
 description: The Lord is trumpeting out with a loud voice, 'Rise up Africa, and declare and decree your way into your inheritance!
-draft: true
+draft: false
 ---
 
 **The Lord is trumpeting out with a loud voice, 'Rise up Africa, and declare and decree your way into your inheritance!** **For that which you see and behold with your natural eyes belong to the natural realm... do not bow to that realm. For you, My Beloved Bride of Africa, are called to a higher sphere, the realm of My Spirit.**

@@ -5,7 +5,7 @@ date: 2016-10-10
 legacy_path: /love-is-the-key/
 excerpt: A friend of mine told me that when her grandmother lay on her dying bed, her last words were 'I have lived well, but love is the key'.
 description: A friend of mine told me that when her grandmother lay on her dying bed, her last words were 'I have lived well, but love is the key'.
-draft: true
+draft: false
 ---
 
 **A friend of mine told me that when her grandmother lay on her dying bed, her last words were 'I have lived well, but love is the key'.**

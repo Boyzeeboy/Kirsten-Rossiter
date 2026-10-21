@@ -5,7 +5,7 @@ date: 2017-10-17
 legacy_path: /response-determines-outcome/
 excerpt: When we face hardship, it's normal to retrieve from life for a time. It's normal to grieve and go through various emotions, ranging from sorrow to anger.
 description: When we face hardship, it's normal to retrieve from life for a time. It's normal to grieve and go through various emotions, ranging from sorrow to anger.
-draft: true
+draft: false
 ---
 
 When we face hardship, it's normal to retrieve from life for a time. It's normal to grieve and go through various emotions, ranging from sorrow to anger. **However, my response determines my outcome more than my hardship.**

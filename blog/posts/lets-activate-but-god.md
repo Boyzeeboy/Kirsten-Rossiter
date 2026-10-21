@@ -5,7 +5,7 @@ date: 2019-09-01
 legacy_path: /lets-activate-but-god/
 excerpt: There is a global agenda at work in the world, to bring all nations together under a One World Order.
 description: There is a global agenda at work in the world, to bring all nations together under a One World Order.
-draft: true
+draft: false
 ---
 
 There is a global agenda at work in the world, to bring all nations together under a One World Order. They operate through weak links, penetrating through the cracks of nations' walls to pull down and plunder from the inside.

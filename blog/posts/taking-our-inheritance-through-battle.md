@@ -5,7 +5,7 @@ date: 2018-01-07
 legacy_path: /taking-our-inheritance-through-battle/
 excerpt: Just as the Israelites had to face giants in their land of promise, so the Lord is calling His Bride to a place of tenacious determination to take hold of their promised inheritance even in the…
 description: Just as the Israelites had to face giants in their land of promise, so the Lord is calling His Bride to a place of tenacious determination to take hold of their promised inheritance even in the…
-draft: true
+draft: false
 ---
 
 **Just as the Israelites had to face giants in their land of promise, so the Lord is calling His Bride to a place of tenacious determination to take hold of their promised inheritance even in the midst of great opposition and battle.**

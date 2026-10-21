@@ -5,7 +5,7 @@ date: 2018-10-31
 legacy_path: /the-prophetic-and-apostolic-gifting-builds-nations/
 excerpt: The End-Time Bride is a mature Bride, gifted in the prophetic and apostolic to co-labour with Christ in Heavenly places!
 description: The End-Time Bride is a mature Bride, gifted in the prophetic and apostolic to co-labour with Christ in Heavenly places!
-draft: true
+draft: false
 ---
 
 The End-Time Bride is a mature Bride, gifted in the prophetic and apostolic to co-labour with Christ in Heavenly places! It is important for us to understand that the spiritual gifts, call, and office upon God's people is not restricted to church buildings and spiritual gatherings. **The Lord is raising up an Army-Bride who runs in the fullness of Him and His Gifts wherever she is - at home, in her community, at work, in government. We are called to be His Bright Lights in the World - market-place ministers who shake and change the world around us for His Glory!**

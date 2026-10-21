@@ -5,7 +5,7 @@ date: 2020-11-07
 legacy_path: /we-might-be-surprised-but-god-is-never-surprised-by-anything/
 excerpt: It is such a comfort to know that we have a God who sees and knows everything, always. We might be caught off-guard and be surprised, but God is never surprised by anything!
 description: It is such a comfort to know that we have a God who sees and knows everything, always. We might be caught off-guard and be surprised, but God is never surprised by anything!
-draft: true
+draft: false
 ---
 
 It is such a comfort to know that we have a God who sees and knows everything, always. We might be caught off-guard and be surprised, but God is never surprised by anything!

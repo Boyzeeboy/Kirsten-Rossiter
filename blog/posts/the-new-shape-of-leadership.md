@@ -4,7 +4,7 @@ type: Reflection
 date: 2024-01-26
 excerpt: I hear the Lord say, 'Have I not called you to the place of My rest and the place of My quiet? This is not only for refreshment and realignment, but it is for healing.
 description: I hear the Lord say, 'Have I not called you to the place of My rest and the place of My quiet? This is not only for refreshment and realignment, but it is for healing.
-draft: true
+draft: false
 ---
 
 ## Receive healing from the spirit of rejection

@@ -5,7 +5,7 @@ date: 2016-10-02
 legacy_path: /patience-builds-faith/
 excerpt: It's so often that I hear people say they lack patience... I remember clearly how impatient I was as a child.
 description: It's so often that I hear people say they lack patience... I remember clearly how impatient I was as a child.
-draft: true
+draft: false
 ---
 
 It's so often that I hear people say they lack patience... I remember clearly how impatient I was as a child. At the age of 13, I closed my eyes, and wished that when I opened it, I would be finished with school... as the saying goes, 'in the blink of an eye'. I was very disappointed to see that my faith couldn't make that saying manifest in the natural.

@@ -5,7 +5,7 @@ date: 2017-04-17
 legacy_path: /repentance-and-forgiveness/
 excerpt: There is a call of God on His Bride, to intercede for our nation at this time. For He is rewiring South Africa's heart, giving her a new heart for this new season dawning upon our land.
 description: There is a call of God on His Bride, to intercede for our nation at this time. For He is rewiring South Africa's heart, giving her a new heart for this new season dawning upon our land.
-draft: true
+draft: false
 ---
 
 **There is a call of God on His Bride, to intercede for our nation at this time. For He is rewiring South Africa's heart, giving her a *new* heart for this *new* season dawning upon our land.**

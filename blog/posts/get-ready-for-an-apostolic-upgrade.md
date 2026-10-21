@@ -5,7 +5,7 @@ date: 2020-09-20
 legacy_path: /get-ready-for-an-apostolic-upgrade/
 excerpt: There’s going to be an explosion of the apostolic gifting in the church. I hear the Lord say, ‘Those who have been faithful in the church, serving and leading the people, will be promoted in this era with a great measure of the apostolic gift.’
 description: There’s going to be an explosion of the apostolic gifting in the church. I hear the Lord say, ‘Those who have been faithful in the church, serving and leading the people, will be promoted in this era with a great measure of the apostolic gift.’
-draft: true
+draft: false
 ---
 
 **There’s going to be an explosion of the apostolic gifting in the church.** I hear the Lord say, *‘Those who have been faithful in the church, serving and leading the people, will be promoted in this era with a great measure of the apostolic gift.’* I see pastors who have pastored their flock faithfully, being promoted to apostles, and I hear the Lord say, *‘I’m going to increase the territory of My faithful ones. They will not only pastor a small flock anymore but will now build an infrastructure that will mobilise My church as an army across nations. They will be the generals who will be on the lookout to align My warriors in their assigned ranks.*

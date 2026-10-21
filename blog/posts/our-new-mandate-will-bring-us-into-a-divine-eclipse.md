@@ -5,7 +5,7 @@ date: 2020-06-10
 legacy_path: /our-new-mandate-will-bring-us-into-a-divine-eclipse/
 excerpt: The Lord has been speaking to me a lot about alignment in the last while. I saw a picture of an eclipse being formed when His holy remnant and their purpose is in perfect alignment with God.
 description: The Lord has been speaking to me a lot about alignment in the last while. I saw a picture of an eclipse being formed when His holy remnant and their purpose is in perfect alignment with God.
-draft: true
+draft: false
 ---
 
 The Lord has been speaking to me a lot about alignment in the last while. **I saw a picture of an eclipse being formed when His holy remnant and their purpose is in perfect alignment with God.** This can only happen when we know what our new mandate is from God for this new era. The Lord is calling us to come near and hear what He is releasing to us, individually, and corporately. **The mandate for this era is different to the last, so it is vital that we take the time to receive what the Lord wants to release and reveal to us, so we can use that as a measuring stick to bring forth perfect alignment as we pursue our purpose in Him for this era.**

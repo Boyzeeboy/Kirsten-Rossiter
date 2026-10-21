@@ -5,7 +5,7 @@ date: 2016-12-28
 legacy_path: /facing-the-giants/
 excerpt: We are living in a world that is changing at a rapid pace... that which is right is seen as wrong, and that which is wrong is seen as right.
 description: We are living in a world that is changing at a rapid pace... that which is right is seen as wrong, and that which is wrong is seen as right.
-draft: true
+draft: false
 ---
 
 **We are living in a world that is changing at a rapid pace... that which is right is seen as wrong, and that which is wrong is seen as right. The globalist movement with its anti-Christ agendas is on the rise, and the enemy is using the deception and influence of the elite to lead many astray.**

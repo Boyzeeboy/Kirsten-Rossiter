@@ -5,7 +5,7 @@ date: 2017-11-15
 legacy_path: /the-lords-fragrant-balm-of-comfort/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/09/Sleeping-Beauty.'
 description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/09/Sleeping-Beauty.'
-draft: true
+draft: false
 ---
 
 *(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/09/Sleeping-Beauty.mp3 (file not in the 2024 backup))*

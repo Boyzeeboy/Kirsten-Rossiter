@@ -5,7 +5,7 @@ date: 2016-10-26
 legacy_path: /keep-moving-forward/
 excerpt: The hardest thing, in the midst of opposition, is to move past the discouragement that wants to set in and keep moving forward.
 description: The hardest thing, in the midst of opposition, is to move past the discouragement that wants to set in and keep moving forward.
-draft: true
+draft: false
 ---
 
 **The hardest thing, in the midst of opposition, is to move past the discouragement that wants to set in and keep moving forward.**

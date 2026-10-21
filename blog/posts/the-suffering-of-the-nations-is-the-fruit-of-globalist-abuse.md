@@ -5,7 +5,7 @@ date: 2020-09-12
 legacy_path: /the-suffering-of-the-nations-is-the-fruit-of-globalist-abuse/
 excerpt: The globalist agenda has caused an incredible level of suffering within the nations right now. It reminds me of a person being in an abusive relationship, where the abuse isn't recognised by the victim, and the toxic environment seems 'normal'.
 description: The globalist agenda has caused an incredible level of suffering within the nations right now. It reminds me of a person being in an abusive relationship, where the abuse isn't recognised by the victim, and the toxic environment seems 'normal'.
-draft: true
+draft: false
 ---
 
 However, when the victim's eyes are opened to see the abuse, they suddenly find themselves looking back at their lives from a different angle, with new eyes they see things they never noticed before, and suddenly that which didn't make sense, suddenly makes sense. It's like finding puzzle pieces that fit together, that helps them look at their life from the outside.

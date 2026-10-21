@@ -5,7 +5,7 @@ date: 2017-05-27
 legacy_path: /return-to-him-again/
 excerpt: The Lord is calling creation to return to Him again. Those who have stumbled and strayed along their way, He is calling back to Himself again.
 description: The Lord is calling creation to return to Him again. Those who have stumbled and strayed along their way, He is calling back to Himself again.
-draft: true
+draft: false
 ---
 
 **The Lord is calling creation to return to Him again.** Those who have stumbled and strayed along their way, He is calling back to Himself again. For our sins have separated us from Him, our idolatry and foolish pride in the work of our hands and ability have brought judgment upon us and our people.

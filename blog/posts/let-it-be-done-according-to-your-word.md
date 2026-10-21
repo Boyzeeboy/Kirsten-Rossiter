@@ -5,7 +5,7 @@ date: 2020-02-13
 legacy_path: /let-it-be-done-according-to-your-word/
 excerpt: When the Angel of the Lord appeared to Mary, delivering a message she did not expect, so the Lord is speaking to us at this time.
 description: When the Angel of the Lord appeared to Mary, delivering a message she did not expect, so the Lord is speaking to us at this time.
-draft: true
+draft: false
 ---
 
 When the Angel of the Lord appeared to Mary, delivering a message she did not expect, so the Lord is speaking to us at this time. Heaven has been waiting in eager anticipation for the sounding of the trumpets and the release of revelation that is needed for the Bride of Christ to build the Kingdom of God in the nations.

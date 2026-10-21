@@ -5,7 +5,7 @@ date: 2017-07-06
 legacy_path: /the-lord-is-my-helper/
 excerpt: The Lord is My Helper
 description: The Lord is My Helper
-draft: true
+draft: false
 ---
 
 > **The Lord is My Helper**

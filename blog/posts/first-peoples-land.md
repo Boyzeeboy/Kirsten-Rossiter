@@ -5,7 +5,7 @@ date: 2017-04-16
 legacy_path: /first-peoples-land/
 excerpt: To be really relevant and cutting-edge in the Spirit, it is essential that we have a good knowledge of history.
 description: To be really relevant and cutting-edge in the Spirit, it is essential that we have a good knowledge of history.
-draft: true
+draft: false
 ---
 
 **To be really relevant and cutting-edge in the Spirit, it is essential that we have a good knowledge of history. We need to be keen learners, going back and reading what we've forgotten... refreshing our minds and gaining new understanding of things that have been. For drawing information from the past, helps to put the present in perspective.**

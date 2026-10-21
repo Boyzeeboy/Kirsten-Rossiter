@@ -5,7 +5,7 @@ date: 2017-07-26
 legacy_path: /4816-2/
 excerpt: We need to know the God Whom we serve. That He is Almighty and able to deliver us out of the miry clay, the vulture's claw, the hunter's net... and if we die, we die trusting God...
 description: We need to know the God Whom we serve. That He is Almighty and able to deliver us out of the miry clay, the vulture's claw, the hunter's net... and if we die, we die trusting God...
-draft: true
+draft: false
 ---
 
 **We need to know the God Whom we serve. That He is Almighty and able to deliver us out of the miry clay, the vulture's claw, the hunter's net... and if we die, we die trusting God... that is our commitment.**

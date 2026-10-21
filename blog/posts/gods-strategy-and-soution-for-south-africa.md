@@ -5,7 +5,7 @@ date: 2018-10-16
 legacy_path: /gods-strategy-and-soution-for-south-africa/
 excerpt: God has a strategy and solution from Heaven for South Africa at this time!
 description: God has a strategy and solution from Heaven for South Africa at this time!
-draft: true
+draft: false
 ---
 
 **God has a strategy and solution from Heaven for South Africa at this time!**

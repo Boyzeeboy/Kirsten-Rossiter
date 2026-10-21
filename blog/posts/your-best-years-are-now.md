@@ -5,7 +5,7 @@ date: 2019-08-11
 legacy_path: /your-best-years-are-now/
 excerpt: For those who have entered the latter part of their lives, the Lord is saying, 'Your best years are now!
 description: For those who have entered the latter part of their lives, the Lord is saying, 'Your best years are now!
-draft: true
+draft: false
 ---
 
 For those who have entered the latter part of their lives, the Lord is saying, ***'Your best years are now! Take the worldly thinking caps off that say, "it's time to retire, time to quieten down******", for this is your most fruitful season yet.'***

@@ -28,6 +28,10 @@ const PAGES = [
   { name: 'thank-you', path: '/thank-you' },
   { name: 'terms', path: '/terms' },
   { name: 'blog-index', path: '/blog/' },
+  // A middle page, because it is the only one that renders every state of the
+  // pagination control at once: both steps enabled, a current page, and an
+  // ellipsis on each side. Page 1 and the last page each hide half of it.
+  { name: 'blog-index-page-7', path: '/blog/page/7' },
   { name: 'blog-post', path: '/blog/keep-moving-forward' },
   { name: '404', path: '/404.html' },
 ];

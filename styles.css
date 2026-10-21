@@ -721,6 +721,39 @@ footer.site-footer {
 }
 .post-row:hover .post-arrow { transform: translateX(6px); }
 
+/* Pagination. Page 1 of the blog is /blog/; later pages are /blog/page/N.
+   Numbers are a windowed list (first, last, current ± 2), so the row keeps its
+   width however long the archive gets. */
+.blog-page-of {
+  margin-top: var(--space-xl); font-size: var(--meta); letter-spacing: var(--meta-ls);
+  text-transform: uppercase; color: var(--kr-colour-text-primary); opacity: 0.6;
+}
+.pagination {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--space-5xl); flex-wrap: wrap; padding-top: var(--space-7xl);
+}
+.page-step {
+  font-family: var(--serif); font-size: 1.05rem; text-decoration: none;
+  color: var(--kr-colour-action-primary); transition: opacity 0.2s;
+}
+.page-step:hover { opacity: 0.7; }
+.page-step.is-disabled { color: var(--kr-colour-text-primary); opacity: 0.25; }
+.page-numbers { display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap; }
+/* The numerals are small type, so the hit area is set by the box rather than
+   the glyph — 32px square clears the 24px WCAG 2.5.8 minimum on touch. */
+.page-number, .page-gap {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: var(--space-4xl); min-height: var(--space-4xl);
+}
+.page-number {
+  font-size: var(--meta); letter-spacing: var(--meta-ls); text-decoration: none;
+  color: var(--kr-colour-text-primary); opacity: 0.7; transition: opacity 0.2s, color 0.2s;
+}
+.page-number:hover { opacity: 1; color: var(--kr-colour-action-primary); }
+.page-number.is-current { opacity: 1; color: var(--kr-colour-action-primary); font-weight: 500; }
+.page-gap { font-size: var(--meta); color: var(--kr-colour-text-primary); opacity: 0.4; }
+.page-step { display: inline-flex; align-items: center; min-height: var(--space-4xl); }
+
 /* ─── BLOG ARTICLE ─────────────────────────────────────────── */
 .article-head { padding: 168px 0 0; max-width: 760px; margin: 0 auto; }
 .article-head .container { padding: 0 40px; }
@@ -801,6 +834,8 @@ footer.site-footer {
   .post-row { grid-template-columns: 1fr; gap: 14px; padding: 30px 0; }
   .post-meta-col { flex-direction: row; gap: var(--space-lg); align-items: center; }
   .post-arrow { display: none; }
+  .pagination { gap: var(--space-3xl); justify-content: center; }
+  .page-numbers { order: -1; width: 100%; justify-content: center; }
   .article-head { padding-top: 140px; }
   .article-body, .article-foot { padding-left: var(--space-2xl); padding-right: var(--space-2xl); }
 }

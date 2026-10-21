@@ -5,7 +5,7 @@ date: 2021-10-16
 legacy_path: /you-will-know-me-as-your-deliverer-and-comforter/
 excerpt: The Lord has been dealing so tenderly with me over the last few weeks. I have been experiencing His comfort in very deep ways.
 description: The Lord has been dealing so tenderly with me over the last few weeks. I have been experiencing His comfort in very deep ways.
-draft: true
+draft: false
 ---
 
 The Lord has been dealing so tenderly with me over the last few weeks. I have been experiencing His comfort in very deep ways. The world is being awakened to that which has been covered up and hidden - to evil schemes and plots, meticulously planned against humanity, for decades. **We are seeing the fulfilment of God's promise, 'I will expose every hidden thing in this era.'. However, we cannot process what is exposed without God's comfort and healing.** The level of trauma and shock that accompanies the disclosure of this evil, must be closely partnered with the Holy Spirit so that our souls don't become broken by it, but healed and comforted. God will turn what the enemy meant for harm, for good, and He will wipe every tear away.

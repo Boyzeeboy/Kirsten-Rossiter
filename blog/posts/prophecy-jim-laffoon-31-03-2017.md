@@ -5,7 +5,7 @@ date: 2017-06-08
 legacy_path: /prophecy-jim-laffoon-31-03-2017/
 excerpt: There’s coming an eruption for that country, and there’s an eruption of corruption says the Lord.
 description: There’s coming an eruption for that country, and there’s an eruption of corruption says the Lord.
-draft: true
+draft: false
 ---
 
 > ***Word for South Africa***

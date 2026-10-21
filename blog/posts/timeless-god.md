@@ -5,7 +5,7 @@ date: 2019-02-27
 legacy_path: /timeless-god/
 excerpt: I heard the Lord say, 'Will you step into My realm of timelessness? Will you come away with Me into places where My Rest never ends and My Love never ceases?
 description: I heard the Lord say, 'Will you step into My realm of timelessness? Will you come away with Me into places where My Rest never ends and My Love never ceases?
-draft: true
+draft: false
 ---
 
 I heard the Lord say, **'Will you step into My realm of timelessness?** Will you come away with Me into places where My Rest never ends and My Love never ceases? **Where eternity becomes your reality, and your forever-life in Me your revelation of salvation?**

@@ -5,7 +5,7 @@ date: 2018-04-09
 legacy_path: /the-lord-is-calling-forth-enochs/
 excerpt: The Lord is calling forth Enochs in this season. Can you hear Him calling you into His rest?
 description: The Lord is calling forth Enochs in this season. Can you hear Him calling you into His rest?
-draft: true
+draft: false
 ---
 
 **The Lord is calling forth Enochs in this season.** Can you hear Him calling you into His rest? Can you see His Hand stretching out to yours, saying, ***'Come, My beloved, My close companion, come and walk with Me'?***

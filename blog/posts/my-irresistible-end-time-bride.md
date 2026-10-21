@@ -5,7 +5,7 @@ date: 2022-07-27
 legacy_path: /my-irresistible-end-time-bride/
 excerpt: The book of 'Song of Songs' is a prophetic poetic love story of the End-Time Bride and our Bridegroom. It is a 'now' book to read and meditate upon... as it carries the living waters of His indescribable passion and adoration of each one of us, individually and corporately.
 description: The book of 'Song of Songs' is a prophetic poetic love story of the End-Time Bride and our Bridegroom. It is a 'now' book to read and meditate upon... as it carries the living waters of His indescribable passion and adoration of each one of us, individually and corporately.
-draft: true
+draft: false
 ---
 
 The book of 'Song of Songs' is a prophetic poetic love story of the End-Time Bride and our Bridegroom. It is a 'now' book to read and meditate upon... as it carries the living waters of His indescribable passion and adoration of each one of us, individually and corporately. When we read it, over and over, it starts to flow like healing waters over every part of our souls. It has the power to set aflame the tiniest sparks, and nourish our every dry parts.

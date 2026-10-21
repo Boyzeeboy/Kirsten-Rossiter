@@ -5,7 +5,7 @@ date: 2021-09-29
 legacy_path: /global-systems-are-falling-local-industries-are-rising/
 excerpt: As I was standing in one of our shopping malls this week, waiting for the shops to open, I clearly heard the Lord say, 'The global systems are falling! The monopolies that set the fashion and industry trends are crashing!'
 description: As I was standing in one of our shopping malls this week, waiting for the shops to open, I clearly heard the Lord say, 'The global systems are falling! The monopolies that set the fashion and industry trends are crashing!'
-draft: true
+draft: false
 ---
 
 As I was standing in one of our shopping malls this week, waiting for the shops to open, I clearly heard the Lord say, *'The global systems are falling! The monopolies that set the fashion and industry trends are crashing! Those who use slave labour to produce products sold at high prices are coming down. They have branded their cheap goods as elite and sought-after, at the cost of the producer and the buyer - however, I am exposing their deeds and uprooting their works. **They, who were called the plunderer, will now become the plundered.***

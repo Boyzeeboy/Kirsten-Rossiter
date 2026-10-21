@@ -4,7 +4,7 @@ type: Reflection
 date: 2022-05-08
 excerpt: Which generation are you falling in right now? The one who have tarried for God's promises, the one who will inherit, or the one who will be a living transformation?
 description: Which generation are you falling in right now? The one who have tarried for God's promises, the one who will inherit, or the one who will be a living transformation?
-draft: true
+draft: false
 ---
 
 Which generation are you falling in right now? The one who have tarried for God's promises, the one who will inherit, or the one who will be a living transformation? We are crossing over in all three, but one will define your journey thus far and point to your role in the future.

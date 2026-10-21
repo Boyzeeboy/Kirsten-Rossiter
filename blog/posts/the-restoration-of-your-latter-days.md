@@ -5,7 +5,7 @@ date: 2018-05-07
 legacy_path: /the-restoration-of-your-latter-days/
 excerpt: Get ready for the restoration of your latter days!
 description: Get ready for the restoration of your latter days!
-draft: true
+draft: false
 ---
 
 **Get ready for the restoration of your latter days!** The Lord is encouraging those who have walked through a season of suffering and hardship, where the road has felt so long, that you find yourself deeply exhausted.

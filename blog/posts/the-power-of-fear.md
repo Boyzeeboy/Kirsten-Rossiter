@@ -5,7 +5,7 @@ date: 2017-03-12
 legacy_path: /the-power-of-fear/
 excerpt: I was reminded yesterday of the power that fear has in our lives, when not rooted out.
 description: I was reminded yesterday of the power that fear has in our lives, when not rooted out.
-draft: true
+draft: false
 ---
 
 **I was reminded yesterday of the power that fear has in our lives, when not rooted out. Every single person can relate to struggling with fear of some kind... the fear of rejection, the fear of man, the fear of failure, the fear of lack, the fear of death...**
