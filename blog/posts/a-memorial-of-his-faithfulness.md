@@ -2,6 +2,7 @@
 title: A Memorial of His Faithfulness
 type: Prophetic Insight
 date: 2020-05-26
+legacy_path: /a-memorial-of-his-faithfulness/
 excerpt: Our Beautiful God has shown His people such great, unfailing love. A faithful Husband, He has been, to a wife who has turned away from Him, over and over again. In His wrath He struck her, drawing her back through hardship and suffering, every time she wandered into adultery.
 description: Our Beautiful God has shown His people such great, unfailing love. A faithful Husband, He has been, to a wife who has turned away from Him, over and over again. In His wrath He struck her, drawing her back through hardship and suffering, every time she wandered into adultery.
 draft: true

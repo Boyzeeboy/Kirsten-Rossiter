@@ -2,6 +2,7 @@
 title: Divine Surprises await us!
 type: Prophetic Insight
 date: 2018-11-27
+legacy_path: /divine-surprises-await-us/
 excerpt: The Lord has been stirring my heart in the last day, saying,
 description: The Lord has been stirring my heart in the last day, saying,
 draft: true

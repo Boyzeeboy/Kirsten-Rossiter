@@ -2,6 +2,7 @@
 title: Word of the Lord for 2020
 type: Prophetic Insight
 date: 2019-12-23
+legacy_path: /word-of-the-lord-for-2020/
 excerpt: The Lord would say to His Bride, 'My Beloved, you have crossed the threshold of the old to the new. You have stepped into My Timing for My End-Time Bride...
 description: The Lord would say to His Bride, 'My Beloved, you have crossed the threshold of the old to the new. You have stepped into My Timing for My End-Time Bride...
 draft: true

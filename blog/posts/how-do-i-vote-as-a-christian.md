@@ -2,6 +2,7 @@
 title: How do I Vote as a Christian?
 type: Prophetic Insight
 date: 2017-06-24
+legacy_path: /how-do-i-vote-as-a-christian/
 excerpt: We, as God's people, have a great responsibility before Him, when we approach the voting day.
 description: We, as God's people, have a great responsibility before Him, when we approach the voting day.
 draft: true

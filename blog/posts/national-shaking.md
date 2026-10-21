@@ -2,6 +2,7 @@
 title: National Shaking
 type: Prophetic Insight
 date: 2017-06-13
+legacy_path: /national-shaking/
 excerpt: In the midst of last week's events in the Cape Province – the storm in Cape Town and the huge fires spreading up the Garden Route, I felt the Lord say, that the next two years leading up to the elections will be a time of national shaking.
 description: In the midst of last week's events in the Cape Province – the storm in Cape Town and the huge fires spreading up the Garden Route, I felt the Lord say, that the next two years leading up to the elections will be a time of national shaking.
 draft: true

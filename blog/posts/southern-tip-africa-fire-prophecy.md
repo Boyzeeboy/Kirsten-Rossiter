@@ -2,6 +2,7 @@
 title: Southern Tip of Africa Fire Prophecy
 type: Reflection
 date: 2018-02-10
+legacy_path: /southern-tip-africa-fire-prophecy/
 excerpt: 'Video: https://www.youtube.com/watch?v=bYS8XrEujmc Andre Baard researched and compiled a book about all the recorded prophecies about the Southern Tip of Africa Fire.'
 description: 'Video: https://www.youtube.com/watch?v=bYS8XrEujmc Andre Baard researched and compiled a book about all the recorded prophecies about the Southern Tip of Africa Fire.'
 draft: true

@@ -2,6 +2,7 @@
 title: In Whose Strength do we Trust?
 type: Prophetic Insight
 date: 2017-08-04
+legacy_path: /in-whose-strength-do-we-trust/
 excerpt: In whose strength do we trust?
 description: In whose strength do we trust?
 draft: true

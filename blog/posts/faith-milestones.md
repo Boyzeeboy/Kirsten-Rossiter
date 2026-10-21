@@ -2,6 +2,7 @@
 title: Faith Milestones
 type: Prophetic Insight
 date: 2016-10-13
+legacy_path: /faith-milestones/
 excerpt: Our lives are filled with opportunities to trust God for miracles - big and small. Every answered prayer and miracle performed, lays a memorial stone of remembrance of thát which God has done.
 description: Our lives are filled with opportunities to trust God for miracles - big and small. Every answered prayer and miracle performed, lays a memorial stone of remembrance of thát which God has done.
 draft: true

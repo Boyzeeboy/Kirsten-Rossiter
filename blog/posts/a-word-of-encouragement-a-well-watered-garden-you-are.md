@@ -2,6 +2,7 @@
 title: 'A Word of Encouragement: A Well-Watered Garden You are'
 type: Prophetic Insight
 date: 2018-03-06
+legacy_path: /a-word-of-encouragement-a-well-watered-garden-you-are/
 excerpt: 'A Word of Encouragement: A Well-Watered Garden You are'
 description: 'A Word of Encouragement: A Well-Watered Garden You are'
 draft: true

@@ -2,6 +2,7 @@
 title: Know Your Season
 type: Prophetic Insight
 date: 2017-01-14
+legacy_path: /know-your-season/
 excerpt: With all the rapid changes happening upon the earth at present, especially the exposing evil of globalism, God is declaring a message to us that is both encouraging and comforting.
 description: With all the rapid changes happening upon the earth at present, especially the exposing evil of globalism, God is declaring a message to us that is both encouraging and comforting.
 draft: true

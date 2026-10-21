@@ -2,6 +2,7 @@
 title: Prophecy by Cindy Jacobs - Angels are God's Ministering Spirits Sent to Serve You!
 type: Prophetic Insight
 date: 2017-09-09
+legacy_path: /prophecy-cindy-jacobs-angels-gods-ministering-spirits-sent-serve-us/
 excerpt: Generals International
 description: Generals International
 draft: true

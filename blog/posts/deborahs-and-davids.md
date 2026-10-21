@@ -2,6 +2,7 @@
 title: Deborahs and Davids
 type: Reflection
 date: 2016-09-18
+legacy_path: /deborahs-and-davids/
 excerpt: This is the season of the Deborahs and Davids arising to their front-line positions in the army of our King!
 description: This is the season of the Deborahs and Davids arising to their front-line positions in the army of our King!
 draft: true

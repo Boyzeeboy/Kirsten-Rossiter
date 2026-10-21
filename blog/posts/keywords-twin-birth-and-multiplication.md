@@ -2,6 +2,7 @@
 title: 'Keywords: Twin-birth and Multiplication'
 type: Prophetic Insight
 date: 2019-01-29
+legacy_path: /keywords-twin-birth-and-multiplication/
 excerpt: Twin-birth refers to the 'double portion' that the Lord has for His Bride.
 description: Twin-birth refers to the 'double portion' that the Lord has for His Bride.
 draft: true

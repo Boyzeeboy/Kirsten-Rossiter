@@ -2,6 +2,7 @@
 title: 'Prophetic Word by Sharell Barrera: The Rise of a Hidden Tribe'
 type: Prophetic Insight
 date: 2020-01-25
+legacy_path: /prophetic-word-by-sharell-barrera-the-rise-of-a-hidden-tribe/
 excerpt: I would like to share this Prophetic Word that Sharell Barrera sent out.
 description: I would like to share this Prophetic Word that Sharell Barrera sent out.
 draft: true

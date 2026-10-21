@@ -2,6 +2,7 @@
 title: Word of the Lord for 2019 - Double Doors of Twin and Multiple Measures
 type: Prophetic Insight
 date: 2018-12-26
+legacy_path: /word-of-the-lord-for-2019/
 excerpt: Word of the Lord for 2019,
 description: Word of the Lord for 2019,
 draft: true

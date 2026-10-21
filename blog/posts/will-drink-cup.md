@@ -2,6 +2,7 @@
 title: Will You Drink From My Cup?
 type: Prophetic Insight
 date: 2018-01-11
+legacy_path: /will-drink-cup/
 excerpt: '''Will you drink from My cup?'', is a question Jesus is asking each of us today.'
 description: '''Will you drink from My cup?'', is a question Jesus is asking each of us today.'
 draft: true

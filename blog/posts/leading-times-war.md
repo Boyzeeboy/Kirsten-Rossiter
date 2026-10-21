@@ -2,6 +2,7 @@
 title: Leading in Times of War
 type: Prophetic Insight
 date: 2017-07-19
+legacy_path: /leading-times-war/
 excerpt: God has been preparing righteous men and women to lead the nations in times of war. I've been having vivid spiritual dreams in the last while, this being the message from my last dream,
 description: God has been preparing righteous men and women to lead the nations in times of war. I've been having vivid spiritual dreams in the last while, this being the message from my last dream,
 draft: true

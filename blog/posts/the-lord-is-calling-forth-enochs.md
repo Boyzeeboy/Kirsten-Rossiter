@@ -2,6 +2,7 @@
 title: The Lord is Calling Forth Enochs
 type: Prophetic Insight
 date: 2018-04-09
+legacy_path: /the-lord-is-calling-forth-enochs/
 excerpt: The Lord is calling forth Enochs in this season. Can you hear Him calling you into His rest?
 description: The Lord is calling forth Enochs in this season. Can you hear Him calling you into His rest?
 draft: true

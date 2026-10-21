@@ -2,6 +2,7 @@
 title: Manna, day-by-day
 type: Prophetic Insight
 date: 2016-11-17
+legacy_path: /manna-day-day/
 excerpt: God in His Wisdom, told us to seek His Kingdom first, then everything that we need will be added to us. He adds to us daily what we need.
 description: God in His Wisdom, told us to seek His Kingdom first, then everything that we need will be added to us. He adds to us daily what we need.
 draft: true

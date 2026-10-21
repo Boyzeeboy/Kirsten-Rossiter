@@ -2,6 +2,7 @@
 title: The Battle Strategy is in the Release of Sound!
 type: Prophetic Insight
 date: 2020-10-12
+legacy_path: /the-battle-strategy-is-in-the-release-of-sound/
 excerpt: As Gideon and his men released sound through the blowing of trumpets and the throwing of pitchers, and Joshua and his men with the blowing of trumpets and loud shouting, so the Lord is releasing His battle strategy, calling us to release a sound that will vibrate and collide, causing confusion, fear, and demolition in the enemy's camp.
 description: As Gideon and his men released sound through the blowing of trumpets and the throwing of pitchers, and Joshua and his men with the blowing of trumpets and loud shouting, so the Lord is releasing His battle strategy, calling us to release a sound that will vibrate and collide, causing confusion, fear, and demolition in the enemy's camp.
 draft: true

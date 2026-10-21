@@ -2,6 +2,7 @@
 title: When the Enemy Slanders the Righteous
 type: Prophetic Insight
 date: 2017-07-21
+legacy_path: /the-enemy-slanders-the-righteous/
 excerpt: The enemy rouses the ungodly to speak lies and false accusations against the Righteous, he uses them to devise evil plans to further their own agendas.
 description: The enemy rouses the ungodly to speak lies and false accusations against the Righteous, he uses them to devise evil plans to further their own agendas.
 draft: true

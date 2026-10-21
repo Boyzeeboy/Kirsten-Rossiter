@@ -2,6 +2,7 @@
 title: Alliance With Truth Will Bring Unity
 type: Prophetic Insight
 date: 2021-07-20
+legacy_path: /alliance-with-truth-will-bring-unity/
 excerpt: I think of the incident of when Peter tried to protect Jesus from the cross. He was rebuked, for he, without his knowledge, was in that moment behaving as the enemy of the cross and the purpose of Christ’s life on earth.
 description: I think of the incident of when Peter tried to protect Jesus from the cross. He was rebuked, for he, without his knowledge, was in that moment behaving as the enemy of the cross and the purpose of Christ’s life on earth.
 draft: true

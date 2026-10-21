@@ -2,6 +2,7 @@
 title: Prophecy by Lana Vawser - Here Comes My Suddenly...
 type: Prophetic Insight
 date: 2017-09-08
+legacy_path: /prophecy-by-lana-vawser-here-comes-my-suddenly/
 excerpt: Lana Vawser Ministries
 description: Lana Vawser Ministries
 draft: true

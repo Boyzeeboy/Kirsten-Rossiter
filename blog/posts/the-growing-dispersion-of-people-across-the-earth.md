@@ -2,6 +2,7 @@
 title: The Growing Dispersion of People across the Earth
 type: Prophetic Insight
 date: 2018-08-01
+legacy_path: /the-growing-dispersion-of-people-across-the-earth/
 excerpt: There is going to be a growing dispersion of people across the earth as nations choose whom they will serve. The Bible speaks of sheep and goat nations at the end of the Age.
 description: There is going to be a growing dispersion of people across the earth as nations choose whom they will serve. The Bible speaks of sheep and goat nations at the end of the Age.
 draft: true

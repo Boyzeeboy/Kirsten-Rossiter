@@ -2,6 +2,7 @@
 title: Urgent Word for SA by Veronika West - 30.03.18
 type: Prophetic Insight
 date: 2018-05-02
+legacy_path: /urgent-word-for-sa-by-veronika-west-30-03-18/
 excerpt: An urgent word for the nation of South Africa… ”Watch and Pray!” Watch! For a divine dismantling of demonic strongholds will begin to take place in the gateway cities of the nation..! Listen!
 description: An urgent word for the nation of South Africa… ”Watch and Pray!” Watch! For a divine dismantling of demonic strongholds will begin to take place in the gateway cities of the nation..! Listen!
 draft: true

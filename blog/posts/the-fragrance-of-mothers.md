@@ -2,6 +2,7 @@
 title: The Fragrance of Mothers
 type: Reflection
 date: 2018-05-13
+legacy_path: /the-fragrance-of-mothers/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/09/Fist-in-a-Velvet-Glove.mp3 (file not in the 2024 backup))'
 description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/09/Fist-in-a-Velvet-Glove.mp3 (file not in the 2024 backup))'
 draft: true

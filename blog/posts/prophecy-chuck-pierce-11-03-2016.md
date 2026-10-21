@@ -2,6 +2,7 @@
 title: Prophecy by Chuck Pierce 11.03.2016
 type: Prophetic Insight
 date: 2017-06-08
+legacy_path: /prophecy-chuck-pierce-11-03-2016/
 excerpt: Over these next six weeks I will redefine this land. Even though the enemy will make a great attempt to rise up recreating structures from the past angelic hosts are now on their way.
 description: Over these next six weeks I will redefine this land. Even though the enemy will make a great attempt to rise up recreating structures from the past angelic hosts are now on their way.
 draft: true

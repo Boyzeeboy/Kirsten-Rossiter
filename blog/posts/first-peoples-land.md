@@ -2,6 +2,7 @@
 title: First Peoples of Our Land
 type: Reflection
 date: 2017-04-16
+legacy_path: /first-peoples-land/
 excerpt: To be really relevant and cutting-edge in the Spirit, it is essential that we have a good knowledge of history.
 description: To be really relevant and cutting-edge in the Spirit, it is essential that we have a good knowledge of history.
 draft: true

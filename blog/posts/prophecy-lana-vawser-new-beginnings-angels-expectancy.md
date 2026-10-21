@@ -2,6 +2,7 @@
 title: Prophecy by Lana Vawser - New Beginnings and Angels of Expectancy
 type: Prophetic Insight
 date: 2017-09-03
+legacy_path: /prophecy-lana-vawser-new-beginnings-angels-expectancy/
 excerpt: Lana Vawser Ministries
 description: Lana Vawser Ministries
 draft: true

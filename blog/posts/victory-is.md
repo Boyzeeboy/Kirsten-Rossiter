@@ -2,6 +2,7 @@
 title: Victory is...
 type: Prophetic Insight
 date: 2017-05-08
+legacy_path: /victory-is/
 excerpt: Sometimes, I think, we are conditioned to think of victory as overcoming a hardship/challenge when we reach the end of it, and the obstacle of that challenge is removed at last.
 description: Sometimes, I think, we are conditioned to think of victory as overcoming a hardship/challenge when we reach the end of it, and the obstacle of that challenge is removed at last.
 draft: true

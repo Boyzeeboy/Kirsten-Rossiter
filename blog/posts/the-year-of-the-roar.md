@@ -2,6 +2,7 @@
 title: The Year of the Roar
 type: Prophetic Insight
 date: 2020-06-03
+legacy_path: /the-year-of-the-roar/
 excerpt: The Lord would say, 'This is the year of the Mouth, the Roar!
 description: The Lord would say, 'This is the year of the Mouth, the Roar!
 draft: true

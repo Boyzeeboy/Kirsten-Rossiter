@@ -2,6 +2,7 @@
 title: I hear the Lord say, 'It is Done!'
 type: Prophetic Insight
 date: 2021-12-31
+legacy_path: /i-hear-the-lord-say-it-is-done/
 excerpt: There is a time and a season for everything. When we are in the waiting season, it feels like it will never end. However, when God says, 'It is done!', we can know for sure, it is done, the 'new' has begun!
 description: There is a time and a season for everything. When we are in the waiting season, it feels like it will never end. However, when God says, 'It is done!', we can know for sure, it is done, the 'new' has begun!
 draft: true

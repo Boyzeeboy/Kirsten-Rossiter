@@ -2,6 +2,7 @@
 title: The New Era of Inheritance
 type: Reflection
 date: 2020-03-30
+legacy_path: /the-new-era-of-inheritance/
 excerpt: HOLY GROUND AT THE JORDAN https://www.youtube.com/watch?v=lEuowPQFAe4 The Lord is standing in our midst as He stood before Joshua, and He is saying, 'Behold My Holiness, behold My Glory.
 description: HOLY GROUND AT THE JORDAN https://www.youtube.com/watch?v=lEuowPQFAe4 The Lord is standing in our midst as He stood before Joshua, and He is saying, 'Behold My Holiness, behold My Glory.
 draft: true

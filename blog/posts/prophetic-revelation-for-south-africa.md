@@ -2,6 +2,7 @@
 title: Prophetic Revelation for South Africa - The humbling of our government
 type: Prophetic Insight
 date: 2019-08-01
+legacy_path: /prophetic-revelation-for-south-africa/
 excerpt: The Lord has been showing me a picture of a drain, with water flowing out of it.
 description: The Lord has been showing me a picture of a drain, with water flowing out of it.
 draft: true

@@ -2,6 +2,7 @@
 title: My Testimony
 type: Reflection
 date: 2021-06-03
+legacy_path: /my-testimony-2/
 excerpt: Coming to know the Lord Jesus Christ at the age of ten, carried me through my teens. I discovered and encountered the unconditional and powerful Love of God, and how much He valued and prized me as His own.
 description: Coming to know the Lord Jesus Christ at the age of ten, carried me through my teens. I discovered and encountered the unconditional and powerful Love of God, and how much He valued and prized me as His own.
 draft: true

@@ -2,6 +2,7 @@
 title: The Fire Has Produced Courageous Warriors!
 type: Prophetic Insight
 date: 2018-09-21
+legacy_path: /the-fire-has-produced-courageous-warriors/
 excerpt: I've been pondering today, 'Lord why are so many faithful sons and daughters going through such intense hard times?'
 description: I've been pondering today, 'Lord why are so many faithful sons and daughters going through such intense hard times?'
 draft: true

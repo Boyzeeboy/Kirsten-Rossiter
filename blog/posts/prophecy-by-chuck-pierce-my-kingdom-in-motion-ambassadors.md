@@ -2,6 +2,7 @@
 title: Prophecy by Chuck Pierce - This is a Day of Movement!
 type: Prophetic Insight
 date: 2017-09-03
+legacy_path: /prophecy-by-chuck-pierce-my-kingdom-in-motion-ambassadors/
 excerpt: Glory of Zion International Ministries
 description: Glory of Zion International Ministries
 draft: true

@@ -2,6 +2,7 @@
 title: Open Gateways and Ring of Fire
 type: Prophetic Insight
 date: 2022-07-01
+legacy_path: /open-gateways-and-ring-of-fire/
 excerpt: There is a call from Heaven for us, His Beloved, to recognise that He is in our midst, walking among us and responding to us as we pour out our affection on Him.
 description: There is a call from Heaven for us, His Beloved, to recognise that He is in our midst, walking among us and responding to us as we pour out our affection on Him.
 draft: true

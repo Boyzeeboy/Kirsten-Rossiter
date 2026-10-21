@@ -2,6 +2,7 @@
 title: Look into My Face
 type: Reflection
 date: 2018-06-18
+legacy_path: /look-into-my-face/
 excerpt: 'Video: https://www.youtube.com/watch?v=xBCOw3i-iVg This famous, old song, ''Oh Lord, You''re Beautiful'', has ministered so much to me in the last few weeks.'
 description: 'Video: https://www.youtube.com/watch?v=xBCOw3i-iVg This famous, old song, ''Oh Lord, You''re Beautiful'', has ministered so much to me in the last few weeks.'
 draft: true

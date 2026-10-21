@@ -2,6 +2,7 @@
 title: What is God saying to South Africa right now?
 type: Prophetic Insight
 date: 2020-02-28
+legacy_path: /what-is-god-saying-to-south-africa-right-now/
 excerpt: My heart has been heavy over the last few weeks, with the news of yet another crazy rape and murder of an eight-year-old girl. 'How much more can our people endure?', was my cry.
 description: My heart has been heavy over the last few weeks, with the news of yet another crazy rape and murder of an eight-year-old girl. 'How much more can our people endure?', was my cry.
 draft: true

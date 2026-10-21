@@ -2,6 +2,7 @@
 title: The Third World-War has officially begun
 type: Prophetic Insight
 date: 2020-03-24
+legacy_path: /the-third-world-war-has-officially-begun/
 excerpt: The enemy has stirred the hearts of an evil elite who has been plotting and scheming to bring down the nations one by one.
 description: The enemy has stirred the hearts of an evil elite who has been plotting and scheming to bring down the nations one by one.
 draft: true

@@ -2,6 +2,7 @@
 title: Why is Prophecy so Important?
 type: Prophetic Insight
 date: 2017-06-24
+legacy_path: /why-is-prophecy-important/
 excerpt: When we know the Will of God for our lives and our nation, we have the authority to stand on that Word, and war for our future.
 description: When we know the Will of God for our lives and our nation, we have the authority to stand on that Word, and war for our future.
 draft: true

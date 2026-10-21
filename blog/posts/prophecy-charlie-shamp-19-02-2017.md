@@ -2,6 +2,7 @@
 title: Prophecy by Charlie Shamp 19.02.2017 - Word for Cape Town
 type: Prophetic Insight
 date: 2017-06-08
+legacy_path: /prophecy-charlie-shamp-19-02-2017/
 excerpt: I saw over Cape Town, South Africa tonight no clouds and no rain. I prayed, but in my Spirit I saw no rain in sight. In fervency I prayed to the Lord again, but He spoke and said, "there shall be no rain fall for a time."
 description: I saw over Cape Town, South Africa tonight no clouds and no rain. I prayed, but in my Spirit I saw no rain in sight. In fervency I prayed to the Lord again, but He spoke and said, "there shall be no rain fall for a time."
 draft: true

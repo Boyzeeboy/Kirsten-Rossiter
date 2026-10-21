@@ -2,6 +2,7 @@
 title: The Lord is Raising Up a Holy Remnant
 type: Reflection
 date: 2018-01-30
+legacy_path: /the-lord-is-raising-up-a-holy-remnant/
 excerpt: 'Video: https://www.youtube.com/watch?v=GHX9yxZL8C8 David Wilkerson, God is training a holy remnant The Lord is raising up a holy remnant, who will be His army in the last days.'
 description: 'Video: https://www.youtube.com/watch?v=GHX9yxZL8C8 David Wilkerson, God is training a holy remnant The Lord is raising up a holy remnant, who will be His army in the last days.'
 draft: true

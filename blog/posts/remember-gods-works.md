@@ -2,6 +2,7 @@
 title: I will Remember the Works of the Lord
 type: Reflection
 date: 2017-10-28
+legacy_path: /remember-gods-works/
 excerpt: I will Remember the Works of the Lord
 description: I will Remember the Works of the Lord
 draft: true

@@ -2,6 +2,7 @@
 title: South Africa, South Africa, Land of My Favour!
 type: Prophetic Insight
 date: 2019-03-20
+legacy_path: /south-africa-south-africa-land-of-my-favour/
 excerpt: South Africa, South Africa, Land of My Favour!
 description: South Africa, South Africa, Land of My Favour!
 draft: true

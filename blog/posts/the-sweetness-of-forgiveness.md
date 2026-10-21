@@ -2,6 +2,7 @@
 title: The Sweetness of Forgiveness
 type: Prophetic Insight
 date: 2017-06-14
+legacy_path: /the-sweetness-of-forgiveness/
 excerpt: The story of Job, as hard as it is to read, has a powerful message for each of us.
 description: The story of Job, as hard as it is to read, has a powerful message for each of us.
 draft: true

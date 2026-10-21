@@ -2,6 +2,7 @@
 title: Prophetic Words for the Bride - Lana Vawser
 type: Prophetic Insight
 date: 2018-03-17
+legacy_path: /prophetic-words-for-the-bride-lana-vawser/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/03/Lana-Vawser-300x270.'
 description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/03/Lana-Vawser-300x270.'
 draft: true

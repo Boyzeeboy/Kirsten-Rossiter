@@ -2,6 +2,7 @@
 title: 'Introducing my New Song: I''ve Been Completely Undone'
 type: Reflection
 date: 2018-01-22
+legacy_path: /introducing-new-song-ive-completely-undone/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/I-have-been-completely-undone-voice.'
 description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/I-have-been-completely-undone-voice.'
 draft: true

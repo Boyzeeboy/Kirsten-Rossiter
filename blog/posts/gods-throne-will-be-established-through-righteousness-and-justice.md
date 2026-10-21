@@ -2,6 +2,7 @@
 title: God's Throne will be Established through Righteousness and Justice
 type: Prophetic Insight
 date: 2020-11-20
+legacy_path: /gods-throne-will-be-established-through-righteousness-and-justice/
 excerpt: There's rejoicing and commotion in Heaven, as the earth is moving from one kingdom to another. History will record our current times as the end of the old kingdom, governed by paganism and hedonism, and the birthing of a new kingdom, governed by sons and daughters of righteousness, truth and justice alongside their eternal King, Jesus Christ.
 description: There's rejoicing and commotion in Heaven, as the earth is moving from one kingdom to another. History will record our current times as the end of the old kingdom, governed by paganism and hedonism, and the birthing of a new kingdom, governed by sons and daughters of righteousness, truth and justice alongside their eternal King, Jesus Christ.
 draft: true

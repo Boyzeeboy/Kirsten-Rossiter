@@ -2,6 +2,7 @@
 title: The Lord is Good to Those who Trust in Him!
 type: Prophetic Insight
 date: 2018-05-15
+legacy_path: /the-lord-is-good-to-those-who-trust-in-him/
 excerpt: The Lord is good to those who fear Him, to those who trust in His Name! We trust in the Lord our God, for He is the Open Door set before us. He is the Light that illuminates the path we tread upon.
 description: The Lord is good to those who fear Him, to those who trust in His Name! We trust in the Lord our God, for He is the Open Door set before us. He is the Light that illuminates the path we tread upon.
 draft: true

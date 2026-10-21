@@ -2,6 +2,7 @@
 title: Recognise the War of Distraction
 type: Prophetic Insight
 date: 2022-02-25
+legacy_path: /recognise-the-war-of-distraction/
 excerpt: The enemy always draws attention to himself. He creates chaos and uproars trying to divert attention away from what God is doing, hoping that the course of events will be altered in his favour. This is his ancient tactic and we see it throughout the Word of God.
 description: The enemy always draws attention to himself. He creates chaos and uproars trying to divert attention away from what God is doing, hoping that the course of events will be altered in his favour. This is his ancient tactic and we see it throughout the Word of God.
 draft: true

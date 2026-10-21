@@ -2,6 +2,7 @@
 title: This Spiritual War demands Spiritual Eyes, Ears and Hands to Fight Effectively
 type: Prophetic Insight
 date: 2019-10-22
+legacy_path: /this-spiritual-war-demands-spiritual-eyes-ears-and-hands-to-fight-effectively/
 excerpt: The enemy walks around like a roaring lion, seeking whom he can devour.
 description: The enemy walks around like a roaring lion, seeking whom he can devour.
 draft: true

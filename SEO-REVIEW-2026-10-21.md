@@ -148,6 +148,94 @@ Note also the one collision flagged above is now live in both eras: old
 the current 2026 post. Resolve the slug before that draft is published, or the
 redirect will shadow the newer post.
 
+### Status — 21 Oct 2026, later again: redirects generated, and the count is two, not nine
+
+Done. `build-blog.js` gained `buildRedirects()`, which writes a marker block in
+`_redirects` from the same published-post list `buildSitemap()` uses. A post
+carrying a `legacy_path` cannot be published without its 301 appearing, and one
+flipped back to draft loses it again. Both `/<slug>/` and `/<slug>` are emitted:
+Cloudflare matches the source path as written and does not normalise the
+trailing slash, which is why the hand-written rules list both forms too.
+Everything above the markers stays hand-written, including the decision not to
+redirect dead posts to the blog index — which still holds for every post that
+stays a draft.
+
+The old URL is data on the post, not inferred from its slug.
+`import-archive-posts.js` now writes `legacy_path: /<slug>/` for every post
+recovered from the **published** side of the export, and the 278 already-imported
+files were stamped to match. Five guards in the build throw rather than emit a
+bad rule: a malformed `legacy_path`, one under `/blog/`, one claimed by two
+posts, one clashing with a hand-written rule, and missing markers.
+`tests/redirects.spec.js` checks the generated block against `blog/posts/`
+rather than a hand-kept list.
+
+**Correction to the note above: only two of the nine live posts ever had an old
+URL, not nine or even three.** This review listed `surviving-the-storm` with the
+other two recovered posts, and checked `/surviving-the-storm/` live. That URL was
+never indexed. The export records it in the **Drafts** section, `Status: draft`
+with an empty `Slug` — WordPress only assigns `post_name` on publish, so it never
+had a public URL. The same is true of the six 2026 posts, which never lived on
+WordPress at all. So:
+
+| Live post | Old URL | Rule |
+|---|---|---|
+| `the-dividing-of-the-army-ranks` | `/the-dividing-of-the-army-ranks/` | **301** |
+| `becoming-the-place-of-his-rest` | `/becoming-the-place-of-his-rest/` | **301** |
+| `surviving-the-storm` | none — WordPress draft, never published | real 404 |
+| the six 2026 posts | none — never on WordPress | real 404 |
+
+Inventing a 301 from a URL that was never indexed buys nothing and asserts a
+history that did not happen, so the other seven stay 404s.
+
+Verified first-hop on the branch's Cloudflare deployment, no `-L`:
+
+```
+/the-dividing-of-the-army-ranks/   301 → /blog/the-dividing-of-the-army-ranks   (target 200)
+/the-dividing-of-the-army-ranks    301 → /blog/the-dividing-of-the-army-ranks
+/becoming-the-place-of-his-rest/   301 → /blog/becoming-the-place-of-his-rest   (target 200)
+/becoming-the-place-of-his-rest    301 → /blog/becoming-the-place-of-his-rest
+/surviving-the-storm/              404        the six 2026 slugs       404
+/a-new-song/                       404        (still a draft)
+/about/ /home/ /terms-of-use/      301        (hand-written rules intact)
+```
+
+**The collision is resolved.** `/keep-moving-forward/` was the 2016 post, so
+pointing it at the unrelated 2026 post of the same slug would be a wrong answer
+rather than a recovery. The cause was subtler than "the draft needs a new slug":
+the import *never created a file for the 2016 post at all*. It skips any slug
+whose file already exists, `blog/posts/keep-moving-forward.md` was the 2026 post,
+so the older one was silently dropped — which is also why it was not actually
+among the 289 drafts, contrary to the note above. The import now detects that the
+slug belongs to a different post (by date) and writes the file as
+`keep-moving-forward-2016-10-26.md`, carrying `legacy_path: /keep-moving-forward/`.
+Publish it and the old URL lands on the 2016 text; `/blog/keep-moving-forward`
+stays the 2026 post. A test pins this.
+
+**The Cloudflare cap is not a risk.** Pages allows 2,000 static redirects and 100
+dynamic, 2,100 combined, with 1,000 characters per declaration. The whole archive
+is 279 posts that had URLs × 2 forms = 558 rules, plus the 6 hand-written ones:
+**564, about 28% of the static cap.** The longest rule is ~180 characters. No
+truncation risk and no need for Bulk Redirects or a dynamic splat, so the
+generated-static approach scales to the full republish as-is. The build throws if
+the total ever crosses 2,000, and a test fails if the archive *would* cross it
+once fully published, so the cap cannot be hit silently.
+
+**What is left for the remaining 289 drafts:** nothing per-post. Flipping
+`draft: false` and running the build is now sufficient — the redirect comes with
+it. Two things to know:
+
+- The **14 recovered WordPress drafts** carry no `legacy_path`, correctly, since
+  they had no public URL. Thirteen of them are in `blog/posts/` under slugs
+  derived from their titles.
+- **One judgement call deferred.** `we-are-the-change` sits in the export's Drafts
+  section but *does* have a slug, which WordPress only assigns on publish — so it
+  was probably published once and later unpublished. This review sampled
+  `/we-are-the-change/` as one of its 404s. It currently has no `legacy_path`,
+  because "the export's published section" is the criterion that can actually be
+  verified. If it is ever published here and Search Console shows the old URL had
+  impressions, add `legacy_path: /we-are-the-change/` to it by hand; the build
+  will pick it up.
+
 ---
 
 ## 2. MEDIUM — `blog/_template.html` is live and indexable

@@ -2,6 +2,7 @@
 title: Word of the Lord for the Prophets by Lana Vawser
 type: Prophetic Insight
 date: 2018-09-18
+legacy_path: /word-of-the-lord-for-the-prophets-by-lana-vawser/
 excerpt: Prophets of God, stand up and don't give in to the Spirit of intimidation. You're moving into a new land of inheritance. Yesterday as I sat with the Lord I heard Him say “Sound the alarm!
 description: Prophets of God, stand up and don't give in to the Spirit of intimidation. You're moving into a new land of inheritance. Yesterday as I sat with the Lord I heard Him say “Sound the alarm!
 draft: true
