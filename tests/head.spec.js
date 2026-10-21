@@ -89,6 +89,28 @@ for (const path of ['/', '/blog/', '/blog/page/2', '/blog/keep-moving-forward', 
   });
 }
 
+// A post's <title> is its title and nothing else. The " — Kirsten Rossiter"
+// suffix the other pages carry is 19 characters, and Google counts it against
+// the ~60 a search result shows: with it, 92 of the 280 published posts were
+// truncated. Nothing renders a <title>, so a suffix creeping back in — from a
+// template copied off one of the hand-authored pages, most likely — would be
+// invisible in a browser and would quietly re-truncate a third of the archive.
+test('a post title carries no site suffix, while the other pages keep theirs', async ({ request }) => {
+  const titleOf = async (path) => {
+    const html = await (await request.get(path)).text();
+    return (html.match(/<title>\s*([\s\S]*?)\s*<\/title>/) || [])[1];
+  };
+
+  for (const path of ['/blog/keep-moving-forward', '/blog/worldview-checks']) {
+    expect(await titleOf(path), `${path} must not carry the site suffix`).not.toMatch(/Kirsten Rossiter/);
+  }
+
+  // The short pages keep the branding: it costs them nothing.
+  for (const path of ['/contact', '/terms', '/blog/', '/blog/page/2']) {
+    expect(await titleOf(path), `${path} should still be branded`).toMatch(/Kirsten Rossiter/);
+  }
+});
+
 test('blog index links posts extensionless, like the homepage and sitemap', async ({ request }) => {
   const html = await (await request.get('/blog/')).text();
   const hrefs = [...html.matchAll(/class="post-row" href="([^"]+)"/g)].map((m) => m[1]);
