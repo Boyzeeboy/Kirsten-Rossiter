@@ -3,7 +3,7 @@ title: You are turning the corner
 type: Prophetic Insight
 date: 2026-06-20
 excerpt: The prophetic 'new era' sounds exciting, but it costs everything. Discover how God shakes the church and dries up finance to make us new and why now you'll be established.
-description: The prophetic 'new era' sounds exciting, but it costs everything. Discover how God shakes the church and dries up finance to make us new and why now you'll be established.
+description: 'The prophetic new era sounds exciting, but it costs everything. How God shakes the church to make us new — and why you are being established.'
 draft: false
 ---
 
