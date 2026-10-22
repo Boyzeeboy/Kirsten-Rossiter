@@ -176,12 +176,19 @@ function buildPost(filePath) {
   isFirstParagraph = true;
   const body = marked.parse(content).trim();
 
+  // The <title> is the post title alone — no " — Kirsten Rossiter" suffix.
+  // That suffix is 19 characters and Google counts it against the ~60 a
+  // result shows. With it, 92 of the 280 published posts were truncated;
+  // without it, 21 are. The hand-authored pages (Contact, Terms, 404) keep
+  // theirs: their titles are short, so the branding is free there. The share
+  // cards are unaffected either way — socialHead() has always taken the bare
+  // title, so og:title and twitter:title never carried the suffix.
   const html = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>${escapeHtml(data.title)} — Kirsten Rossiter</title>
+<title>${escapeHtml(data.title)}</title>
 <meta name="description" content="${escapeHtml(description)}" />
 ${socialHead({ url, title: data.title, description, type: 'article' })}
 <meta property="article:published_time" content="${isoDate(data.date)}" />
