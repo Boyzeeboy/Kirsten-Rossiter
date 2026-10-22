@@ -1,5 +1,5 @@
 ---
-title: As we enter to possess, Jesus is saying, 'I AM HERE TO TAKE CHARGE!'
+title: Jesus is saying, 'I AM HERE TO TAKE CHARGE!'
 type: Prophetic Insight
 date: 2021-11-09
 legacy_path: /as-we-enter-to-possess-jesus-is-saying-i-am-here-to-take-charge/

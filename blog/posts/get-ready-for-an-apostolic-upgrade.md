@@ -1,5 +1,5 @@
 ---
-title: 'To all the Faithful Shepherds: Get Ready for an Apostolic Upgrade!'
+title: 'Faithful Shepherds: Get Ready for an Apostolic Upgrade!'
 type: Prophetic Insight
 date: 2020-09-20
 legacy_path: /get-ready-for-an-apostolic-upgrade/

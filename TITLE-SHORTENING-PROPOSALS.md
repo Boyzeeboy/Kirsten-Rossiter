@@ -1,138 +1,32 @@
-# Title shortening: 21 proposals for Kirsten to accept or reject
-
-Nothing in this file has been applied. Every title in `blog/posts/` is still exactly as you wrote it. The post `title` is also the `<h1>` at the top of the page, so these are your words on the page and not just a search-result label, which is why they are proposed here rather than changed.
-
-These are the 21 published archive posts whose title runs past 60 characters, the point at which Google starts cutting the title off in a search result.
-
-## Read this part first
-
-The thing costing you the most room is not these 21 titles. The site builds every post's browser title as:
-
-```
-<title>Your title — Kirsten Rossiter</title>
-```
-
-That suffix is 19 characters, and it is counted by Google too. So:
-
-- **21** of your 280 published posts have a title over 60 characters.
-- **92** of them go over 60 once ` — Kirsten Rossiter` is added.
-- Every one of the 13 shortened titles proposed below still lands over 60 with the suffix attached.
-
-In other words, shortening these 21 titles is worth doing for its own sake, but it will not on its own stop a single result being truncated. Dropping or shortening the suffix on post pages (to nothing, or to ` — Kirsten Rossiter` only on the home page) would do more for all 280 posts than retitling 21 of them. That is a one-line change in `build-blog.js:184`, it affects your whole site's branding in search results, and it is your call, so it has deliberately not been made here. Say the word and it is a separate, very small PR.
-
-The social cards are already fine either way: `og:title` and `twitter:title` carry your title with no suffix.
-
-## 13 I would shorten
-
-Lengths are the title on its own. The bracketed number is what it becomes with the site suffix.
-
-### As Daniel saw a prophetic alignment in his time, so we see the end of our captivity!
-
-`blog/posts/as-daniel-saw-a-prophetic-alignment-in-his-time-so-we-see-the-end-of-our-captivity.md` — **84 characters** (103 with suffix)
-
-**Proposed:** As Daniel saw, our captivity has come to an end!
-
-**48 characters** (67 with suffix). The clause 'a prophetic alignment in his time' is explained in the opening line of the post itself, so the title does not have to carry it.
-
-### The Trumpet Sounds: This is the Day of the Manifestation of My Sons and Daughters!
-
-`blog/posts/the-trumpet-sounds-this-is-the-day-of-the-manifestation-of-my-sons-and-daughters.md` — **82 characters** (101 with suffix)
-
-**Proposed:** The Trumpet Sounds: the Day of My Sons and Daughters!
-
-**53 characters** (72 with suffix). Keeps your colon structure and both images. 'This is the Day of the Manifestation of' is the only part that goes.
-
-### The Prayers of the Chinese People have gone forth for China and the Nations!
-
-`blog/posts/the-prayers-of-the-chinese-people-have-gone-forth-for-china-and-the-nations.md` — **76 characters** (95 with suffix)
-
-**Proposed:** The Chinese People's Prayers for China and the Nations
-
-**54 characters** (73 with suffix). Keeps the subject that someone would actually search for. 'have gone forth' is the part that costs the characters.
-
-### While you are still building, the Lord will bring Movement and Acceleration!
-
-`blog/posts/while-you-are-still-building-the-lord-will-bring-movement-and-acceleration.md` — **76 characters** (95 with suffix)
-
-**Proposed:** While you are still building, He brings Acceleration!
-
-**53 characters** (72 with suffix). 'Movement and' is close to a synonym pair with 'Acceleration' here, and the post is about the acceleration.
-
-### Call your Nation out of the Grave as Jesus Called, 'Lazarus, Come Forth!'
-
-`blog/posts/call-your-nation-out-of-the-grave-as-jesus-called-lazarus-come-forth.md` — **73 characters** (92 with suffix)
-
-**Proposed:** Call your Nation out of the Grave: 'Lazarus, Come Forth!'
-
-**57 characters** (76 with suffix). A colon does the work that 'as Jesus Called,' was doing. Both halves of your title survive.
-
-### Prophetic Revelation for South Africa - The humbling of our government
-
-`blog/posts/prophetic-revelation-for-south-africa.md` — **70 characters** (89 with suffix)
-
-**Proposed:** South Africa: the Humbling of our Government
-
-**44 characters** (63 with suffix). The part before the dash is a generic label; everything specific is in the subtitle. This is the one I would change with least hesitation.
-
-### Rise up Africa, and Declare and Decree your Way into your Inheritance!
-
-`blog/posts/rise-up-africa-and-declare-and-decree-your-way-into-your-inheritance.md` — **70 characters** (89 with suffix)
-
-**Proposed:** Rise up Africa, Decree your Way into your Inheritance!
-
-**54 characters** (73 with suffix). 'Declare and Decree' is your phrase, so this one is a real loss. Worth it only if you want it under the line.
-
-### We are going into the Enemy's Camp to take BACK what he stole from us!
-
-`blog/posts/we-are-going-into-the-enemys-camp-to-take-back-what-he-stole-from-us.md` — **70 characters** (89 with suffix)
-
-**Proposed:** Into the Enemy's Camp to take BACK what he stole!
-
-**49 characters** (68 with suffix). Drops 'We are going' and 'from us'. The capitalised BACK, which is the sound of the title, stays.
-
-### Word of the Lord for 2019 - Double Doors of Twin and Multiple Measures
-
-`blog/posts/word-of-the-lord-for-2019.md` — **70 characters** (89 with suffix)
-
-**Proposed:** Word of the Lord for 2019: the Double Doors
-
-**43 characters** (62 with suffix). Keeps the year, which is what people search. 'Twin and Multiple Measures' is in the first paragraph of the post.
-
-### As we enter to possess, Jesus is saying, 'I AM HERE TO TAKE CHARGE!'
-
-`blog/posts/as-we-enter-to-possess-jesus-is-saying-i-am-here-to-take-charge.md` — **68 characters** (87 with suffix)
-
-**Proposed:** Jesus is saying, 'I AM HERE TO TAKE CHARGE!'
-
-**44 characters** (63 with suffix). The quote is the title. 'As we enter to possess' is the post's first move and reads better there than in front of it.
-
-### Give the devil NO place on the battlefield through misunderstandings
-
-`blog/posts/give-the-devil-no-place-on-the-battlefied-through-misunderstandings.md` — **68 characters** (87 with suffix)
-
-**Proposed:** Give the devil NO place through misunderstandings
-
-**49 characters** (68 with suffix). Only 'on the battlefield' goes, and the post keeps the battlefield image throughout.
-
-### To all the Faithful Shepherds: Get Ready for an Apostolic Upgrade!
-
-`blog/posts/get-ready-for-an-apostolic-upgrade.md` — **66 characters** (85 with suffix)
-
-**Proposed:** Faithful Shepherds: Get Ready for an Apostolic Upgrade!
-
-**55 characters** (74 with suffix). Purely mechanical: 'To all the' is address, not content.
-
-### The Striking on the Earth will bring forth Judeo-Christian Nations
-
-`blog/posts/the-striking-on-the-earth-will-bring-forth-judeo-christian-nations.md` — **66 characters** (85 with suffix)
-
-**Proposed:** The Striking that brings forth Judeo-Christian Nations
-
-**54 characters** (73 with suffix). 'on the Earth' is implied by 'The Striking', which is how the post uses the word.
-
-## 8 I would leave exactly as they are
-
-These are all between 61 and 66 characters. In each case the sentence is doing something that a shorter version would break, and the gain is a handful of characters that the site suffix swallows anyway.
+# Title shortening: the decision, 22 October 2026
+
+**All 13 proposed shortenings were accepted and applied. The 8 below were left exactly as Kirsten wrote them.** This file is now a record, not a request.
+
+Titles over 60 characters, across the 280 published posts: **21 before, 8 after.** The longest is now 66 characters, down from 84.
+
+Changing a title did not change any URL: the slug is the filename, so every old link, sitemap entry and 301 from the old WordPress address still works. `sitemap.xml` and `_redirects` were untouched by this change.
+
+## The 13 that changed
+
+| was | now | characters |
+|---|---|---|
+| As Daniel saw a prophetic alignment in his time, so we see the end of our captivity! | As Daniel saw, our captivity has come to an end! | 84 → 48 |
+| The Trumpet Sounds: This is the Day of the Manifestation of My Sons and Daughters! | The Trumpet Sounds: the Day of My Sons and Daughters! | 82 → 53 |
+| The Prayers of the Chinese People have gone forth for China and the Nations! | The Chinese People's Prayers for China and the Nations | 76 → 54 |
+| While you are still building, the Lord will bring Movement and Acceleration! | While you are still building, He brings Acceleration! | 76 → 53 |
+| Call your Nation out of the Grave as Jesus Called, 'Lazarus, Come Forth!' | Call your Nation out of the Grave: 'Lazarus, Come Forth!' | 73 → 57 |
+| Prophetic Revelation for South Africa - The humbling of our government | South Africa: the Humbling of our Government | 70 → 44 |
+| Rise up Africa, and Declare and Decree your Way into your Inheritance! | Rise up Africa, Decree your Way into your Inheritance! | 70 → 54 |
+| We are going into the Enemy's Camp to take BACK what he stole from us! | Into the Enemy's Camp to take BACK what he stole! | 70 → 49 |
+| Word of the Lord for 2019 - Double Doors of Twin and Multiple Measures | Word of the Lord for 2019: the Double Doors | 70 → 43 |
+| As we enter to possess, Jesus is saying, 'I AM HERE TO TAKE CHARGE!' | Jesus is saying, 'I AM HERE TO TAKE CHARGE!' | 68 → 44 |
+| Give the devil NO place on the battlefield through misunderstandings | Give the devil NO place through misunderstandings | 68 → 49 |
+| To all the Faithful Shepherds: Get Ready for an Apostolic Upgrade! | Faithful Shepherds: Get Ready for an Apostolic Upgrade! | 66 → 55 |
+| The Striking on the Earth will bring forth Judeo-Christian Nations | The Striking that brings forth Judeo-Christian Nations | 66 → 54 |
+
+## The 8 that were left alone
+
+These are all between 61 and 66 characters. In each case the sentence is doing something a shorter version would break. They are listed here so nobody shortens them later thinking they were simply missed.
 
 ### God's Throne will be Established through Righteousness and Justice
 
@@ -182,8 +76,7 @@ The contrast is the sentence. Any shortening leaves the first half without its a
 
 One character over, and it tells a reader exactly what is inside. Not worth touching.
 
-## How to accept one
 
-Change the `title:` line in the named file under `blog/posts/`, then run `npm run build` and commit what it regenerates. Changing a title does **not** change the post's URL: the slug is the filename, so the old link, its sitemap entry and its 301 from the old WordPress URL all keep working.
+## On the site suffix
 
-One thing to know: the title is also the `<h1>` and the text on the card on `/blog/`, so a shortened title changes how the post reads on the blog index too. The card's summary text underneath it (`excerpt`) is untouched by any of this.
+Post pages no longer append ` — Kirsten Rossiter` to the browser title (#42). That suffix was 19 characters and Google counted it, which is why 92 of 280 posts were being truncated before it went. Between dropping it and accepting these 13, the number of posts whose `<title>` runs past 60 characters has gone from **92 to 8**.

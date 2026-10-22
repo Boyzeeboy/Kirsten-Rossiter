@@ -1,5 +1,5 @@
 ---
-title: The Striking on the Earth will bring forth Judeo-Christian Nations
+title: The Striking that brings forth Judeo-Christian Nations
 type: Prophetic Insight
 date: 2019-10-28
 legacy_path: /the-striking-on-the-earth-will-bring-forth-judeo-christian-nations/

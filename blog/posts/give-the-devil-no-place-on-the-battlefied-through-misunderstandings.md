@@ -1,5 +1,5 @@
 ---
-title: Give the devil NO place on the battlefield through misunderstandings
+title: Give the devil NO place through misunderstandings
 type: Prophetic Insight
 date: 2019-11-07
 legacy_path: /give-the-devil-no-place-on-the-battlefied-through-misunderstandings/

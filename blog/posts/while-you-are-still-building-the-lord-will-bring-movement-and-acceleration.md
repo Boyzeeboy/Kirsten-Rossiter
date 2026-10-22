@@ -1,5 +1,5 @@
 ---
-title: While you are still building, the Lord will bring Movement and Acceleration!
+title: While you are still building, He brings Acceleration!
 type: Prophetic Insight
 date: 2019-11-13
 legacy_path: /while-you-are-still-building-the-lord-will-bring-movement-and-acceleration/

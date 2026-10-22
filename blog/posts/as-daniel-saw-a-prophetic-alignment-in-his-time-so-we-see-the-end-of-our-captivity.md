@@ -1,5 +1,5 @@
 ---
-title: As Daniel saw a prophetic alignment in his time, so we see the end of our captivity!
+title: As Daniel saw, our captivity has come to an end!
 type: Prophetic Insight
 date: 2020-10-30
 legacy_path: /as-daniel-saw-a-prophetic-alignment-in-his-time-so-we-see-the-end-of-our-captivity/
