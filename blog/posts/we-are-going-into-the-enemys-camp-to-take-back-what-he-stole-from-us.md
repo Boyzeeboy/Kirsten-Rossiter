@@ -1,5 +1,5 @@
 ---
-title: We are going into the Enemy's Camp to take BACK what he stole from us!
+title: Into the Enemy's Camp to take BACK what he stole!
 type: Prophetic Insight
 date: 2020-05-10
 legacy_path: /we-are-going-into-the-enemys-camp-to-take-back-what-he-stole-from-us/

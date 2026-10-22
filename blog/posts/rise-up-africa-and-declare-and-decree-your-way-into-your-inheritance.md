@@ -1,5 +1,5 @@
 ---
-title: Rise up Africa, and Declare and Decree your Way into your Inheritance!
+title: Rise up Africa, Decree your Way into your Inheritance!
 type: Prophetic Insight
 date: 2018-04-03
 legacy_path: /rise-up-africa-and-declare-and-decree-your-way-into-your-inheritance/

@@ -1,5 +1,5 @@
 ---
-title: Call your Nation out of the Grave as Jesus Called, 'Lazarus, Come Forth!'
+title: 'Call your Nation out of the Grave: ''Lazarus, Come Forth!'''
 type: Prophetic Insight
 date: 2021-01-30
 legacy_path: /call-your-nation-out-of-the-grave-as-jesus-called-lazarus-come-forth/

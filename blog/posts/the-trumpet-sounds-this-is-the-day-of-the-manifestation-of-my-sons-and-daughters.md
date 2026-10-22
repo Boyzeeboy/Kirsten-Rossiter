@@ -1,5 +1,5 @@
 ---
-title: 'The Trumpet Sounds: This is the Day of the Manifestation of My Sons and Daughters!'
+title: 'The Trumpet Sounds: the Day of My Sons and Daughters!'
 type: Prophetic Insight
 date: 2020-10-03
 legacy_path: /the-trumpet-sounds-this-is-the-day-of-the-manifestation-of-my-sons-and-daughters/

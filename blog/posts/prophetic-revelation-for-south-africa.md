@@ -1,5 +1,5 @@
 ---
-title: Prophetic Revelation for South Africa - The humbling of our government
+title: 'South Africa: the Humbling of our Government'
 type: Prophetic Insight
 date: 2019-08-01
 legacy_path: /prophetic-revelation-for-south-africa/

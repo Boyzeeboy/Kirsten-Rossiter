@@ -1,5 +1,5 @@
 ---
-title: The Prayers of the Chinese People have gone forth for China and the Nations!
+title: The Chinese People's Prayers for China and the Nations
 type: Prophetic Insight
 date: 2020-12-15
 legacy_path: /the-prayers-of-the-chinese-people-have-gone-forth-for-china-and-the-nations/
