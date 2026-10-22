@@ -817,9 +817,20 @@ footer.site-footer {
   .page-home .hero { grid-template-columns: 1fr; }
   .page-home .hero-right { display: none; }
   .page-home .hero-left { padding: 140px var(--space-5xl) var(--space-8xl); }
+  /* These three are two-column grids that have to become one column here, the
+     way .hero and .insights-featured do. Without this they keep their columns
+     (and an 80px gap) all the way down, so .book-right and .about-right end up
+     past the right edge of a phone: at 375px the book section rendered a cover
+     and nothing else, its headline, blurb and buy button sitting off-screen
+     between x=384 and x=600, reachable only by scrolling sideways.
+
+     The rule used to read `order: -1` on these three. That was dead code —
+     their parent is a plain block container, so order does nothing to them —
+     which is most likely how the missing collapse went unnoticed. The order
+     that matters is on .book-visual-left, keeping the cover above the copy. */
   .page-home .positioning-inner,
   .page-home .about-inner,
-  .page-home .book-inner,
+  .page-home .book-inner { grid-template-columns: 1fr; }
   .page-home .book-visual-left { order: -1; }
   .page-home .insights-featured { grid-template-columns: 1fr; }
   .container { padding: 0 var(--space-2xl); }
