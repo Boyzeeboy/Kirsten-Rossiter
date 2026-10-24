@@ -17,15 +17,11 @@
 //   3. The Cloudflare Web Analytics beacon is still requested. It lived in
 //      includes.js next to the fetch logic, and deleting that file would have
 //      silently ended analytics.
-//
-// terms.html and 404.html carry their own older nav with no drawer, so they
-// are checked for links only.
 
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-const PARTIAL_PAGES = ['/', '/building-the-nations', '/contact', '/blog/', '/blog/keep-moving-forward', '/blog/_template.html'];
-const OWN_NAV_PAGES = ['/terms', '/404.html'];
+const PARTIAL_PAGES = ['/', '/building-the-nations', '/contact', '/terms', '/404.html', '/blog/', '/blog/keep-moving-forward', '/blog/_template.html'];
 
 test.describe('nav and footer ship in the HTML', () => {
   test.use({ javaScriptEnabled: false });
@@ -37,14 +33,6 @@ test.describe('nav and footer ship in the HTML', () => {
       await expect(page.locator('#navDrawer')).toHaveCount(1);
       await expect(page.locator('footer.site-footer .footer-nav a')).toHaveCount(5);
       await expect(page.locator('[data-include]')).toHaveCount(0);
-    });
-  }
-
-  for (const path of OWN_NAV_PAGES) {
-    test(`${path} with JavaScript off`, async ({ page }) => {
-      await page.goto(path);
-      await expect(page.locator('nav.site-nav a[href^="/"]').first()).toBeAttached();
-      await expect(page.locator('footer a[href^="/"]').first()).toBeAttached();
     });
   }
 });
