@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+# Form endpoints (Pages Functions). POST only, so a GET is a correct 404 that
+# crawlers have no reason to keep requesting.
+Disallow: /api/
 
 Sitemap: https://www.kirstenrossiter.com/sitemap.xml

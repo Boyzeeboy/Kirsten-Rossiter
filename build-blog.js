@@ -54,10 +54,6 @@ function escapeHtml(str) {
 // page, generated or hand-authored, and replaces only what sits between the
 // markers. Same pattern as the homepage insights block. Hand-authored pages
 // are never rewritten wholesale.
-//
-// terms.html and 404.html carry their own older nav, with no drawer, and are
-// not walked. Moving them onto the partial changes what they look like, so it
-// is a separate change with its own baseline update.
 const PARTIALS_DIR = path.join(__dirname, 'partials');
 const PARTIALS = { NAV: 'nav.html', FOOTER: 'footer.html' };
 const partialCache = {};
@@ -93,7 +89,7 @@ function inlinePartials(html) {
 // Hand-authored pages that carry the markers. blog/_template.html is reachable
 // live (SEO-AUDIT.md #7), so it gets the same treatment rather than a stale
 // data-include that nothing fills any more.
-const STATIC_HTML = ['index.html', 'contact.html', 'building-the-nations.html', 'blog/_template.html'];
+const STATIC_HTML = ['index.html', 'contact.html', 'building-the-nations.html', 'terms.html', '404.html', 'blog/_template.html'];
 
 function inlineStaticPages() {
   for (const rel of STATIC_HTML) {
@@ -474,7 +470,7 @@ function buildHomepageInsights(posts) {
 const STATIC_PAGES = [
   { path: '/building-the-nations', lastmod: '2026-07-04' },
   { path: '/contact', lastmod: '2026-07-04' },
-  { path: '/terms', lastmod: '2026-07-04' },
+  { path: '/terms', lastmod: '2026-10-24' },
 ];
 
 function isoDate(dateVal) {
@@ -600,10 +596,9 @@ function buildRedirects(posts) {
 // requested again. An unchanged asset keeps its URL and stays cached — the
 // hash is of the bytes, not of the build.
 //
-// Every HTML file is rewritten, not just the generated ones: terms.html and
-// 404.html are deliberately left out of the nav/footer inlining because that
-// would change how they look, but a query string on a stylesheet link changes
-// nothing visually, so there is no reason to leave them stale.
+// Every HTML file is rewritten, not just the generated ones: a hand-authored
+// page with no partial markers still links the stylesheet, and a query string
+// on that link changes nothing visually, so there is no reason to leave it stale.
 const VERSIONED_ASSETS = ['styles.css', 'vendor/tokens.css', 'site.js'];
 
 // Source, not output: partials/ is inlined into the pages (and versioned
