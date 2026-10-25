@@ -4,9 +4,38 @@
 **Scope:** `styles.css`, the 14 spacing declarations in its `:root` block, every
 hand-written dimension literal in the stylesheet, and the `spacing` and `radius`
 collections of `kirsten-rossiter-tokens` v2.3.0.
-**Status:** Option A actioned 12 Aug (five `:root` declarations). Everything else
-below is finding only. Figures describe the state *before* that change unless
-noted.
+**Status:** **Closed 25 Oct 2026 (ORIN-30)** by a fourth option, D, recorded
+directly below. Option A was actioned 12 Aug. The rest of this document is the
+August finding and is kept as the record; its figures describe the state before
+either change.
+
+---
+
+## Resolution, 25 Oct 2026: Option D, the whole ramp
+
+B and C both treated the seven semantic tokens as the only things the site was
+allowed to consume. That was the plaster: seven role names cannot describe a
+13-step layout. D treats the value-named ramp as the site's spacing API.
+
+- **Figma.** The `Spacing` collection was identical in the IDEM Revised file, so
+  there was no better scale to import. The KR file gained `scale/120`, `144` and
+  `168` for section and hero padding. All 23 variables are scoped to gap and
+  padding (they were scoped to every property), and their web code syntax now
+  names the built CSS (`var(--kr-spacing-scale-24)`), not the template's
+  `var(--space-24)`, which collided with the site's own `--space-xl`.
+- **Pipeline.** Synced, released as v2.4.0.
+- **Site.** The 13 `--space-*` aliases are gone. 251 margin, padding and gap
+  values consume `var(--kr-spacing-scale-*)` directly, matched by value. 142
+  were exact, 79 moved by 4px or less, and the rest moved by 6–12px: 88 and 90
+  to 80, 96 to 104, 110 to 104, 128 to 120, 140 and 150 to 144, 180 to 168. A
+  midpoint rounds up. 1px and 2px hairlines stay literal.
+- **Why the ramp is allowed here when colour primitives are not.** The colour
+  rule exists because a ramp step was renumbered under the site (`c98ccc6`).
+  `scale/24` is named for its value, so it cannot be renumbered without the
+  rename being obvious. Lint check 1 still forbids `--kr-primitives-*`.
+- **Enforced.** Lint check 5 fails any px above 2 in a margin, padding or gap
+  declaration, in `styles.css` and every page-local `<style>` block. That closes
+  the 60-literal half that check 4 could not see.
 
 ---
 
