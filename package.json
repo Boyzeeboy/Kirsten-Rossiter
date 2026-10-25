@@ -14,6 +14,6 @@
   },
   "devDependencies": {
     "@playwright/test": "1.63.0",
-    "kirsten-rossiter-tokens": "github:Boyzeeboy/kr-token-pipeline#v2.3.0"
+    "kirsten-rossiter-tokens": "github:Boyzeeboy/kr-token-pipeline#v2.4.0"
   }
 }

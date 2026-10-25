@@ -30,6 +30,8 @@
  *              package is not installed — see below).
  *   4. RATCHET Hand-written values in custom-property declarations may not
  *              increase — any file, colours and dimensions alike.
+ *   5. ERROR   No hand-written px in margin, padding or gap, in any rule body.
+ *              Spacing comes from the --kr-spacing-scale-* ramp (ORIN-30).
  *
  * Run: npm run lint:tokens
  */
@@ -63,12 +65,9 @@ const PKG_TOKENS = join(PKG, 'dist', 'light', 'variables.css');
  *   friends. The pipeline carries no alpha channel at all, so these cannot be
  *   sourced upstream today. A gap in the token set, not drift in the site.
  *
- *   The dimensions are the remaining half of the spacing gap. Five of the
- *   original thirteen `--space-*` steps were connected to semantic tokens on
- *   12 Aug; these eight could not be, because five exist only on the raw
- *   spacing/scale/* ramp (a primitive by nature — NEW-CLIENT-PLAYBOOK.md:37)
- *   and three (28, 60, 120px) have no token at any layer. `--meta`/`--meta-ls`
- *   are a genuine site-only role: 12px coincides with fonts/size/label-large
+ *   The dimensions are `--meta`/`--meta-ls`, a genuine site-only role. (The
+ *   eight `--space-*` steps that used to sit here went with ORIN-30, when the
+ *   site moved onto the spacing ramp.) 12px coincides with fonts/size/label-large
  *   but the tracking differs 3.5x, so borrowing that token would couple two
  *   unrelated roles. Full reasoning in SPACING-GAP.md.
  *
@@ -100,15 +99,7 @@ const LITERAL_BASELINE = {
     '--shadow-soft',
     '--white-faint',
     '--error',
-    // Dimension — the unmapped half of the spacing scale.
-    '--space-md',
-    '--space-xl',
-    '--space-3xl',
-    '--space-4xl',
-    '--space-6xl',
-    '--space-7xl',
-    '--space-8xl',
-    '--space-section',
+    // Dimension — a site-only type role, see above.
     '--meta',
     '--meta-ls',
   ]),
@@ -120,7 +111,7 @@ const LITERAL_BASELINE = {
 };
 
 /** Directories never worth walking. vendor/ is the token source itself. */
-const SKIP_DIRS = new Set(['node_modules', '.git', 'vendor', '.github']);
+const SKIP_DIRS = new Set(['node_modules', '.git', 'vendor', '.github', '.claude']);
 
 /** Only these can consume a token. */
 const SCAN_EXT = /\.(css|html|js)$/;
@@ -323,6 +314,50 @@ if (removed.length) {
   );
 }
 
+// ── 5. No hand-written spacing ──────────────────────────────────────────────
+// Check 4 only reads custom-property declarations, so `padding: 22px` in a rule
+// body was invisible to it — that was the larger half of the spacing gap. Every
+// margin, padding and gap now takes a --kr-spacing-scale-* step; this keeps a
+// literal from creeping back in. 1px and 2px are exempt: they draw hairline
+// grid dividers and nudge glyphs, and are not spacing. Negative offsets are not
+// spacing either, and position offsets (top/left/…) are out of scope.
+const SPACING_PROP = /^(?:margin|padding|gap|row-gap|column-gap)(?:-[a-z-]+)?$/i;
+const RULE_DECL = /([a-z-]+)\s*:\s*([^;{}]+)/gi;
+const spacingLiterals = [];
+
+function scanSpacing(text, file, lineOffset) {
+  const clean = text.replace(/\/\*[\s\S]*?\*\//g, (c) => c.replace(/[^\n]/g, ' '));
+  for (const m of clean.matchAll(RULE_DECL)) {
+    if (!SPACING_PROP.test(m[1])) continue;
+    const px = [...m[2].matchAll(/(?<![\w.-])(\d*\.?\d+)px\b/g)];
+    if (!px.some((p) => Number(p[1]) > 2)) continue;
+    spacingLiterals.push(
+      `${file}:${lineOffset + clean.slice(0, m.index).split('\n').length - 1}  ${m[1]}: ${m[2].trim()}`
+    );
+  }
+}
+
+for (const abs of files) {
+  const file = relative(ROOT, abs).split(sep).join('/');
+  const text = readFileSync(abs, 'utf8');
+  if (file.endsWith('.css')) scanSpacing(text, file, 1);
+  else if (file.endsWith('.html')) {
+    for (const m of text.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/gi)) {
+      const contentStart = m.index + m[0].indexOf('>') + 1;
+      scanSpacing(m[1], file, text.slice(0, contentStart).split('\n').length);
+    }
+  }
+}
+
+if (spacingLiterals.length) {
+  errors.push(
+    `${spacingLiterals.length} hand-written spacing value(s):\n` +
+      spacingLiterals.map((l) => `      ${l}`).join('\n') +
+      `\n    Use the nearest var(--kr-spacing-scale-*) step, matched by VALUE.\n` +
+      `    If no step is close enough, add one in Figma and release the pipeline.`
+  );
+}
+
 // ── Report ──────────────────────────────────────────────────────────────────
 const scanned = `${files.length} files, ${defined.size} tokens defined`;
 
@@ -337,6 +372,7 @@ console.log(`✓ Token lint passed (${scanned})`);
 console.log(`  no primitives consumed directly`);
 console.log(`  all var(--kr-*) references resolve`);
 console.log(`  vendor/tokens.css ${syncState}`);
+console.log(`  no hand-written spacing in margin, padding or gap`);
 // Counted by distinct file+name, matching how the baseline is held: a property
 // declared twice (building-the-nations.html re-declares --rule-w per section)
 // is one entry to ratchet down, not two.
