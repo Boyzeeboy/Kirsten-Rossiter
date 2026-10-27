@@ -4,7 +4,7 @@ type: Reflection
 date: 2022-02-19
 excerpt: Passover 2022 will not be a passover of struggle and defeat, it will mark our salvation, deliverance and freedom.
 description: Passover 2022 will mark salvation and deliverance, not defeat. A picture of the Lord sweeping a torch through a dark room until the whole web is seen.
-draft: false
+draft: true
 ---
 
 Passover 2022 will not be a passover of struggle and defeat, it will mark our salvation, deliverance and freedom. We are about to see the act of God, working on behalf of His people, to set them free from tyranny and wickedness.

@@ -4,7 +4,7 @@ type: Reflection
 date: 2022-03-02
 excerpt: When we read the New Testament we see how the enemy stirs the crowds through propaganda. Their strategy is to stir people up to action that is fuelled by rage and irrationality.
 description: The enemy has always stirred the crowds through propaganda. A warning not to swallow what the media spews, and a picture of a hand signalling, 'Stop!'
-draft: false
+draft: true
 ---
 
 When we read the New Testament we see how the enemy stirs the crowds through propaganda. Their strategy is to stir people up to action that is fuelled by rage and irrationality. Are we going to be such easy targets to just believe the lies that the Mainstream Media is spewing at us?
