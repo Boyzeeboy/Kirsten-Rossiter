@@ -3,12 +3,10 @@ title: God can Multiply the Last of your Resources
 type: Prophetic Insight
 date: 2018-01-27
 legacy_path: /god-can-multiply-last-resources/
-excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/diego-ph-259050-240x300.'
+excerpt: 'Just when you think you''ve reached the last of your resources, be reminded of the story of Elisha and the widow''s oil. She too, reached the last of her resources, she too, was facing a crisis she couldn''t solve.'
 description: 'Elisha and the widow''s oil: when you reach the last of your resources He supersedes the possible, so let your thinking move beyond what you can solve.'
 draft: false
 ---
-
-***(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/diego-ph-259050-240x300.jpg (file not in the 2024 backup))***
 
 **Just when you think you've reached the last of your resources, be reminded of the story of Elisha and the widow's oil.** She too, reached the last of her resources, she too, was facing a crisis she couldn't solve.
 

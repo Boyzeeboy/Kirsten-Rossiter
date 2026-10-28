@@ -3,14 +3,10 @@ title: The Lord Works Wonders on the Earth
 type: Reflection
 date: 2018-01-25
 legacy_path: /lord-works-wonders-earth/
-excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/andy-fitzsimon-104515-300x200.'
+excerpt: 'The Lord works wonders on the earth, displaying His Greatness and Strength. He is our Deliverer, our Salvation, and our Miracle-Working God!'
 description: 'The lyrics of ''Africa, you are loved'': a declaration that the heavens will open, rivers will flow, and the Lord will hear the poor and the needy.'
 draft: false
 ---
-
-***(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/andy-fitzsimon-104515-300x200.jpg (file not in the 2024 backup))***
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/Africa-you-are-loved.mp3 (file not in the 2024 backup))*
 
 The Lord works wonders on the earth, displaying His Greatness and Strength. **He is our Deliverer, our Salvation, and our Miracle-Working God!**
 

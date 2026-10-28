@@ -14,8 +14,6 @@ I've been hearing the Lord say, over and over, ***'just do it!'*** What you have
 
 **Don't neglect your small beginnings. Trust the Lord and be expectant to see His Goodness and Miraculous, and Favour in your lives.** I will never forget when I wrote my song, ['We are the Change'](https://www.youtube.com/watch?v=UNcxOC6Oc6E), I really wanted to draw a picture of Nelson Mandela. Even though I'm a graphic designer, I've never been particularly good at doing portraits... especially freehand. The one night before I went to bed, I really felt the Lord say, 'just draw it. I'll help you!', so I found a photo of him on the internet as a reference, and just started drawing freehand. No tracing, no redoing... after one hour it was complete. I was stunned!
 
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2019/01/Scan-300x291.jpg (file not in the 2024 backup))*
-
 I would encourage you to hear the Lord's prompting in the things you ought to do, and just do it, trusting Him to enable you as you step out. It's fun, it's adventurous, and it's exhilarating! **The Lord is releasing creativity in great measure to His Beloved right now – get ready to paint, draw, sculpt, compose, perform, dance, act, write, photograph, exhibit, film, etc! We are His Creative Trumpets, His Voice piece, and His Conduits, releasing Heaven upon the Earth.**
 
 > ***Matthew 25:14-30***
