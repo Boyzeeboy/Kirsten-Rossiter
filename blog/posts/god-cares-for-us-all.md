@@ -5,12 +5,10 @@ topics:
   - Faith in Hard Times
 date: 2018-11-18
 legacy_path: /god-cares-for-us-all/
-excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/11/gemma-evans-64661-unsplash-300x213.'
+excerpt: 'We spent this last weekend at a home for the elderly in a small country town, whilst visiting my mom who has Altzheimers. We made them dinner and sat around a large dining room table chatting and asking about their lives.'
 description: A weekend at a country care home, visiting a mother with Alzheimer's, and the talk around the table that was all about family and not achievement.
 draft: false
 ---
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/11/gemma-evans-64661-unsplash-300x213.jpg (file not in the 2024 backup))*
 
 We spent this last weekend at a home for the elderly in a small country town, whilst visiting my mom who has Altzheimers. We made them dinner and sat around a large dining room table chatting and asking about their lives. Everyone has a story of their own, followed different paths... but ended up at this special care home at the latter part of their lives.
 

@@ -25,8 +25,6 @@ You have to be watchmen of your nation. You have to fight in the Spirit, for as 
 
 I'm uploading my prayer for South Africa today, won't you pray it with me?
 
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/09/20170911-055048.m4a (file not in the 2024 backup))*
-
 > ***2 Chronicles 20:1-34***
 >
 > ***Jehoshaphat’s Prayer***

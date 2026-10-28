@@ -35,8 +35,6 @@ For us to enter deeper still, we need to be secure in Him. For how can He share 
 >
 > ***[**1**](http://biblehub.com/galatians/5-1.htm)**For freedom Christ has set us free; stand firm therefore, and do not submit again to a yoke of slavery.*
 
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2020/03/I-saw-you-2020.mp3 (file not in the 2024 backup))*
-
 **I saw you** © Kirsten Rossiter
 
 ***Lyrics***

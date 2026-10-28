@@ -24,8 +24,6 @@ I would like to share this Prophetic Word that Sharell Barrera sent out. So many
 >
 > I prophesy, health and a new day. I declare that the pit you have been in, will become a platform for God's glory! I prophesy that the hidden ones will come out for all of the world to see, and that the mouths of these ones will be used to usher in the greatest outpouring of God's Spirit we have ever seen! I declare these mouths will be used for truth and that they will respond to the call. It's your time hidden ones. Arise!
 
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2020/01/Sharell_Barrera_2018_470px.jpg (file not in the 2024 backup))*
-
 **Sharell Barrera**
 **Birthing the Fire Ministries**
 Email: [barrerasharell@gmail.com](mailto:barrerasharell@gmail.com?subject=Inquiry%20From%20Elijah%20List%20Subscriber)

@@ -5,12 +5,10 @@ topics:
   - Faith in Hard Times
 date: 2017-11-15
 legacy_path: /the-lords-fragrant-balm-of-comfort/
-excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/09/Sleeping-Beauty.'
+excerpt: 'The Lord is comforting us with His Balm of fragrant spices and rich perfume. For the time of sifting, shaking and refining has brought a tenderness, vulnerability, and rawness within the souls of many.'
 description: After the sifting and the refining comes tenderness. On His balm of fragrant spices, and the deeper waters where abandoned trust leads the way.
 draft: false
 ---
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/09/Sleeping-Beauty.mp3 (file not in the 2024 backup))*
 
 **The Lord is comforting us with His Balm of fragrant spices and rich perfume.** For the time of sifting, shaking and refining has brought a tenderness, vulnerability, and rawness within the souls of many.
 

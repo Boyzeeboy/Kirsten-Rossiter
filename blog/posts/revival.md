@@ -16,8 +16,6 @@ As we seek the Lord with hungry and thirsty hearts, He is going to shower His Re
 
 I share this song with you, in the hope that you can learn it, share it, and play it in your own worship bands or at home.
 
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2019/05/Revival-Spirit-2019_05_07-6.54-PM.mp3 (file not in the 2024 backup))*
-
 ***Revival Spirit***
 *© Kirsten Rossiter 2000*
 
@@ -36,5 +34,3 @@ With Your Spirit once again*
 Fall on us, we pray
 Fall on us, we need You
 To fall on us this day*
-
-Download or print the song sheet *(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2019/05/Revival-Spirit.pdf (file not in the 2024 backup))*

@@ -46,8 +46,6 @@ His Mercies met us every morning, His Grace kept us each day. We were fed with H
 >
 > ***[**26**](http://biblehub.com/hebrews/12-26.htm)**At that time his voice shook the earth, but now he has promised, “Yet once more I will shake not only the earth but also the heavens.” **[**27**](http://biblehub.com/hebrews/12-27.htm)**This phrase, “Yet once more,” indicates the removal of things that are shaken—that is, things that have been made—in order that the things that cannot be shaken may remain. **[**28**](http://biblehub.com/hebrews/12-28.htm)**Therefore let us be grateful for receiving a kingdom that cannot be shaken, and thus let us offer to God acceptable worship, with reverence and awe, **[**29**](http://biblehub.com/hebrews/12-29.htm)**for our God is a consuming fire.*
 
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/I-have-been-completely-undone-voice.mp3 (file not in the 2024 backup))*
-
 **I've been completely undone** © Kirsten Rossiter
 
 ***Lyrics***

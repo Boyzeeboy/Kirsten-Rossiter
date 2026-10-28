@@ -35,8 +35,6 @@ draft: false
 > **"Be faithful. Faint not. Be faithful to that which I have called you to do and I will perform it and establish it."
 > **
 >
-> *(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/Russ_Kitty_Walden2_500px-300x203.jpg (file not in the 2024 backup))*
->
 > *Russ Walden is a prophet and marketplace minister with over 30 years of service in the Kingdom of God. Russ and Kitty founded Father's Heart Ministry in 2007 and since then have prophesied to thousands in 78 countries and all seven continents. Russ has served as a full-time pastor to several congregations. In the early 90's he assisted in the oversight of a group of 400 churches before founding an IT business in the Mid-west. Russ and Kitty converted the business to a marketplace ministry model and out of that Father's Heart Ministry was born. The ministry that Russ moves in is not just talking "about" Jesus but manifesting and activating the demonstration of Spirit and the demonstration of power. Each day Prophet Russ releases a powerful prophetic word that encourages thousands. Russ has written a book Face to Face with the Father: a Chronicle of the Men and Women who saw the Face of God and Lived.*
 >
 > Prophets Russ and Kitty Walden

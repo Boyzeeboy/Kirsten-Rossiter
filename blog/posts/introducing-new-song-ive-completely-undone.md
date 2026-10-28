@@ -5,12 +5,10 @@ topics:
   - The Bride & the Church
 date: 2018-01-22
 legacy_path: /introducing-new-song-ive-completely-undone/
-excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/I-have-been-completely-undone-voice.'
+excerpt: 'I''m excited to share my latest song with you - ''I''ve been completely undone'' (first rough recording).'
 description: A first rough recording of the song 'I've Been Completely Undone', written for the times our world falls apart and He remains the Anchor.
 draft: false
 ---
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/I-have-been-completely-undone-voice.mp3 (file not in the 2024 backup))*
 
 **I'm excited to share my latest song with you - *'I've been completely undone' (first rough recording).***
 When it feels like our world is falling apart, and we can’t work out how to put the pieces of our lives back together again, **God is there with us.** **He is the Anchor that keeps us alive.** He is the One that holds our world in His Hands... **we can trust Him even when we don’t understand.**

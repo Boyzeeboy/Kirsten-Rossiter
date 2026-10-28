@@ -68,8 +68,6 @@ draft: false
 >
 > ***[**19**](http://biblehub.com/romans/8-19.htm)**For the creation waits with eager longing for the revealing of the sons of God.conformed to the image of his Son, in order that he might be the firstborn among many brothers.*
 
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2020/03/You-are-good-all-the-time.mp3 (file not in the 2024 backup))*
-
 **You are good all the time** © Kirsten Rossiter
 
 ***Lyrics:***
