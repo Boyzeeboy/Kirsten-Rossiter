@@ -171,6 +171,15 @@ The `type` field accepts any string, but these are the standard options configur
 - **Reflection**
 - **Featured Revelation**
 
+## Search
+
+`/blog/` has full-text search with Type and Year filters. `build-blog.js` indexes every published post with [Pagefind](https://pagefind.app) and writes the index to `pagefind/`; `blog-search.js` runs the search in the browser and only loads the index when someone searches.
+
+- **Nothing to do per post.** Publishing a post adds it to the index on the next build, and setting `draft: true` takes it out. The Type and Year options come from the published posts, so a new year or type appears on its own.
+- **`pagefind/` is not committed.** Cloudflare Pages builds it on every deploy, and the test job in `visual-regression.yml` builds it before the tests. Pagefind does not write the index byte-for-byte the same twice, so a committed copy would turn every push to `main` into a no-op commit from `build-blog.yml`.
+- **Without JavaScript** the search form stays hidden and the paginated list works as before.
+- **Searches are links.** The query and filters go in the address, for example `/blog/?q=esther&type=Reflection&year=2021`.
+
 ## Sveltia CMS — one-time OAuth setup
 
 Sveltia CMS needs a GitHub OAuth app so editors can log in via the `/admin` page. Two options:

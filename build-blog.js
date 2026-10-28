@@ -237,7 +237,7 @@ ${partialBlock('FOOTER')}
 </html>
 `;
 
-  return { slug, data, displayDate, html, legacyPath: data.legacy_path || null };
+  return { slug, data, displayDate, html, body, legacyPath: data.legacy_path || null };
 }
 
 const BLOG_DESCRIPTION = 'Prophetic revelation, teachings, and reflections for the Bride and the nations — from Kirsten Rossiter.';
@@ -314,7 +314,40 @@ ${current < total ? link(current + 1, 'Older →', 'page-step') : '<span class="
 </nav>`;
 }
 
-function buildIndexPage(pagePosts, current, total) {
+// The search form ships `hidden`: it only works with blog-search.js, so with
+// JavaScript off the page is the paginated list exactly as before. The Type
+// and Year options come from the published posts, so a type nobody uses (the
+// CMS offers "Featured Revelation") never appears as a filter that finds nothing.
+function searchForm({ types, years }) {
+  const options = (values) => values.map(v => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join('\n');
+  return `<form class="blog-search" role="search" action="/blog/" hidden data-blog-search>
+<div class="blog-search-field blog-search-query">
+<label for="blog-search-q">Search the blog</label>
+<input type="search" id="blog-search-q" name="q" placeholder="A word or phrase, e.g. Esther" autocomplete="off" enterkeyhint="search" />
+</div>
+<div class="blog-search-field">
+<label for="blog-search-type">Type</label>
+<select id="blog-search-type" name="type">
+<option value="">All types</option>
+${options(types)}
+</select>
+</div>
+<div class="blog-search-field">
+<label for="blog-search-year">Year</label>
+<select id="blog-search-year" name="year">
+<option value="">All years</option>
+${options(years)}
+</select>
+</div>
+</form>
+<div class="blog-search-summary" hidden data-blog-search-summary>
+<p class="blog-search-status" role="status" aria-live="polite"></p>
+<button type="button" class="blog-search-clear">Clear search</button>
+</div>
+<div class="blog-search-results" hidden data-blog-search-results></div>`;
+}
+
+function buildIndexPage(pagePosts, current, total, filters) {
   // Pages below the first sit one directory deeper, so the relative asset
   // links need an extra hop. The nav and footer partials are root-absolute
   // and need no adjustment.
@@ -368,12 +401,16 @@ ${partialBlock('NAV')}
 
 <main class="blog-list">
 <div class="container">
+${searchForm(filters)}
+<div class="blog-browse" data-blog-browse>
 ${[cards, paginationNav(current, total)].filter(Boolean).join('\n')}
+</div>
 </div>
 </main>
 
 ${partialBlock('FOOTER')}
 <script src="${up}/site.js"></script>
+<script src="${up}/blog-search.js"></script>
 </body>
 </html>
 `;
@@ -383,10 +420,14 @@ function buildIndexPages(posts) {
   const pages = paginate(posts);
   const total = pages.length;
   const built = [];
+  const filters = {
+    types: [...new Set(posts.map(p => p.data.type))].sort(),
+    years: [...new Set(posts.map(p => String(new Date(p.data.date).getUTCFullYear())))].sort().reverse(),
+  };
 
   for (let i = 0; i < total; i++) {
     const current = i + 1;
-    const html = buildIndexPage(pages[i], current, total);
+    const html = buildIndexPage(pages[i], current, total, filters);
     const outPath = current === 1
       ? path.join(BLOG_DIR, 'index.html')
       : path.join(PAGE_DIR, `${current}.html`);
@@ -599,12 +640,13 @@ function buildRedirects(posts) {
 // Every HTML file is rewritten, not just the generated ones: a hand-authored
 // page with no partial markers still links the stylesheet, and a query string
 // on that link changes nothing visually, so there is no reason to leave it stale.
-const VERSIONED_ASSETS = ['styles.css', 'vendor/tokens.css', 'site.js'];
+const VERSIONED_ASSETS = ['styles.css', 'vendor/tokens.css', 'site.js', 'blog-search.js'];
 
 // Source, not output: partials/ is inlined into the pages (and versioned
 // there), admin/ is the CMS and loads its own bundle from a CDN.
 const VERSION_SKIP_DIRS = new Set([
   'node_modules', '.git', '.github', '.claude', 'test-results', 'tests', 'partials', 'admin', 'vendor',
+  'pagefind',
 ]);
 
 function assetVersions() {
@@ -708,6 +750,67 @@ ${body}
   console.log(`  built  sitemap.xml (${urls.length} urls)`);
 }
 
+// ---- Search index ----------------------------------------------------------
+//
+// Full-text search on /blog/ runs on Pagefind: it splits the index into small
+// chunks at build time, and the browser fetches only the chunks a query needs.
+// The whole archive is ~230,000 words, far too much to ship as one JSON file
+// to a phone.
+//
+// Posts go in as custom records built from the data already in hand, rather
+// than by crawling the generated HTML, so the post pages carry no Pagefind
+// attributes and none of them change. Drafts never reach `posts`, so an
+// unpublished post drops out of the index on the next build along with its page.
+//
+// The output directory is deleted first: Pagefind names its chunks by content
+// hash, and chunks from a previous build would otherwise pile up in the repo.
+const SEARCH_DIR = path.join(__dirname, 'pagefind');
+
+function plainText(html) {
+  return html
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+async function buildSearchIndex(posts) {
+  const pagefind = await import('pagefind');
+  const { index, errors } = await pagefind.createIndex({ forceLanguage: 'en' });
+  if (!index) throw new Error(`pagefind: ${errors.join('; ')}`);
+
+  for (const p of posts) {
+    const { errors: recordErrors } = await index.addCustomRecord({
+      url: `/blog/${p.slug}`,
+      content: `${p.data.title}. ${plainText(p.body)}`,
+      language: 'en',
+      meta: {
+        title: p.data.title,
+        type: p.data.type,
+        date: p.displayDate,
+        excerpt: p.data.excerpt,
+      },
+      filters: {
+        type: [p.data.type],
+        year: [String(new Date(p.data.date).getUTCFullYear())],
+      },
+      sort: { date: isoDate(p.data.date) },
+    });
+    if (recordErrors.length) throw new Error(`pagefind: ${p.slug}: ${recordErrors.join('; ')}`);
+  }
+
+  fs.rmSync(SEARCH_DIR, { recursive: true, force: true });
+  const { errors: writeErrors } = await index.writeFiles({ outputPath: SEARCH_DIR });
+  if (writeErrors.length) throw new Error(`pagefind: ${writeErrors.join('; ')}`);
+  await pagefind.close();
+  console.log(`  built  pagefind/ search index (${posts.length} posts)`);
+}
+
 // Main
 const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md'));
 const posts = [];
@@ -744,3 +847,8 @@ inlineStaticPages();
 buildSitemap(posts, indexPages);
 buildRedirects(posts);
 versionAssetsEverywhere(assetVersions());
+
+buildSearchIndex(posts).catch((err) => {
+  console.error(err);
+  process.exit(1);
+});

@@ -731,6 +731,46 @@ footer.site-footer {
 .page-gap { font-size: var(--meta); color: var(--kr-colour-text-primary); opacity: 0.4; }
 .page-step { display: inline-flex; align-items: center; min-height: var(--kr-spacing-scale-32); }
 
+/* Search and filters. The form is `hidden` in the HTML and blog-search.js
+   reveals it, so without JavaScript none of this shows. Results reuse
+   .post-row, so a match looks exactly like the card it would be in the list. */
+.blog-search {
+  display: grid; grid-template-columns: minmax(0, 1fr) 13rem 9rem; gap: var(--kr-spacing-scale-24);
+  align-items: end; padding-bottom: var(--kr-spacing-scale-48);
+}
+.blog-search[hidden], .blog-search-summary[hidden], .blog-search-results[hidden], .blog-browse[hidden] { display: none; }
+.blog-search-field label {
+  display: block; margin-bottom: var(--kr-spacing-scale-12);
+  font-size: var(--label-sm); font-weight: 500; letter-spacing: var(--label-md-ls);
+  text-transform: uppercase; color: var(--kr-colour-text-secondary);
+}
+.blog-search input, .blog-search select {
+  width: 100%; min-height: var(--kr-spacing-scale-48); padding: var(--kr-spacing-scale-12) var(--kr-spacing-scale-16);
+  font-family: var(--sans); font-weight: 300; font-size: 1rem; color: var(--kr-colour-text-primary);
+  background: var(--kr-colour-background-surface); border: 1px solid var(--kr-colour-border-default); border-radius: 0;
+  transition: border-color 0.2s;
+}
+.blog-search select { cursor: pointer; }
+.blog-search input:hover, .blog-search select:hover { border-color: var(--kr-colour-border-strong); }
+.blog-search input:focus-visible, .blog-search select:focus-visible {
+  outline: 2px solid var(--kr-colour-state-focus); outline-offset: 2px; border-color: var(--kr-colour-action-primary);
+}
+.blog-search-summary {
+  display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap;
+  gap: var(--kr-spacing-scale-16); padding-bottom: var(--kr-spacing-scale-24);
+}
+.blog-search-status { font-size: var(--meta); letter-spacing: var(--meta-ls); text-transform: uppercase; color: var(--kr-colour-text-secondary); }
+.blog-search-clear, .blog-search-more {
+  font-family: var(--serif); font-size: 1.05rem; color: var(--kr-colour-action-primary);
+  background: none; border: 0; padding: 0; cursor: pointer; transition: opacity 0.2s;
+}
+.blog-search-clear { display: inline-flex; align-items: center; min-height: var(--kr-spacing-scale-32); }
+.blog-search-clear:hover, .blog-search-more:hover { opacity: 0.7; }
+.blog-search-clear:focus-visible, .blog-search-more:focus-visible { outline: 2px solid var(--kr-colour-state-focus); outline-offset: 3px; }
+.blog-search-more { display: block; margin: var(--kr-spacing-scale-48) auto 0; min-height: var(--kr-spacing-scale-32); }
+.blog-search-more:disabled { opacity: 0.4; cursor: default; }
+.blog-search-results mark { background: none; color: var(--kr-colour-action-primary); font-weight: 500; }
+
 /* ─── BLOG ARTICLE ─────────────────────────────────────────── */
 .article-head { padding: var(--kr-spacing-scale-168) 0 0; max-width: 760px; margin: 0 auto; }
 .article-head .container { padding: 0 var(--kr-spacing-scale-40); }
@@ -823,6 +863,8 @@ footer.site-footer {
   .post-meta-col { flex-direction: row; gap: var(--kr-spacing-scale-16); align-items: center; }
   .post-arrow { display: none; }
   .pagination { gap: var(--kr-spacing-scale-32); justify-content: center; }
+  .blog-search { grid-template-columns: 1fr 1fr; gap: var(--kr-spacing-scale-16); padding-bottom: var(--kr-spacing-scale-40); }
+  .blog-search-query { grid-column: 1 / -1; }
   .page-numbers { order: -1; width: 100%; justify-content: center; }
   .article-head { padding-top: var(--kr-spacing-scale-144); }
   .article-body, .article-foot { padding-left: var(--kr-spacing-scale-24); padding-right: var(--kr-spacing-scale-24); }

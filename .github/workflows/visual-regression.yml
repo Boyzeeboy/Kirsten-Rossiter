@@ -80,6 +80,13 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
+      # The blog search index (pagefind/) is generated, not committed — see
+      # .gitignore — and tests/search.spec.js searches it. The build is the
+      # same one Cloudflare Pages runs on deploy, so the pages tested here are
+      # the pages that ship.
+      - name: Build
+        run: npm run build
+
       - name: Compare against baselines
         if: ${{ !inputs.update_baselines }}
         run: npm run test:visual

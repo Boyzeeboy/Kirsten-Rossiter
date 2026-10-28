@@ -8,6 +8,12 @@ node_modules/
 # Visual regression. Only the Linux baselines CI generates are committed —
 # macOS renders fonts differently, so a local run's output must not compete
 # with them. Reports and test-results are per-run artefacts.
+# Blog search index, written by build-blog.js. Cloudflare Pages builds it on
+# every deploy, and CI builds it before the tests. It is not committed because
+# Pagefind does not write it byte-for-byte the same twice, so a committed copy
+# would make build-blog.yml commit a no-op change on every push to main.
+pagefind/
+
 tests/screenshots/darwin/
 tests/screenshots/win32/
 test-results/

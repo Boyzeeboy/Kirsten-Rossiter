@@ -110,8 +110,12 @@ const LITERAL_BASELINE = {
   'building-the-nations.html': new Set(['--measure', '--rule-w']),
 };
 
-/** Directories never worth walking. vendor/ is the token source itself. */
-const SKIP_DIRS = new Set(['node_modules', '.git', 'vendor', '.github', '.claude']);
+/**
+ * Directories never worth walking. vendor/ is the token source itself;
+ * pagefind/ is the search index build-blog.js generates, including
+ * Pagefind's own stylesheet, which the site does not load.
+ */
+const SKIP_DIRS = new Set(['node_modules', '.git', 'vendor', '.github', '.claude', 'pagefind']);
 
 /** Only these can consume a token. */
 const SCAN_EXT = /\.(css|html|js)$/;
