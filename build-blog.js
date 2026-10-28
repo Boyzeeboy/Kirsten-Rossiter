@@ -325,14 +325,14 @@ function searchForm({ types, years }) {
 <label for="blog-search-q">Search the blog</label>
 <input type="search" id="blog-search-q" name="q" placeholder="A word or phrase, e.g. Esther" autocomplete="off" enterkeyhint="search" />
 </div>
-<div class="blog-search-field">
+<div class="blog-search-field blog-search-type">
 <label for="blog-search-type">Type</label>
 <select id="blog-search-type" name="type">
 <option value="">All types</option>
 ${options(types)}
 </select>
 </div>
-<div class="blog-search-field">
+<div class="blog-search-field blog-search-year">
 <label for="blog-search-year">Year</label>
 <select id="blog-search-year" name="year">
 <option value="">All years</option>

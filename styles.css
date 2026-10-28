@@ -734,26 +734,47 @@ footer.site-footer {
 /* Search and filters. The form is `hidden` in the HTML and blog-search.js
    reveals it, so without JavaScript none of this shows. Results reuse
    .post-row, so a match looks exactly like the card it would be in the list.
-   The search box takes the left half of the row and the two filters share the
-   right half; below 760px the box gets a row of its own. */
+   The row is a 12-column grid: the search box spans columns 1-4, columns 5-8
+   are left empty, and Type and Year take two columns each at the right edge.
+   Two columns are 160px at the widest, which just fits "Prophetic Insight", so
+   below 1120px the box takes the left half and the filters share the right
+   half; below 760px the box gets a row of its own with the filters under it. */
 .blog-search {
-  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--kr-spacing-scale-24);
+  display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--kr-spacing-scale-24);
   align-items: end; padding-bottom: var(--kr-spacing-scale-48);
 }
-.blog-search-query { grid-column: span 2; }
+.blog-search-query { grid-column: 1 / span 4; }
+.blog-search-type { grid-column: 9 / span 2; }
+.blog-search-year { grid-column: 11 / span 2; }
+@media (max-width: 1119px) {
+  .blog-search { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .blog-search-query { grid-column: 1 / span 2; }
+  .blog-search-type { grid-column: 3; }
+  .blog-search-year { grid-column: 4; }
+}
 .blog-search[hidden], .blog-search-summary[hidden], .blog-search-results[hidden], .blog-browse[hidden] { display: none; }
 .blog-search-field label {
   display: block; margin-bottom: var(--kr-spacing-scale-12);
   font-size: var(--label-sm); font-weight: 500; letter-spacing: var(--label-md-ls);
   text-transform: uppercase; color: var(--kr-colour-text-secondary);
 }
+/* A fixed height, and no native appearance, because Safari ignores height on
+   a native <select> and draws it shorter and rounded beside the search box.
+   The select's chevron is drawn in currentColor, so it needs no colour of its
+   own. */
 .blog-search input, .blog-search select {
-  width: 100%; min-height: var(--kr-spacing-scale-48); padding: var(--kr-spacing-scale-12) var(--kr-spacing-scale-16);
-  font-family: var(--sans); font-weight: 300; font-size: 1rem; color: var(--kr-colour-text-primary);
+  -webkit-appearance: none; appearance: none;
+  width: 100%; height: var(--kr-spacing-scale-48); padding: 0 var(--kr-spacing-scale-16);
+  font-family: var(--sans); font-weight: 300; font-size: 1rem; line-height: normal; color: var(--kr-colour-text-primary);
   background: var(--kr-colour-background-surface); border: 1px solid var(--kr-colour-border-default); border-radius: 0;
   transition: border-color 0.2s;
 }
-.blog-search select { cursor: pointer; }
+.blog-search select {
+  padding-right: var(--kr-spacing-scale-24); cursor: pointer; text-overflow: ellipsis;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 17px) 50%, calc(100% - 12px) 50%;
+  background-size: 5px 5px; background-repeat: no-repeat;
+}
 .blog-search input:hover, .blog-search select:hover { border-color: var(--kr-colour-border-strong); }
 .blog-search input:focus-visible, .blog-search select:focus-visible {
   outline: 2px solid var(--kr-colour-state-focus); outline-offset: 2px; border-color: var(--kr-colour-action-primary);
@@ -868,6 +889,7 @@ footer.site-footer {
   .pagination { gap: var(--kr-spacing-scale-32); justify-content: center; }
   .blog-search { grid-template-columns: 1fr 1fr; gap: var(--kr-spacing-scale-16); padding-bottom: var(--kr-spacing-scale-40); }
   .blog-search-query { grid-column: 1 / -1; }
+  .blog-search-type, .blog-search-year { grid-column: auto; }
   .page-numbers { order: -1; width: 100%; justify-content: center; }
   .article-head { padding-top: var(--kr-spacing-scale-144); }
   .article-body, .article-foot { padding-left: var(--kr-spacing-scale-24); padding-right: var(--kr-spacing-scale-24); }
