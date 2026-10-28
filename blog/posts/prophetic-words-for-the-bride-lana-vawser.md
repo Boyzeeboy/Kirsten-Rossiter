@@ -3,12 +3,10 @@ title: Prophetic Words for the Bride - Lana Vawser
 type: Prophetic Insight
 date: 2018-03-17
 legacy_path: /prophetic-words-for-the-bride-lana-vawser/
-excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/03/Lana-Vawser-300x270.'
-description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/03/Lana-Vawser-300x270.'
+excerpt: 'The Lord has called Lana Vawser to minister to the Bride of Christ, revealing the Heart of God for His children. Through her intimate friendship with Jesus, she shares what she hears Him say... words of encouragement, hope, healing, and love for His Beloved.'
+description: 'The Lord has called Lana Vawser to minister to the Bride of Christ, revealing the Heart of God for His children.'
 draft: true
 ---
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/03/Lana-Vawser-300x270.jpg (file not in the 2024 backup))*
 
 The Lord has called **Lana Vawser** to minister to the Bride of Christ, revealing the Heart of God for His children. **Through her intimate friendship with Jesus, she shares what she hears Him say... words of encouragement, hope, healing, and love for His Beloved.**
 

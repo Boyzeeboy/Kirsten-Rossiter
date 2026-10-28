@@ -3,8 +3,8 @@ title: Prophecy by Dr Jonathan David
 type: Prophetic Insight
 date: 2018-02-28
 legacy_path: /prophecy-dr-jonathan-david/
-excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/02/Screen-Shot-2018-02-28-at-7.39.24-PM-300x269.'
-description: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/02/Screen-Shot-2018-02-28-at-7.39.24-PM-300x269.'
+excerpt: 'Get Ready SA! Get ready for what is about to happen says the Lord. The men I am going to choose are set apart for the rebuilding of the Nation.'
+description: 'Get Ready SA! Get ready for what is about to happen says the Lord. The men I am going to choose are set apart for the rebuilding of the Nation.'
 draft: true
 ---
 
@@ -31,8 +31,6 @@ draft: true
 > ***This is the hour South Africa, this is the hour! Fear not, take your Righteousness, take your place in History to change the continent of  Africa, Acts 3:19-21!** **In 2017 to 2019 the Spirit of the Lord will consume you. There is going to be an abundance of resources because men cannot plunder what I have planted! Your harvest will be your own.***
 >
 > *Therefore* rise *and go forth and you will not fail, says the Lord! **The nation will rejoice because she will excel and a whole new generation of people will be united and collected. Together they will be called the rainbow nation for every colour and tribe will be there, hope for all, Acts 2:44-45 & Acts 4:31-32!** **In Christ Jesus’  Name, go forth and prosper says the Lord! ***
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/02/Screen-Shot-2018-02-28-at-7.39.24-PM-300x269.png (file not in the 2024 backup))*
 
 ***Dr Jonathan David*** ***is the founder and senior pastor of*** ***All Nations Sanctuary in Muar, Malaysia!***
 [**Read more about Dr Jonathan David**](http://www.jonathan-david.org/pages/about-jonathan-david/)
