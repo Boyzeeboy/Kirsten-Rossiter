@@ -22,8 +22,6 @@ draft: false
 >
 > *I will reveal, I will lift the skirts of these leaders, in fact a party that has long probed their King will fall apart before I am done, and they will melt down for that nation is my nation not theirs – from the very beginning says the Lord, I had a purpose for that nation, from the very beginning it was to be a mission nation, even if white settlers, even now black original in habitants have violates my purpose, my purpose  will span through that nation and I have come like a burning refining fire, you will see people shot in the streets says the Lord, even people of great power will be shot down before I’m done, you are not to be afraid, you are not to lose heart, my purpose for that land will stand and stand and stand – it is greater says the Lord than the Rand. You are not to fear, it is not in free fall, my hand is on the Rand, watch what I do for though it will fall low, it will boil back high, it will even go faster than it went lower – you are not to be afraid, trust me says the Lord, everything is in my hand.*
 
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/jim-laffoon.jpeg (file not in the 2024 backup))*
-
 *Pastor, King's Park International Church*
  *Member, International Apostolic Team for Every Nation Ministries*
 

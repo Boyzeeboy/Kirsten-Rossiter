@@ -50,5 +50,3 @@ We've been caught up with a system of praise and worship, that is centred around
 > **[**9**](https://biblehub.com/psalms/99-9.htm)**Exalt the LORD our God
 > and worship at His holy mountain,
 > for the LORD our God is holy.
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2020/04/rick-joyner.jpg (file not in the 2024 backup))*](https://www.amazon.com/Power-Change-World-Street-Revivals/dp/1929371721)

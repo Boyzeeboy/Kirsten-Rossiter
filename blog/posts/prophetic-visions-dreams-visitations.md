@@ -12,24 +12,4 @@ I regard **Rick Joyner** as a spiritual father in the area of the prophetic. I h
 
 [About Rick Joyner](https://www.morningstarministries.org/)
 
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/Rick-Joyner-300x164.jpeg (file not in the 2024 backup))*
-
 **Rick Joyner**
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/Rick-Joyner-book-8-198x300.jpg (file not in the 2024 backup))*
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/Rick-Joyner-book-7.jpeg (file not in the 2024 backup))*
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/Rick-Joyner-book-6-196x300.jpg (file not in the 2024 backup))*
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/Rick-Joyner-book-5.jpg (file not in the 2024 backup))*
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/Rick-Joyner-book-4-199x300.jpg (file not in the 2024 backup))*
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/Rick-Joyner-Book-3-195x300.jpg (file not in the 2024 backup))*
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/Rick-Joyner-book-2.jpg (file not in the 2024 backup))*
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/Rick-Joyner-book-1.jpeg (file not in the 2024 backup))*
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/Screen-Shot-2019-05-04-at-10.51.25-PM-202x300.png (file not in the 2024 backup))*](https://www.amazon.com/Power-Change-World-Street-Revivals/dp/1929371721)

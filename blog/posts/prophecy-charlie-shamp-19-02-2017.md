@@ -26,8 +26,6 @@ draft: true
 >
 > *"Cape Town you have been marked by Me for an outpouring, yes a great revival you will see," says the Lord!*
 
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2017/06/charlie-and-wife.jpeg (file not in the 2024 backup))*
-
 *Charlie and Brynn are the founders of Destiny Encounters. They have a true passion to see revival and the glory of God manifested in all the earth.  They boldly declare the gospel of Christ; ministering freedom, joy, and supernatural healing everywhere they go. They are fulfilling a mandate from God to preach the gospel with miracles, signs and wonders in the nations of the earth. They have ministered both nationally and internationally with radical demonstrations of faith seeing lives transformed through the power of the Holy Spirit. Compelled by the heart of the Father to seek and save the lost, they are releasing God’s love to the world seeing the captives delivered, the sick healed, and lives changed.*
 
 *They have been uniquely gifted with an ability to motivate people to move beyond mediocrity and embrace excellence and wholeness in their lives. God has equipped them to see and speak into the spirit realm with the power to reveal phenomenal insight into the universal truths of God’s word. Through God’s divine gifting, Charlie and Brynn have the ability to see the potential in people and motivate them to cultivate the gifts and talents that often lie dormant within them. People all over the world have been brought to the sacred truth that they are not victims, but overcomes in this life.*

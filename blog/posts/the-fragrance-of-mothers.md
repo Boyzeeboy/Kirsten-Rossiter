@@ -3,7 +3,7 @@ title: The Fragrance of Mothers
 type: Reflection
 date: 2018-05-13
 legacy_path: /the-fragrance-of-mothers/
-excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/09/Fist-in-a-Velvet-Glove.mp3 (file not in the 2024 backup))'
+excerpt: 'Mothers leave a fragrance that lingers on. When she''s gone, it still carries on.'
 description: 'A poem for mothers: the fragrance that lingers after she is gone, and the woman whose wisdom and instruction do not come from here.'
 draft: false
 ---
@@ -43,5 +43,3 @@ draft: false
 >  *They have the power to change this great ball*
 >  *For with each fall, the fire will spread until all is red*
 >  *For His glory and His power will be seen by all*
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2016/09/Fist-in-a-Velvet-Glove.mp3 (file not in the 2024 backup))*

@@ -117,5 +117,3 @@ It is a river of His Glory that is carrying resurrection power to revive, restor
 Blessings to you all.
 ~ by **Veronika West
 *(Ignite Ireland Ministries, Belfast)***
-
-*(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/05/Veronika-West-300x179.jpg (file not in the 2024 backup))*
