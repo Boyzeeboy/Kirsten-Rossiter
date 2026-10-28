@@ -1,6 +1,8 @@
 ---
 title: Prophetic Word for SA by André Bronkhorst
 type: Reflection
+topics:
+  - The Nations & World Events
 date: 2018-07-20
 legacy_path: /prophetic-word-for-sa-by-andre-bronkhorst/
 excerpt: 'Video: https://www.facebook.com/lewendewoord/videos/1786425501441879/ I was very excited to hear this Word from the Lord for SA through André Bronkhorst from Prophetic Life today!'

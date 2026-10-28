@@ -1,6 +1,9 @@
 ---
 title: As Daniel saw, our captivity has come to an end!
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
+  - The Nations & World Events
 date: 2020-10-30
 legacy_path: /as-daniel-saw-a-prophetic-alignment-in-his-time-so-we-see-the-end-of-our-captivity/
 excerpt: Just as Daniel's eyes were opened by the Holy Spirit to recognise that they have come to the end of their seventy-year period of captivity as prophesied by the prophet Jeremiah, so the Holy Spirit is opening our eyes to see that we, also, have come to the end of our captivity as Israel amongst the nations.

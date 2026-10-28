@@ -1,6 +1,8 @@
 ---
 title: Create New Positions, Services and Products
 type: Prophetic Insight
+topics:
+  - Building the Kingdom
 date: 2017-09-10
 legacy_path: /create-new-positions-services/
 excerpt: Many are feeling stuck in their lives at this present moment... unable to work out how to move forward.

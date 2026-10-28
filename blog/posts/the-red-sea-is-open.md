@@ -1,6 +1,9 @@
 ---
 title: The Red Sea is Open
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
+  - Seasons & a New Era
 date: 2020-04-09
 legacy_path: /the-red-sea-is-open/
 excerpt: Yesterday was the first day of Passover 2020. When I awoke, the Lord spoke so clearly, 'Today is the day that you will begin to see the Red Sea open before you.'

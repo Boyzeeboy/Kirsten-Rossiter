@@ -1,6 +1,8 @@
 ---
 title: Just 'do it!'
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2019-01-14
 legacy_path: /just-do-it/
 excerpt: I've been hearing the Lord say, over and over, 'just do it!' What you have on your heart to do, just do it!

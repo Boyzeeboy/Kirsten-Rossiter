@@ -1,6 +1,9 @@
 ---
 title: The Desert Season of Preparation (3)
 type: Reflection
+topics:
+  - Faith in Hard Times
+  - Identity & Calling
 date: 2020-03-28
 legacy_path: /the-desert-season-of-preparation-3/
 excerpt: As the Holy Spirit scooped away the dross that came up in His Fire, I recognized that deep inside, I was an orphan child, unsure of who I was and where I belonged.

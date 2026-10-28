@@ -12,6 +12,9 @@
    ---
    title: "Your post title"
    type: Prophetic Insight       # or: Teaching, Reflection, Featured Revelation
+   topics:                       # one to three, main topic first; see "Search" below
+     - Spiritual Warfare
+     - Seasons & a New Era
    date: 2026-07-01
    excerpt: "A short teaser shown on the blog index card."
    description: "SEO description for search engines and link previews."
@@ -173,12 +176,13 @@ The `type` field accepts any string, but these are the standard options configur
 
 ## Search
 
-`/blog/` has full-text search with Type and Year filters. `build-blog.js` indexes every published post with [Pagefind](https://pagefind.app) and writes the index to `pagefind/`; `blog-search.js` runs the search in the browser and only loads the index when someone searches.
+`/blog/` has full-text search with Topic and Year filters. `build-blog.js` indexes every published post with [Pagefind](https://pagefind.app) and writes the index to `pagefind/`; `blog-search.js` runs the search in the browser and only loads the index when someone searches.
 
-- **Nothing to do per post.** Publishing a post adds it to the index on the next build, and setting `draft: true` takes it out. The Type and Year options come from the published posts, so a new year or type appears on its own.
+- **Nothing to do per post.** Publishing a post adds it to the index on the next build, and setting `draft: true` takes it out. The Year options come from the published posts, so a new year appears on its own.
+- **Topics.** Each post has one to three `topics` in its front matter (main topic first), picked in the CMS from a fixed list of eight. The Topic dropdown lists the topics published posts use. To add or rename a topic, change the list in `admin/config.yml` and update the posts that use the old name.
 - **`pagefind/` is not committed.** Cloudflare Pages builds it on every deploy, and the test job in `visual-regression.yml` builds it before the tests. Pagefind does not write the index byte-for-byte the same twice, so a committed copy would turn every push to `main` into a no-op commit from `build-blog.yml`.
 - **Without JavaScript** the search form stays hidden and the paginated list works as before.
-- **Searches are links.** The query and filters go in the address, for example `/blog/?q=esther&type=Reflection&year=2021`.
+- **Searches are links.** The query and filters go in the address, for example `/blog/?q=esther&topic=Spiritual+Warfare&year=2021`.
 
 ## Sveltia CMS — one-time OAuth setup
 

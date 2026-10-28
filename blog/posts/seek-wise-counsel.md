@@ -1,6 +1,8 @@
 ---
 title: Seek Wise Counsel
 type: Prophetic Insight
+topics:
+  - Building the Kingdom
 date: 2016-09-24
 legacy_path: /seek-wise-counsel/
 excerpt: When treading new ground, we need to be very selective about who we invite into our territories as advisors and counselors.

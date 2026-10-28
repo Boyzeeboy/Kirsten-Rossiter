@@ -1,6 +1,8 @@
 ---
 title: The Lord's Fragrant Balm of Comfort
 type: Reflection
+topics:
+  - Faith in Hard Times
 date: 2017-11-15
 legacy_path: /the-lords-fragrant-balm-of-comfort/
 excerpt: 'The Lord is comforting us with His Balm of fragrant spices and rich perfume. For the time of sifting, shaking and refining has brought a tenderness, vulnerability, and rawness within the souls of many.'

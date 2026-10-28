@@ -1,6 +1,9 @@
 ---
 title: Building the Kingdom bears Good Fruit
 type: Prophetic Insight
+topics:
+  - Building the Kingdom
+  - The Bride & the Church
 date: 2018-11-04
 legacy_path: /building-the-kingdom-bears-fruit/
 excerpt: Just because something is labeled 'church', it doesn't mean that it is 'Kingdom'. In fact, we must search our hearts and ensure that we are building one kingdom only, and that is the Kingdom of God.

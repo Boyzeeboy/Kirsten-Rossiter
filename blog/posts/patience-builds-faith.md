@@ -1,6 +1,8 @@
 ---
 title: Patience Builds Faith
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2016-10-02
 legacy_path: /patience-builds-faith/
 excerpt: It's so often that I hear people say they lack patience... I remember clearly how impatient I was as a child.

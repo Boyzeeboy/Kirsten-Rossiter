@@ -1,6 +1,8 @@
 ---
 title: The Lord is Dancing and Singing over us
 type: Prophetic Insight
+topics:
+  - The Bride & the Church
 date: 2018-04-19
 legacy_path: /the-lord-is-dancing-and-singing-over-us/
 excerpt: The Lord is dancing and singing over us, 'My beloved is Mine and I am hers'. Do we behold the passion of His Heart?

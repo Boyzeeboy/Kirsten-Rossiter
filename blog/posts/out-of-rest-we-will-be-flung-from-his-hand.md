@@ -1,6 +1,9 @@
 ---
 title: Out of rest, we will be flung from His Hand
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
+  - Faith in Hard Times
 date: 2022-12-13
 legacy_path: /out-of-rest-we-will-be-flung-from-his-hand/
 excerpt: As we go into the unwinding of 2022, the Lord is calling us to a deep place of rest and trust. His waves of healing are flowing over our souls, bodies, and spirits to refresh and restore all weary places.

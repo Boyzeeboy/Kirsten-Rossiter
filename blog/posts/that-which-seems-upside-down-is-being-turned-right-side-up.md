@@ -1,6 +1,9 @@
 ---
 title: That Which Seems Upside-Down, is Being Turned Right-Side-Up
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
+  - Faith in Hard Times
 date: 2021-06-14
 legacy_path: /that-which-seems-upside-down-is-being-turned-right-side-up/
 excerpt: In the natural it seems like everything is turned upside-down. The earth has never been so out of kilter as it is right now. However, it is in this very act of resistance and attack against everything right and just, that God is going to flip the world back on track.

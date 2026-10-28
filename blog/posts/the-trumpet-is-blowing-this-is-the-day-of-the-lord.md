@@ -1,6 +1,9 @@
 ---
 title: 'The Trumpet is blowing: This is the Day of the Lord!'
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
+  - Revival & Outpouring
 date: 2020-05-07
 legacy_path: /the-trumpet-is-blowing-this-is-the-day-of-the-lord/
 excerpt: As I've been studying the book of Joel, I've been feeling such an excitement in my spirit about what the Lord is doing right now.

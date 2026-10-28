@@ -1,6 +1,8 @@
 ---
 title: The Power of Servanthood
 type: Prophetic Insight
+topics:
+  - Identity & Calling
 date: 2016-08-27
 legacy_path: /the-power-of-servant-hood/
 excerpt: The road of servanthood is not discovered by all, but once you tread this ground, you won't veer off this path easily. It brings with it such rich blessings and benefits, joy being the greatest of all.

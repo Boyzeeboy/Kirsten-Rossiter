@@ -1,6 +1,8 @@
 ---
 title: Love is the Key
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2016-10-10
 legacy_path: /love-is-the-key/
 excerpt: A friend of mine told me that when her grandmother lay on her dying bed, her last words were 'I have lived well, but love is the key'.

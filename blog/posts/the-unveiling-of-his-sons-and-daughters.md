@@ -1,6 +1,8 @@
 ---
 title: The Unveiling of My Sons and Daughters
 type: Prophetic Insight
+topics:
+  - Identity & Calling
 date: 2019-06-21
 legacy_path: /the-unveiling-of-his-sons-and-daughters/
 excerpt: I clearly hear the Lord say, 'This is the time of the unveiling of My sons and daughters. For I have kept you hidden deep under My Wing, I have held you tight against the Feathers of My Chest.

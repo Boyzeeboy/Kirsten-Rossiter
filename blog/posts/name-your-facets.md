@@ -1,6 +1,8 @@
 ---
 title: Name your Facets
 type: Prophetic Insight
+topics:
+  - Identity & Calling
 date: 2017-08-28
 legacy_path: /name-your-facets/
 excerpt: Following from my last blog post, 'What is your Name?'

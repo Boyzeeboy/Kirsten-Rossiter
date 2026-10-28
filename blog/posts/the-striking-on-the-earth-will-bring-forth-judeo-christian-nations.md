@@ -1,6 +1,9 @@
 ---
 title: The Striking that brings forth Judeo-Christian Nations
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
+  - Spiritual Warfare
 date: 2019-10-28
 legacy_path: /the-striking-on-the-earth-will-bring-forth-judeo-christian-nations/
 excerpt: There is a war on for the nations right now. In the Heavenlies, the Lord our God has released new legions of angels upon the earth for this New Kingdom-building era.

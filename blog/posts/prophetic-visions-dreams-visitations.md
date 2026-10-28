@@ -1,6 +1,8 @@
 ---
 title: 'Resources: Prophetic Revelations for the End-Time Church'
 type: Teaching
+topics:
+  - The Bride & the Church
 date: 2017-06-25
 legacy_path: /prophetic-visions-dreams-visitations/
 excerpt: I regard Rick Joyner as a spiritual father in the area of the prophetic.

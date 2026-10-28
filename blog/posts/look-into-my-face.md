@@ -1,6 +1,8 @@
 ---
 title: Look into My Face
 type: Reflection
+topics:
+  - The Bride & the Church
 date: 2018-06-18
 legacy_path: /look-into-my-face/
 excerpt: 'Video: https://www.youtube.com/watch?v=xBCOw3i-iVg This famous, old song, ''Oh Lord, You''re Beautiful'', has ministered so much to me in the last few weeks.'

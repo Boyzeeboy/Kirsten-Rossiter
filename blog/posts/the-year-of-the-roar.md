@@ -1,6 +1,9 @@
 ---
 title: The Year of the Roar
 type: Prophetic Insight
+topics:
+  - Spiritual Warfare
+  - Seasons & a New Era
 date: 2020-06-03
 legacy_path: /the-year-of-the-roar/
 excerpt: The Lord would say, 'This is the year of the Mouth, the Roar!

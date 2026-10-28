@@ -1,6 +1,9 @@
 ---
 title: While you are still building, He brings Acceleration!
 type: Prophetic Insight
+topics:
+  - Building the Kingdom
+  - Seasons & a New Era
 date: 2019-11-13
 legacy_path: /while-you-are-still-building-the-lord-will-bring-movement-and-acceleration/
 excerpt: The Lord has been showing me a picture today that I want to share with you all. He showed me a big wheel, like the wheel of Ezekiel.

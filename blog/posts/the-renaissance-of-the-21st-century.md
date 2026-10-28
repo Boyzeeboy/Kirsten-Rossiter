@@ -1,6 +1,9 @@
 ---
 title: The Renaissance of the 21st Century
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
+  - The Nations & World Events
 date: 2020-03-07
 legacy_path: /the-renaissance-of-the-21st-century/
 excerpt: I keep hearing the Lord say, 'The world is entering a new Renaissance period that will be recorded in history as the greatest period of rebirthing in all areas of society.

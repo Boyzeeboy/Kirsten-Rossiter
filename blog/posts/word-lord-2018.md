@@ -1,6 +1,8 @@
 ---
 title: 'Word of the Lord: 2018'
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
 date: 2018-01-19
 legacy_path: /word-lord-2018/
 excerpt: 'Cindy Jacobs has published a Word from the Lord for 2018, compiled by the general impression that God has released to His apostolic and prophetic people.'

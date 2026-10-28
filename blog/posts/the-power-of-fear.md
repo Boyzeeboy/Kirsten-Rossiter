@@ -1,6 +1,8 @@
 ---
 title: The Power of Fear
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2017-03-12
 legacy_path: /the-power-of-fear/
 excerpt: I was reminded yesterday of the power that fear has in our lives, when not rooted out.

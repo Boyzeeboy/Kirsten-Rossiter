@@ -1,6 +1,9 @@
 ---
 title: The Opposition through Truth will unleash the Battle
 type: Prophetic Insight
+topics:
+  - Spiritual Warfare
+  - The Nations & World Events
 date: 2019-12-07
 legacy_path: /the-opposition-through-truth-will-unleash-the-battle/
 excerpt: I would like to share with you what the Lord has been revealing to me about Africa this week, "Africa, you are Mine.

@@ -1,6 +1,8 @@
 ---
 title: Solomon's Prayer Released Fire from Heaven
 type: Prophetic Insight
+topics:
+  - Revival & Outpouring
 date: 2018-01-21
 legacy_path: /solomons-prayer-released-fire-from-heaven/
 excerpt: When Solomon dedicated the Temple to God, he prayed fervently, asking whether He would hear the prayers of His people when they turn from their wicked ways, would He forgive them and keep His…

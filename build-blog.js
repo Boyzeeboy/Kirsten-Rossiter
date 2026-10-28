@@ -315,21 +315,21 @@ ${current < total ? link(current + 1, 'Older →', 'page-step') : '<span class="
 }
 
 // The search form ships `hidden`: it only works with blog-search.js, so with
-// JavaScript off the page is the paginated list exactly as before. The Type
-// and Year options come from the published posts, so a type nobody uses (the
-// CMS offers "Featured Revelation") never appears as a filter that finds nothing.
-function searchForm({ types, years }) {
+// JavaScript off the page is the paginated list exactly as before. The Topic
+// and Year options come from the published posts, so a topic nobody uses yet
+// never appears as a filter that finds nothing.
+function searchForm({ topics, years }) {
   const options = (values) => values.map(v => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join('\n');
   return `<form class="blog-search" role="search" action="/blog/" hidden data-blog-search>
 <div class="blog-search-field blog-search-query">
 <label for="blog-search-q">Search the blog</label>
 <input type="search" id="blog-search-q" name="q" placeholder="A word or phrase, e.g. Esther" autocomplete="off" enterkeyhint="search" />
 </div>
-<div class="blog-search-field blog-search-type">
-<label for="blog-search-type">Type</label>
-<select id="blog-search-type" name="type">
-<option value="">All types</option>
-${options(types)}
+<div class="blog-search-field blog-search-topic">
+<label for="blog-search-topic">Topic</label>
+<select id="blog-search-topic" name="topic">
+<option value="">All topics</option>
+${options(topics)}
 </select>
 </div>
 <div class="blog-search-field blog-search-year">
@@ -421,7 +421,7 @@ function buildIndexPages(posts) {
   const total = pages.length;
   const built = [];
   const filters = {
-    types: [...new Set(posts.map(p => p.data.type))].sort(),
+    topics: [...new Set(posts.flatMap(p => p.data.topics || []))].sort(),
     years: [...new Set(posts.map(p => String(new Date(p.data.date).getUTCFullYear())))].sort().reverse(),
   };
 
@@ -796,7 +796,7 @@ async function buildSearchIndex(posts) {
         excerpt: p.data.excerpt,
       },
       filters: {
-        type: [p.data.type],
+        topic: p.data.topics || [],
         year: [String(new Date(p.data.date).getUTCFullYear())],
       },
       sort: { date: isoDate(p.data.date) },

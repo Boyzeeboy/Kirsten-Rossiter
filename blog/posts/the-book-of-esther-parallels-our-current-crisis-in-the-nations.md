@@ -1,6 +1,9 @@
 ---
 title: The Book of Esther Parallels our Current Crisis in the Nations
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
+  - Spiritual Warfare
 date: 2021-01-17
 legacy_path: /the-book-of-esther-parallels-our-current-crisis-in-the-nations/
 excerpt: There's so much happening in the world right now. As we are seeing the spirit of Haman rise in the nations, we recognise that the book of Esther parallels our crisis. No matter how bad things look, God is still on His throne and His word is still true.

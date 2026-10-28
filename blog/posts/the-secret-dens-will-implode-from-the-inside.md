@@ -1,6 +1,9 @@
 ---
 title: The Secret Dens will Implode from the Inside
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
+  - Spiritual Warfare
 date: 2019-11-28
 legacy_path: /the-secret-dens-will-implode-from-the-inside/
 excerpt: The Lord showed me a vision of a very large and dark stretched-out den of evil operations where sexual immorality, child sacrifice, and the basest of practices take place.

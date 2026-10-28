@@ -1,6 +1,8 @@
 ---
 title: Viewpoint Above the Clouds
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2016-08-28
 legacy_path: /viewpoint-above-the-clouds/
 excerpt: Outside the window during a recent flight, was a field of clouds lit up by the bright sun. I was struck by the contrast of viewpoints of land and sky.

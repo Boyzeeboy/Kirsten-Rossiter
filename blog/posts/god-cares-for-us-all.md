@@ -1,6 +1,8 @@
 ---
 title: God cares for us all
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2018-11-18
 legacy_path: /god-cares-for-us-all/
 excerpt: 'We spent this last weekend at a home for the elderly in a small country town, whilst visiting my mom who has Altzheimers. We made them dinner and sat around a large dining room table chatting and asking about their lives.'

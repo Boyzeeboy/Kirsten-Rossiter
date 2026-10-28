@@ -1,6 +1,8 @@
 ---
 title: The Lord is Leveling the Ground through His Shaking
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
 date: 2019-04-20
 legacy_path: /the-lord-is-leveling-the-ground-through-his-shaking/
 excerpt: The Lord has been showing me a picture of Him holding a shaker, pouring in many varieties of coloured sand.

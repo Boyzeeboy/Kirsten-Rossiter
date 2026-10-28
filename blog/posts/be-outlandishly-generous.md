@@ -1,6 +1,9 @@
 ---
 title: Be Outlandishly Generous!
 type: Prophetic Insight
+topics:
+  - Identity & Calling
+  - Building the Kingdom
 date: 2017-08-06
 legacy_path: /be-outlandishly-generous/
 excerpt: God is calling us to be outlandishly generous! Do we give freely, without calculating how we can benefit?

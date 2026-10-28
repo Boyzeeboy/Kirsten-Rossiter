@@ -1,6 +1,9 @@
 ---
 title: The Desert Season of Preparation (4)
 type: Reflection
+topics:
+  - Faith in Hard Times
+  - Identity & Calling
 date: 2020-03-29
 legacy_path: /the-desert-season-of-preparation-4/
 excerpt: '''Now, My child, your eyes have opened up to the things of My Spirit.'

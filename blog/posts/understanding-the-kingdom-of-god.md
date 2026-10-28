@@ -1,6 +1,8 @@
 ---
 title: Understanding the Kingdom of God
 type: Prophetic Insight
+topics:
+  - Building the Kingdom
 date: 2018-02-23
 legacy_path: /understanding-the-kingdom-of-god/
 excerpt: 'Understanding the Kingdom of God is essential to understanding the workings of the Spirit in our current times. Many Christians fail to see their significance and role in partnering with God as He''s establishing His Sheep nations upon the earth.'

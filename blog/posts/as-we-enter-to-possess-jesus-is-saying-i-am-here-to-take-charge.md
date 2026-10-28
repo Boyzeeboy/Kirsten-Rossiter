@@ -1,6 +1,8 @@
 ---
 title: Jesus is saying, 'I AM HERE TO TAKE CHARGE!'
 type: Prophetic Insight
+topics:
+  - Spiritual Warfare
 date: 2021-11-09
 legacy_path: /as-we-enter-to-possess-jesus-is-saying-i-am-here-to-take-charge/
 excerpt: Joshua's encounter with the Commander of the Armies of Heaven mirrors what the Lord is saying to us right now.

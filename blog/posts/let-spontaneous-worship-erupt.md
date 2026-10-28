@@ -1,6 +1,8 @@
 ---
 title: Let Spontaneous Worship Erupt!
 type: Reflection
+topics:
+  - Revival & Outpouring
 date: 2020-04-06
 legacy_path: /let-spontaneous-worship-erupt/
 excerpt: REFLECTING ON THE WELSH AND AZUSA STREET REVIVALS I just love reading about the Holy Spirit's outpourings on the earth.

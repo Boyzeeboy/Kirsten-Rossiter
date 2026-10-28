@@ -1,6 +1,8 @@
 ---
 title: Your Will be done on Earth, as it is in Heaven
 type: Prophetic Insight
+topics:
+  - Building the Kingdom
 date: 2017-12-11
 legacy_path: /will-done-earth-heaven/
 excerpt: This is such a powerful part of The Lord's Prayer. Do you realize that God's Will is settled in Heaven?

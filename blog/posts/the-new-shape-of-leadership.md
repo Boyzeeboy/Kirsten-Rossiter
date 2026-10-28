@@ -1,6 +1,10 @@
 ---
 title: The new shape of leadership
 type: Reflection
+topics:
+  - Building the Kingdom
+  - Identity & Calling
+  - Seasons & a New Era
 date: 2024-01-26
 excerpt: I hear the Lord say, 'Have I not called you to the place of My rest and the place of My quiet? This is not only for refreshment and realignment, but it is for healing.
 description: Healing from the spirit of rejection, and a warning against overcommitting. He is reshaping ministry, vocation and for many even location.

@@ -1,6 +1,8 @@
 ---
 title: The Violent Shaking of South Africa will Birth New Life
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
 date: 2019-07-14
 legacy_path: /the-violent-shaking-of-south-africa-will-birth-new-life/
 excerpt: I've been feeling such a burden for South Africa, and in particular for our people. There is great pressure, great suffering, and a violent shaking happening right now.

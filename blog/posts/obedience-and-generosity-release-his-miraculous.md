@@ -1,6 +1,8 @@
 ---
 title: Obedience and Generosity Release His Miraculous!
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2019-06-08
 legacy_path: /obedience-and-generosity-release-his-miraculous/
 excerpt: The Lord would say, 'Will you put your ears to My Chest and hear the beat of My heart? Will you listen for My instruction in the midst of your situation?

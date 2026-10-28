@@ -1,6 +1,8 @@
 ---
 title: When we come to the End of Ourselves... Miracles Happen!
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2018-10-18
 legacy_path: /when-we-come-to-the-end-of-ourselves-miracles-happen/
 excerpt: The process of coming to the end of ourselves is a very painful one, but very freeing. It is in our nature to solve problems and assist God in bringing about that which He promises.

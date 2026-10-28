@@ -1,6 +1,8 @@
 ---
 title: The ACDP, God's Vehicle for Change
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
 date: 2019-03-20
 legacy_path: /the-acdp-gods-vehicle-for-change/
 excerpt: The Lord has given me many Prophetic Words for the ACDP throughout the years, and seeing that we are drawing near the elections, I thought I would share some of the insights the Lord has been giving…

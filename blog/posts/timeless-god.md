@@ -1,6 +1,8 @@
 ---
 title: Timeless God
 type: Prophetic Insight
+topics:
+  - The Bride & the Church
 date: 2019-02-27
 legacy_path: /timeless-god/
 excerpt: I heard the Lord say, 'Will you step into My realm of timelessness? Will you come away with Me into places where My Rest never ends and My Love never ceases?

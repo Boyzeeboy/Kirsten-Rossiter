@@ -1,6 +1,9 @@
 ---
 title: Position yourself for the deluge not the drippings!
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
+  - Revival & Outpouring
 date: 2022-09-19
 legacy_path: /position-yourself-for-the-deluge-not-the-drippings/
 excerpt: What you expect is what you will get. The Lord is challenging us to put out large, pliable and expandable vessels by faith, so that we can catch and hold the rain of abundance He is pouring from Heaven.

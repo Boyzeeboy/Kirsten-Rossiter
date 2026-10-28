@@ -1,6 +1,8 @@
 ---
 title: Becoming the Place of His Rest
 type: Reflection
+topics:
+  - Building the Kingdom
 date: 2024-04-23
 legacy_path: /becoming-the-place-of-his-rest/
 excerpt: The Lord calls us to build Him a house in the nations. Not one from toil, but rest. He has been searching the earth, looking for those who will wholly abandon themselves to Him, becoming the place where He can freely dwell.

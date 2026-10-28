@@ -1,6 +1,8 @@
 ---
 title: 'Introducing my New Song: I''ve Been Completely Undone'
 type: Reflection
+topics:
+  - The Bride & the Church
 date: 2018-01-22
 legacy_path: /introducing-new-song-ive-completely-undone/
 excerpt: 'I''m excited to share my latest song with you - ''I''ve been completely undone'' (first rough recording).'

@@ -1,6 +1,8 @@
 ---
 title: Breaking the Sound Barrier
 type: Prophetic Insight
+topics:
+  - The Bride & the Church
 date: 2017-04-29
 legacy_path: /breaking-sound-barrier/
 excerpt: God has a call on His church to enter into her promised land at this time. To inherit that which she's been prepared for.

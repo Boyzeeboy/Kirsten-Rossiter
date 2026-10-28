@@ -1,6 +1,9 @@
 ---
 title: The World of Innovation
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
+  - Building the Kingdom
 date: 2017-08-31
 legacy_path: /the-world-of-innovation/
 excerpt: The world we know is changing at a rapid pace. Controlled systems have dominated business, government and education for too long, leaving people tired, demotivated and uncreative.

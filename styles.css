@@ -734,23 +734,22 @@ footer.site-footer {
 /* Search and filters. The form is `hidden` in the HTML and blog-search.js
    reveals it, so without JavaScript none of this shows. Results reuse
    .post-row, so a match looks exactly like the card it would be in the list.
-   The row is a 12-column grid: the search box spans columns 1-4, columns 5-8
-   are left empty, and Type and Year take two columns each at the right edge.
-   Two columns are 160px at the widest, which just fits "Prophetic Insight", so
-   below 1120px the box takes the left half and the filters share the right
-   half; below 760px the box gets a row of its own with the filters under it. */
+   The row is a 12-column grid: the search box spans columns 1-4, columns 5-7
+   are left empty, Topic takes columns 8-10 and Year 11-12. Topic needs three
+   columns because "The Nations & World Events" needs about 226px; three are
+   242px at 1120px. Below that the selects are as wide as their longest option
+   and the box takes the rest of the row; below 760px each gets a row of its own,
+   since the longest topic and Year no longer fit side by side on a phone. */
 .blog-search {
   display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--kr-spacing-scale-24);
   align-items: end; padding-bottom: var(--kr-spacing-scale-48);
 }
 .blog-search-query { grid-column: 1 / span 4; }
-.blog-search-type { grid-column: 9 / span 2; }
+.blog-search-topic { grid-column: 8 / span 3; }
 .blog-search-year { grid-column: 11 / span 2; }
 @media (max-width: 1119px) {
-  .blog-search { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .blog-search-query { grid-column: 1 / span 2; }
-  .blog-search-type { grid-column: 3; }
-  .blog-search-year { grid-column: 4; }
+  .blog-search { grid-template-columns: minmax(0, 1fr) max-content max-content; }
+  .blog-search-query, .blog-search-topic, .blog-search-year { grid-column: auto; }
 }
 .blog-search[hidden], .blog-search-summary[hidden], .blog-search-results[hidden], .blog-browse[hidden] { display: none; }
 .blog-search-field label {
@@ -887,9 +886,7 @@ footer.site-footer {
   .post-meta-col { flex-direction: row; gap: var(--kr-spacing-scale-16); align-items: center; }
   .post-arrow { display: none; }
   .pagination { gap: var(--kr-spacing-scale-32); justify-content: center; }
-  .blog-search { grid-template-columns: 1fr 1fr; gap: var(--kr-spacing-scale-16); padding-bottom: var(--kr-spacing-scale-40); }
-  .blog-search-query { grid-column: 1 / -1; }
-  .blog-search-type, .blog-search-year { grid-column: auto; }
+  .blog-search { grid-template-columns: minmax(0, 1fr); gap: var(--kr-spacing-scale-16); padding-bottom: var(--kr-spacing-scale-40); }
   .page-numbers { order: -1; width: 100%; justify-content: center; }
   .article-head { padding-top: var(--kr-spacing-scale-144); }
   .article-body, .article-foot { padding-left: var(--kr-spacing-scale-24); padding-right: var(--kr-spacing-scale-24); }

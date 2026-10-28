@@ -1,6 +1,8 @@
 ---
 title: The Lord Gathers the Unrighteous
 type: Reflection
+topics:
+  - Revival & Outpouring
 date: 2018-01-22
 legacy_path: /lord-gathers-unrighteous/
 excerpt: 'The Lord gathers the unrighteous to Himself, He declares over them salvation! The Lord is calling forth a people who did not know Him, a people who did not heed His way.'

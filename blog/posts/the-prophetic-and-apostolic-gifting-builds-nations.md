@@ -1,6 +1,9 @@
 ---
 title: The Prophetic and Apostolic Gifting Builds Nations
 type: Prophetic Insight
+topics:
+  - Building the Kingdom
+  - The Bride & the Church
 date: 2018-10-31
 legacy_path: /the-prophetic-and-apostolic-gifting-builds-nations/
 excerpt: The End-Time Bride is a mature Bride, gifted in the prophetic and apostolic to co-labour with Christ in Heavenly places!

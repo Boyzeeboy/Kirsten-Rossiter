@@ -1,6 +1,9 @@
 ---
 title: Prayer for South Africa - Rise up and Sing out Loud!
 type: Reflection
+topics:
+  - The Nations & World Events
+  - Spiritual Warfare
 date: 2017-09-11
 legacy_path: /prayer-for-south-africa-rise-up-and-sing-out-loud/
 excerpt: As I was praying for South Africa this morning, I saw a picture of the devil trying to strangle her. He is determined to destroy her.

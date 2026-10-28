@@ -1,6 +1,8 @@
 ---
 title: When the Enemy is on His Knees
 type: Reflection
+topics:
+  - Spiritual Warfare
 date: 2017-06-28
 legacy_path: /when-the-enemy-is-on-his-knees/
 excerpt: It's easy to love our friends, but the power of love is displayed best when we love with a higher kind of love... loving our enemy when he is weak, and on his knees.

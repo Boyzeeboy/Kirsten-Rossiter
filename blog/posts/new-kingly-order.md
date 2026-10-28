@@ -1,6 +1,9 @@
 ---
 title: New Kingly Order
 type: Prophetic Insight
+topics:
+  - Building the Kingdom
+  - The Nations & World Events
 date: 2017-06-05
 legacy_path: /new-kingly-order/
 excerpt: This is the time of God raising up and releasing a new generation of kings and priests to rule and reign in the nations.

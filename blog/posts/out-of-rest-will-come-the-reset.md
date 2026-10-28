@@ -1,6 +1,9 @@
 ---
 title: Out of Rest will come the Reset
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
+  - Faith in Hard Times
 date: 2023-06-13
 legacy_path: /out-of-rest-will-come-the-reset/
 excerpt: The Lord has been speaking so much about entering the place of His rest over the last few months. I believe it is imperative for us to lean so deeply into Him in trust so that He can fill us with the assurance of His peace in the midst of the world's storm and His calm in the midst of the waves.

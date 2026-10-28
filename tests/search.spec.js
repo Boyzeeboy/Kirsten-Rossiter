@@ -14,7 +14,7 @@
 //      untouched — the blog must not depend on the script.
 //   2. A word that only appears in a post's body is found. That is the whole
 //      point of full-text search over titles and excerpts.
-//   3. Filters alone list newest first, and narrow by type and year.
+//   3. Filters alone list newest first, and narrow by topic and year.
 //   4. The search is in the address, so a shared link reproduces it.
 //   5. Clearing a search brings the list and its pagination back.
 
@@ -47,12 +47,15 @@ test('finds a word that appears only in the body of a post', async ({ page }) =>
   expect(new URL(page.url()).searchParams.get('q')).toBe('Jehoshaphat');
 });
 
+// Revival & Outpouring is the smallest topic, and still more than one page
+// of results, so this also covers "Show more results".
 test('filters alone list the newest first', async ({ page }) => {
   await page.goto('/blog/');
-  await page.getByLabel('Type').selectOption('Teaching');
-  await expect(status(page)).toHaveText('4 posts match Teaching.');
-  await expect(results(page)).toHaveCount(4);
-  await expect(results(page).locator('.post-type')).toHaveText(Array(4).fill('Teaching'));
+  await page.getByLabel('Topic').selectOption('Revival & Outpouring');
+  await expect(status(page)).toHaveText('26 posts match Revival & Outpouring.');
+  await expect(results(page)).toHaveCount(20);
+  await page.getByRole('button', { name: 'Show more results' }).click();
+  await expect(results(page)).toHaveCount(26);
 
   const dates = await results(page).locator('.post-date').allTextContents();
   const times = dates.map((d) => Date.parse(d));
@@ -60,10 +63,10 @@ test('filters alone list the newest first', async ({ page }) => {
 });
 
 test('a shared link reproduces the search', async ({ page }) => {
-  await page.goto('/blog/?type=Reflection&year=2021');
-  await expect(page.getByLabel('Type')).toHaveValue('Reflection');
+  await page.goto('/blog/?topic=Spiritual+Warfare&year=2021');
+  await expect(page.getByLabel('Topic')).toHaveValue('Spiritual Warfare');
   await expect(page.getByLabel('Year')).toHaveValue('2021');
-  await expect(status(page)).toHaveText(/posts? match Reflection, 2021\.$/);
+  await expect(status(page)).toHaveText('7 posts match Spiritual Warfare, 2021.');
   for (const date of await results(page).locator('.post-date').allTextContents()) {
     expect(date).toMatch(/ 2021$/);
   }

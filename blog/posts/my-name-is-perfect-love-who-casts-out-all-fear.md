@@ -1,6 +1,9 @@
 ---
 title: My Name is 'Perfect Love Who casts out all fear'
 type: Reflection
+topics:
+  - Faith in Hard Times
+  - Identity & Calling
 date: 2023-11-28
 legacy_path: /my-name-is-perfect-love-who-casts-out-all-fear/
 excerpt: The Lord is saying, 'I am revealing Myself to My people in this hour of shaking, this hour of the storm. You will know Me by a new name, and you, too, will be known by a new name.'

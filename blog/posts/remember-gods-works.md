@@ -1,6 +1,8 @@
 ---
 title: I will Remember the Works of the Lord
 type: Reflection
+topics:
+  - Faith in Hard Times
 date: 2017-10-28
 legacy_path: /remember-gods-works/
 excerpt: I will Remember the Works of the Lord

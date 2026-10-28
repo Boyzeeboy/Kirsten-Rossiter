@@ -1,6 +1,9 @@
 ---
 title: We have entered a Davidic Era
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
+  - Building the Kingdom
 date: 2020-05-13
 legacy_path: /we-have-entered-a-davidic-era/
 excerpt: The Lord has been speaking very clearly to me about this new era that we have entered. He is saying, 'My children, you have entered a Davidic era.

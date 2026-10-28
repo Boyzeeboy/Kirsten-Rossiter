@@ -1,6 +1,8 @@
 ---
 title: God can Multiply the Last of your Resources
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2018-01-27
 legacy_path: /god-can-multiply-last-resources/
 excerpt: 'Just when you think you''ve reached the last of your resources, be reminded of the story of Elisha and the widow''s oil. She too, reached the last of her resources, she too, was facing a crisis she couldn''t solve.'

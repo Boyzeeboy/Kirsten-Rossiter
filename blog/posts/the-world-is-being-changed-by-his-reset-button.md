@@ -1,6 +1,9 @@
 ---
 title: The World is being Changed by His 'Reset' Button
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
+  - Seasons & a New Era
 date: 2020-03-16
 legacy_path: /the-world-is-being-changed-by-his-reset-button/
 excerpt: The Lord has been speaking repeatedly about new systems, new models, new ways of working, new ways of living.

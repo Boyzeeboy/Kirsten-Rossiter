@@ -1,6 +1,8 @@
 ---
 title: The Call of The Bride
 type: Reflection
+topics:
+  - The Bride & the Church
 date: 2017-07-09
 legacy_path: /the-call-of-the-bride/
 excerpt: The Call of The Bride

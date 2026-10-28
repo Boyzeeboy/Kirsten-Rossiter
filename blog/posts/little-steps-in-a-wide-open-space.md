@@ -1,6 +1,8 @@
 ---
 title: Little Steps in a Wide, Open Space
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
 date: 2016-08-27
 legacy_path: /little-steps-in-a-wide-open-space/
 excerpt: This is the season of wide, open space for the beloved of the Lord.

@@ -1,6 +1,8 @@
 ---
 title: The Time of Judgment has Come
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
 date: 2020-10-19
 legacy_path: /the-time-of-judgment-has-come/
 excerpt: A few days ago the Spirit of the Lord moved so deeply in my soul, it was as if I could feel the Lord's pain and sorrow for the sins of the wicked and the impending judgment that awaits them.

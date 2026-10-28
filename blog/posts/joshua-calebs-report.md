@@ -1,6 +1,9 @@
 ---
 title: Joshua & Caleb's Report
 type: Prophetic Insight
+topics:
+  - Spiritual Warfare
+  - Faith in Hard Times
 date: 2017-03-18
 legacy_path: /joshua-calebs-report/
 excerpt: God is calling us to have the report that Joshua and Caleb had, when Moses sent out the 12 spies. Only 2 came back with God's report...

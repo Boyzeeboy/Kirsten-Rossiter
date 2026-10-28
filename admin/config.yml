@@ -25,6 +25,22 @@ collections:
           - Teaching
           - Reflection
           - Featured Revelation
+      - label: "Topics"
+        name: "topics"
+        widget: "select"
+        multiple: true
+        min: 1
+        max: 3
+        hint: "One to three. Put the main topic first. These are the Topic options in the blog search."
+        options:
+          - The Nations & World Events
+          - Seasons & a New Era
+          - Faith in Hard Times
+          - Revival & Outpouring
+          - Building the Kingdom
+          - Identity & Calling
+          - Spiritual Warfare
+          - The Bride & the Church
       - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { label: "Excerpt", name: "excerpt", widget: "text" }
       - { label: "SEO Description", name: "description", widget: "text" }

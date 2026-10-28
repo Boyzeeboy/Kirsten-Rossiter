@@ -1,6 +1,8 @@
 ---
 title: 'South Africa: the Humbling of our Government'
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
 date: 2019-08-01
 legacy_path: /prophetic-revelation-for-south-africa/
 excerpt: The Lord has been showing me a picture of a drain, with water flowing out of it.

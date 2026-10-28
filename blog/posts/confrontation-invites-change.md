@@ -1,6 +1,9 @@
 ---
 title: Confrontation Invites Change
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
+  - Spiritual Warfare
 date: 2018-12-04
 legacy_path: /confrontation-invites-change/
 excerpt: One of the greatest challenges as a Christian is to know when to be silent, waiting for God's vindication and intervention in a situation, and when to confront it.

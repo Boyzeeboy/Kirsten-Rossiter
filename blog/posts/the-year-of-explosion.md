@@ -1,6 +1,8 @@
 ---
 title: 2018 - The Year of Explosion!
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
 date: 2017-12-14
 legacy_path: /the-year-of-explosion/
 excerpt: I have been hearing the Lord say, '2018 is the Year of Explosion!'

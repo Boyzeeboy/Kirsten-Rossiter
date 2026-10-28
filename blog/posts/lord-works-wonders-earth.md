@@ -1,6 +1,9 @@
 ---
 title: The Lord Works Wonders on the Earth
 type: Reflection
+topics:
+  - The Nations & World Events
+  - Faith in Hard Times
 date: 2018-01-25
 legacy_path: /lord-works-wonders-earth/
 excerpt: 'The Lord works wonders on the earth, displaying His Greatness and Strength. He is our Deliverer, our Salvation, and our Miracle-Working God!'

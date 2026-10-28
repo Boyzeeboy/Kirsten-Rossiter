@@ -1,6 +1,8 @@
 ---
 title: Battle-Weary or Not, Evict the Locusts Off your Land!
 type: Prophetic Insight
+topics:
+  - Spiritual Warfare
 date: 2021-04-17
 legacy_path: /battle-weary-or-not-evict-the-locusts-off-your-land/
 excerpt: '''It''s time to evict the locusts off your land! Let the king and watchman arise in you! Take hold of your authority in Me and command the locusts to flee.'''

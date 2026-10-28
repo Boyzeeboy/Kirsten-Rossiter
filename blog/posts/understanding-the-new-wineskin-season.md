@@ -1,6 +1,8 @@
 ---
 title: Understanding the New Wineskin Season - Introduction
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
 date: 2019-01-27
 legacy_path: /understanding-the-new-wineskin-season/
 excerpt: When the Lord speaks prophetically through His people, He often speaks specific keywords multiple times, that has great significance and depth that only become more visible as He reveals more detail…

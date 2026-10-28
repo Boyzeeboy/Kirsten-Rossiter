@@ -1,6 +1,9 @@
 ---
 title: Give the devil NO place through misunderstandings
 type: Prophetic Insight
+topics:
+  - Spiritual Warfare
+  - The Bride & the Church
 date: 2019-11-07
 legacy_path: /give-the-devil-no-place-on-the-battlefied-through-misunderstandings/
 excerpt: As the mature Bride of Christ, we need to be wholly surrendered and committed to living in the Word and the Spirit, at all times.

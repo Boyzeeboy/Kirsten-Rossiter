@@ -1,6 +1,10 @@
 ---
 title: It's time to align your perspective
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
+  - Building the Kingdom
+  - Identity & Calling
 date: 2026-06-22
 excerpt: 'A new season requires new eyes: what feels like loss, uncertainty, and barren ground may actually be God preparing and positioning His pioneers to build, birth, and flourish in a new era.'
 description: 'A new season requires new eyes. What feels like loss, uncertainty and barren ground may be God positioning His pioneers to flourish in a new era.'

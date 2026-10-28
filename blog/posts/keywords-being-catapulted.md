@@ -1,6 +1,9 @@
 ---
 title: 'Keywords: Being Catapulted'
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
+  - The Bride & the Church
 date: 2019-02-12
 legacy_path: /keywords-being-catapulted/
 excerpt: This new season for the Bride of Christ will be marked by people working alongside each other in unity of vision, focus, passion, obedience to the Lord, and faithfulness.

@@ -1,6 +1,8 @@
 ---
 title: Faith Milestones
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2016-10-13
 legacy_path: /faith-milestones/
 excerpt: Our lives are filled with opportunities to trust God for miracles - big and small. Every answered prayer and miracle performed, lays a memorial stone of remembrance of thát which God has done.
