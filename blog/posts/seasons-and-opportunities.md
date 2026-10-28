@@ -1,6 +1,9 @@
 ---
 title: Seasons and Opportunities
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
+  - Faith in Hard Times
 date: 2016-08-27
 legacy_path: /seasons-and-opportunities/
 excerpt: Our lives are filled with different seasons. It is important to know the season we're in. I've had to learn to be patient in one season, embracing the 'now' and be at peace with the laying down of things that are yet to come.

@@ -1,6 +1,8 @@
 ---
 title: Divine Downloads of Heaven's Models
 type: Prophetic Insight
+topics:
+  - Building the Kingdom
 date: 2019-10-09
 legacy_path: /divine-downloads-of-heavens-models/
 excerpt: Over the last year, I've had so many Divine downloads from Heaven regarding the 'New Kingdom Model', many scribbles and pictures have filled my diaries.

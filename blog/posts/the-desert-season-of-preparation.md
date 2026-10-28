@@ -1,6 +1,8 @@
 ---
 title: The Desert Season of Preparation (1)
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2020-03-27
 legacy_path: /the-desert-season-of-preparation/
 excerpt: For us to know the Lord, intimately and passionately, we must go through the fire of testing.

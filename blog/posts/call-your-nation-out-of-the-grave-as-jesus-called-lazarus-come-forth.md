@@ -1,6 +1,8 @@
 ---
 title: 'Call your Nation out of the Grave: ''Lazarus, Come Forth!'''
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
 date: 2021-01-30
 legacy_path: /call-your-nation-out-of-the-grave-as-jesus-called-lazarus-come-forth/
 excerpt: We see such amazing parallels between the death and resurrection of Lazarus and our current political situation in the nations. Jesus spoke the truth very clearly regarding Lazarus, that his illness would not lead to death but would instead be used for the glory of God.

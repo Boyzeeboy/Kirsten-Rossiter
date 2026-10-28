@@ -1,6 +1,8 @@
 ---
 title: The Thinning of the Army produces Warrior-Pioneers
 type: Prophetic Insight
+topics:
+  - Spiritual Warfare
 date: 2021-02-14
 legacy_path: /the-thinning-of-the-army-produces-warrior-pioneers/
 excerpt: As God thinned out Gideon's army, so He is thinning out His frontline ranks. What seems to be delay upon delay is His fire of purification and separation.

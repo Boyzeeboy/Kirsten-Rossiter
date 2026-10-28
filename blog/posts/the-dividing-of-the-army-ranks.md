@@ -1,6 +1,9 @@
 ---
 title: The Dividing of the Army Ranks
 type: Prophetic Insight
+topics:
+  - Spiritual Warfare
+  - The Bride & the Church
 date: 2024-05-23
 legacy_path: /the-dividing-of-the-army-ranks/
 excerpt: I hear the Lord say, 'I am dividing the ranks in My army. I am rearranging the order.'

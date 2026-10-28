@@ -1,6 +1,8 @@
 ---
 title: Return to Him Again
 type: Prophetic Insight
+topics:
+  - Revival & Outpouring
 date: 2017-05-27
 legacy_path: /return-to-him-again/
 excerpt: The Lord is calling creation to return to Him again. Those who have stumbled and strayed along their way, He is calling back to Himself again.

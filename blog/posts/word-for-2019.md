@@ -1,6 +1,9 @@
 ---
 title: 'Apostolic Council of Prophetic Elders: Word for 2019'
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
+  - The Nations & World Events
 date: 2019-01-29
 legacy_path: /word-for-2019/
 excerpt: Hear what the Spirit of the Lord is speaking through His prophets across the earth. It is so exciting, let's open our ears to hear, and let our hearts be encouraged at His trumpeting.

@@ -1,6 +1,8 @@
 ---
 title: Heaven's Curtains are Opened, Tip over the Oil, Catch the Fire!
 type: Prophetic Insight
+topics:
+  - Revival & Outpouring
 date: 2019-11-12
 legacy_path: /heavens-curtains-are-opened-tip-over-the-oil-catch-the-fire/
 excerpt: The Lord is calling His People to come before Him, seeking Him out, for He is opening the Heavens as a curtain, and He is making available the weighty richness of His Anointing Oil, pouring it out…

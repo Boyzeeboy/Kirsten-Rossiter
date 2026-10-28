@@ -1,6 +1,10 @@
 ---
 title: "The swelling of the tsunami wave"
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
+  - The Nations & World Events
+  - The Bride & the Church
 date: 2026-06-18
 excerpt: "A prophetic word about the coming shaking, the faithfulness of God's remnant, and the call to trust Him as He realigns the earth with Heaven's purposes."
 description: "A prophetic word about the coming shaking, the faithfulness of God's remnant, and the call to trust Him as He realigns the earth with Heaven's purposes."

@@ -1,6 +1,10 @@
 ---
 title: Joshua and Caleb
 type: Reflection
+topics:
+  - Spiritual Warfare
+  - Faith in Hard Times
+  - The Bride & the Church
 date: 2020-09-03
 legacy_path: /8620/
 excerpt: It's time for the Bride of Christ to rise up like Joshua and Caleb, with a report that says, 'Our God is strong! The giants are small! Our God has delivered them all, into our hands! This song is for Africa and the nations of the earth, to take hold of God's Promise to give you your land as an inheritance.

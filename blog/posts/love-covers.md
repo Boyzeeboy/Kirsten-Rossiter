@@ -1,6 +1,8 @@
 ---
 title: Love covers
 type: Prophetic Insight
+topics:
+  - The Bride & the Church
 date: 2016-09-14
 legacy_path: /love-covers/
 excerpt: God is calling forth a people who will walk with hearts that are joined to Him, and joined to each other in unity.

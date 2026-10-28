@@ -1,6 +1,8 @@
 ---
 title: The Lord, our Teacher, will not hide Himself anymore
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
 date: 2020-02-19
 legacy_path: /the-lord-our-teacher-will-not-hide-himself-anymore/
 excerpt: The Lord is revealing Himself to us in this season. He is opening our eyes to behold Him as our Teacher, and our ears to hear His Voice directing us as we walk.

@@ -1,6 +1,8 @@
 ---
 title: Watchman of your street
 type: Reflection
+topics:
+  - Spiritual Warfare
 date: 2017-06-20
 legacy_path: /watchman-of-your-street/
 excerpt: Watchman of your street

@@ -1,6 +1,8 @@
 ---
 title: 'My Personal Testimony: The Gift of My Dad'
 type: Reflection
+topics:
+  - Faith in Hard Times
 date: 2021-05-18
 excerpt: The last few weeks have been a whirlwind for me. God gave me the gift of time with my dying father to see the fulfilment of two prayers. Reconciliation and salvation.
 description: 'After two and a half years of silence, the gift of time with a dying father, and the answer to two long prayers: reconciliation and salvation.'

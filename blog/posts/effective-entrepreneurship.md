@@ -1,6 +1,8 @@
 ---
 title: Being an Effective, Innovative Entrepreneur
 type: Prophetic Insight
+topics:
+  - Building the Kingdom
 date: 2017-07-15
 legacy_path: /effective-entrepreneurship/
 excerpt: Many dream of being an effective, innovative entrepreneur, free from the corporate systems and earning more than a mere monthly salary.

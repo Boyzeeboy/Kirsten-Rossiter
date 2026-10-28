@@ -1,6 +1,9 @@
 ---
 title: A New Song
 type: Prophetic Insight
+topics:
+  - The Bride & the Church
+  - Revival & Outpouring
 date: 2017-07-06
 legacy_path: /a-new-song/
 excerpt: '''My son and My daughter, be ready to sing a new song. I am releasing a new sound and a new song to My Bride.'''

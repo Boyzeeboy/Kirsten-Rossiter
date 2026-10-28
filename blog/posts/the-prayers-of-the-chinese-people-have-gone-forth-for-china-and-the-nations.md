@@ -1,6 +1,8 @@
 ---
 title: The Chinese People's Prayers for China and the Nations
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
 date: 2020-12-15
 legacy_path: /the-prayers-of-the-chinese-people-have-gone-forth-for-china-and-the-nations/
 excerpt: The Chinese people have paid a price for the freedom of the nations. Their prayers and cries are for China and the rest of the world, to be set free from the snare of the enemy!

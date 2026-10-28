@@ -1,6 +1,8 @@
 ---
 title: 'Resources: Supernatural Living'
 type: Teaching
+topics:
+  - Revival & Outpouring
 date: 2017-06-22
 legacy_path: /supernatural-living/
 excerpt: Mahesh Chavda has ministered healing to more than a million people around the world.

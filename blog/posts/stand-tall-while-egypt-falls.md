@@ -1,6 +1,9 @@
 ---
 title: Stand Tall while Egypt Falls!
 type: Prophetic Insight
+topics:
+  - Spiritual Warfare
+  - The Nations & World Events
 date: 2023-07-11
 legacy_path: /stand-tall-while-egypt-falls/
 excerpt: The Lord is saying, 'This is a time of great courage. As David recorded the names and acts of his mighty men, so I will record your names and acts in these times. World events have arisen and will continue to arise that will demand courage and action.

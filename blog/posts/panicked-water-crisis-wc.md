@@ -1,6 +1,9 @@
 ---
 title: Are You Panicked About the Water Crisis in the WC?
 type: Reflection
+topics:
+  - The Nations & World Events
+  - Faith in Hard Times
 date: 2018-01-20
 legacy_path: /panicked-water-crisis-wc/
 excerpt: 'Video: https://www.youtube.com/watch?v=uYnUER_djVw Are you panicked about the water crisis in the Western Cape? Let your hearts be stilled as you listen to the message that the Lord is giving us.'

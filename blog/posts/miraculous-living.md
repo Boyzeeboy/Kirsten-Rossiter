@@ -1,6 +1,8 @@
 ---
 title: Miraculous Living
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2017-02-15
 legacy_path: /miraculous-living/
 excerpt: After spending two long days in state hospital queues, that never seemed to end, I'm convinced more than ever, that we need to walk in the power of miraculous healing on a day-to-day basis.

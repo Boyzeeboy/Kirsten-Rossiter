@@ -1,6 +1,9 @@
 ---
 title: Unity is Pivotal in the Process of Inheritance
 type: Prophetic Insight
+topics:
+  - The Bride & the Church
+  - Building the Kingdom
 date: 2017-12-05
 legacy_path: /the-blessing-follows-unity/
 excerpt: The Lord has been showing me more and more how pivotal unity is in the process of inheritance. He is calling us to live by a standard that is marked by unity.

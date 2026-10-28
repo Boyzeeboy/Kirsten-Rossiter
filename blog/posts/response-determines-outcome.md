@@ -1,6 +1,8 @@
 ---
 title: My Response Determines my Outcome
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2017-10-17
 legacy_path: /response-determines-outcome/
 excerpt: When we face hardship, it's normal to retrieve from life for a time. It's normal to grieve and go through various emotions, ranging from sorrow to anger.

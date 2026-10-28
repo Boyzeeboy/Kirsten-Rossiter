@@ -1,6 +1,8 @@
 ---
 title: Substance Precedes Inheritance
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2017-11-06
 legacy_path: /substance-precedes-inheritance/
 excerpt: The Lord is faithful to all of His promises.

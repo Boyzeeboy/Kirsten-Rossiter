@@ -1,6 +1,8 @@
 ---
 title: In Whose Strength do we Trust?
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2017-08-04
 legacy_path: /in-whose-strength-do-we-trust/
 excerpt: In whose strength do we trust?

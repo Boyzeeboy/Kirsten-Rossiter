@@ -1,6 +1,8 @@
 ---
 title: The Lord is My Helper
 type: Reflection
+topics:
+  - Faith in Hard Times
 date: 2017-07-06
 legacy_path: /the-lord-is-my-helper/
 excerpt: The Lord is My Helper

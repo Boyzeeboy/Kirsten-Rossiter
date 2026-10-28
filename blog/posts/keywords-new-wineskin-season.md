@@ -1,6 +1,9 @@
 ---
 title: 'Keywords: New Wineskin Season'
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
+  - The Bride & the Church
 date: 2019-03-08
 legacy_path: /keywords-new-wineskin-season/
 excerpt: This season for the Bride is new in every possible way.

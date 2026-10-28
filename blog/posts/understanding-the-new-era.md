@@ -1,6 +1,8 @@
 ---
 title: Understanding the New Era
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
 date: 2020-03-27
 legacy_path: /understanding-the-new-era/
 excerpt: I've created this category, 'Understanding the New Era', where I will be posting a series of posts that will follow one upon another, as pages in a book.

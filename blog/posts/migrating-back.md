@@ -1,6 +1,9 @@
 ---
 title: Migrating back
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
+  - Revival & Outpouring
 date: 2016-12-13
 legacy_path: /migrating-back/
 excerpt: I saw vivid images yesterday, of migrating birds flying over lands and seas, migrating herd running over fields.

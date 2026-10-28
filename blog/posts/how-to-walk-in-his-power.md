@@ -1,6 +1,8 @@
 ---
 title: How to Walk in His Power
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
 date: 2017-06-22
 legacy_path: /how-to-walk-in-his-power/
 excerpt: I have been very aware of my own need and desire to walk in God's Power. The more I see the evil around me, the more I realize how I need God... ALL OF HIM!

@@ -1,6 +1,8 @@
 ---
 title: Reflecting on 2019 Elections
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
 date: 2019-05-12
 legacy_path: /reflecting-on-2019-elections/
 excerpt: The build-up towards the 2019 elections have been quite intense, and I think in many ways, many of us have been feeling a great anti-climax since the release of the results.

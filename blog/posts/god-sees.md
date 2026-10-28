@@ -1,6 +1,9 @@
 ---
 title: God Sees All Things
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
+  - The Nations & World Events
 date: 2017-06-16
 legacy_path: /god-sees/
 excerpt: There is great comfort in knowing that God sees all things, and not one wicked act done, will go unnoticed or unpunished.

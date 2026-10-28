@@ -1,6 +1,9 @@
 ---
 title: 'Faithful Shepherds: Get Ready for an Apostolic Upgrade!'
 type: Prophetic Insight
+topics:
+  - Building the Kingdom
+  - The Bride & the Church
 date: 2020-09-20
 legacy_path: /get-ready-for-an-apostolic-upgrade/
 excerpt: There’s going to be an explosion of the apostolic gifting in the church. I hear the Lord say, ‘Those who have been faithful in the church, serving and leading the people, will be promoted in this era with a great measure of the apostolic gift.’

@@ -1,6 +1,8 @@
 ---
 title: The Apple of His Eye
 type: Prophetic Insight
+topics:
+  - Identity & Calling
 date: 2016-09-06
 legacy_path: /the-apple-of-his-eye/
 excerpt: A real 'blow-me-away' thought about God's love, is that when He looks at me, He sees only me... as if I am the only one who exists to Him.

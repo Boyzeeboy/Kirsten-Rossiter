@@ -1,6 +1,9 @@
 ---
 title: The Lord Works Wonders on the Earth
 type: Reflection
+topics:
+  - The Nations & World Events
+  - Faith in Hard Times
 date: 2018-01-25
 legacy_path: /lord-works-wonders-earth/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/andy-fitzsimon-104515-300x200.'

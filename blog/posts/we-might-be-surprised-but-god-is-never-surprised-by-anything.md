@@ -1,6 +1,9 @@
 ---
 title: We might be surprised, but God is never surprised by anything!
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
+  - The Nations & World Events
 date: 2020-11-07
 legacy_path: /we-might-be-surprised-but-god-is-never-surprised-by-anything/
 excerpt: It is such a comfort to know that we have a God who sees and knows everything, always. We might be caught off-guard and be surprised, but God is never surprised by anything!

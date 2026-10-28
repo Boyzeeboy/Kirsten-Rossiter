@@ -1,6 +1,9 @@
 ---
 title: Know Your Season
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
+  - The Nations & World Events
 date: 2017-01-14
 legacy_path: /know-your-season/
 excerpt: With all the rapid changes happening upon the earth at present, especially the exposing evil of globalism, God is declaring a message to us that is both encouraging and comforting.

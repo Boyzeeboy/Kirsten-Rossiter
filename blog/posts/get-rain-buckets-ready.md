@@ -1,6 +1,8 @@
 ---
 title: Glory Rain is Coming!
 type: Prophetic Insight
+topics:
+  - Revival & Outpouring
 date: 2017-09-03
 legacy_path: /get-rain-buckets-ready/
 excerpt: The Lord is about to pour out His Glory Rain upon our land. We have stepped into the new season of His outpouring... we must expect His visitation in this hour.

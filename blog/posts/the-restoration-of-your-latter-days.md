@@ -1,6 +1,9 @@
 ---
 title: The Restoration of your Latter Days
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
+  - Seasons & a New Era
 date: 2018-05-07
 legacy_path: /the-restoration-of-your-latter-days/
 excerpt: Get ready for the restoration of your latter days!

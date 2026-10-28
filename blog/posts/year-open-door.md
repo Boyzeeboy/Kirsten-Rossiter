@@ -1,6 +1,8 @@
 ---
 title: The Year of The Open Door
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
 date: 2016-12-18
 legacy_path: /year-open-door/
 excerpt: I hear the Lord say, 'This is the year of The Open Door. I am The Open Door, who is set before you.

@@ -1,6 +1,8 @@
 ---
 title: God-Enthroned Speaks to Rebel-Kings, Laughing at their Schemes!
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
 date: 2021-09-03
 legacy_path: /god-enthroned-speaks-to-rebel-kings-laughing-at-their-schemes/
 excerpt: Psalm 2 paints a vivid theatrical picture of God, the Son, and the Holy Spirit, speaking to the wicked world leaders who have set themselves against Yahweh.

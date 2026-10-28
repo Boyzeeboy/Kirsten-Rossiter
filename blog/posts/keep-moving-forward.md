@@ -1,6 +1,9 @@
 ---
 title: Keep moving FORWARD!
 type: Prophetic Insight
+topics:
+  - Spiritual Warfare
+  - Seasons & a New Era
 date: 2026-07-27
 excerpt: The Lord showed me a picture of a circle within a circle. The resistance you've been feeling comes from crossing the outer band of defence around the territory you are called to - the fighting zone where territorial giants guard the land within. But the enemy cannot hold you back if you keep moving forward. You've reached the line that separates the band of defences from the land of your inheritance. Now is not the time to hesitate. It's time to advance.
 description: 'A prophetic word on crossing the defence circle into your promised territory. Keep moving forward through the fighting zone — your inheritance awaits.'

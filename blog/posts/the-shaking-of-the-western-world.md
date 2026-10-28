@@ -1,6 +1,8 @@
 ---
 title: The Shaking of the Western World
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
 date: 2018-11-25
 legacy_path: /the-shaking-of-the-western-world/
 excerpt: The Lord is shaking and will continue to shake the Western World. He is calling the lands who once followed Him back to Himself.

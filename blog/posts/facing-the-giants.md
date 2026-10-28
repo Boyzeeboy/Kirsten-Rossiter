@@ -1,6 +1,8 @@
 ---
 title: Facing the Giants
 type: Prophetic Insight
+topics:
+  - Spiritual Warfare
 date: 2016-12-28
 legacy_path: /facing-the-giants/
 excerpt: We are living in a world that is changing at a rapid pace... that which is right is seen as wrong, and that which is wrong is seen as right.

@@ -1,6 +1,8 @@
 ---
 title: There is Only One Answer for SA's problems!
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
 date: 2017-09-19
 legacy_path: /its-all-about-jesus/
 excerpt: There is only one answer to our nation's problems... After going out for a 'market-meal' in our local area last week, we had a chat to the parking guy.

@@ -10,7 +10,7 @@
    /pagefind/; it is loaded on first use rather than on page load,
    so a visitor who never searches never downloads any of it.
 
-   The query and filters live in the address (?q=&type=&year=), so
+   The query and filters live in the address (?q=&topic=&year=), so
    a search can be shared or bookmarked and survives a reload.
    ============================================================ */
 (function () {
@@ -26,7 +26,7 @@
   var TYPING_DELAY = 250;
 
   var input = form.elements.q;
-  var typeSelect = form.elements.type;
+  var topicSelect = form.elements.topic;
   var yearSelect = form.elements.year;
   var status = summary.querySelector('.blog-search-status');
   var clearButton = summary.querySelector('.blog-search-clear');
@@ -51,17 +51,17 @@
   function currentState() {
     return {
       q: input.value.trim(),
-      type: typeSelect.value,
+      topic: topicSelect.value,
       year: yearSelect.value,
     };
   }
 
   function isActive(state) {
-    return Boolean(state.q || state.type || state.year);
+    return Boolean(state.q || state.topic || state.year);
   }
 
   // Only values the form actually offers are accepted from the address,
-  // so a hand-edited ?type= cannot leave the select showing nothing.
+  // so a hand-edited ?topic= cannot leave the select showing nothing.
   function setSelect(select, value) {
     for (var i = 0; i < select.options.length; i++) {
       if (select.options[i].value === value) {
@@ -74,7 +74,7 @@
   function writeUrl(state) {
     var params = new URLSearchParams();
     if (state.q) params.set('q', state.q);
-    if (state.type) params.set('type', state.type);
+    if (state.topic) params.set('topic', state.topic);
     if (state.year) params.set('year', state.year);
     var query = params.toString();
     history.replaceState(null, '', location.pathname + (query ? '?' + query : '') + location.hash);
@@ -96,7 +96,7 @@
     var noun = count === 1 ? 'post matches' : 'posts match';
     var text = (count === 0 ? 'No posts match' : count + ' ' + noun);
     if (state.q) text += ' “' + state.q + '”';
-    var filters = [state.type, state.year].filter(Boolean);
+    var filters = [state.topic, state.year].filter(Boolean);
     if (filters.length) text += (state.q ? ' in ' : ' ') + filters.join(', ');
     return text + '.';
   }
@@ -173,7 +173,7 @@
 
     loadPagefind().then(function (pagefind) {
       var filters = {};
-      if (state.type) filters.type = state.type;
+      if (state.topic) filters.topic = state.topic;
       if (state.year) filters.year = state.year;
       // With words to match, Pagefind ranks by relevance. With filters
       // alone there is nothing to rank, so the newest come first, as in
@@ -202,7 +202,7 @@
     clearTimeout(typingTimer);
     typingTimer = setTimeout(run, TYPING_DELAY);
   });
-  typeSelect.addEventListener('change', run);
+  topicSelect.addEventListener('change', run);
   yearSelect.addEventListener('change', run);
 
   form.addEventListener('submit', function (event) {
@@ -219,7 +219,7 @@
 
   var params = new URLSearchParams(location.search);
   input.value = params.get('q') || '';
-  setSelect(typeSelect, params.get('type') || '');
+  setSelect(topicSelect, params.get('topic') || '');
   setSelect(yearSelect, params.get('year') || '');
 
   form.hidden = false;

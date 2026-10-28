@@ -1,6 +1,8 @@
 ---
 title: Break Open the Seal of God's Prophetic Promises for NOW!
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
 date: 2021-09-20
 legacy_path: /break-open-the-seal-of-gods-prophetic-promises-for-now/
 excerpt: The Lord is unveiling His prophetic promises hidden in the pages of His Word. Prophetic revelation remains a mystery until the time of its appointed unveiling, and even then, it is only made visible to those who have eyes to see, ears to hear and a mind to understand.

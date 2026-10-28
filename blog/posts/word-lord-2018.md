@@ -1,6 +1,8 @@
 ---
 title: 'Word of the Lord: 2018'
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
 date: 2018-01-19
 legacy_path: /word-lord-2018/
 excerpt: '(media file not in the 2024 backup: https://kirstenrossiter.com/wp-content/uploads/2018/01/Cindy-Jacobs-300x236.'

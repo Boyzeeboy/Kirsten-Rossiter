@@ -1,6 +1,9 @@
 ---
 title: Let's activate, 'But God!'
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
+  - Spiritual Warfare
 date: 2019-09-01
 legacy_path: /lets-activate-but-god/
 excerpt: There is a global agenda at work in the world, to bring all nations together under a One World Order.

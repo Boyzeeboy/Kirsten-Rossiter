@@ -1,6 +1,9 @@
 ---
 title: We are fighting a territorial spirit
 type: Reflection
+topics:
+  - Spiritual Warfare
+  - Faith in Hard Times
 date: 2026-07-09
 excerpt: The enemy is illegitimately occupying land that is yours for the taking. All he has is time—time to push you until you give up. But you serve a God who fights for you. See the enemy for who he is, let a holy fire of righteous anger rise, and take back your territory.
 description: The enemy occupies land God promised you. Learn to resist fear, rest in God's sovereignty, and reclaim your territory through faith. Rooted in Psalm 91.

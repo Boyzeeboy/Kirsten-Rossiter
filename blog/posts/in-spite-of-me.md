@@ -1,6 +1,8 @@
 ---
 title: In Spite of Me
 type: Prophetic Insight
+topics:
+  - Identity & Calling
 date: 2016-09-11
 legacy_path: /in-spite-of-me/
 excerpt: God uses us despite our imperfections. He's looking for hearts that are bowed down before Him in full surrender, love and obedience.

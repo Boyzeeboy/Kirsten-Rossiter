@@ -1,6 +1,9 @@
 ---
 title: We will go into battle until justice is restored!
 type: Prophetic Insight
+topics:
+  - Spiritual Warfare
+  - The Nations & World Events
 date: 2021-12-14
 legacy_path: /we-will-go-into-battle-until-justice-is-restored/
 excerpt: As the Lord sent imperfect people to save Israel during the time of Judges, so He is commissioning us as His judges in the end-times to restore justice, truth and righteousness in the nations.

@@ -1,6 +1,9 @@
 ---
 title: The Desert Season of Preparation (2)
 type: Reflection
+topics:
+  - Faith in Hard Times
+  - Identity & Calling
 date: 2020-03-27
 legacy_path: /the-desert-season-of-preparation-2/
 excerpt: DESIRE LED TO SEPARATION When Jesus called his disciples, they left what they were busy with and immediately got up and followed Him where He went.

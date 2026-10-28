@@ -1,6 +1,9 @@
 ---
 title: '''This is the Hour of My Wonder and Glory'', says the Lord'
 type: Prophetic Insight
+topics:
+  - Revival & Outpouring
+  - The Nations & World Events
 date: 2021-03-28
 legacy_path: /this-is-the-hour-of-my-wonder-and-glory-says-the-lord/
 excerpt: As in the days of Moses when Pharaoh hardened his heart at the instruction of the Lord to let His people go, so we witness a hardening of the hearts of world-leaders in this hour, to show forth God's wonder and glory.

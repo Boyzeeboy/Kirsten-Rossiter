@@ -1,6 +1,9 @@
 ---
 title: Word of the Lord for South Africa - Davids Arise!
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
+  - Identity & Calling
 date: 2020-01-27
 legacy_path: /word-of-the-lord-for-south-africa-davids-arise/
 excerpt: The Lord would say to you, South Africa, 'My Hand I have removed from the Sauls who have ruled and ruined this nation.

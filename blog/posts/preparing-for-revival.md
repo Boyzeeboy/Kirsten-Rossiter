@@ -1,6 +1,8 @@
 ---
 title: Preparing for Revival
 type: Prophetic Insight
+topics:
+  - Revival & Outpouring
 date: 2020-04-25
 legacy_path: /preparing-for-revival/
 excerpt: LESSONS FROM PREVIOUS REVIVALS The Lord is shaking the earth, getting her ready for the greatest Holy Spirit outpouring the world has ever seen or experienced.

@@ -1,6 +1,9 @@
 ---
 title: The Lump of Clay in the Potter's Hands
 type: Reflection
+topics:
+  - Faith in Hard Times
+  - Identity & Calling
 date: 2017-05-22
 legacy_path: /in-the-potters-hands/
 excerpt: We are the lump of clay on our Heavenly Potter's wheel... being refined, moulded, shaped and beatified by Him. It is a continual process.

@@ -1,6 +1,9 @@
 ---
 title: War for the Nations
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
+  - Spiritual Warfare
 date: 2017-03-12
 legacy_path: /war-for-the-nations/
 excerpt: There is a war going on in the spiritual realm for the nations of the earth. The enemy knows his fate, he knows his time is short, and he knows every Word spoken over the nations for this season.

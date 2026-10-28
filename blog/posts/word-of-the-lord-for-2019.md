@@ -1,6 +1,8 @@
 ---
 title: 'Word of the Lord for 2019: the Double Doors'
 type: Prophetic Insight
+topics:
+  - Seasons & a New Era
 date: 2018-12-26
 legacy_path: /word-of-the-lord-for-2019/
 excerpt: Word of the Lord for 2019,

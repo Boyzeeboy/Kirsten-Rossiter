@@ -1,6 +1,9 @@
 ---
 title: Salvation is coming to the Nations
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
+  - Revival & Outpouring
 date: 2020-07-02
 legacy_path: /salvation-is-coming-to-the-nations/
 excerpt: When reading through the prophetic books of the Old Testament, it is evident that the Lord isn't only speaking about literal Israel, but His covenantal people, the believing Jews and Gentiles.

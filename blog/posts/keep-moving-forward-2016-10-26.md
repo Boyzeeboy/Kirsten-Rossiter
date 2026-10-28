@@ -1,6 +1,9 @@
 ---
 title: Keep Moving Forward
 type: Prophetic Insight
+topics:
+  - Faith in Hard Times
+  - Spiritual Warfare
 date: 2016-10-26
 legacy_path: /keep-moving-forward/
 excerpt: The hardest thing, in the midst of opposition, is to move past the discouragement that wants to set in and keep moving forward.

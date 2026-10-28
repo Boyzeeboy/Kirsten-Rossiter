@@ -1,6 +1,9 @@
 ---
 title: Global Systems are Falling, Local Industries are Rising!
 type: Prophetic Insight
+topics:
+  - The Nations & World Events
+  - Building the Kingdom
 date: 2021-09-29
 legacy_path: /global-systems-are-falling-local-industries-are-rising/
 excerpt: As I was standing in one of our shopping malls this week, waiting for the shops to open, I clearly heard the Lord say, 'The global systems are falling! The monopolies that set the fashion and industry trends are crashing!'
