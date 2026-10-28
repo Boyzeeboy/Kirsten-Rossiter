@@ -733,11 +733,14 @@ footer.site-footer {
 
 /* Search and filters. The form is `hidden` in the HTML and blog-search.js
    reveals it, so without JavaScript none of this shows. Results reuse
-   .post-row, so a match looks exactly like the card it would be in the list. */
+   .post-row, so a match looks exactly like the card it would be in the list.
+   The search box takes the left half of the row and the two filters share the
+   right half; below 760px the box gets a row of its own. */
 .blog-search {
-  display: grid; grid-template-columns: minmax(0, 1fr) 13rem 9rem; gap: var(--kr-spacing-scale-24);
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--kr-spacing-scale-24);
   align-items: end; padding-bottom: var(--kr-spacing-scale-48);
 }
+.blog-search-query { grid-column: span 2; }
 .blog-search[hidden], .blog-search-summary[hidden], .blog-search-results[hidden], .blog-browse[hidden] { display: none; }
 .blog-search-field label {
   display: block; margin-bottom: var(--kr-spacing-scale-12);
