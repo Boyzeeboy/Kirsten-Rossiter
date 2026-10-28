@@ -83,7 +83,7 @@ test.describe('noindex pages', () => {
 for (const path of ['/', '/blog/', '/blog/page/2', '/blog/keep-moving-forward', '/contact', '/terms', '/404.html']) {
   test(`assets are version-stamped on ${path}`, async ({ request }) => {
     const html = await (await request.get(path)).text();
-    const refs = [...html.matchAll(/(?:href|src)="([^"]*(?:styles\.css|tokens\.css|site\.js)[^"]*)"/g)].map((m) => m[1]);
+    const refs = [...html.matchAll(/(?:href|src)="([^"]*(?:styles\.css|tokens\.css|site\.js|blog-search\.js)[^"]*)"/g)].map((m) => m[1]);
     expect(refs.length).toBeGreaterThan(0);
     for (const ref of refs) expect(ref, `${ref} is not version-stamped`).toMatch(/\?v=[0-9a-f]{8}$/);
   });
