@@ -10,6 +10,8 @@ description: Can suffering and unanswered prayers harden our hearts towards God?
 draft: false
 ---
 
+**In the suffering, I choose Jesus.**
+
 The Scripture in Hebrews 6 that speaks of those who have fallen away from their faith, not being able to be restored back again, has been an unsettling and puzzling one for many. I have been pondering it over the last few days and asked the question, ‘what would be a reason for one who has been walking closely with God to fall away from Him?’
 
 > “For it is impossible, in the case of those who have once been enlightened, who have tasted the heavenly gift, and have shared in the Holy Spirit, and have tasted the goodness of the word of God and the powers of the age to come, and then have fallen away, to restore them again to repentance, since they are crucifying once again the Son of God to their own harm and holding him up to contempt. (Hebrews 6:4-6 ESV)
