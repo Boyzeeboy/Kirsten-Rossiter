@@ -10,6 +10,8 @@ description: Discover the freedom of the New Covenant of Grace. Explore covenant
 draft: false
 ---
 
+**Live under it and flee from the curse of the law.**
+
 God gave me such a revelation this week about covenant. The covenant we choose to live under is the one whose blessings or curses we come under. When we mix the Old and New Covenants, we automatically put ourselves under the curses that would come on those who live under the laws of the Old.
 
 When life is tough and we search our hearts and lives to see if there could be any open door to the enemy that we are unaware of, we sometimes step into the place of fear and control, not faith and freedom. We move from Grace to Law, to cover our bases. Giving to God is never about what we will get in return. (I’m not referring to giving by faith with an expectation of a yield, but giving under compulsion out of fear that we might come under the curse if we don’t). If we do, we base our giving on works and it becomes a transaction upon which we expect God to act. The root motivation of that kind of giving is fear, not faith.
