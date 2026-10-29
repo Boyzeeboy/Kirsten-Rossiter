@@ -11,6 +11,8 @@ description: Discover how to overcome fear, trust God without having all the ans
 draft: false
 ---
 
+**Let’s work with Him, effortlessy.**
+
 There are few things as frustrating as trying to get your kids to be obedient and just trust you, so that what needs to be done runs effortlessly and smoothly. When you need to explain, convince, and push, the whole experience delays the process and causes a lot of friction and frustration. We see this in the dialogues between God and Moses in the early chapters of Exodus.
 
 We are living in very important times where God is needing to partner with His people, who can hear His voice and simply work with Him in obedience and in step. In this time of the ‘new’, God is going to work fast and dynamically. He can’t give us all the explanations and facts at every turn. He just needs us to trust Him in the running.
