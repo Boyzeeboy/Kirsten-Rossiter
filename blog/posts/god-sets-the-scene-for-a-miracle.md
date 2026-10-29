@@ -10,6 +10,8 @@ description: Discover 7 powerful lessons from Exodus about trusting God through 
 draft: false
 ---
 
+**Stand still and watch your salvation unfold**
+
 I’ve been reading the book of Exodus in The Passion Translation, and so many truths have been highlighted for me that we need during this time of stepping through the impossible into the promise.
 
 **1. Our detour is for our protection**
