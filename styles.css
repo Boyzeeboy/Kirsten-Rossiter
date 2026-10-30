@@ -710,6 +710,8 @@ footer.site-footer {
   font-size: var(--label-sm); font-weight: 500; letter-spacing: var(--label-md-ls);
   text-transform: uppercase; color: var(--kr-colour-text-secondary);
 }
+/* The eyebrow takes a row of its own, so the links sit underneath it. */
+.topic-links .topic-links-label { flex-basis: 100%; margin-bottom: var(--kr-spacing-scale-4); }
 .topic-links a {
   font-family: var(--serif); font-size: 1.15rem; color: var(--kr-colour-action-primary);
   text-decoration: none; border-bottom: 1px solid var(--rule); transition: opacity 0.2s;
