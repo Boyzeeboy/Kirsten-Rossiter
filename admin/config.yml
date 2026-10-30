@@ -46,3 +46,45 @@ collections:
       - { label: "SEO Description", name: "description", widget: "text" }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  # Topic hubs (ORIN-164). One file per hub topic; the build turns it into
+  # /blog/topics/<topic>. The Topic options must match the Topics list in
+  # Blog Posts above, so change both together. Lead posts are picked by title
+  # and stored by slug; the build fails if one is a draft or not on the topic.
+  - name: hubs
+    label: Topic Hubs
+    label_singular: Topic Hub
+    folder: blog/hubs
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    fields:
+      - label: "Topic"
+        name: "topic"
+        widget: "select"
+        hint: "The blog topic this hub is for. Its page lists every post carrying it."
+        options:
+          - The Nations & World Events
+          - Seasons & a New Era
+          - Faith in Hard Times
+          - Revival & Outpouring
+          - Building the Kingdom
+          - Identity & Calling
+          - Spiritual Warfare
+          - The Bride & the Church
+      - { label: "Title", name: "title", widget: "string", hint: "The hub's heading, and its title in search results." }
+      - { label: "SEO Description", name: "description", widget: "text", required: false, hint: "Shown in search results. Leave empty to use a standard one." }
+      - label: "Lead posts"
+        name: "leads"
+        widget: "relation"
+        collection: "blog"
+        value_field: "{{slug}}"
+        search_fields: ["title"]
+        display_fields: ["title"]
+        multiple: true
+        required: false
+        max: 15
+        hint: "Up to 15 posts to start with, shown first. Each must carry this hub's topic."
+      - { label: "Introduction", name: "body", widget: "markdown", required: false, hint: "A short introduction shown under the title." }

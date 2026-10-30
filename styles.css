@@ -698,6 +698,48 @@ footer.site-footer {
 }
 .post-row:hover .post-arrow { transform: translateX(6px); }
 
+/* Topic pages (/blog/topics/<slug>) and the hub links on the blog index.
+   A topic page reuses the blog hero and .post-row cards for its lead posts;
+   the rest of the topic is a compact list, since it carries every post on
+   the topic on one page. */
+.topic-links {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  gap: var(--kr-spacing-scale-12) var(--kr-spacing-scale-24); margin-top: var(--kr-spacing-scale-32);
+}
+.topic-links-label, .article-topics-label {
+  font-size: var(--label-sm); font-weight: 500; letter-spacing: var(--label-md-ls);
+  text-transform: uppercase; color: var(--kr-colour-text-secondary);
+}
+.topic-links a {
+  font-family: var(--serif); font-size: 1.15rem; color: var(--kr-colour-action-primary);
+  text-decoration: none; border-bottom: 1px solid var(--rule); transition: opacity 0.2s;
+}
+.topic-links a:hover { opacity: 0.7; }
+.blog-hero .back-link { display: block; width: fit-content; }
+.topic-intro p + p { margin-top: var(--kr-spacing-scale-16); }
+.topic-intro a { color: var(--kr-colour-action-primary); }
+.topic-section-title {
+  font-family: var(--serif); font-weight: 400; font-size: 1.6rem; line-height: 1.2;
+  margin: var(--kr-spacing-scale-64) 0 var(--kr-spacing-scale-24);
+}
+.topic-section-title:first-child { margin-top: 0; }
+.topic-list { list-style: none; }
+.topic-list li { border-bottom: 1px solid var(--kr-colour-background-muted); }
+.topic-list li:first-child { border-top: 1px solid var(--kr-colour-background-muted); }
+.topic-list a {
+  display: flex; align-items: baseline; justify-content: space-between; gap: var(--kr-spacing-scale-24);
+  padding: var(--kr-spacing-scale-16) 0; text-decoration: none; color: inherit;
+}
+.topic-list-title { font-family: var(--serif); font-size: 1.2rem; line-height: 1.3; transition: color 0.2s; }
+.topic-list a:hover .topic-list-title { color: var(--kr-colour-action-primary); }
+.topic-list-date {
+  flex-shrink: 0; font-size: var(--meta); letter-spacing: var(--meta-ls);
+  color: var(--kr-colour-text-primary); opacity: 0.7;
+}
+@media (max-width: 600px) {
+  .topic-list a { flex-direction: column; gap: var(--kr-spacing-scale-4); }
+}
+
 /* Pagination. Page 1 of the blog is /blog/; later pages are /blog/page/N.
    Numbers are a windowed list (first, last, current ± 2), so the row keeps its
    width however long the archive gets. */
@@ -850,6 +892,16 @@ footer.site-footer {
   padding-bottom: var(--kr-spacing-scale-4); transition: color 0.3s;
 }
 .article-foot a:hover { color: var(--kr-colour-action-primary); }
+/* The post's topics, above the link back to the blog. */
+.article-topics {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline;
+  gap: var(--kr-spacing-scale-12) var(--kr-spacing-scale-24); margin-bottom: var(--kr-spacing-scale-48);
+}
+.article-foot .article-topics a {
+  font-family: var(--serif); font-size: 1.15rem; font-weight: 400; letter-spacing: normal; text-transform: none;
+  color: var(--kr-colour-action-primary); border-bottom-color: var(--rule); padding-bottom: 0;
+}
+.article-foot .article-topics a:hover { opacity: 0.7; }
 
 /* ─── RESPONSIVE ───────────────────────────────────────────── */
 @media (max-width: 900px) {

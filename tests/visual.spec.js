@@ -33,6 +33,11 @@ const PAGES = [
   // ellipsis on each side. Page 1 and the last page each hide half of it.
   { name: 'blog-index-page-7', path: '/blog/page/7' },
   { name: 'blog-post', path: '/blog/keep-moving-forward' },
+  // A topic page with a hub file (lead cards, then the list) and one without
+  // (the list alone): the two states the topic template has. Revival &
+  // Outpouring is the smallest topic, so its full-page capture stays short.
+  { name: 'topic-hub', path: '/blog/topics/spiritual-warfare' },
+  { name: 'topic-page', path: '/blog/topics/revival-and-outpouring' },
   { name: '404', path: '/404.html' },
 ];
 

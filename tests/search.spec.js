@@ -51,7 +51,7 @@ test('finds a word that appears only in the body of a post', async ({ page }) =>
 // of results, so this also covers "Show more results".
 test('filters alone list the newest first', async ({ page }) => {
   await page.goto('/blog/');
-  await page.getByLabel('Topic').selectOption('Revival & Outpouring');
+  await page.getByLabel('Topic', { exact: true }).selectOption('Revival & Outpouring');
   await expect(status(page)).toHaveText('26 posts match Revival & Outpouring.');
   await expect(results(page)).toHaveCount(20);
   await page.getByRole('button', { name: 'Show more results' }).click();
@@ -64,7 +64,7 @@ test('filters alone list the newest first', async ({ page }) => {
 
 test('a shared link reproduces the search', async ({ page }) => {
   await page.goto('/blog/?topic=Spiritual+Warfare&year=2021');
-  await expect(page.getByLabel('Topic')).toHaveValue('Spiritual Warfare');
+  await expect(page.getByLabel('Topic', { exact: true })).toHaveValue('Spiritual Warfare');
   await expect(page.getByLabel('Year')).toHaveValue('2021');
   await expect(status(page)).toHaveText('7 posts match Spiritual Warfare, 2021.');
   for (const date of await results(page).locator('.post-date').allTextContents()) {

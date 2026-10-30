@@ -179,10 +179,59 @@ The `type` field accepts any string, but these are the standard options configur
 `/blog/` has full-text search with Topic and Year filters. `build-blog.js` indexes every published post with [Pagefind](https://pagefind.app) and writes the index to `pagefind/`; `blog-search.js` runs the search in the browser and only loads the index when someone searches.
 
 - **Nothing to do per post.** Publishing a post adds it to the index on the next build, and setting `draft: true` takes it out. The Year options come from the published posts, so a new year appears on its own.
-- **Topics.** Each post has one to three `topics` in its front matter (main topic first), picked in the CMS from a fixed list of eight. The Topic dropdown lists the topics published posts use. To add or rename a topic, change the list in `admin/config.yml` and update the posts that use the old name.
+- **Topics.** Each post has one to three `topics` in its front matter (main topic first), picked in the CMS from a fixed list of eight. The Topic dropdown lists the topics published posts use. To add or rename a topic, change the list in `admin/config.yml` (it appears twice: under Blog Posts and under Topic Hubs) and update the posts that use the old name. A rename also moves the topic's page; see *Topic pages and hubs* below.
 - **`pagefind/` is not committed.** Cloudflare Pages builds it on every deploy, and the test job in `visual-regression.yml` builds it before the tests. Pagefind does not write the index byte-for-byte the same twice, so a committed copy would turn every push to `main` into a no-op commit from `build-blog.yml`.
 - **Without JavaScript** the search form stays hidden and the paginated list works as before.
 - **Searches are links.** The query and filters go in the address, for example `/blog/?q=esther&topic=Spiritual+Warfare&year=2021`.
+
+## Topic pages and hubs
+
+Added for ORIN-164. Every topic a published post carries has a page at
+`/blog/topics/<slug>`, listing all its posts newest first on one page. The slug
+comes from the topic's name, with `&` read as "and":
+`The Nations & World Events` → `/blog/topics/the-nations-and-world-events`.
+Each post links to its topics' pages at its foot.
+
+A topic becomes a **hub** when it has a file in `blog/hubs/`. In the CMS that's
+**Topic Hubs**, with one entry per hub:
+
+- **Topic**: which blog topic the hub is for.
+- **Title**: the hub's heading, and its title in search results.
+- **SEO Description**: optional; left empty, a standard one is used.
+- **Lead posts**: up to 15, picked by title. They show as cards under "Start
+  here", and the rest of the topic is listed below them.
+- **Introduction**: Kirsten's words under the title. Left empty, the page
+  says "Everything Kirsten has written on …".
+
+The blog index links every hub under "Browse by topic". A topic without a hub
+file still has its page, as a plain list.
+
+**The build fails** if a hub names a topic no published post carries, if two
+hubs share a topic, or if a lead post is missing, a draft, or not tagged with
+the hub's topic. The error names the hub file and the post. Fix the hub, or
+the post's topics, and publish again.
+
+### Held out of search until the topic names are approved
+
+`TOPIC_PAGES_INDEXED` at the top of the topic section in `build-blog.js` is
+`false` for now. While it is, topic pages ship `noindex` and stay out of
+`sitemap.xml`, so if Kirsten renames a topic, Google has nothing indexed under
+the old address. Once she approves the names, set it to `true`. The pages then
+get a canonical, share tags and `CollectionPage` JSON-LD, and go into the
+sitemap. `tests/topics.spec.js` checks whichever state the flag says.
+
+### Renaming a topic after the pages are indexed
+
+The page moves with the name. Add both forms of the old address to the
+hand-written part of `_redirects`, above the generated block:
+
+```
+/blog/topics/old-slug    /blog/topics/new-slug   301
+/blog/topics/old-slug/   /blog/topics/new-slug   301
+```
+
+The build deletes the old page itself. Update the topic in both lists in
+`admin/config.yml`, in every post that carries it, and in its hub file.
 
 ## Sveltia CMS — one-time OAuth setup
 
