@@ -17,6 +17,13 @@ name: Visual regression
 # that the analytics beacon is still requested. Not pictures, but the same
 # question — did something that should be invisible break something.
 #
+# The job builds twice. The other specs run against `npm run build`, the real
+# blog. The screenshots run against `npm run build:visual`: today's code with
+# the blog posts and hubs pinned at one commit, so a post Kirsten publishes
+# through the CMS does not turn this check red on main. Why is in the header
+# of tests/visual.spec.js; the pin, and when to move it, in
+# scripts/build-visual.sh.
+#
 # BASELINES
 #
 # The committed baselines under tests/screenshots/linux/ were generated in
@@ -85,10 +92,27 @@ jobs:
       # same one Cloudflare Pages runs on deploy, so the pages tested here are
       # the pages that ship.
       - name: Build
+        id: build
         run: npm run build
 
-      - name: Compare against baselines
+      - name: Check the built site
         if: ${{ !inputs.update_baselines }}
+        env:
+          PLAYWRIGHT_HTML_OUTPUT_DIR: playwright-report/site
+        run: npm run test:site
+
+      # Overwrites the build above with the pinned blog content. Nothing after
+      # this step may read the real posts. It runs even when the site checks
+      # failed, so one red run reports both.
+      - name: Build with pinned blog content
+        id: build_visual
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: npm run build:visual
+
+      - name: Compare against baselines
+        if: ${{ !cancelled() && !inputs.update_baselines && steps.build_visual.outcome == 'success' }}
+        env:
+          PLAYWRIGHT_HTML_OUTPUT_DIR: playwright-report/visual
         run: npm run test:visual
 
       # The report carries the expected, actual and diff image for every
@@ -121,6 +145,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add tests/screenshots/linux
           git commit -m "test: regenerate visual regression baselines in CI"
+
+          # The pinned build rewrote the generated HTML. Drop it, or the
+          # rebase below refuses to run on a dirty tree.
+          git checkout -- .
 
           # Someone may have pushed while we were rendering.
           git pull --rebase origin "${GITHUB_REF_NAME}"

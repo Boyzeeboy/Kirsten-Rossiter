@@ -17,6 +17,37 @@
 //
 // One page per template. Every blog post is the same template with different
 // markdown, so one representative post stands in for all of them.
+//
+// PINNED CONTENT
+//
+// Half these pages are made of the newest posts: the homepage's latest-insight
+// cards, the blog index and its page 7, the topic pages. Kirsten publishes
+// through the CMS straight to main, so every post she published moved those
+// pictures and turned this check red on main until someone regenerated the
+// baselines by hand (on 30 Oct 2026 ORIN-164 had to carry a regenerated
+// home.png for posts it had nothing to do with). A check that goes red because
+// Kirsten wrote something trains everyone to wave baselines through, which is
+// the one way a real regression gets past this suite.
+//
+// So these pages are not built from today's posts. `npm run build:visual`
+// (scripts/build-visual.sh) builds today's templates and CSS from blog/posts/
+// and blog/hubs/ as they were at a pinned commit. A new post, an edited one
+// or a reworded hub cannot move a pixel here; a change to build-blog.js,
+// styles.css, the tokens or a page's HTML still does. Every card, row and
+// pagination state is still photographed in full — nothing is masked.
+//
+// Masking the post-driven regions was the alternative, and it does not hold:
+// a new title that wraps to two lines, or a topic list one post longer,
+// changes the page's height, and a full-page capture of a different height
+// fails however much of it is masked.
+//
+// The other specs, which carry no @visual tag, check that the real posts are
+// linked, redirected and searchable, so they run against `npm run build`. In
+// CI the job builds twice: live content for them, pinned content for this.
+// Locally:
+//
+//   npm run build:visual && npm run test:visual
+//   npm run build            # put the real blog back afterwards
 
 // @ts-check
 import { test, expect } from '@playwright/test';
@@ -76,7 +107,7 @@ async function settle(page) {
 }
 
 for (const { name, path } of PAGES) {
-  test(name, async ({ page }) => {
+  test(name, { tag: '@visual' }, async ({ page }) => {
     await page.goto(path);
     await settle(page);
     await expect(page).toHaveScreenshot(`${name}.png`, { fullPage: true });
