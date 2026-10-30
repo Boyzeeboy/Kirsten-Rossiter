@@ -21,9 +21,9 @@ God does nothing without revealing it to the prophets first. The key for us is t
 
 There are too many voices, too much noise, and too much of a muchness.
 
-Amos 5:13 says, ‘Yes, the smartest thing for the prudent is to remain silent in such an evil time as this.’
+Amos 5:13 says, _‘Yes, the smartest thing for the prudent is to remain silent in such an evil time as this.’_
 
-Amos 5:14 says, ‘Devote yourself to what is good, not evil, so that you may live. And YAHWEH, the God of Angel Armies, will really be with you, just as you claim he is. Hate what is evil, love what is right, and let justice prevail in the courts. It may be that YAHWEH, God of Angel Armies, will show mercy to the remnant of Israel.’
+Amos 5:14 says, _‘Devote yourself to what is good, not evil, so that you may live. And YAHWEH, the God of Angel Armies, will really be with you, just as you claim he is. Hate what is evil, love what is right, and let justice prevail in the courts. It may be that YAHWEH, God of Angel Armies, will show mercy to the remnant of Israel.’_
 
 We are in a time of judgment. God is going to restore justice on the earth, and we are going to have to find ourselves on the side of good and not evil. Righteousness and Truth.
 
