@@ -228,7 +228,7 @@ ${body}
 </article>
 
 <div class="article-foot">
-<a href="/blog/">Read more from the blog</a>
+${articleTopics(data.topics)}<a href="/blog/">Read more from the blog</a>
 </div>
 
 ${partialBlock('FOOTER')}
@@ -347,6 +347,20 @@ ${options(years)}
 <div class="blog-search-results" hidden data-blog-search-results></div>`;
 }
 
+function postRow(p) {
+  return `<a class="post-row" href="/blog/${p.slug}">
+<div class="post-meta-col">
+<span class="post-type">${escapeHtml(p.data.type)}</span>
+<span class="post-date">${p.displayDate}</span>
+</div>
+<div>
+<h2 class="post-title">${escapeHtml(p.data.title)}</h2>
+<p class="post-excerpt">${escapeHtml(p.data.excerpt)}</p>
+</div>
+<span class="post-arrow">→</span>
+</a>`;
+}
+
 function buildIndexPage(pagePosts, current, total, filters) {
   // Pages below the first sit one directory deeper, so the relative asset
   // links need an extra hop. The nav and footer partials are root-absolute
@@ -360,19 +374,7 @@ function buildIndexPage(pagePosts, current, total, filters) {
     ? BLOG_DESCRIPTION
     : `${BLOG_DESCRIPTION} Page ${current} of ${total}.`;
 
-  const cards = pagePosts.map(p => {
-    return `<a class="post-row" href="/blog/${p.slug}">
-<div class="post-meta-col">
-<span class="post-type">${escapeHtml(p.data.type)}</span>
-<span class="post-date">${p.displayDate}</span>
-</div>
-<div>
-<h2 class="post-title">${escapeHtml(p.data.title)}</h2>
-<p class="post-excerpt">${escapeHtml(p.data.excerpt)}</p>
-</div>
-<span class="post-arrow">→</span>
-</a>`;
-  }).join('\n\n');
+  const cards = pagePosts.map(postRow).join('\n\n');
 
   return `<!doctype html>
 <html lang="en">
@@ -395,7 +397,7 @@ ${partialBlock('NAV')}
 <div class="container">
 <span class="label"><span class="rule-line"></span>Prophetic Writings</span>
 <h1 class="blog-headline">The Prophetic Blog</h1>
-<p class="blog-sub">Prophetic revelation, teachings, and reflections for the Bride and the nations. Words to awaken, equip, and mobilise the Ekklesia for this hour.</p>${total > 1 ? `\n<p class="blog-page-of">Page ${current} of ${total}</p>` : ''}
+<p class="blog-sub">Prophetic revelation, teachings, and reflections for the Bride and the nations. Words to awaken, equip, and mobilise the Ekklesia for this hour.</p>${total > 1 ? `\n<p class="blog-page-of">Page ${current} of ${total}</p>` : ''}${hubLinks(filters.hubs)}
 </div>
 </header>
 
@@ -416,13 +418,14 @@ ${partialBlock('FOOTER')}
 `;
 }
 
-function buildIndexPages(posts) {
+function buildIndexPages(posts, hubs) {
   const pages = paginate(posts);
   const total = pages.length;
   const built = [];
   const filters = {
     topics: [...new Set(posts.flatMap(p => p.data.topics || []))].sort(),
     years: [...new Set(posts.map(p => String(new Date(p.data.date).getUTCFullYear())))].sort().reverse(),
+    hubs,
   };
 
   for (let i = 0; i < total; i++) {
@@ -449,6 +452,227 @@ function buildIndexPages(posts) {
   }
 
   console.log(`  built  index.html + ${total - 1} more page(s) (${posts.length} posts, ${POSTS_PER_PAGE}/page)`);
+  return built;
+}
+
+// ---- Topic pages ------------------------------------------------------------
+//
+// Every topic a published post carries gets a page at /blog/topics/<slug>,
+// listing every post on it newest first, with no pagination: the biggest topic
+// is under 80 posts, and one page keeps each post two clicks from the hub
+// (ORIN-164). Posts link to their topics' pages, so the archive is no longer
+// reachable only through the /blog/page/N chain (ORIN-159).
+//
+// A topic becomes a hub when it has a file in blog/hubs/, edited in the CMS:
+// a title and description for search, Kirsten's introduction as the body, and
+// up to 15 lead posts shown as cards above the list. The blog index links the
+// hubs. A topic with no hub file is still a page, just a plain list.
+//
+// The URL comes from the topic's name, so renaming a topic moves its page. The
+// old URL then needs a rule in _redirects (see BLOG.md).
+//
+// TOPIC_PAGES_INDEXED holds the pages out of search until Kirsten has approved
+// the topic names: while it is false they ship noindex and stay out of the
+// sitemap, so a name that changes leaves nothing indexed behind it.
+const TOPIC_PAGES_INDEXED = false;
+const TOPIC_DIR = path.join(BLOG_DIR, 'topics');
+const HUBS_DIR = path.join(BLOG_DIR, 'hubs');
+const MAX_LEADS = 15;
+
+// "The Nations & World Events" -> "the-nations-and-world-events".
+function topicSlug(topic) {
+  return topic.toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+const topicPath = (topic) => `/blog/topics/${topicSlug(topic)}`;
+
+// The links at the foot of a post, main topic first, as the post lists them.
+function articleTopics(topics) {
+  if (!topics || !topics.length) return '';
+  const links = topics.map(t => `<a href="${topicPath(t)}">${escapeHtml(t)}</a>`).join('\n');
+  return `<nav class="article-topics" aria-label="Topics">
+<span class="article-topics-label">More on</span>
+${links}
+</nav>
+`;
+}
+
+// The hubs, linked from every blog index page.
+function hubLinks(hubs) {
+  if (!hubs || !hubs.length) return '';
+  const links = hubs.map(h => `<a href="${topicPath(h.topic)}">${escapeHtml(h.title)}</a>`).join('\n');
+  return `\n<nav class="topic-links" aria-label="Browse by topic">
+<span class="topic-links-label">Browse by topic</span>
+${links}
+</nav>`;
+}
+
+function readHubs() {
+  if (!fs.existsSync(HUBS_DIR)) return [];
+  return fs.readdirSync(HUBS_DIR).filter(f => f.endsWith('.md')).sort().map(file => {
+    const { data, content } = matter(fs.readFileSync(path.join(HUBS_DIR, file), 'utf8'));
+    return {
+      file,
+      topic: data.topic,
+      title: data.title || data.topic,
+      description: data.description || '',
+      leads: data.leads || [],
+      intro: content.trim(),
+    };
+  });
+}
+
+// A hub that names a topic no post carries, or a lead post that is missing,
+// a draft or off-topic, fails the build. Publishing it would ship a hub with
+// a hole in it, and nothing on the page would say why.
+function validateHubs(hubs, posts, draftSlugs = new Set()) {
+  const bySlug = new Map(posts.map(p => [p.slug, p]));
+  const used = new Set(posts.flatMap(p => p.data.topics || []));
+  const seen = new Map();
+
+  for (const hub of hubs) {
+    const where = `blog/hubs/${hub.file}`;
+    if (!hub.topic) throw new Error(`${where}: no topic`);
+    if (!used.has(hub.topic)) {
+      throw new Error(`${where}: no published post carries the topic "${hub.topic}"`);
+    }
+    if (seen.has(hub.topic)) {
+      throw new Error(`${where}: "${hub.topic}" already has a hub in blog/hubs/${seen.get(hub.topic)}`);
+    }
+    seen.set(hub.topic, hub.file);
+    if (hub.leads.length > MAX_LEADS) {
+      throw new Error(`${where}: ${hub.leads.length} lead posts, at most ${MAX_LEADS}`);
+    }
+    for (const slug of hub.leads) {
+      const post = bySlug.get(slug);
+      if (!post) {
+        throw new Error(draftSlugs.has(slug)
+          ? `${where}: lead post "${slug}" is a draft`
+          : `${where}: lead post "${slug}" does not exist`);
+      }
+      if (!(post.data.topics || []).includes(hub.topic)) {
+        throw new Error(`${where}: lead post "${slug}" is not tagged "${hub.topic}"`);
+      }
+    }
+  }
+}
+
+function buildTopicPage(topic, topicPosts, hub) {
+  const url = `${SITE_ORIGIN}${topicPath(topic)}`;
+  const title = hub ? hub.title : topic;
+  const count = `${topicPosts.length} post${topicPosts.length === 1 ? '' : 's'}`;
+  const description = (hub && hub.description) ||
+    `${count} from Kirsten Rossiter on ${topic}: prophetic insights, teachings and reflections.`;
+
+  const leadSlugs = hub ? hub.leads : [];
+  const leads = leadSlugs.map(slug => topicPosts.find(p => p.slug === slug));
+  const rest = topicPosts.filter(p => !leadSlugs.includes(p.slug));
+
+  // The intro is Markdown, but not a post: no first-paragraph lead styling.
+  isFirstParagraph = false;
+  const intro = hub && hub.intro
+    ? marked.parse(hub.intro).trim()
+    : `<p>Everything Kirsten has written on ${escapeHtml(topic)}, newest first.</p>`;
+
+  const head = TOPIC_PAGES_INDEXED
+    ? `${socialHead({ url, title, description, type: 'website' })}
+${jsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  url,
+  name: title,
+  description,
+  about: topic,
+  author: AUTHOR,
+  inLanguage: 'en',
+})}`
+    : '<meta name="robots" content="noindex" />';
+
+  const list = rest.map(p => `<li><a href="/blog/${p.slug}"><span class="topic-list-title">${escapeHtml(p.data.title)}</span><span class="topic-list-date">${p.displayDate}</span></a></li>`).join('\n');
+
+  const sections = [];
+  if (leads.length) {
+    sections.push(`<h2 class="topic-section-title">Start here</h2>
+<div class="topic-leads">
+${leads.map(postRow).join('\n\n')}
+</div>`);
+  }
+  if (rest.length) {
+    sections.push(`<h2 class="topic-section-title">${leads.length ? `More on ${escapeHtml(topic)}` : `All posts on ${escapeHtml(topic)}`}</h2>
+<ul class="topic-list">
+${list}
+</ul>`);
+  }
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>${escapeHtml(`${title} — Kirsten Rossiter`)}</title>
+<meta name="description" content="${escapeHtml(description)}" />
+${head}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="../../vendor/tokens.css" />
+<link rel="stylesheet" href="../../styles.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+${partialBlock('NAV')}
+
+<header class="blog-hero">
+<div class="container">
+<a href="/blog/" class="back-link">← The Prophetic Blog</a>
+<span class="label"><span class="rule-line"></span>Topic</span>
+<h1 class="blog-headline">${escapeHtml(title)}</h1>
+<div class="blog-sub topic-intro">
+${intro}
+</div>
+<p class="blog-page-of">${count}</p>
+</div>
+</header>
+
+<main class="blog-list">
+<div class="container">
+${sections.join('\n\n')}
+</div>
+</main>
+
+${partialBlock('FOOTER')}
+<script src="../../site.js"></script>
+</body>
+</html>
+`;
+}
+
+function buildTopicPages(posts, hubs) {
+  const topics = [...new Set(posts.flatMap(p => p.data.topics || []))].sort();
+  const built = [];
+  fs.mkdirSync(TOPIC_DIR, { recursive: true });
+
+  for (const topic of topics) {
+    const topicPosts = posts.filter(p => (p.data.topics || []).includes(topic));
+    const hub = hubs.find(h => h.topic === topic);
+    const file = `${topicSlug(topic)}.html`;
+    fs.writeFileSync(path.join(TOPIC_DIR, file), buildTopicPage(topic, topicPosts, hub));
+    built.push({ topic, file, path: topicPath(topic), newest: topicPosts[0] });
+  }
+
+  // A topic nobody uses any more, or one that was renamed, would otherwise
+  // leave its old page behind, listing posts that have moved on.
+  const current = new Set(built.map(t => t.file));
+  for (const file of fs.readdirSync(TOPIC_DIR).filter(f => f.endsWith('.html'))) {
+    if (!current.has(file)) {
+      fs.unlinkSync(path.join(TOPIC_DIR, file));
+      console.log(`  removed  topics/${file} (no published post carries it)`);
+    }
+  }
+
+  console.log(`  built  ${built.length} topic page(s), ${hubs.length} with a hub (${TOPIC_PAGES_INDEXED ? 'indexed' : 'noindex, not in sitemap'})`);
   return built;
 }
 
@@ -716,7 +940,7 @@ function versionAssetsEverywhere(versions) {
 // sitemap.xml is generated, never hand-edited — editing it by hand is how it
 // went stale. The homepage and blog index both change whenever a post is
 // published, so their lastmod tracks the newest post.
-function buildSitemap(posts, indexPages) {
+function buildSitemap(posts, indexPages, topicPages) {
   const newest = posts.length ? isoDate(posts[0].data.date) : isoDate(Date.now());
 
   const urls = [
@@ -730,6 +954,8 @@ function buildSitemap(posts, indexPages) {
       lastmod: pg.newest ? isoDate(pg.newest.data.date) : newest,
     })),
     ...posts.map(p => ({ path: `/blog/${p.slug}`, lastmod: isoDate(p.data.date) })),
+    // Held back until the topic names are approved (TOPIC_PAGES_INDEXED).
+    ...(TOPIC_PAGES_INDEXED ? topicPages : []).map(t => ({ path: t.path, lastmod: isoDate(t.newest.data.date) })),
     ...STATIC_PAGES,
   ];
 
@@ -811,44 +1037,67 @@ async function buildSearchIndex(posts) {
   console.log(`  built  pagefind/ search index (${posts.length} posts)`);
 }
 
-// Main
-const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md'));
-const posts = [];
+// Every published post, newest first, plus the slugs of the drafts so a hub
+// that names one can say so.
+function readPosts() {
+  const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md'));
+  const posts = [];
+  const draftSlugs = new Set();
 
-for (const file of files) {
-  const result = buildPost(path.join(POSTS_DIR, file));
-  if (result) posts.push(result);
-}
-
-posts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
-
-const activeSlugs = new Set(posts.map(p => p.slug));
-const existingHtml = fs.readdirSync(BLOG_DIR).filter(f =>
-  f.endsWith('.html') && f !== 'index.html' && f !== '_template.html'
-);
-for (const file of existingHtml) {
-  const slug = file.replace(/\.html$/, '');
-  if (!activeSlugs.has(slug)) {
-    fs.unlinkSync(path.join(BLOG_DIR, file));
-    console.log(`  removed  ${file} (no matching .md source)`);
+  for (const file of files) {
+    const result = buildPost(path.join(POSTS_DIR, file));
+    if (result) posts.push(result);
+    else draftSlugs.add(path.basename(file, '.md'));
   }
+
+  posts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+  return { posts, draftSlugs };
 }
 
-for (const post of posts) {
-  const outPath = path.join(BLOG_DIR, `${post.slug}.html`);
-  fs.writeFileSync(outPath, post.html);
-  console.log(`  built  ${post.slug}.html`);
+function main() {
+  const { posts, draftSlugs } = readPosts();
+
+  // Validated before anything is written, so a bad hub leaves the site as it was.
+  const hubs = readHubs();
+  validateHubs(hubs, posts, draftSlugs);
+  // Biggest topic first in the blog index's topic links.
+  const postsOn = (topic) => posts.filter(p => (p.data.topics || []).includes(topic)).length;
+  hubs.sort((a, b) => postsOn(b.topic) - postsOn(a.topic) || a.topic.localeCompare(b.topic));
+
+  const activeSlugs = new Set(posts.map(p => p.slug));
+  const existingHtml = fs.readdirSync(BLOG_DIR).filter(f =>
+    f.endsWith('.html') && f !== 'index.html' && f !== '_template.html'
+  );
+  for (const file of existingHtml) {
+    const slug = file.replace(/\.html$/, '');
+    if (!activeSlugs.has(slug)) {
+      fs.unlinkSync(path.join(BLOG_DIR, file));
+      console.log(`  removed  ${file} (no matching .md source)`);
+    }
+  }
+
+  for (const post of posts) {
+    const outPath = path.join(BLOG_DIR, `${post.slug}.html`);
+    fs.writeFileSync(outPath, post.html);
+    console.log(`  built  ${post.slug}.html`);
+  }
+
+  const indexPages = buildIndexPages(posts, hubs);
+  const topicPages = buildTopicPages(posts, hubs);
+
+  buildHomepageInsights(posts);
+  inlineStaticPages();
+  buildSitemap(posts, indexPages, topicPages);
+  buildRedirects(posts);
+  versionAssetsEverywhere(assetVersions());
+
+  buildSearchIndex(posts).catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
 }
 
-const indexPages = buildIndexPages(posts);
+// Run as `node build-blog.js`; the tests require it for the topic rules.
+if (require.main === module) main();
 
-buildHomepageInsights(posts);
-inlineStaticPages();
-buildSitemap(posts, indexPages);
-buildRedirects(posts);
-versionAssetsEverywhere(assetVersions());
-
-buildSearchIndex(posts).catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+module.exports = { TOPIC_PAGES_INDEXED, topicSlug, topicPath, readPosts, readHubs, validateHubs };
