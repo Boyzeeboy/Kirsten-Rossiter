@@ -5,8 +5,13 @@ const matter = require('gray-matter');
 const { Marked } = require('marked');
 
 const SITE_ORIGIN = 'https://www.kirstenrossiter.com';
-const POSTS_DIR = path.join(__dirname, 'blog', 'posts');
 const BLOG_DIR = path.join(__dirname, 'blog');
+// Where the markdown is read from: blog/ itself, unless BLOG_CONTENT_DIR names
+// another folder holding posts/ and hubs/. The output always goes to blog/.
+// Only scripts/build-visual.sh sets it, to build the site from the blog as it
+// was at a pinned commit — see tests/visual.spec.js.
+const CONTENT_DIR = process.env.BLOG_CONTENT_DIR ? path.resolve(process.env.BLOG_CONTENT_DIR) : BLOG_DIR;
+const POSTS_DIR = path.join(CONTENT_DIR, 'posts');
 const PAGE_DIR = path.join(BLOG_DIR, 'page');
 
 const marked = new Marked();
@@ -476,7 +481,7 @@ function buildIndexPages(posts, hubs) {
 // sitemap, so a name that changes leaves nothing indexed behind it.
 const TOPIC_PAGES_INDEXED = false;
 const TOPIC_DIR = path.join(BLOG_DIR, 'topics');
-const HUBS_DIR = path.join(BLOG_DIR, 'hubs');
+const HUBS_DIR = path.join(CONTENT_DIR, 'hubs');
 const MAX_LEADS = 15;
 
 // "The Nations & World Events" -> "the-nations-and-world-events".

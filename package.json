@@ -3,10 +3,12 @@
   "private": true,
   "scripts": {
     "build": "node build-blog.js",
+    "build:visual": "bash scripts/build-visual.sh",
     "lint:tokens": "node scripts/lint-tokens.mjs",
     "sync-tokens": "bash scripts/sync-tokens.sh && node scripts/lint-tokens.mjs",
-    "test:visual": "playwright test",
-    "test:visual:update": "playwright test --update-snapshots"
+    "test:site": "playwright test --grep-invert @visual",
+    "test:visual": "playwright test --grep @visual",
+    "test:visual:update": "playwright test --grep @visual --update-snapshots"
   },
   "dependencies": {
     "gray-matter": "4.0.3",
