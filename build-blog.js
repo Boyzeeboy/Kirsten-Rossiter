@@ -476,10 +476,9 @@ function buildIndexPages(posts, hubs) {
 // The URL comes from the topic's name, so renaming a topic moves its page. The
 // old URL then needs a rule in _redirects (see BLOG.md).
 //
-// TOPIC_PAGES_INDEXED holds the pages out of search until Kirsten has approved
-// the topic names: while it is false they ship noindex and stay out of the
-// sitemap, so a name that changes leaves nothing indexed behind it.
-const TOPIC_PAGES_INDEXED = false;
+// TOPIC_PAGES_INDEXED let the pages into search once Kirsten approved the topic
+// names. Set false, they ship noindex and stay out of the sitemap.
+const TOPIC_PAGES_INDEXED = true;
 const TOPIC_DIR = path.join(BLOG_DIR, 'topics');
 const HUBS_DIR = path.join(CONTENT_DIR, 'hubs');
 const MAX_LEADS = 15;
