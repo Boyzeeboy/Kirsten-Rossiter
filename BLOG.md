@@ -211,14 +211,13 @@ hubs share a topic, or if a lead post is missing, a draft, or not tagged with
 the hub's topic. The error names the hub file and the post. Fix the hub, or
 the post's topics, and publish again.
 
-### Held out of search until the topic names are approved
+### In search
 
 `TOPIC_PAGES_INDEXED` at the top of the topic section in `build-blog.js` is
-`false` for now. While it is, topic pages ship `noindex` and stay out of
-`sitemap.xml`, so if Kirsten renames a topic, Google has nothing indexed under
-the old address. Once she approves the names, set it to `true`. The pages then
-get a canonical, share tags and `CollectionPage` JSON-LD, and go into the
-sitemap. `tests/topics.spec.js` checks whichever state the flag says.
+`true`: Kirsten approved the topic names, so topic pages carry a canonical,
+share tags and `CollectionPage` JSON-LD, and are in `sitemap.xml`. Setting it
+back to `false` ships them `noindex` and takes them out of the sitemap.
+`tests/topics.spec.js` checks whichever state the flag says.
 
 ### Renaming a topic after the pages are indexed
 
